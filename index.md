@@ -1,4 +1,3 @@
-# Summary
 ---
 title: "Welcome to the nOps Help Center"
 permalink: onboarding.md
