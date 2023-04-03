@@ -1,6 +1,6 @@
 ---
 title: "Welcome to the nOps Help Center"
-permalink: onboarding.md
+permalink: index.md
 layout: default
 ---
 
