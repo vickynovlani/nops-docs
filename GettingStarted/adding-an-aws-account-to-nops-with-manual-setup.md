@@ -61,7 +61,7 @@ On this page, select the type of cloud account that you want to onboard and clic
 
 In the scope of this article, we are only going to deal with the **AWS Account** setup.
 
-Getting Started
+## Getting Started ##
 ---------------
 
 In this section, you need to select the account setup method. In the scope of this article, we will deal with the **Manual Setup**. Select the **Manual Setup** and click **Next**.
@@ -83,14 +83,14 @@ If you want to add more accounts after the completion of your onboarding:
 
 **Important:** Do not exit this page, you will return to this page later to complete the account setup.
 
-Setup S3 billing bucket for Cost & Usage Reports
+## Setup S3 billing bucket for Cost & Usage Reports ##
 ------------------------------------------------
 
 This section is divided into two steps, in the first step you will create the Cost & Usage Report, and in the second step you will create/select an S3 bucket for the Cost & Usage Report.
 
 **Note:** Ensure that your AWS SCP configurations allow IAM administrators to make the changes.
 
-Create the Cost & Usage Report
+## Create the Cost & Usage Report ##
 ------------------------------
 
 In this step you will create a Cost & Usage Report (also called Detailed Billing Reports or CUR) so that nOps can analyze your cost information:
@@ -107,7 +107,7 @@ In this step you will create a Cost & Usage Report (also called Detailed Billing
 
 When you click **Next,** it will take you to the **Delivery options** page where you will create the S3 billing bucket.
 
-Create/Select the S3 billing bucket
+## Create/Select the S3 billing bucket ##
 -----------------------------------
 
 AWS needs a place to save your cost and usage/detailed billing files, a place that is safe for you. In this step, you will create an S3 bucket that secures your information:

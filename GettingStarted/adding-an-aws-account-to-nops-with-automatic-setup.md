@@ -48,14 +48,14 @@ If you only add a single account during the automatic setup and want to add more
 
 * * *
 
-Select Cloud Type
+## Select Cloud Type ##
 -----------------
 
 On this page, select the type of cloud account that you want to onboard and click **Next**. In the scope of this document, we will only explore the **AWS Account** option.
 
 If you want to explore nOps first before you onboard any accounts, click **Let Me Explore App**.
 
-Getting Started
+## Getting Started ##
 ---------------
 
 In this section, you need to select the account setup method. In the scope of this article, we will deal with the **Automatic Setup**. Select the **nOps Wizard Setup** and click **Next**.
@@ -66,7 +66,7 @@ To learn more about **Manual Setup**, see [Manual Setup](https://help.nops.io/en
 
 * * *
 
-Link Cloud Accounts
+## Link Cloud Accounts ##
 -------------------
 
 On the first page of this section, you can either select an AWS _Organization_ account or a _Single Account_.
@@ -107,7 +107,7 @@ When data ingestion starts, in AWS console **CloudFormation > Stacks > Stack Det
 2.  If you don’t have proper permissions then you will see errors as shown in the screenshot below, and the stack will not be created. You can assign the necessary permissions to the AWS user or ask other teammates to rerun the setup.
 3.  Once the stack creation is successful, log in to [nOps Dashboard](https://app.nops.io/) after the nOps integration (stack) creation process is completed
 
-Fetching
+## Fetching ##
 --------
 
 Once your AWS accounts are linked successfully, you will see the following screen:
@@ -158,7 +158,7 @@ On initial ingestion, nOps will pull the data from AWS accounts based on the fol
 * Rules: Current date.
 * CloudTrail Events: 14 days look back.
 
-IAM and CloudFormation:
+## IAM and CloudFormation: ##
 -----------------------
 
 The IAM policy used by nOps is scoped to read and write permissions only.
