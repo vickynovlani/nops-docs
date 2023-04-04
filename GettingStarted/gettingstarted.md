@@ -10,3 +10,4 @@ Resources to help you get started.
 - [nOps Free Platform IAM Permissions](/GettingStarted/aws-iam-policy-nops-free-platform.md)
 - [nOps ShareSave Risk Free Commitment Management IAM Permissions](/GettingStarted/aws-iam-policy-nops-free-platform.md)
 - [nOps ShareSave nSwitch Scheduler IAM Permissions](/GettingStarted/aws-iam-policy-sharesave-resource-scheduler.md)
+- [ntesting](/GettingStarted/test.md)
