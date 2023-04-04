@@ -1,188 +1,247 @@
-# Adding an AWS account to nOps with Automatic Setup #
---------------------------------------------------
 
-## Setting up an AWS nOps account (Automatic Setup) ##
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-nOps requires safe, secure, and AWS-approved access to your AWS accounts in order to give you the analysis, dashboards, and reports that you need. We only see what we need, no more, and we need you to give us permission first.
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Adding an AWS account to nOps with Automatic Setup # | nops-docs</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Adding an AWS account to nOps with Automatic Setup #" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="nOps Docs Site Git" />
+<meta property="og:description" content="nOps Docs Site Git" />
+<link rel="canonical" href="http://helcenter.dev.nops.io/GettingStarted/adding-an-aws-account-to-nops-with-automatic-setup.html" />
+<meta property="og:url" content="http://helcenter.dev.nops.io/GettingStarted/adding-an-aws-account-to-nops-with-automatic-setup.html" />
+<meta property="og:site_name" content="nops-docs" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Adding an AWS account to nOps with Automatic Setup #" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"nOps Docs Site Git","headline":"Adding an AWS account to nOps with Automatic Setup #","url":"http://helcenter.dev.nops.io/GettingStarted/adding-an-aws-account-to-nops-with-automatic-setup.html"}</script>
+<!-- End Jekyll SEO tag -->
 
-In order to get started with nOps, the first step is to set up an AWS account for nOps via the Setup Wizard and subscribe to nOps on the AWS marketplace. We made the setup process as easy as possible for you while complying with AWS security best practices.
+    <link rel="stylesheet" href="/assets/css/style.css?v=b41a0806219b8fec51d7e3e96db11b61f6d0cb9d">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 
-In Automatic Setup, nOps takes care of creating the IAM policy and the CloudFormation stack for the account.
+<!-- Setup Google Analytics -->
 
 
 
-## Prerequisites
-To successfully set up the AWS account(s), the AWS user must possess:
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
 
-* Access to the Payer account, if you are using AWS Organizations.
-* Permission to create and run an AWS CloudFormation stack.
-* Permission to create AWS Identity and Access Management (IAM) roles in your account.
-* The name of an Amazon S3 bucket where your AWS Cost and Usage Reports (CURs) will be written. (nOps will create a bucket with the provided name if one does not exist.)
-* CURs enabled in the account.
+<!-- end custom head snippets -->
 
-* * *
+  </head>
+  <body>
+    <div class="container-lg px-3 my-5 markdown-body">
+      
+      <h1><a href="http://helcenter.dev.nops.io/">nops-docs</a></h1>
+      
 
-**Note:** If you add an AWS child account instead of a Payer Account, nOps will only see the cost details of the specific child account instead of the cost details of the entire organization.
+      <h1 id="adding-an-aws-account-to-nops-with-automatic-setup">Adding an AWS account to nOps with Automatic Setup</h1>
+<hr />
 
-* * *
+<h2 id="setting-up-an-aws-nops-account-automatic-setup">Setting up an AWS nOps account (Automatic Setup)</h2>
 
-Adding AWS Account(s)
----------------------
+<p>nOps requires safe, secure, and AWS-approved access to your AWS accounts in order to give you the analysis, dashboards, and reports that you need. We only see what we need, no more, and we need you to give us permission first.</p>
 
-When you log in to your nOps account for the first time, a pop-up screen will appear. This pop-up screen will guide you on how you can add your AWS account(s) to nOps. The screen consists of four distinct sections:
+<p>In order to get started with nOps, the first step is to set up an AWS account for nOps via the Setup Wizard and subscribe to nOps on the AWS marketplace. We made the setup process as easy as possible for you while complying with AWS security best practices.</p>
 
-1.  [Select Cloud Type](#h_910dd1dd7c)
-2.  [Getting Started](#h_b839a84580)
-3.  [Link Cloud Accounts](#h_86e3a87963)
-4.  [Fetching](#h_43a0c3160f)
+<p>In Automatic Setup, nOps takes care of creating the IAM policy and the CloudFormation stack for the account.</p>
 
-* * *
+<h2 id="prerequisites">Prerequisites</h2>
+<p>To successfully set up the AWS account(s), the AWS user must possess:</p>
 
-**Note:**
+<ul>
+  <li>Access to the Payer account, if you are using AWS Organizations.</li>
+  <li>Permission to create and run an AWS CloudFormation stack.</li>
+  <li>Permission to create AWS Identity and Access Management (IAM) roles in your account.</li>
+  <li>The name of an Amazon S3 bucket where your AWS Cost and Usage Reports (CURs) will be written. (nOps will create a bucket with the provided name if one does not exist.)</li>
+  <li>CURs enabled in the account.</li>
+</ul>
 
-If you only add a single account during the automatic setup and want to add more accounts later, once your single account is onboarded and you have access to the nOps platform:
+<hr />
 
-1.  On the top-right corner of your nOps account, click on your user avatar to open a drop-down list.
-2.  In the dropdown list, click **Organization Settings**. This will take you to the **Cloud Accounts** page.
-3.  On the **Cloud Accounts** page, click **\+ Add New Account**.
+<p><strong>Note:</strong> If you add an AWS child account instead of a Payer Account, nOps will only see the cost details of the specific child account instead of the cost details of the entire organization.</p>
 
-* * *
+<hr />
 
-Select Cloud Type
------------------
+<h2 id="adding-aws-accounts">Adding AWS Account(s)</h2>
 
-On this page, select the type of cloud account that you want to onboard and click **Next**. In the scope of this document, we will only explore the **AWS Account** option.
+<p>When you log in to your nOps account for the first time, a pop-up screen will appear. This pop-up screen will guide you on how you can add your AWS account(s) to nOps. The screen consists of four distinct sections:</p>
 
-If you want to explore nOps first before you onboard any accounts, click **Let Me Explore App**.
+<ol>
+  <li><a href="#h_910dd1dd7c">Select Cloud Type</a></li>
+  <li><a href="#h_b839a84580">Getting Started</a></li>
+  <li><a href="#h_86e3a87963">Link Cloud Accounts</a></li>
+  <li><a href="#h_43a0c3160f">Fetching</a></li>
+</ol>
 
-Getting Started
----------------
+<hr />
 
-In this section, you need to select the account setup method. In the scope of this article, we will deal with the **Automatic Setup**. Select the **nOps Wizard Setup** and click **Next**.
+<p><strong>Note:</strong></p>
 
-* * *
+<p>If you only add a single account during the automatic setup and want to add more accounts later, once your single account is onboarded and you have access to the nOps platform:</p>
 
-To learn more about **Manual Setup**, see [Manual Setup](https://help.nops.io/en/adding-an-aws-account-to-nops-with-manual-setup/). To learn more about **IaaC Setup**, see **IaaC Multiple Accounts Setup**.
+<ol>
+  <li>On the top-right corner of your nOps account, click on your user avatar to open a drop-down list.</li>
+  <li>In the dropdown list, click <strong>Organization Settings</strong>. This will take you to the <strong>Cloud Accounts</strong> page.</li>
+  <li>On the <strong>Cloud Accounts</strong> page, click <strong>+ Add New Account</strong>.</li>
+</ol>
 
-* * *
+<hr />
 
-Link Cloud Accounts
--------------------
+<h2 id="select-cloud-type">Select Cloud Type</h2>
 
-On the first page of this section, you can either select an AWS _Organization_ account or a _Single Account_.
+<p>On this page, select the type of cloud account that you want to onboard and click <strong>Next</strong>. In the scope of this document, we will only explore the <strong>AWS Account</strong> option.</p>
 
-In the case of an **AWS Organization** account:
+<p>If you want to explore nOps first before you onboard any accounts, click <strong>Let Me Explore App</strong>.</p>
 
-* Make sure that you are logged into your AWS Master Payer Account.
-* Select the _AWS Organization_ option.
-* Fill out the _AWS Master Payer Account Name_ and _S3 Bucket Name_ fields.
-* Click **Setup Account.**
+<h2 id="getting-started">Getting Started</h2>
 
-If you select **AWS Organization** account, in the next section **Link Cloud Account**, you will have the option to onboard the child accounts associated with your _AWS Organization Account_.
+<p>In this section, you need to select the account setup method. In the scope of this article, we will deal with the <strong>Automatic Setup</strong>. Select the <strong>nOps Wizard Setup</strong> and click <strong>Next</strong>.</p>
 
-In the case of **Single Account**:
+<hr />
 
-* Make sure that you are logged into your AWS account.
-* Select the _Single Account_ option.
-* Fill out the _AWS Account Name_ and _S3 Bucket Name_ fields.
-* Click **Setup Account.**
+<p>To learn more about <strong>Manual Setup</strong>, see <a href="https://help.nops.io/en/adding-an-aws-account-to-nops-with-manual-setup/">Manual Setup</a>. To learn more about <strong>IaaC Setup</strong>, see <strong>IaaC Multiple Accounts Setup</strong>.</p>
 
-When you click **Setup Account**, you will be redirected to your **AWS** \> **Create Stack** page. All the fields on this page will be pre-populated. Click on the checkbox for **“I acknowledge that AWS CloudFormation might create IAM resources”**. nOps needs this permission to automate the creation of the IAM role.
+<hr />
 
-After you click the checkbox, click on the **Create** button to start the data ingestion.
+<h2 id="link-cloud-accounts">Link Cloud Accounts</h2>
 
-* * *
+<p>On the first page of this section, you can either select an AWS <em>Organization</em> account or a <em>Single Account</em>.</p>
 
-**Note:**
+<p>In the case of an <strong>AWS Organization</strong> account:</p>
 
-CF stack can run from any region you prefer. You can easily change the region of the CF stack from the **CloudFormation** screen once you launch it from nOps after your setup process is complete.
+<ul>
+  <li>Make sure that you are logged into your AWS Master Payer Account.</li>
+  <li>Select the <em>AWS Organization</em> option.</li>
+  <li>Fill out the <em>AWS Master Payer Account Name</em> and <em>S3 Bucket Name</em> fields.</li>
+  <li>Click <strong>Setup Account.</strong></li>
+</ul>
 
-* * *
+<p>If you select <strong>AWS Organization</strong> account, in the next section <strong>Link Cloud Account</strong>, you will have the option to onboard the child accounts associated with your <em>AWS Organization Account</em>.</p>
 
-Once the stack is created, come back to nOps. nOps will check the account connectivity with AWS and check the CloudFormation stack permissions, and start the ingestion:
+<p>In the case of <strong>Single Account</strong>:</p>
 
-When data ingestion starts, in AWS console **CloudFormation > Stacks > Stack Detail**:
+<ul>
+  <li>Make sure that you are logged into your AWS account.</li>
+  <li>Select the <em>Single Account</em> option.</li>
+  <li>Fill out the <em>AWS Account Name</em> and <em>S3 Bucket Name</em> fields.</li>
+  <li>Click <strong>Setup Account.</strong></li>
+</ul>
 
-1.  If you have all the required permissions, as mentioned in the prerequisites section, the setup will start creating the stack with the status **“CREATE\_IN\_PROGRESS”**. Once the stack is created the **“Status”** will change to **“CREATE_COMPLETE”**. You can click the browser refresh button to check progress. Normally it takes 1 to 2 minutes to complete the process.
-2.  If you don’t have proper permissions then you will see errors as shown in the screenshot below, and the stack will not be created. You can assign the necessary permissions to the AWS user or ask other teammates to rerun the setup.
-3.  Once the stack creation is successful, log in to [nOps Dashboard](https://app.nops.io/) after the nOps integration (stack) creation process is completed
+<p>When you click <strong>Setup Account</strong>, you will be redirected to your <strong>AWS</strong> &gt; <strong>Create Stack</strong> page. All the fields on this page will be pre-populated. Click on the checkbox for <strong>“I acknowledge that AWS CloudFormation might create IAM resources”</strong>. nOps needs this permission to automate the creation of the IAM role.</p>
 
-Fetching
---------
+<p>After you click the checkbox, click on the <strong>Create</strong> button to start the data ingestion.</p>
 
-Once your AWS accounts are linked successfully, you will see the following screen:
+<hr />
 
-![](https://help.nops.io/wp-content/uploads/2023/03/fatcing-1024x694.jpg)
+<p><strong>Note:</strong></p>
 
-Once you log back into nOps, after data ingestion is complete, in the case of AWS _Organization Account_ you will see the **Setup Child Account** page. With the help of your CUR, the setup process will automatically pull in the child accounts associated with your organization account.
+<p>CF stack can run from any region you prefer. You can easily change the region of the CF stack from the <strong>CloudFormation</strong> screen once you launch it from nOps after your setup process is complete.</p>
 
-To onboard a child account, click the **Automatic Setup** button against the child account that you want to add. If you don’t want to add a specific child account, click **Skip Setup.**
+<hr />
 
-* * *
+<p>Once the stack is created, come back to nOps. nOps will check the account connectivity with AWS and check the CloudFormation stack permissions, and start the ingestion:</p>
 
-**Note:**
+<p>When data ingestion starts, in AWS console <strong>CloudFormation &gt; Stacks &gt; Stack Detail</strong>:</p>
 
-If you don’t have the required permissions to onboard a child account, click **Invite team member** to invite a member of your organization who has the required permissions.
+<ol>
+  <li>If you have all the required permissions, as mentioned in the prerequisites section, the setup will start creating the stack with the status <strong>“CREATE_IN_PROGRESS”</strong>. Once the stack is created the <strong>“Status”</strong> will change to <strong>“CREATE_COMPLETE”</strong>. You can click the browser refresh button to check progress. Normally it takes 1 to 2 minutes to complete the process.</li>
+  <li>If you don’t have proper permissions then you will see errors as shown in the screenshot below, and the stack will not be created. You can assign the necessary permissions to the AWS user or ask other teammates to rerun the setup.</li>
+  <li>Once the stack creation is successful, log in to <a href="https://app.nops.io/">nOps Dashboard</a> after the nOps integration (stack) creation process is completed</li>
+</ol>
 
-* * *
+<h2 id="fetching">Fetching</h2>
 
-If you click **Automatic Setup**, the setup process will show you a confirmation popup.
+<p>Once your AWS accounts are linked successfully, you will see the following screen:</p>
 
-Before you click **Proceed**, make sure that you are logged in to the child account you are onboarding. When you click **Proceed,** you will be redirected to the AWS CloudFormation console with all the fields pre-filled:
+<p><img src="https://help.nops.io/wp-content/uploads/2023/03/fatcing-1024x694.jpg" alt="" /></p>
 
-![](https://help.nops.io/wp-content/uploads/2023/03/Quick-create-stuck-Automatic-Setup-905x1024.jpg)
+<p>Once you log back into nOps, after data ingestion is complete, in the case of AWS <em>Organization Account</em> you will see the <strong>Setup Child Account</strong> page. With the help of your CUR, the setup process will automatically pull in the child accounts associated with your organization account.</p>
 
-Check the **I acknowledge that AWS CloudFormation might create an IAM resources** checkbox, and click **Create Stack**.
+<p>To onboard a child account, click the <strong>Automatic Setup</strong> button against the child account that you want to add. If you don’t want to add a specific child account, click <strong>Skip Setup.</strong></p>
 
-To take a look at the nOps CloudFormation template, see [CloudFormation YAML Template](https://s3-us-west-2.amazonaws.com/nops-users/nOpsRole-uat.yaml).
+<hr />
 
-In case, nOps detects more than 10 child accounts, you will get a prompt to use the [nOps IaaC Setup](https://help.nops.io/en/adding-aws-accounts-to-nops-with-terraform/). nOps recommends that in this case, you use the IaaC Setup instead of the **Automatic Setup**. To learn more about the IaaC setup, see **IaaC Multiple Account Setup**.
+<p><strong>Note:</strong></p>
 
-Once all the Child Accounts are added or skipped, click **Next.**
+<p>If you don’t have the required permissions to onboard a child account, click <strong>Invite team member</strong> to invite a member of your organization who has the required permissions.</p>
 
-The setup process is now complete.
+<hr />
 
-* * *
+<p>If you click <strong>Automatic Setup</strong>, the setup process will show you a confirmation popup.</p>
 
-**Note:**
+<p>Before you click <strong>Proceed</strong>, make sure that you are logged in to the child account you are onboarding. When you click <strong>Proceed,</strong> you will be redirected to the AWS CloudFormation console with all the fields pre-filled:</p>
 
-It can take up to 24 hours before you start seeing the different nOps dashboards and compliance views populated with data from your workload.
+<p><img src="https://help.nops.io/wp-content/uploads/2023/03/Quick-create-stuck-Automatic-Setup-905x1024.jpg" alt="" /></p>
 
-* * *
+<p>Check the <strong>I acknowledge that AWS CloudFormation might create an IAM resources</strong> checkbox, and click <strong>Create Stack</strong>.</p>
 
-If you have any questions, please contact us at [help@nops.io](mailto:help@nops.io), or by phone at +1 866-673-9330.
+<p>To take a look at the nOps CloudFormation template, see <a href="https://s3-us-west-2.amazonaws.com/nops-users/nOpsRole-uat.yaml">CloudFormation YAML Template</a>.</p>
 
-On initial ingestion, nOps will pull the data from AWS accounts based on the following durations:
+<p>In case, nOps detects more than 10 child accounts, you will get a prompt to use the <a href="https://help.nops.io/en/adding-aws-accounts-to-nops-with-terraform/">nOps IaaC Setup</a>. nOps recommends that in this case, you use the IaaC Setup instead of the <strong>Automatic Setup</strong>. To learn more about the IaaC setup, see <strong>IaaC Multiple Account Setup</strong>.</p>
 
-* Cost data: 6 months look back + current month.
-* Rules: Current date.
-* CloudTrail Events: 14 days look back.
+<p>Once all the Child Accounts are added or skipped, click <strong>Next.</strong></p>
 
-IAM and CloudFormation:
------------------------
+<p>The setup process is now complete.</p>
 
-The IAM policy used by nOps is scoped to read and write permissions only.
+<hr />
 
-Lambda function automates the creation of Role and Bucket (if it’s absent) for nOps integration to work.
+<p><strong>Note:</strong></p>
 
-The code for the Lambda function is available for your review. Click the link to get the [YAML file](https://s3-us-west-2.amazonaws.com/nops-users/nOpsRole-uat.yaml).
+<p>It can take up to 24 hours before you start seeing the different nOps dashboards and compliance views populated with data from your workload.</p>
 
-If you are not comfortable with using the automated setup, you can use manual steps for the setup.
+<hr />
 
-Article: [Adding Your AWS account with the Manual Setup](https://help.nops.io/en/adding-an-aws-account-to-nops-with-manual-setup/)
+<p>If you have any questions, please contact us at <a href="mailto:help@nops.io">help@nops.io</a>, or by phone at +1 866-673-9330.</p>
 
-![](https://help.nops.io/wp-content/uploads/2023/03/IAM-and-CloudFormation.jpg)
+<p>On initial ingestion, nOps will pull the data from AWS accounts based on the following durations:</p>
 
-_View the latest [IAM Policy here](https://app.nops.io/c/aws/policy/get_iam_policy/)_
+<ul>
+  <li>Cost data: 6 months look back + current month.</li>
+  <li>Rules: Current date.</li>
+  <li>CloudTrail Events: 14 days look back.</li>
+</ul>
 
-Troubleshooting Tips:
----------------------
+<h2 id="iam-and-cloudformation">IAM and CloudFormation:</h2>
 
-* Do you have a **pop-up blocker** on your browser? A pop-up blocker on your browser will stop nOps from redirecting you to an AWS account to create a stack.
-* There may have been a disconnect when creating the S3 stack causing the stack to have an error of **ROLLBACK_ERROR.** In this case, re-try the automatic setup, then delete the first one.
-* Is it pulling in incorrect data? Make sure that you are logging into the correct account. When you have multiple access to AWS accounts, it can import the wrong data. Ensure that you’re logged in to the correct account prior to starting the integration process.
-* If you belong to an Organization ( multiple accounts linked to a Master Account) ensure that you are logged into the Master account before running the wizard (so the billing data is populated) or having organizational billing data files exported to one of your buckets.
+<p>The IAM policy used by nOps is scoped to read and write permissions only.</p>
 
-Related Articles:
+<p>Lambda function automates the creation of Role and Bucket (if it’s absent) for nOps integration to work.</p>
 
-[How Child Accounts Work in nOps](https://help.nops.io/en/adding-aws-child-accounts-in-nops/)
+<p>The code for the Lambda function is available for your review. Click the link to get the <a href="https://s3-us-west-2.amazonaws.com/nops-users/nOpsRole-uat.yaml">YAML file</a>.</p>
+
+<p>If you are not comfortable with using the automated setup, you can use manual steps for the setup.</p>
+
+<p>Article: <a href="https://help.nops.io/en/adding-an-aws-account-to-nops-with-manual-setup/">Adding Your AWS account with the Manual Setup</a></p>
+
+<p><img src="https://help.nops.io/wp-content/uploads/2023/03/IAM-and-CloudFormation.jpg" alt="" /></p>
+
+<p><em>View the latest <a href="https://app.nops.io/c/aws/policy/get_iam_policy/">IAM Policy here</a></em></p>
+
+<h2 id="troubleshooting-tips">Troubleshooting Tips:</h2>
+
+<ul>
+  <li>Do you have a <strong>pop-up blocker</strong> on your browser? A pop-up blocker on your browser will stop nOps from redirecting you to an AWS account to create a stack.</li>
+  <li>There may have been a disconnect when creating the S3 stack causing the stack to have an error of <strong>ROLLBACK_ERROR.</strong> In this case, re-try the automatic setup, then delete the first one.</li>
+  <li>Is it pulling in incorrect data? Make sure that you are logging into the correct account. When you have multiple access to AWS accounts, it can import the wrong data. Ensure that you’re logged in to the correct account prior to starting the integration process.</li>
+  <li>If you belong to an Organization ( multiple accounts linked to a Master Account) ensure that you are logged into the Master account before running the wizard (so the billing data is populated) or having organizational billing data files exported to one of your buckets.</li>
+</ul>
+
+<p>Related Articles:</p>
+
+<p><a href="https://help.nops.io/en/adding-aws-child-accounts-in-nops/">How Child Accounts Work in nOps</a></p>
+
+
+      
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>anchors.add();</script>
+  </body>
+</html>
