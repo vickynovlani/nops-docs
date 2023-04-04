@@ -2,6 +2,6 @@
 
 Table of Contents
 
-- [Getting Started](/GettingStarted/gettingstarted.md)
+- [Getting Started](/GettingStarted/README.md)
 - [User Guides](/UserGuides/)
 - [Integrations](/Integrations/)
