@@ -9,5 +9,5 @@ Resources to help you get started.
 - [Adding Child/Linked Accounts](/GettingStarted/adding-aws-child-accounts-in-nops.md)
 - [nOps Free Platform IAM Permissions](/GettingStarted/aws-iam-policy-nops-free-platform.md)
 - [nOps ShareSave Risk Free Commitment Management IAM Permissions](/GettingStarted/aws-iam-policy-nops-free-platform.md)
-- [nOps ShareSave nSwitch Scheduler IAM Permissions](/GettingStarted/aws-iam-policy-sharesave-resource-scheduler.md)
+- [nOps ShareSave nSwitch Scheduler IAM Permissions](/GettingStarted/aws-iam-policy-sharesave-resource-scheduler.html)
 - [ntesting](/GettingStarted/test.html)
