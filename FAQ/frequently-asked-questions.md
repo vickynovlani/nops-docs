@@ -5,7 +5,7 @@ category: FAQ
 
 # Frequently Asked Questions #
 
-## Does nOps Require any Write Policy? $$
+## Does nOps Require any Write Policy? ##
 
 nOps requires the following write permissions for setup (optional):
 

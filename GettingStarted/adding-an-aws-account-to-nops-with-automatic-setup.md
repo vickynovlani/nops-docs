@@ -1,6 +1,8 @@
 ---
 title: Adding an AWS account to nOps with Automatic Setup
 category: Getting Started
+nav_order: 1
+has_children: true
 ---
 
 # Adding an AWS account to nOps with Automatic Setup #

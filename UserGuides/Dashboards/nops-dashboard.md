@@ -1,4 +1,9 @@
-nOps Dashboard
+---
+title: The nOps Dashboard
+category: Getting Started
+---
+
+# nOps Dashboard
 
 Use nOps Cost Control facilities to manage and optimize your cloud costs.
 
@@ -34,7 +39,7 @@ This topic describes:
 * [nOps Analysis Tools in Cloud Resources Cost](#h_c25c4ed3d7)
     
 
-nOps Dashboard
+## nOps Dashboard ##
 ==============
 
 The nOps Dashboard summarizes changes in your cloud costs and allows you to choose what period of time to compare. The cost changes are broken out by:
@@ -56,7 +61,7 @@ Note that the Cloud Accounts summary at the top includes links to give you detai
 
 Note also the **View More** link at the bottom left of the individual items partial list in each group, to show all records for that group.
 
-Overall Cost Control Options
+## Overall Cost Control Options ##
 ============================
 
 |     |     |     |
