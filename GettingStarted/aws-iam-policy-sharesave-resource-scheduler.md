@@ -1,3 +1,10 @@
+---
+title: ShareSave nSwitch resource scheduler IAM permissions
+category: Getting Started
+---
+
+# ShareSave nSwitch resource scheduler IAM permissions #
+
 As a part of the [free nOps platform](https://help.nops.io/en/aws-iam-policy-nops-free-platform#h_9bd655b8ac), we analyze your Cost and Usage Report (CUR). As a part of the free nOps platform, we analyze your Cost and Usage Report (CUR) and provide you with scheduler recommendations that you can automate.
 
 In order to extract the full potential of the nOps Scheduler, you need permissions for two nOps features:
@@ -7,7 +14,7 @@ In order to extract the full potential of the nOps Scheduler, you need permissio
 
 _Note: To enable Scheduler recommendations for any child account, it is necessary to get the account fully configured. I.e to enable the [ReadOnly policy](https://docs.nops.io/en/articles/4886159-aws-iam-policy-nops-free-platform#h_9bd655b8ac) access at the child account level._
 
-Access CUR data to analyze utilization
+## Access CUR data to analyze utilization ##
 ======================================
 
 The permissions required at the payer and Child account for basic ShareSave Resource Scheduler Analysis are:
@@ -48,7 +55,7 @@ nOps also required two CUR reports to be configured, with the following bucket a
 
 ```
 
-Scheduler Permissions: Lambda and Eventbridge
+## Scheduler Permissions: Lambda and Eventbridge ##
 =============================================
 
 nOps requires AWS managed [AWSLambdaBasicExecutionRole](https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole) permissions along with the following permission for Scheduler Lambda Function to automatically create schedules with the help of [EventBridge](https://help.nops.io/en/utilize-nops-resource-scheduler-with-eventbridge-integration-to-reduce-costs-automatically/):

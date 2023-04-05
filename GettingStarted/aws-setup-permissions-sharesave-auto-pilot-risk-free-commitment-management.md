@@ -1,6 +1,11 @@
+---
+title: YAML file for CUR, S3 bucket, IAM Policy, and nOps ShareSave linked accounts to your AWS Organization
+category: Getting Started
+---
+
 **YAML file for CUR, S3 bucket, IAM Policy and nOps ShareSave linked accounts to your AWS Organization**
 
-**Prerequisites**
+## Prerequisites ##
 =================
 
 To take advantage of all nOps ShareSave Program, **you must subscribe ONCE to nOps AWS Marketplace offering.** If you have previously subscribe, you are all set to take advantage of all of nOps ShareSave Programs. If not, it’s easy to subscribe and nOps will not charge anything unless we save you money:
@@ -10,7 +15,7 @@ To take advantage of all nOps ShareSave Program, **you must subscribe ONCE to nO
 3.  Once on the nOps offering, Click “**View Offering**“, “**Subscribe**” and finally “**setup Account**“.. That’s it, your done, now time to save!  
     
 
-**Steps for** **Automated** **Setup for Auto-Pilot Risk-Free Commitment Management**
+## Steps for** **Automated** **Setup for Auto-Pilot Risk-Free Commitment Management ##
 ====================================================================================
 
 The automated setup is simple, easy and takes only 5 minutes:

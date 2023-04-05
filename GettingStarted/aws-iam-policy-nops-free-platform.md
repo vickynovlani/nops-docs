@@ -1,4 +1,11 @@
-**IAM Policy for nOps Platform**
+---
+title: Adding Multiple AWS Account to nOps with CloudFormation
+category: Getting Started
+---
+
+# Adding Multiple AWS Account to nOps with CloudFormation #
+
+## IAM Policy for nOps Platform ##
 
 nOps requires safe, secure, and AWS-approved cross account access to your AWS accounts in order to give you the analysis, dashboards, and reports that you need. We only see what you want us to see in order to provide our services, no more, and we need you to give us permission first.
 
@@ -66,7 +73,7 @@ The following tables describe each permission within the IAM policy:
 | Well-Architected | What | Why | Access (Full access) |
 | wellarchitected | Gives full access to Well-Architected. | nOps provides a full functionality dedicated for wellarchitected compliances and it requires full access of this component for managing cloud workloads. | Full access |
 
-Explicit Deny
+## Explicit Deny ##
 =============
 
 The following is the list of services for which nOps explicitly denies the permission:

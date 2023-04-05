@@ -1,8 +1,11 @@
-Adding AWS Account(s) to nOps with Terraform
+---
+title: Adding AWS Account(s) to nOps with Terraform
+category: Getting Started
+---
 
-Onboarding via IaaC (Terraform)
+# Adding AWS Account(s) to nOps with Terraform #
 
-Written by James Wilson. Updated over a week ago
+### Onboarding via IaaC (Terraform) ###
 
 nOps requires safe, secure, and AWS-approved access to your AWS accounts in order to give you the analysis, dashboards, and reports that you need. We only see what you want us to see in order to provide our services, no more, and we need you to give us permission first.
 
@@ -15,7 +18,7 @@ In order to credential and register multiple accounts, we leverage _AWS Organiza
 * Access to the nOps public Github repository [nOps Cloud Account Registration](https://github.com/nops-io/nops-cloud-account-registration).
     
 
-nOps Onboarding - Terraform Setup
+## nOps Onboarding - Terraform Setup ##
 =================================
 
 When you log in to your nOps account for the first time, a pop-up screen will appear. This pop-up screen will guide you on how you can add your AWS account(s) to nOps. The screen consists of four distinct sections:
@@ -29,19 +32,19 @@ When you log in to your nOps account for the first time, a pop-up screen will ap
 4.  [Fetching](#h_6af7c52ac7)
     
 
-1 - Select Cloud Type
+### 1 - Select Cloud Type ###
 ---------------------
 
 On this page, select the type of cloud account that you want to onboard (AWS or Azure) and click **Next**.
 
 In the scope of this article, we are going to deal with the **AWS Account** setup process.
 
-2 - Getting Started
+### 2 - Getting Started ###
 -------------------
 
 In this section, you need to select the account setup method. In the scope of this article, we will deal with the **IaaC Multiple Accounts Setup**. Select the **IaaC Multiple Accounts Setup** option and click **Next**.
 
-3 - Link Cloud Accounts
+### 3 - Link Cloud Accounts ###
 -----------------------
 
 The first page in the Link **Cloud Accounts** section informs you of the prerequisites. If this is your first time onboarding accounts in nOps, click **Proceed to Create API Key**.
@@ -112,7 +115,7 @@ You can monitor the progress from the terminal where you ran the Terraform comma
 
 After a few minutes (depending on the number of accounts) all stacks should be in the state **CURRENT**.
 
-4 - Fetching
+### 4 - Fetching ###
 ------------
 
 Once your AWS accounts are linked successfully, the data-fetching process will start It might take several hours for nOps to fetch the data from your AWS account, in the meantime, you can click **Let Me Explore** to enter the nOps web application to see all the savings that nOps has to offer.  

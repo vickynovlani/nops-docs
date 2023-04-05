@@ -1,4 +1,9 @@
-Adding AWS Child Accounts in nOps
+---
+title: Adding AWS Child Accounts in nOps
+category: Getting Started
+---
+
+# Adding AWS Child Accounts in nOps #
 
 There are three different methods of onboarding a child account:
 
@@ -11,7 +16,7 @@ There are three different methods of onboarding a child account:
 
 All of these onboarding methods give the child accounts IAM permissions that allow nOps to read metadata, CloudTrail, and everything else about the child accounts. It allows nOps to offer its monitoring and recommendations features for security, operations, reliability, and performance.
 
-During Automatic Setup
+## During Automatic Setup ##
 ======================
 
 You can add child accounts to nOps during the automatic setup process. When you add an AWS Organization Master Payer Account during the automatic process, nOps will automatically pull in child accounts associated with the Parent account. nOps learns about these accounts with the help of your Cost and Usage Report (CUR).
@@ -36,7 +41,7 @@ The setup process can take 1-2 hours to pull in data from AWS.
 
 You can skip the onboarding of child accounts during this setup and add the accounts later.
 
-nOps Organization Account
+## nOps Organization Account ##
 =========================
 
 If you decided to skip onboarding of the child accounts during the Automatic Setup, you can still onboard your child accounts via your nOps Organization Account.
@@ -63,11 +68,11 @@ During the onboarding process of child accounts, nOps will not ask for the CUR s
 
 The setup process can take 1-2 hours to pull in data from AWS.
 
-Terraform Multi Account Registration (IaaC)
+## Terraform Multi Account Registration (IaaC) ##
 ===========================================
 
 Use the Terraform Multi Account Registration process when, along with your AWS Organization Master Payer Account, you have numerous child accounts that you want to onboard in nOps. This process makes it easier for you to onboard your child accounts with minimal effort.
 
 You can simply provide the Organizational Unit IDs (OUs) of your child accounts during this setup and nOps will take care of the rest.
 
-To learn about this onboarding process, see [Adding Multiple AWS Accounts to nOps with Terraform](/GettingStarted/adding-aws-accounts-to-nops-with-terraform.md).
+To learn about this onboarding process, see [Adding Multiple AWS Accounts to nOps with Terraform](adding-aws-accounts-to-nops-with-terraform.md).

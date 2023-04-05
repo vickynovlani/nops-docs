@@ -1,3 +1,8 @@
+---
+title: Frequently Asked Questions
+category: FAQ
+---
+
 # Frequently Asked Questions #
 
 ## Does nOps Require any Write Policy? $$

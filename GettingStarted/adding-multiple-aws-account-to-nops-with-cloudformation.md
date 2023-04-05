@@ -1,4 +1,9 @@
-Adding Multiple AWS Account to nOps with CloudFormation
+---
+title: Adding Multiple AWS Account to nOps with CloudFormation
+category: Getting Started
+---
+
+## Adding Multiple AWS Account to nOps with CloudFormation ##
 
 nOps requires safe, secure, and AWS-approved access to your AWS accounts in order to give you the analysis, dashboards, and reports that you need. We only see what you want us to see in order to provide our services, no more, and we need you to give us permission first.
 

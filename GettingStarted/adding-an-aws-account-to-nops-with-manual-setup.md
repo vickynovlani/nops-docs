@@ -1,4 +1,9 @@
-Setting up an AWS nOps account (Manual Setup)
+---
+title: Setting up an AWS nOps account with Manual Setup
+category: Getting Started
+---
+
+# Setting up an AWS nOps account (Manual Setup) #
 
 nOps requires safe, secure, and AWS-approved access to your AWS accounts in order to give you the analysis, dashboards, and reports that you need. We only see what you want us to see in order to provide our services, no more, and we need you to give us permission first.
 
