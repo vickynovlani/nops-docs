@@ -2,7 +2,7 @@ title: nOps Documentation site
 description: learn how to get the most value out of nOps
 theme: just-the-docs
 
-remote_theme: just-the-docs
+#remote_theme: pmarsceill/just-the-docs
 plugins:
   - jekyll-remote-theme
   - jekyll-relative-links

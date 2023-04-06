@@ -1,6 +1,6 @@
 # Getting Started #
 
-Resources to help you get started.
+Resources to help you get started with nOps.
 
 - [Adding AWS Accounts with Automatic Setup](adding-an-aws-account-to-nops-with-automatic-setup.md)
 - [Adding AWS Accounts with Manual Setup](adding-an-aws-account-to-nops-with-manual-setup.md)
