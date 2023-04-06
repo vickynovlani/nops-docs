@@ -8,7 +8,6 @@ has_children: true
 This section is designed to help you get onboarded to nOps with our automation or with a manual process.  You can also view which IAM permissions are necessary.
 
 # Getting Started
-{: .no_toc }
 
 <details open markdown="block">
   <summary>

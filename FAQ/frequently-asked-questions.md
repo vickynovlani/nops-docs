@@ -1,7 +1,7 @@
 ---
 title: Frequently Asked Questions
 layout: default
-nav_order: 1
+nav_order: 3
 has_children: false
 ---
 

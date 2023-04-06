@@ -1,4 +1,12 @@
-# Getting Started #
+---
+layout: default
+title: Home
+nav_order: 1
+description: "The help center documentation site for nOps."
+permalink: /
+---
+
+# Home #
 
 Resources to help you get started.
 
