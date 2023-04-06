@@ -1,6 +1,7 @@
 ---
 title: Adding an AWS account to nOps with Automatic Setup
-parent: Getting Started with nOps
+parent: Onboarding
+grand_parent: Getting Started
 nav_order: 2
 layout: default
 ---

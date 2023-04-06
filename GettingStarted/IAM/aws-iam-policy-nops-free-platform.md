@@ -1,13 +1,12 @@
 ---
-title: Adding Multiple AWS Account to nOps with CloudFormation
-parent: Getting Started with nOps
-nav_order: 7
+title: nOps Platform IAM Permissions
+parent: IAM Policies
+grand_parent: Getting Started
+nav_order: 2
 layout: default
 ---
 
-# Adding Multiple AWS Account to nOps with CloudFormation #
-
-## IAM Policy for nOps Platform ##
+## IAM Policy Permissions for the nOps Platform ##
 
 nOps requires safe, secure, and AWS-approved cross account access to your AWS accounts in order to give you the analysis, dashboards, and reports that you need. We only see what you want us to see in order to provide our services, no more, and we need you to give us permission first.
 

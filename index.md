@@ -8,13 +8,4 @@ permalink: /
 
 # Home #
 
-Resources to help you get started.
-
-- [Adding AWS Accounts with Automatic Setup](/gettingstarted/adding-an-aws-account-to-nops-with-automatic-setup.md)
-- [Adding AWS Accounts with Manual Setup](/gettingstarted/adding-an-aws-account-to-nops-with-manual-setup.md)
-- [Adding AWS Accounts with Terraform](/gettingstarted/adding-aws-accounts-to-nops-with-terraform.md)
-- [Adding AWS Accounts with Cloudformation](/gettingstarted/adding-multiple-aws-account-to-nops-with-cloudformation.md)
-- [Adding Child/Linked Accounts](/gettingstarted/adding-aws-child-accounts-in-nops.md)
-- [nOps Free Platform IAM Permissions](/gettingstarted/aws-iam-policy-nops-free-platform.md)
-- [nOps ShareSave Risk Free Commitment Management IAM Permissions](/gettingstarted/aws-iam-policy-nops-free-platform.md)
-- [nOps ShareSave nSwitch Scheduler IAM Permissions](/gettingstarted/aws-iam-policy-sharesave-resource-scheduler.md)
+Welcome to the resource center for nOps.  If there is an article you'd like to see added, please let us know.  Help is only a click away in the platform with our chatbot if you still need help.

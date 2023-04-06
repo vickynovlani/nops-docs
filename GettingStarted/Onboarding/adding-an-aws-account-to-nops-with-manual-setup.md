@@ -1,6 +1,7 @@
 ---
 title: Setting up an AWS nOps account with Manual Setup
-parent: Getting Started with nOps
+parent: Onboarding
+grand_parent: Getting Started
 nav_order: 3
 layout: default
 ---

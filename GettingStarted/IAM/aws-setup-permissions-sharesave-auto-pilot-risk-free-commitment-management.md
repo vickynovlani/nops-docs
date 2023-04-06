@@ -1,7 +1,8 @@
 ---
-title: YAML file for CUR, S3 bucket, IAM Policy, and nOps ShareSave linked accounts to your AWS Organization
-parent: Getting Started with nOps
-nav_order: 9
+title: YAML file for nOps ShareSave
+parent: IAM Policies
+grand_parent: Getting Started
+nav_order: 4
 layout: default
 ---
 

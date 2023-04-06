@@ -1,6 +1,7 @@
 ---
 title: Adding Multiple AWS Account to nOps with CloudFormation
-parent: Getting Started with nOps
+parent: Onboarding
+grand_parent: Getting Started
 nav_order: 6
 layout: default
 ---
