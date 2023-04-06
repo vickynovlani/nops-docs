@@ -1,11 +1,13 @@
 title: nOps Documentation site
 description: learn how to get the most value out of nOps
 
-remote_theme: pmarsceill/just-the-docs
+remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-remote-theme
   - jekyll-relative-links
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-github-metadata
 relative_links:
   enabled: true
   collections: true
@@ -52,10 +54,6 @@ nav_sort: case_sensitive # Capital letters sorted before lowercase
 back_to_top: true
 back_to_top_text: "Back to top"
 
-plugins:
-  - jekyll-seo-tag
-  - jekyll-github-metadata
-
 kramdown:
   syntax_highlighter_opts:
     block:
@@ -70,3 +68,9 @@ compress_html:
   profile: false
   # ignore:
   #   envs: all
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://helpcenter.dev.nops.io/" # the base hostname & protocol for your site, e.g. http://example.com
+repository: just-the-docs/just-the-docs # for github-metadata
+
+permalink: pretty
