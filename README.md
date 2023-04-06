@@ -1,7 +1,3 @@
-# nops-docs
+# nops-docs is the repository for nOps documentation
 
-Table of Contents
-
-- [Getting Started](/GettingStarted/README.md)
-- [User Guides](/UserGuides/)
-- [Integrations](/Integrations/)
+At some point, there will be more here.  Currently, this is a work in progress.

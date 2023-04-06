@@ -1,6 +1,9 @@
 ---
 title: The nOps Dashboard
-category: Getting Started
+parent: Dashboards
+grand_parent: User Guides
+nav_order: 1
+layout: default
 ---
 
 # nOps Dashboard

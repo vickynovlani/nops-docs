@@ -1,6 +1,8 @@
 ---
 title: Frequently Asked Questions
-category: FAQ
+layout: default
+nav_order: 1
+has_children: false
 ---
 
 # Frequently Asked Questions #
