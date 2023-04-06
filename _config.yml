@@ -1,6 +1,6 @@
 title: nOps Documentation site
 description: learn how to get the most value out of nOps
-
+logo: "./nops-logo.png"
 remote_theme: just-the-docs/just-the-docs
 plugins:
   - jekyll-remote-theme
