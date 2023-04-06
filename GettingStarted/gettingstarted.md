@@ -1,3 +1,10 @@
+---
+title: Getting Started with nOps
+layout: default
+nav_order: 1
+has_children: true
+---
+
 # Getting Started #
 
 Resources to help you get started with nOps.

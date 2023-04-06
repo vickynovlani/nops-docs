@@ -1,6 +1,8 @@
 ---
 title: Adding AWS Account(s) to nOps with Terraform
-category: Getting Started
+parent: Getting Started
+nav_order: 3
+layout: default
 ---
 
 # Adding AWS Account(s) to nOps with Terraform #
