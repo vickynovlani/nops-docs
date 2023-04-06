@@ -1,7 +1,7 @@
 ---
-title: nOps Dashboards
+title: Dashboards
 layout: default
-nav_order: 1
+nav_order: 2
 has_children: true
 parent: User Guides
 ---

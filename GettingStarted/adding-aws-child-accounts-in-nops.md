@@ -1,7 +1,7 @@
 ---
 title: Adding AWS Child Accounts in nOps
-parent: Getting Started
-nav_order: 4
+parent: Getting Started with nOps
+nav_order: 5
 layout: default
 ---
 

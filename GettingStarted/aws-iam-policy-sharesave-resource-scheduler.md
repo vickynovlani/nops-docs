@@ -1,7 +1,7 @@
 ---
 title: ShareSave nSwitch resource scheduler IAM permissions
-parent: Getting Started
-nav_order: 7
+parent: Getting Started with nOps
+nav_order: 8
 layout: default
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: YAML file for CUR, S3 bucket, IAM Policy, and nOps ShareSave linked accounts to your AWS Organization
-parent: Getting Started
-nav_order: 8
+parent: Getting Started with nOps
+nav_order: 9
 layout: default
 ---
 
