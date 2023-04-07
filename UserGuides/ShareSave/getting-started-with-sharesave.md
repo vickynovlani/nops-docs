@@ -24,9 +24,7 @@ The following is the list of cost-saving automation under ShareSave:
     
 *   Graviton
     
-*   [Resource Scheduler](https://www.nops.io/sharesave-scheduler/)
-    
-*   [Auto Scaling Groups](https://www.nops.io/amazon-ec2-autoscaling/)
+*   [nSwitch Resource Scheduler](https://www.nops.io/sharesave-scheduler/)
     
 *   Amazon Relational Database Service
     
