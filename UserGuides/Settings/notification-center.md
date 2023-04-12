@@ -7,10 +7,12 @@ layout: default
 ---
 
 {: .no_toc }
-
-# Notifications Center #
+# Notifications Center
 
 Using the Notification center for Cost Changes, nOps Rules, Security, SOC2 Readiness, HIPAA Readiness Report, and CIS Readiness Report
+
+1. TOC
+{:toc}
 
 ## How to use the Notifications Center ##
 ===================================

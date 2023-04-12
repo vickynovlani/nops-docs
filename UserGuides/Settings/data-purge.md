@@ -8,6 +8,9 @@ layout: default
 
 {: .no_toc }
 
+1. TOC
+{:toc}
+
 **How nOps purges data**
 ========================
 
