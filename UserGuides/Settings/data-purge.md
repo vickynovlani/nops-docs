@@ -6,7 +6,6 @@ nav_order: 6
 layout: default
 ---
 
-{: .no_toc }
 
 1. TOC
 {:toc}
