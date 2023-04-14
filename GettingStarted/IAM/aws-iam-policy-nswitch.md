@@ -6,16 +6,21 @@ nav_order: 3
 layout: default
 ---
 
+In this article: 
+
+1. TOC
+{:toc}
 # ShareSave nSwitch resource scheduler IAM permissions #
 
-As a part of the [free nOps platform](https://help.nops.io/en/aws-iam-policy-nops-free-platform#h_9bd655b8ac), we analyze your Cost and Usage Report (CUR). As a part of the free nOps platform, we analyze your Cost and Usage Report (CUR) and provide you with scheduler recommendations that you can automate.
+
+As a part of the [free nOps platform](../aws-iam-policy-nops-free-platform), we analyze your Cost and Usage Report (CUR). As a part of the free nOps platform, we analyze your Cost and Usage Report (CUR) and provide you with scheduler recommendations that you can automate.
 
 In order to extract the full potential of the nOps Scheduler, you need permissions for two nOps features:
 
-* **[ShareSave nSwitch Resource Scheduler](../aws-iam-policy-sharesave-resource-scheduler/)**: To get the scheduling recommendations.
+* **[ShareSave nSwitch Resource Scheduler](../aws-iam-policy-nswitch)**: To get the scheduling recommendations.
 * **[nSwitch using Eventbridge](#scheduler-permissions-lambda-and-eventbridge)**: To automate the scheduling of resources based on the ShareSave Resource Scheduler recommendations.
 
-_Note: To enable nSwitch recommendations for any child account, it is necessary to get the account fully configured. I.e to enable the [ReadOnly policy](https://docs.nops.io/en/articles/4886159-aws-iam-policy-nops-free-platform#h_9bd655b8ac) access at the child account level._
+_Note: To enable nSwitch recommendations for any child account, it is necessary to get the account fully configured. I.e to enable the [ReadOnly policy](../aws-iam-policy-nops-free-platform.md) access at the child account level._
 
 ## Access CUR data to analyze utilization ##
 ======================================
@@ -93,4 +98,4 @@ These permissions are required on the **_child account or master account where t
 
 ```
 
-To get the full CloudFormation YAML template, see [nOps Scheduler Lambda Function](https://github.com/nops-io/nops-rules-lambda/blob/master/scheduler/scheduler.yml).
+To get the full CloudFormation YAML template, see [nOps nSwitch Lambda Function](https://github.com/nops-io/nops-rules-lambda/blob/master/scheduler/scheduler.yml).

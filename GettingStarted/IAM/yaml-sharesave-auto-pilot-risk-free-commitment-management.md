@@ -8,6 +8,12 @@ layout: default
 
 **YAML file for CUR, S3 bucket, IAM Policy and nOps ShareSave linked accounts to your AWS Organization**
 
+In this article: 
+
+1. TOC
+{:toc}
+
+
 ## Prerequisites ##
 =================
 
@@ -27,19 +33,23 @@ The automated setup is simple, easy and takes only 5 minutes:
     1.  _Trusted Entity Type_: AWS Account
     2.  _Trusted Entity_: nOps
     3.  _Role name_: nops-sharesave-payer
-    4.  _IAM Policy for the Role_: [IAM Policy](https://help.nops.io/en/aws-setup-permissions-sharesave-auto-pilot-risk-free-commitment-management#h_e5732f6dbf)
-    5.  _Automated Creation_: [YAML File](https://help.nops.io/en/aws-setup-permissions-sharesave-auto-pilot-risk-free-commitment-management#h_06c2073ab6)
+    4.  _IAM Policy for the Role_: [IAM Policy](../aws-iam-policy-nops-free-platform)
+    5.  _Automated Creation_: [YAML File](../yaml-sharesave-auto-pilot-risk-free-commitment-management)
 2.  nOps will link **two nOps ShareSave accounts** to your AWS Organization in your AWS Payer/Management account:  
     
     1.  **ShareSave Compute &lt;xx&gt;** – used by nOps to buy/sell EC2 3-year Standard Reserved Instances and buy 3-year Compute Savings Plans.  
-        1.  _Trusted Entity Type_: AWS Account_Trusted Entity_: nOps_Role name_: nops-sharesave-ri_IAM Policy for the Role_: [IAM Policy](https://help.nops.io/en/aws-setup-permissions-sharesave-auto-pilot-risk-free-commitment-management#h_dbee600031)_Automated Creation_: NA – preloaded  
+        1. _Trusted Entity Type_: AWS Account_Trusted 
+        2. _Entity_: nOps
+        3. _Role name_: nops-sharesave-ri
+        4. _IAM Policy for the Role_: [IAM Policy](../yaml-sharesave-auto-pilot-risk-free-commitment-management)
+        5. _Automated Creation_: NA – preloaded  
             
     
     1.  **ShareSave Other &lt;xx&gt;** – used by nOps to buy current generation/flexible 1-year Reserved Instances for RDS, Redshift, OpenSearch, and ElasticCache.  
         1.  _Trusted Entity Type_: AWS Account
         2.  _Trusted Entity_: nOps
         3.  _Role name_: nops-sharesave-ri
-        4.  _IAM Policy for the Role_: [IAM Policy](https://help.nops.io/en/aws-setup-permissions-sharesave-auto-pilot-risk-free-commitment-management#h_dbee600031)
+        4.  _IAM Policy for the Role_: [IAM Policy](./yaml-sharesave-auto-pilot-risk-free-commitment-management)
         5.  _Automated Creation_: NA – preloaded
 
 **How to kick off the automated setup and to begin Saving!**
@@ -58,7 +68,7 @@ To begin savings via **nOps ShareSave – Auto-Pilot Risk-free Commitment Manage
     NOTE: The CloudFormation will take about 3-5mins to complete
 6.  Once the CloudFormation has completed, go to **AWS Organizations via the AWS Console** to see the two nOps ShareSave Accounts added
 
-![](https://help.nops.io/wp-content/uploads/2023/03/sharesave-aws-organization--1024x924.png)
+![](https://nops-docs-img.s3.amazonaws.com/gettingstarted/gs-iam-sharesave-aws-organization.png)
 
 ShareSave: Auto-Pilot Risk-Free Commitment Management configuration is now complete.
 
