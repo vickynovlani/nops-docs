@@ -7,9 +7,12 @@ layout: default
 ---
 
 
-
+{: .no_toc }
 # Adding an AWS account to nOps with Automatic Setup #
 --------------------------------------------------
+
+1. TOC
+{:toc}
 
 ## Setting up an AWS nOps account (Automatic Setup) ##
 

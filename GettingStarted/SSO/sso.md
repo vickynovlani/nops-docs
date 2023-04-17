@@ -4,6 +4,7 @@ layout: default
 nav_order: 3
 has_children: true
 parent: Getting Started
+permalink: ./SSO
 ---
 
 This section is designed to help implement SSO for easier adoption of nOps.

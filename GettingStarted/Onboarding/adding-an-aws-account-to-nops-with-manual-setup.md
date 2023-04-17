@@ -5,16 +5,20 @@ grand_parent: Getting Started
 nav_order: 3
 layout: default
 ---
-
+{: .no_toc}
 # Setting up an AWS nOps account (Manual Setup) #
+
 
 nOps requires safe, secure, and AWS-approved access to your AWS accounts in order to give you the analysis, dashboards, and reports that you need. We only see what you want us to see in order to provide our services, no more, and we need you to give us permission first.
 
-In order to get started with nOps, the first step is to set up an AWS account for nOps via the [Automatic Setup](https://help.nops.io/en/adding-an-aws-account-to-nops-with-automatic-setup/), Manual Setup, IaaC Multi Account Setup (CloudFormation), or IaaC Multi Account Setup (Terraform). We made the setup process as easy as possible for you while complying with AWS security best practices.
+In order to get started with nOps, the first step is to set up an AWS account for nOps via the [Automatic Setup](../adding-an-aws-account-to-nops-with-automatic-setup), Manual Setup, IaaC Multi Account Setup (CloudFormation), or IaaC Multi Account Setup (Terraform). We made the setup process as easy as possible for you while complying with AWS security best practices.
 
 This Manual Setup is used in complex environments by experienced AWS administrators who need granular control and insight into the access that nOps require.
 
 The Manual Setup approach is also useful for administrators who want to embed nOps access into their automation.
+
+1. TOC
+{:toc}
 
 Prerequisites
 -------------
