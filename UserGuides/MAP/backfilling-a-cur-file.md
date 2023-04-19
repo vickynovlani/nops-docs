@@ -24,12 +24,31 @@ For each Payer account, log into your [Amazon Support Console](https://support.c
 
 ### Ticket Information ###
 
-**Type**: Billing
-**Category**: Invoices and Reports
-**Subject**: Backfill CUR reports
-**Description**:
+<table>
+<tr>
+<td> <b>Item</b> </td><td> <b>What to enter</b> </td>
+</tr>
+<tr>
+<td> <b>Type</b> </td><td> Billing </td>
+</tr>
+<tr>
+<td> <b>Category</b> </td><td> Invoices and Reports </td>
+</tr>
+<tr>
+<td> <b>Subject</b>: </td><td> Backfill CUR reports </td>
+</tr>
+<tr>
+<td> <b>Description</b>: </td>
+<td>
 
-Please Backfill The CUR for the following:
-**CUR Report name**: nopsbilling-hourly-parquet
-**Time Period**: <Enter the MAP Start Month> to <Enter the Month prior to the data in nOps>
-**Reason**: We moved to a finance reporting engine for tracking MAP credits that requires all CURs to be in parquet format
+Please Backfill The CUR for the following:<br /><br />
+
+<b>CUR Report name</b>: nopsbilling-hourly-parquet<br />
+
+<b>Time Period</b>: <i>&lt;MAP Start Month&gt;</i> to <i>&lt;the Month prior to the data in nOps&gt;</i> <br />
+
+<b>Reason</b>: We moved to a finance reporting engine for tracking MAP credits that requires all CURs to be in parquet format
+
+</td>
+</tr>
+</table>
