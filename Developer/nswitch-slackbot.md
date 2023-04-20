@@ -1,14 +1,12 @@
 ---
-title: Getting started with the nOps developer API
+title: nSwitch Slackbot "How To" Guide
 layout: default
 nav_order: 2
 has_children: false
 parent: Developer Documentation
 ---
 
-
-Prerequisites:
---------------
+### Prerequisites: ###
 
 * Access to nOps nSwitch  
       
@@ -18,7 +16,7 @@ Prerequisites:
     nOps Slack Integration Lambda code in Github:   
     [https://github.com/nops-io/nops-rules-lambda/tree/master/scheduler/slack](https://github.com/nops-io/nops-rules-lambda/tree/master/scheduler/slack)
 * nOps generated API key (we do not need to generate public and private keys for this SlackBot):
-    * Log into the nOps console and from the S**ettings** pane click the **API Key** option
+    * Log into the nOps console and from the **Settings** pane click the **API Key** option
     * Click on **Let’s Generate Your API Key**
     * You will see a confirmation dialog that contains your newly generated key.
     * Click the copy button on the right of the key, and save the key.You must download a copy of the key when it is generated as you will not be able to access it again.
@@ -31,7 +29,7 @@ Prerequisites:
 3.  Login to your AWS account Go to AWS Lambda > Create a aws chatbot that will integrate with the dedicated slack channel we setup to communicate with aws
 
 **Use the following Lambda code to create the nSwitch SlackBot Lambda Function:**
-
+```lambda
     import boto3
     import urllib3
     import json
@@ -82,8 +80,8 @@ Prerequisites:
             "response_type": "in_channel",
             "text": response_message
         }
-
-**IAM Permissions to be attached to the nSwitch SlackBot Lambda Function:**
+```
+### **IAM Permissions to be attached to the nSwitch SlackBot Lambda Function:** ###
 
 ![](https://help.nops.io/wp-content/uploads/2023/03/Screen_Shot_2023-03-23_at_3.07.29_PM.png)
 
