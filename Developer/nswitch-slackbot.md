@@ -83,15 +83,13 @@ parent: Developer Documentation
 ```
 ### **IAM Permissions to be attached to the nSwitch SlackBot Lambda Function:** ###
 
-![](https://help.nops.io/wp-content/uploads/2023/03/Screen_Shot_2023-03-23_at_3.07.29_PM.png)
-
-![💡](https://s.w.org/images/core/emoji/14.0.0/svg/1f4a1.svg)
+![](https://nops-docs-img.s3.amazonaws.com/solutions/dev-slackbot-lambda.png)
 
 We need to set the ACCESS_KEY above in the Lambda configuration under _**‘Environment Variables’**_
 
 4.  Once the chatbot is created, go to the nSwitch SlackBot Lambda Function channel and use the following command to invoke the Lambda function:
-
+```
     @aws
      lambda invoke --payload {"schedule_id":"your_schedule_id", "schedule_action":"start"} --function-name invoke-scheduler --region us-west-2
-
-> **Note:** You can use the following link to know “How to create an aws chatbot using Lambda”: [https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-run-lambda-function-remotely-tutorial.html](https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-run-lambda-function-remotely-tutorial.html)
+```
+ **Note:** You can use the following link to know “How to create an aws chatbot using Lambda”: [https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-run-lambda-function-remotely-tutorial.html](https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-run-lambda-function-remotely-tutorial.html)
