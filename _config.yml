@@ -78,3 +78,9 @@ url: "http://helpcenter.dev.nops.io/" # the base hostname & protocol for your si
 repository: just-the-docs/just-the-docs # for github-metadata
 
 permalink: pretty
+
+
+
+
+
+github_editme_path: nops-io/nops-docs/blob/main/
