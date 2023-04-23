@@ -1,4 +1,4 @@
-repository: nops-io/helpcenter
+repository: nops-io/nops-docs
 
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
@@ -12,7 +12,7 @@ site_title: Documentation site for the nOps platform
 company_name: nOps
 # this appears in the footer
 
-github_editme_path: nops-io/helpcenter/blob/main/
+github_editme_path: nops-io/nops-docs/blob/main/
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 # gitlab_editme_path: tomjoht/documentation-theme-jekyll/blob/gh-pages/
