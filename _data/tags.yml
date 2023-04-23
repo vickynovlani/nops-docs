@@ -1,0 +1,20 @@
+# Note:
+# If you are using the createtag script, don't leave a blank line at the end of this file.
+# In other words, the last line must be the last tag in the allowed-tags list.
+allowed-tags:
+  - getting_started
+  - onboarding
+  - iam
+  - sso
+  - solutions
+  - developer
+  - savings
+  - recommendations
+  - cost_visibility
+  - reporting
+  - compliance
+  - agents_integrations
+  - settings
+
+
+# Copyright 2021 Google LLC

@@ -1,0 +1,400 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: sidebar
+ # product: nOps Docs navigation
+  folders:
+
+  - title:
+    output: pdf
+    type: frontmatter
+    folderitems:
+    - title:
+      url: /titlepage.html
+      output: pdf
+      type: frontmatter
+    - title:
+      url: /tocpage.html
+      output: pdf
+      type: frontmatter
+
+#start of nav
+  - title: Home
+    output: web
+    folderitems:
+
+    - title: Connecting to nOps
+      url: /index.html
+      output: web
+
+  - title: Getting Started
+    output: web
+    folderitems:
+
+    - title: skip
+      url:
+      output: skip
+
+      subfolders:
+      - title: Onboarding
+        output: web
+        subfolderitems:
+
+        - title: Onboarding with Automatic Setup
+          url: /onboarding-aws-with-automatic-setup.html
+          output: web
+
+        - title: Onboarding with Manual Setup
+          url: /onboarding-aws-with-manual-setup.html
+          output: web
+
+        - title: Onboarding Linked Accounts
+          url: /onboarding-aws-linked-accounts.html
+          output: web
+
+        - title: Onboarding Accounts with Terraform
+          url: /onboarding-aws-with-terraform.html
+          output: web
+
+        - title: Onboarding Accounts with CloudFormation
+          url: /onboarding-aws-with-cloudformation.html
+          output: web
+
+      - title: IAM
+        output: web
+        subfolderitems:
+
+        - title: nOps platform IAM permissions
+          url: /iam-policy-nops-free-platform.html
+          output: web
+
+        - title: nSwitch IAM permissions
+          url: /iam-policy-nswitch.html
+          output: web
+
+        - title: YAML file for Sharesave Setup
+          url: /iam-yaml-sharesave.html
+          output: web
+
+      - title: SSO
+        output: web
+        subfolderitems:
+
+        - title: SSO Integration
+          url: /sso-integration.html
+          output: web
+
+        - title: SSO integration with Okta
+          url: /sso-okta.html
+          output: web
+
+        - title: SSO integration with OneLogin
+          url: /sso-onelogin.html
+          output: web
+
+  - title: ShareSave
+    output: web
+    folderitems:
+
+    - title: Savings on Auto-Pilot
+      url: /sharesave-overview.html
+      output: web
+
+
+  - title: Agents and Integrations
+    output: web
+    folderitems:
+
+    - title: skip
+      url:
+      output: skip
+
+      subfolders:
+      - title: Agents
+        output: web
+        subfolderitems:
+
+        - title: Cloudwatch Agent
+          url: /cloudwatch-agent.html
+          output: web
+
+        - title: Kubernetes Agent
+          url: /k8s-agent.html
+          output: web
+
+        - title: Lambda Forwarder Agent
+          url: /lambda-forwarder-agent.html
+          output: web
+
+      - title: Integrations
+        output: web
+        subfolderitems:
+
+        - title: Eventbridge Integration
+          url: /eventbridge-integration.html
+          output: web
+
+        - title: Jira Integration
+          url: /jira-integration.html
+          output: web
+
+        - title: PagerDuty Integration
+          url: /pagerduty-integration.html
+          output: web
+
+        - title: Slack Integration
+          url: /slack-integration.html
+          output: web
+
+        - title: Webhook Integration
+          url: /webhook-integration.html
+          output: web
+
+
+  - title: User Guides
+    output: web
+    folderitems:
+
+    - title: skip
+      url:
+      output: skip
+
+      subfolders:
+      - title: Cost
+        output: web
+        subfolderitems:
+
+        - title: Commitment Management - Working with Reserved Instances
+          url: /cost-commitment-management-working-with-reserved-instances.html
+          output: web   
+
+        - title: Cost Reporting for Cloud Resources
+          url: /cost-reporting-for-cloud-resources.html
+          output: web
+
+        - title: Resource Rightsizing
+          url: /cost-resource-rightsizing.html
+          output: web          
+
+        - title: Spot Advisor
+          url: /cost-spot-advisor.html
+          output: web
+
+        - title: Tag Explorer
+          url: /cost-tag-explorer.html
+          output: web  
+
+      - title: Dashboards
+        output: web
+        subfolderitems:
+
+        - title: The nOps Dashboard
+          url: /dashboards-nops-dashboard.html
+          output: web
+
+        - title: nOps DSL
+          url: /dashboards-nops-dsl.html
+          output: web
+
+      - title: Data Explorer
+        output: web
+        subfolderitems:
+
+        - title: The nOps Data Explorer
+          url: /nops-data-explorer.html
+          output: web
+
+      - title: Reports
+        output: web
+        subfolderitems:
+
+        - title: Weekly Reports
+          url: /weekly-reports.html
+          output: web
+
+      - title: Rules
+        output: web
+        subfolderitems:
+
+        - title: Custom Rules
+          url: /rules-custom.html
+          output: web
+
+        - title: View Underutilized EBS Volumes
+          url: /rules-view-ebs.html
+          output: web
+
+        - title: View Underutlized Network Resources
+          url: /rules-view-underutilized-network-resources.html
+          output: web
+
+        - title: View IAM Violations
+          url: /rules-view-iam-violations.html
+          output: web
+
+      - title: Security
+        output: web
+        subfolderitems:
+
+        - title: View Security Violations
+          url: /security-view-violations.html
+          output: web
+
+        - title: Check Multi-Factor Authentication
+          url: /security-mfa-activated.html
+          output: web
+
+      - title: Settings
+        output: web
+        subfolderitems:
+
+        - title: Adding Users to nOps
+          url: /settings-adding-users-to-nops.html
+          output: web
+
+        - title: Change Your Password
+          url: /settings-change-password.html
+          output: web
+
+        - title: Customize Settings
+          url: /settings-customize.html
+          output: web      
+
+        - title: Data Purge
+          url: /settings-data-purge.html
+          output: web
+
+        - title: Disable Notifications
+          url: /settings-disable-notifications.html
+          output: web
+
+        - title: Notifications Center
+          url: /settings-notification-center.html
+          output: web
+
+  - title: Workload
+    output: web
+    folderitems:
+
+    - title: skip
+      url:
+      output: skip
+
+      subfolders:
+      - title: Workloads
+        output: web
+        subfolderitems:
+
+        - title: Add Resources to Workloads
+          url: /workload-add-new-resources.html
+          output: web
+
+        - title: Workload API
+          url: /workload-api.html
+          output: web
+
+        - title: Attach Documents to Workloads
+          url: /workload-attach-documents.html
+          output: web
+
+        - title: Create Workloads
+          url: /workload-create.html
+          output: web
+
+        - title: Evaluate Risk for a Workload
+          url: /workload-evaluate-risk.html
+          output: web
+
+        - title: View and Manage Workloads
+          url: /workload-view-and-manage.html
+          output: web
+
+      - title: Well Architected Framework
+        output: web
+        subfolderitems:
+
+        - title: Export a WAFR Report
+          url: /wafr-export.html
+          output: web
+
+        - title: WAFR Report
+          url: /wafr-report.html
+          output: web
+
+        - title: WAFR Review
+          url: /wafr-review.html
+          output: web
+
+      - title: MAP
+        output: web
+        subfolderitems:
+
+        - title: Automated Taging for AWS MAP
+          url: /automated-tagging-for-aws-map.html
+          output: web
+
+        - title: Backfill a CUR for AWS MAP
+          url: /backfilling-a-cur-file.html
+          output: web
+
+      - title: FTR
+        output: web
+        subfolderitems:
+
+        - title: The AWS Foundational Technical Review
+          url: /ftr-aws-foundational-technical-review.html
+          output: web
+
+        - title: The FTR Report
+          url: /ftr-aws-ftr-report.html
+          output: web          
+
+        - title: FTR Question Descriptions
+          url: /ftr-question-descriptions.html
+          output: web  
+
+  - title: Solutions
+    output: web
+    folderitems:
+
+    - title: Cost Optimization Recommendations
+      url: /solutions-cost-optimization-rec.html
+      output: web
+
+    - title: NAT Gateway Visibility
+      url: /solutions-nat-gateway-visibility.html
+      output: web
+
+    - title: Evaluating the Cost Impact of a Changeset
+      url: /solutions-evaluating-changeset-costs.html
+      output: web
+
+    - title: Using EventBridge with nSwitch to Reduce Costs
+      url: /solutions-using-eventbridge-with-nswitch-to-reduce-costs.html
+      output: web
+
+  - title: Developer
+    output: web
+    folderitems:
+
+    - title: Getting Started with the nOps API
+      url: /developer-getting-started.html
+      output: web
+
+    - title: nSwitch Slackbot "How To" Guide
+      url: /developer-nswitch-slackbot.html
+      output: web
+
+    - title: nOps Application API Swagger File
+      external_url: https://app.nops.io/swagger/
+      output: web
+
+    - title: Notification APIs
+      external_url: https://app.nops.io/svc/notifications/api/schema/swagger-ui/#/
+      output: web
+      
+    - title: Recommendations API Swagger
+      external_url: https://app.nops.io/svc/k8s_cost/docs
+      output: web
+
+# Copyright 2023 nOps
