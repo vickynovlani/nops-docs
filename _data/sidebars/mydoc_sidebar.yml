@@ -72,7 +72,7 @@ entries:
           url: /iam-policy-nswitch.html
           output: web
 
-        - title: YAML file for Sharesave Setup
+        - title: YAML file for ShareSave Setup
           url: /iam-yaml-sharesave.html
           output: web
 
