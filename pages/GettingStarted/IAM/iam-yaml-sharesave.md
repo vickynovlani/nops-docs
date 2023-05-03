@@ -68,7 +68,7 @@ To begin savings via **nOps ShareSave – Auto-Pilot Risk-free Commitment Manage
     ![](https://nops-docs-img.s3.amazonaws.com/gettingstarted/gs-create-stack.png)  
     NOTE: The CloudFormation will take about 3-5mins to complete
 6.  Once the CloudFormation has completed, go to **AWS Organizations via the AWS Console** to see the two nOps ShareSave Accounts added
-    ![](https://nops-docs-img.s3.amazonaws.com/gettingstarted/gs-iam-sharesave-aws-organization.png)
+    ![](https://nops-docs-img.s3.amazonaws.com/gettingstarted/gs-sharesave-in-aws-organization.png)
 
 ShareSave: Auto-Pilot Risk-Free Commitment Management configuration is now complete.
 
