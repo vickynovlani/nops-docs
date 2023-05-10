@@ -8,35 +8,39 @@ folder: GettingStarted
 ---
 
 
-# Adding an AWS account to nOps with Automatic Setup #
+# Adding your AWS payer account to nOps with Automatic Setup #
 
 nOps requires safe, secure, and AWS-approved access to your AWS accounts in order to give you the analysis, dashboards, and reports that you need. We only see what we need, no more, and we need you to give us permission first.
 
-In order to get started with nOps, the first step is to set up an AWS account for nOps via the Setup Wizard and subscribe to nOps on the AWS marketplace. We made the setup process as easy as possible for you while complying with AWS security best practices.
+In order to get started with nOps, the first step is to subscribe to nOps on the AWS marketplace.  Next, you'll create an nOps login and set up your AWS payer account. We've made the setup process as easy as possible for you while complying with AWS security best practices.
 
-In Automatic Setup, nOps takes care of creating the IAM policy and the CloudFormation stack for the account.
+In Automatic Setup, nOps takes care of creating the S3 bucket, Cost and Usage Report (CUR), and IAM policy through a CloudFormation stack.
 
 
 
 ## Prerequisites ##
 To successfully set up the AWS account(s), the AWS user must possess:
 
+* An accepted AWS Marketplace offer.  
+    {% include important.html content="Contact sales@nops.io if you do not have an MPPO." %}
 * Access to the Payer account, if you are using AWS Organizations.
 * Permission to create and run an AWS CloudFormation stack.
 * Permission to create AWS Identity and Access Management (IAM) roles in your account.
 * The name of an Amazon S3 bucket where your AWS Cost and Usage Reports (CURs) will be written. (nOps will create a bucket with the provided name if one does not exist)
-* CURs enabled in the account.
+* CURs enabled in the organization.
 
 {% include note.html content="If you add an AWS child account instead of a Payer Account, nOps will only see the cost details of the specific child account instead of the cost details of the entire organization."%}
 
 
-## Adding an AWS Account ##
+## Onboarding the AWS Payer Account ##
 
 When you log in to your nOps account for the first time, a pop-up screen will appear. This pop-up screen will guide you on how you can add your AWS Payer account to nOps. The screen consists of three distinct sections:
 
 1.  [Getting Started](#getting-started)
-2.  [Link Cloud Accounts](#link-cloud-accounts)
+2.  [Link AWS Accounts](#link-aws-accounts)
 3.  [Fetching](#fetching)
+
+![](https://nops-docs-img.s3.amazonaws.com/gettingstarted/gs-onboardingwizard.png)
 
 {% include note.html content="
 After adding your Payer account with the automatic setup, to add more accounts later:<br /><br />
@@ -54,7 +58,7 @@ In this section, you need to select the account setup method. In the scope of th
 To learn more about **Manual Setup**, see [Manual Setup](onboarding-aws-with-manual-setup.html). To learn more about **IaaC Setup**, see [Onboarding with CloudFormation](onboarding-aws-with-cloudformation.html).
 
 
-## Link Cloud Accounts ##
+## Link AWS Accounts ##
 
 In the case of an **AWS Organization** account:
 

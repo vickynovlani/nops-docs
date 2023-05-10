@@ -162,7 +162,7 @@ To schedule a recommendation, click the **Schedule** button against the recommen
 
 To create a new schedule, based on the nOps recommendation, click **Create New Schedule**, all fields will be prepopulated according to the recommendation. Simply click **Create** to start reducing your spend:
 
-[![](https://downloads.intercomcdn.com/i/o/656927495/b56fce700e6c94203118ca76/2023-01-21_20-31-14.png)](https://downloads.intercomcdn.com/i/o/656927495/b56fce700e6c94203118ca76/2023-01-21_20-31-14.png)
+![](/tmpimg/2023-01-21_20-31-14.png)
 
 To attach an existing schedule to the RDS resource(s), click the **Attach Existing Schedule** button, select an existing schedule from the dropdown list, and click **Attach**.
 
@@ -194,47 +194,4 @@ If you are an existing nOps customer, in order to get access to all the cost sav
     
 5.  Click the **Update on AWS** button against all associated accounts. Make sure that you are already logged in to the respective AWS account before you click the button **(optional)**.
     
-
-## ShareSave Configuration ##
-=======================
-
-In the scope of this document, we will go through the configuration of **ShareSave - List of Risk-Free Commitments**.
-
-To learn about **ShareSave - nSwitch Resource Scheduler** and its configuration, see [Utilize nOps Resource Scheduler with EventBridge Integration to Reduce Costs Automatically](solutions-using-eventbridge-with-nswitch.html).
-
-To configure **ShareSave - List of Risk-free Commitment**, follow these steps:
-
-1.  Log in to your nOps environment and head over to the **ShareSave** dashboard:
-    
- ![](/tmpimg/sharesave-menu.png)
-    
-2.  On the **ShareSave** dashboard, in the **List of Opportunities** section, click the **Configure Risk Free Commitment** button:
-    
-    ![](/tmpimg/configure-rfcm.png)
-    
-    1.  If your account has already been configured, you won’t see the **Configure Risk Free Commitment** button. The button is only visible to new customers and existing customers who haven't configured ShareSave yet.
-        
-    2.  _Risk Free Commitments_ are only available to customers that onboard a Master Payer Account. You will not see the button if you haven’t onboarded a Master Payer account.
-        
-    
-3.  Once you click the **Configure Risk Free Commitment** button, the following pop-up will appear:
-    
-    ![](/tmpimg/rfcm-proceed.png)
-    
-    1.  If the pop-up does not appear, make sure that the pop-up isn’t being blocked by your browser.
-        
-    2.  Before you click **Proceed,** make sure that you're logged in to your AWS master account in the same browser.
-        
-    
-4.  After you click **Proceed**, nOps will take you to your AWS console’s CloudFormation **Quick create stack** page —with all the required information pre-filled— in order to create the required Cost and Usage Report (CUR). **Acknowledge** and click **Create stack**:
-    
-    ![](/tmpimg/rfcm-stack.png)
-    
-
-**ShareSave - List of Risk-Free Commitments** configuration is now complete.
-
-* * *
-
-**Note:** It will take upto 24 hours for the data to populate in nOps.
-
-* * *
+Follow the steps to configure [Risk-Free Commitment Management](/rfcm-configure.html)
