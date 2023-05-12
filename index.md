@@ -20,6 +20,8 @@ Getting connected with the nOps platform only takes a few minutes:
 
 1. Follow the steps for [Automatic Setup](/onboarding-aws-with-automatic-setup.html) or [Manual Setup](/onboarding-aws-with-manual-setup) to get started with the nOps platform.
 
+Read about the necessary [IAM permissions](/iam-policy-nops-free-platform.html) for the free platform.
+
 
 ## Next Steps ## 
 
