@@ -44,7 +44,7 @@ feedback_email: helpdocs@nops.io
 # feedback_text: "Need help?"
 # if you uncomment the previous line, it changes the Feedback text
 
-# feedback_link: "http://helpy.io/"
+# feedback_link: "http://help.nops.io/"
 # if you uncomment the previous line, it changes where the feedback link points to
 
 highlighter: rouge
@@ -109,9 +109,7 @@ sidebars:
 description: "Documentation to help you get the most out of nOps."
 # the description is used in the feed.xml file
 
-# needed for sitemap.xml file only
-# url: http://idratherbewriting.com
-# baseurl: /documentation-theme-jekyll
+
 
 
 github: [metadata]
