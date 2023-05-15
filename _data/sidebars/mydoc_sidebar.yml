@@ -60,6 +60,10 @@ entries:
           url: /onboarding-aws-with-cloudformation.html
           output: web
 
+        - title: Generate an AWS Cost and Usage Report
+          url: /onboarding-generate-a-cur.html
+          output: web
+
       - title: IAM
         output: web
         subfolderitems:
