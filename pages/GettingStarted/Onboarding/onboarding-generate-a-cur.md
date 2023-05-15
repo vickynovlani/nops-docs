@@ -41,4 +41,4 @@ AWS keeps a rolling 13 months of cost and usage data. Therefore, if you request 
 
 In conclusion, generating a CUR in AWS is a straightforward process that provides you with detailed cost and usage data for your AWS resources. By requesting a CUR, you can analyze your usage and costs more effectively, create custom reports, and perform cost and usage analyses. Keep in mind that AWS stores 13 months of cost and usage data, and the first report you generate may only include data from the day you created the report onwards.
 
-Depending on th circumstanc, you may be able to [Backfill a CUR file](backfilling-a-cur-file.html)
+Depending on th circumstance, you may be able to [Backfill a CUR file](backfilling-a-cur-file.html)
