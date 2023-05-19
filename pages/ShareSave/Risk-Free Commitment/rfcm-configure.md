@@ -1,3 +1,12 @@
+---
+title: Configure Risk-Free Commitment Management
+keywords: savings, recommendations, sharesave
+tags: [savings, recommendations, sharesave]
+sidebar: mydoc_sidebar
+permalink: rfcm-configure.html
+folder: ShareSave
+---
+
 ## ShareSave Configuration ##
 =======================
 
