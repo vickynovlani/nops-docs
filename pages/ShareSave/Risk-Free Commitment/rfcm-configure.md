@@ -12,7 +12,7 @@ folder: ShareSave
 
 In the scope of this document, we will go through the configuration of **ShareSave -  Risk-Free Commitments**.
 
-To learn about **ShareSave - nSwitch Resource Scheduler** and its configuration, see [Utilize nOps nSwitch Resource Scheduler with EventBridge Integration to Reduce Costs Automatically](solutions-using-eventbridge-with-nswitch.html).
+To learn about **ShareSave - nSwitch Resource Scheduler** and its configuration, see [Utilize nOps nSwitch Resource Scheduler with EventBridge Integration to Reduce Costs Automatically](solutions-using-eventbridge-with-nswitch-to-reduce-costs.html).
 
 To configure **ShareSave - Risk-free Commitment**, follow these steps:
 
