@@ -16,7 +16,9 @@ In order to get started with nOps, the first step is to subscribe to nOps on the
 
 In Automatic Setup, nOps takes care of creating the S3 bucket, Cost and Usage Report (CUR), and IAM policy through a CloudFormation stack.
 
+**Watch the video on how to configure your Payer account with automatic setup:** 
 
+{% include video.html content="https://nops-docs-vids.s3.amazonaws.com/nops_free_setup.mp4" vidclass="vid800600" vidwidth="100%" vidheight="100%" %}
 
 ## Prerequisites ##
 To successfully set up the AWS account(s), the AWS user must possess:

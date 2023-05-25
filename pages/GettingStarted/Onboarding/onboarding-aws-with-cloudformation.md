@@ -15,6 +15,12 @@ In order to credential and register multiple accounts, we leverage _AWS Organiza
 
 For multi-account setup, nOps recommends the use of CloudFormation (this setup) instead of Terraform (intended for advanced users with specific requirements).
 
+**Watch the video on how to configure linked accounts with CloudFormation:** 
+
+{% include video.html content="https://nops-docs-vids.s3.amazonaws.com/nOps-cloud-formation-stackset.mp4" vidclass="vid800600" vidwidth="100%" vidheight="100%" %}
+
+
+
 
 ## Prerequisites ##
 

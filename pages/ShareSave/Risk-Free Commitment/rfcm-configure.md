@@ -7,10 +7,15 @@ permalink: rfcm-configure.html
 folder: ShareSave
 ---
 
-## ShareSave Configuration ##
+## ShareSave Risk-Free Commitment Management Configuration ##
 =======================
 
 In the scope of this document, we will go through the configuration of **ShareSave -  Risk-Free Commitments**.
+
+Watch the video on how to configure Risk-Free Commitment Management: 
+{% include video.html content="https://nops-docs-vids.s3.amazonaws.com/RFCM_configure_explained.mp4" vidclass="vid800600" vidwidth="100%" vidheight="100%" %}
+
+
 
 To learn about **ShareSave - nSwitch Resource Scheduler** and its configuration, see [Utilize nOps nSwitch Resource Scheduler with EventBridge Integration to Reduce Costs Automatically](solutions-using-eventbridge-with-nswitch-to-reduce-costs.html).
 
