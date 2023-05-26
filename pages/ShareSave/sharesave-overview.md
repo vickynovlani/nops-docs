@@ -21,7 +21,7 @@ ShareSave is also ideal for organizations that, during their rapid expansion, ov
 
 The following is the list of cost-saving automation under ShareSave:
 
-*   [Risk-Free Commitment](https://www.nops.io/sharesave/)
+*   [Risk-Free Commitment](https://www.nops.io/sharesave-overview/)
     
 *   Graviton
     

@@ -17,7 +17,6 @@ Watch the video on how to configure Risk-Free Commitment Management:
 
 
 
-To learn about **ShareSave - nSwitch Resource Scheduler** and its configuration, see [Utilize nOps nSwitch Resource Scheduler with EventBridge Integration to Reduce Costs Automatically](solutions-using-eventbridge-with-nswitch-to-reduce-costs.html).
 
 To configure **ShareSave - Risk-free Commitment**, follow these steps:
 
@@ -55,3 +54,5 @@ To configure **ShareSave - Risk-free Commitment**, follow these steps:
 **Note:** It will take upto 24 hours for the data to populate in nOps.
 
 * * *
+
+To learn about **ShareSave - nSwitch Resource Scheduler** and its configuration, see [Utilize nOps nSwitch Resource Scheduler with EventBridge Integration to Reduce Costs Automatically](solutions-using-eventbridge-with-nswitch-to-reduce-costs.html).
