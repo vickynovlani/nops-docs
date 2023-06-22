@@ -42,7 +42,7 @@ Within AWS:
 
     _nOps_: Entity ID
     _AWS_: Application SAML audience
-    
+
     _Example_: https://app.nops.io/sso/v1/YYYYYYYYYYYYYYYYYYYYYYYYY/metadata
 
 1. In AWS, download the IAM Identity Center Certificate and copy the certificate content to the nOps X.509 Certificate section
@@ -58,7 +58,7 @@ Within AWS:
     | Subject | ${user:subject} | transient |
     | User.Email | ${user:email} | basic |
     | User.FirstName | ${user:givenName} | basic |
-    | vUser.LastName | ${user:familyName} | basic |
+    | User.LastName | ${user:familyName} | basic |
 
 
 
