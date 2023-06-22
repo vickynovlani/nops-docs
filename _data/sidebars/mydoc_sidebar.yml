@@ -96,6 +96,10 @@ entries:
           url: /sso-onelogin.html
           output: web
 
+        - title: SSO integration with AWS
+          url: /sso-aws.html
+          output: web
+
   - title: ShareSave
     output: web
     folderitems:
