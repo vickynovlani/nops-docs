@@ -18,7 +18,7 @@ To take advantage of all nOps ShareSave Program, **you must subscribe ONCE to nO
 
 1.  Log in to your AWS Payer/Management account with your IAM user.
 2.  Click the for Following link: [nOps AWS Marketplace Offering](https://aws.amazon.com/marketplace/pp/prodview-xcwcwhkhkjxdw?sr=0-2&ref_=beagle&applicationId=AWS-Marketplace-Console)
-3.  Once on the nOps offering, Click “**View Offering**“, “**Subscribe**” and finally “**setup Account**“.. That’s it, your done, now time to save!  
+3.  Once on the nOps offering, Click “**View Offering**“, “**Subscribe**” and finally “**setup Account**“. That’s it, you're done, now it's time to save!  
     
 
 ## Steps for **Automated** Setup for Auto-Pilot Risk-Free Commitment Management ##
