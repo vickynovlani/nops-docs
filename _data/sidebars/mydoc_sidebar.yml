@@ -340,7 +340,7 @@ entries:
         output: web
         subfolderitems:
 
-        - title: Automated Taging for AWS MAP
+        - title: Automated Tagging for AWS MAP
           url: /automated-tagging-for-aws-map.html
           output: web
 
