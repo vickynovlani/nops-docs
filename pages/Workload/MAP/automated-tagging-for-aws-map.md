@@ -27,46 +27,52 @@ In order to get your AWS MAP credits, all your resources must be tagged accordin
 
 To use the nOps MAP facitliy, from the nOps dashboard go to **Workload > AWS MAP:**
 
-![](/tmpimg/map1.png)
+![](/tmpimg/map-menu.png)
 
 Defining Your Migration Projects
 --------------------------------
 
 The nOps MAP facility starts with the page **_AWS MAP 2.0 Summary_**, where you’ll find three sections:
 
-* **QTD (Overall Migration Resource Spend Summary)** – gives quarter to date total spending in AWS on migrated resources (tagged and untagged), untagged resources, and earned MAP credits.
+* **Overall Migration Resource Spend Summary** – displays AWS on MAP migrated resources (tagged and untagged) and earned MAP credits.
     
-* **Your Current Tagging Status** – shows the % of your migrated resources are tagged with _map-migrated_ in order to get credits, and what % are untagged. It also shows the resource spend equivalent to the percentages.
+* **Your Current Tagging Status** – shows the % of your migrated resources are tagged with _map-migrated_ in order to get credits and actual credits distributed.
     
-* **List of Migration Projects** – shows projects that you’ve defined. Each project corresponds with a _MAP Migration Contract_ from AWS and is identified by the project number in that contract, of the form _MPExxxxx_ (where _xxxxx_ are digits).
+* **List of Migration Projects** – shows projects that you’ve defined. Each project corresponds with a _MAP Migration Contract_ from AWS and is identified by the project number in that contract, of the form _MPExxxxx_ (where _xxxxx_ are digits) or a 10-digit identifier such as ABCLMNOPYZ.
     
 
-![](/tmpimg/map2.png)
+    ![](/tmpimg/map-tophalf.png)
+    ![](/tmpimg/map-bottomhalf.png)
 
 To create/add a MAP migration project in nOps, click **\+ Create MAP Project** at the upper right; it will bring up this dialog:
 
-![](/tmpimg/map3.png)
+![](/tmpimg/map-project-details.png)
 
 In the dialog, fill out the details:
 
-* **Project Name —** Choose one that is meaningful to you.
+
     
-* **Project ID —** The project ID starts with “MP” followed by 5 digits (_MPExxxxx_, where _xxxxx_ are digits). If you are not sure where to find your MAP _Project ID_, refer to the top of the first page of your MAP contract.
+* **MAP ID —** The project ID starts with “MP” followed by 5 digits or 10 digits (_MPExxxxx_, where _xxxxx_ are digits), depending on your contract.
+
+    If you are not sure where to find your MAP _Project ID_, refer to the top of the first page of your MAP contract.
+
+* **MAP NAME —** Choose one that is meaningful to you.
     
 * **_Start Date_** and **_End Date —_** They should be per your MAP contract terms from AWS.
     
-* **Tag Key —** Prefilled for you.
+* **Credit % —** Prefilled for you to the typical 25%, however you may edit this if your contract terms state a different discount for standard MAP resources.
     
-* **Server ID —** Must be the _exact_ server-ID string from AWS. If you do not already have an AWS server ID, click the blue **_Generate Server ID_** button, which will take you to the AWS facility for creating one – be sure and copy the ID that you create there in order to come back to this dialog and paste it into this **Server ID** field.
+* **Tag Value —** Must be the _exact_ value string from your AWS contract. This value should be _mig_ followed by the 5 or 10-digit MAP ID.  If it's an older MAP contract, you may also use the server-id (typcally d- followed by 9 digits).
+
+* **Additional options —** Select any options for additional MAP incentives specified in your contract, such as Windows optimization or Commercial DB&A
     
 * **Workload (optional) —** As identified in nOps’ Well Architected Framework Review facility. You can select an existing workload that you’ve created in nOps or you can create a new workload for the MAP project. To create a new workload, click **Create Workload,** this will take you to the **_Workloads_** page in nOps. With workloads, you have the option to define a scope for where nOps should look for tagged and untagged resources.
     
 
-Once you’ve entered all the details for this MAP project, click **Create.** The project you just created will show up in the **List of Migration Projects** on the **_AWS MAP 2.0 Summary_** page:
+Once you’ve entered all the details for this MAP project, click **Create.** The project you just created will show up in the **List of Migration Projects** on the **_AWS MAP 2.0 Summary_** page.  Every MAP project that you create this way in nOps will correspond to a MAP _Migration Contract_.
 
-![](/tmpimg/map4.png)
+You can now click ➡️ in the **Action** column of the **List of Migration Projects** section for the project to see the cost, credit, and resource details.
 
-Every MAP project that you create this way in nOps will correspond to a MAP _Migration Contract_.
 
 * * *
 
@@ -86,15 +92,15 @@ To tag resources of a project:
 1.  Click ➡️ in the **Action** column of the **List of Migration Projects** section:  
     This will take you to the **Migration Details** of the migration project.
     
-2.  Scroll down to the **List of resources** section. This list contains all the resources associated with the migration project:
+2.  Scroll down to the **List of resources** section. Each service category opens a list that contains all the resources associated with the migration project:
     
-![](/tmpimg/map5.png)
+![](/tmpimg/map-untagged-resources.png)
 
 3.  Select the resource(s) you want to tag, and click **\+ Add Migration Tag** and then **\+ Tag Now**:
     
-![](/tmpimg/map6.png)
+![](/tmpimg/map-tagging-resources.png)
     
-4.  Click **Yes**:
+4.  Click **Yes** in the prompt that pops up and follow the steps of Systems Manager to complete the tagging.
 
 
 * * *
@@ -103,7 +109,7 @@ To tag resources of a project:
 
 Once you click **Yes**, nOps will redirect you to AWS, where you will tag the selected resources. nOps will pre-fill **Tag Key**, **Tag Value**, and **ARN,** which is some of the information required to tag the selected resource.
 
-To successfully tag a resource in AWS, you (the customer) will need two permissions from your AWS Admin – permission for the selected resources and the permission to tag resources.
+To successfully tag a resource in AWS, you will need access to the account the resources reside in and permission to use System Manager to tag the selected resources.
 
 * * *
 
@@ -112,16 +118,9 @@ Managing Your Migration Projects
 
 Once you’ve defined one or more migration projects in nOps, you will see each of those projects listed at the bottom of the **_AWS_** _**MAP 2.0 Summary**_ page where you started:
 
-![](/tmpimg/map7.png)
+![](/tmpimg/map-bottomhalf.png)
 
 You can access and manage any migration project by clicking the ➡️ button in the _Action_ column of the **List of Migration Projects** section.
-
-In the **_AWS MAP 2.0 Summary_** page you will also find a collective summary of all of your migration projects in the form of:
-
-* **Overall Migration Resource Spend Summary —** Shows quarter to date (QTD) migrated resource spend, untagged resource spend, and estimated credit.
-    
-* **Your Current Tagging Status —** Shows a bar chart for how much of your spending has been tagged and how much remains untagged in the current QTD, across all of your migration projects.
-    
 
 * * *
 
@@ -132,17 +131,12 @@ In the **_AWS MAP 2.0 Summary_** page you will also find a collective summary of
 Navigate and Track Your Incentive Credits
 =========================================
 
-In the **_AWS MAP 2.0 Summary_** page, again note the arrow at the right of each migration project line, in the _Action_ column. Clicking that arrow brings up the details of that migration project:
+In the **_AWS MAP 2.0 Summary_** page, again note the arrow at the right of each migration project line, in the _Action_ column. Clicking that arrow brings up the details of that migration project.
 
-![](/tmpimg/map8.png)
+The details page shows the performance of a specific migration project, and it is divided into four distinct sections. At the top of the details page you will see the **Migration ID**, **Start Date**, **End Date**, **Tag Key**, **Tag Value**, **Credit Percentage**, and **Workload** associated with the migration project you just clicked:
 
-The details page shows the performance of a specific migration project, and it is divided into four distinct sections. At the top of the details page you will see the **Migration ID**, **Start Date**, **End Date**, **Tag Key**, **Server ID**, and **Workload** associated with the migration project you just clicked:
+![](/tmpimg/map-details-full.png)
 
-![](/tmpimg/map9.png)
-
-![](/tmpimg/map10.png)
-
-![](/tmpimg/map11.png)
 
 The next three sections are all about navigating your incentive credits, tracking your tagging status, and tagging untagged resources:
 
@@ -160,17 +154,14 @@ MAP Tracker offers a way for you to find the scope of your project and navigate 
 
 * **MAP Spend:** Total Spend/Cost excluding CUR line-item types Tax, Credit, and Refunds.
     
-* **Trailing Twelve Month (TTM) MAP Spend: Sum of MAP spend in the existing quarter and the previous three quarters.**
+* **Trailing Twelve Month (TTM) MAP Spend:** Sum of MAP spend in the existing quarter and the previous three quarters.
     
 * **General Spend Growth:** Refer to the _MAP Credit Calculations_ section of your AWS MAP plan.
     
-* **Multiply by 25%**: 25% delta value of General Spend Growth.
     
-* **Earned MAP Incentives:** Credits that you have earned from AWS with the MAP plan.
+* **Estimated MAP Incentives:** Estimated credits that you have earned from AWS with the MAP plan.
     
-* **MAP Credits Disbursed:** Credits that you have received from AWS. You only receive your earned credits in the month after a quarter ends.
-    
-* **Cumulative MAP Credits Disbursed:** Cumulative sum of all past quarters and the current quarter (-) MAP credits disbursed.
+* **Actual MAP Credits Disbursed:** Credits that you have received from AWS. You only receive your earned credits in the month after a quarter ends.
     
 
 Current Tagging Status
@@ -185,21 +176,19 @@ List of Resources
 
 This section shows all the resources, tagged or untagged, within the migration project. You can filter the resources based on the account associated with the resource and the tagging status (tagged, untagged) of the resource. You also have the option to search any specific service with the help of the search box at the top right of the list.
 
-To tag untagged resources, select the untagged resources and click the **\+ Add Migration Tag** button. To learn more about the process in detail, see the [Tagging Resources Within Each Project to Earn MAP Credits](https://docs.google.com/document/d/1lxEdILiJPMnq8Mp1knY7DmmRnWBzCsE-pRZqi3JeymY/edit#heading=h.6o1okpkboq8l) section of this article.
+To tag untagged resources, select the untagged resources and click the **\+ Add Migration Tag** button. 
 
 The resource table gives:
 
-* **Service Name — AWS service that contains the resources.**
+* **Service Name** — AWS service that contains the resources.
     
-* **Resource Name — Resource associated with the AWS service.**
+* **Resource Name** — Resource associated with the AWS service.
     
-* **Account — The AWS account associated with the resource.**
+* **Account** — The AWS account associated with the resource.
     
-* **Region — Region of the resource.**
+* **Region** — Region of the resource.
     
-* **QTD Cost — Quarter to date cost of the resource.**
-    
-* **Action —** Click the _Action_ to see the _Details_, _Cost History_, and _Config History_ of the resource.
+* **Total Cost** — The total cost of the resource.
     
 
 The resource table will update periodically as more resources are added. Continue visiting the **List of Resources** section to tag all newly added untagged resources for the duration of the migration project.
