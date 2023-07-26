@@ -61,7 +61,7 @@ The following tables describe each permission within the IAM policy:
 
 | <span id="S3">**S3**</span>  | **What** | **Why** | **Access (Limited: Read)** |
 | --- | --- | --- | --- |
-| HeadBucket | Allows you to determine if a bucket exists and you have permission to access it. | This permission allows nOps to see if the butcket for CUR already exists or do we need need to create one. | Read |
+| HeadBucket | Allows you to determine if a bucket exists and you have permission to access it. | This permission allows nOps to see if the bucket for CUR already exists or do we need need to create one. | Read |
 | HeadObject | The HEAD action retrieves metadata from an object without returning the object itself | This permission allows nOps to only see the metadata of a bucket without allowing nOps to see the bucket’s contents. | Read |
 
 |  <span id="support">**Support**</span> | **What** | **Why** | **Access (Limited: Read)** |
