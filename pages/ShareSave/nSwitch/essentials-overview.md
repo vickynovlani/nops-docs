@@ -1,5 +1,5 @@
 ---
-title: Getting Started with Storage Essentials
+title: Getting Started with nSwitch Essentials
 keywords: savings, recommendations, sharesave, essentials
 tags: [savings, recommendations, sharesave]
 sidebar: mydoc_sidebar
@@ -7,7 +7,7 @@ permalink: essentials-overview.html
 folder: ShareSave
 ---
 
-## nSwitch Storage Essentials
+## nSwitch Essentials
 
 The nSwitch Essentials module will enable you to automate the laborious task of changing candidate volumes from gp2 to gp3 volumes via EventBridge or nSwitch Changeset (for those gp2 volumes that are defined in your terraform configuration file), allowing you to stay focused on innovation.
 
