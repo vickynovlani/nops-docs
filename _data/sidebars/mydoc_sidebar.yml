@@ -112,6 +112,10 @@ entries:
       url: /rfcm-configure.html
       output: web
 
+    - title: nSwitch Essentials
+      url: /essentials-overview.html
+      output: web      
+
   - title: Agents and Integrations
     output: web
     folderitems:

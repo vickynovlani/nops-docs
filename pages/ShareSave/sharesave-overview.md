@@ -39,12 +39,9 @@ The ShareSave AI engine collects Amazon CloudWatch and AWS CloudTrail logs and c
 
 ShareSave grabs the most lucrative discounts in the Amazon EC2 Reserved Instance Marketplace.
 
-### Graviton ###
---------
 
-Switching workloads to AWS Graviton-based instances that provide the best price-performance for workloads in Amazon EC2.
 
-### Resource Scheduler ###
+### nSwitch Resource Scheduler ###
 ------------------
 
 nOps ShareSave Resource Scheduler makes it easy to pause resources during inactivity and leverages the Amazon EventBridge bus to deliver signals to resources to stop them during inactivity and restart them when they are most likely to be used automatically.
@@ -56,6 +53,11 @@ nOps ShareSave Resource Scheduler makes it easy to pause resources during inacti
 The RDS recommendations clearly describe the optimization approach you should take and shows the recommendations to implement.
 
 nOps looks at the utilization metrics and determines time periods when RDS instances are running but are inactive. The insights that nOps gather from your utilization partners turn into scheduling recommendations that you can implement to immediately start savings and reducing your spend.
+
+### Storage Essentials ###
+--------
+
+Switching EBS volumes from gp2 to gp3 to reduce storage costs.
 
 ## ShareSave Dashboard ##
 ===================
@@ -128,11 +130,6 @@ In the **List of Risk-Free Commitment**, click on an opportunity name to expand 
 
 ![](/tmpimg/sharesave-opp-list.png)
 
-#### List of Graviton
-
-In the **List of Graviton**, click on an opportunity name to expand the list and see the details including resource name, region, previous configuration, suggested new configuration, detection date, and total savings:
-
-![](/tmpimg/sharesave-opp-ri-list.png)
 
 #### Resource Scheduler
 
@@ -167,6 +164,9 @@ To create a new schedule, based on the nOps recommendation, click **Create New S
 To attach an existing schedule to the RDS resource(s), click the **Attach Existing Schedule** button, select an existing schedule from the dropdown list, and click **Attach**.
 
 ![](/tmpimg/create-schedule.png)
+
+
+
 
 ### Filters ###
 -------
