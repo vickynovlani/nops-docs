@@ -21,7 +21,7 @@ Read more about essentials in our [Essentials feature release blog post announce
 
 
 ## Pre-Requisites ##
-Dy default, AWS has a soft limit of 50TB in gp3 EBS Volumes per region per account.  Eceeding that limit with a migration through EventBridge will cause the migration to fail.
+Dy default, AWS has a soft limit of 50TB in gp3 EBS Volumes per region per account.  Exceeding that limit with a migration through EventBridge will cause the migration to fail.
 
 ### Increasing EBS service quote ###
 To ensure migration from gp2 to gp3 is successful, we recommend using the AWS [Service Quota Console](https://console.aws.amazon.com/servicequotas/home) to request increases for your accounts.
