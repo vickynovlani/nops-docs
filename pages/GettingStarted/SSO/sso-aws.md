@@ -55,7 +55,7 @@ Within AWS:
 
     |**application** | **Maps** | **Format** | 
     |-------|--------|---------|
-    | Subject | ${user:subject} | transient |
+    | Subject | ${user:subject} | emailAddress |
     | User.Email | ${user:email} | basic |
     | User.FirstName | ${user:givenName} | basic |
     | User.LastName | ${user:familyName} | basic |
