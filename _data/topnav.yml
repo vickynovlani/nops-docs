@@ -4,7 +4,7 @@ topnav:
 - title: Topnav
   items:
     - title: GitHub
-      external_url: https://github.com/nops-io/helpcenter
+      external_url: https://github.com/nops-io/nops-docs
 
 #Topnav dropdowns
 topnav_dropdowns:

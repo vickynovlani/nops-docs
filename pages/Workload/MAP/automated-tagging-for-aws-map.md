@@ -52,7 +52,7 @@ In the dialog, fill out the details:
 
 
     
-* **MAP ID —** The project ID starts with “MP” followed by 5 digits or 10 digits (_MPExxxxx_, where _xxxxx_ are digits), depending on your contract.
+* **MAP ID —** The project ID starts with “MPE” followed by 5 digits or 10 digits (_MPExxxxx_, where _xxxxx_ are digits), depending on your contract.
 
     If you are not sure where to find your MAP _Project ID_, refer to the top of the first page of your MAP contract.
 

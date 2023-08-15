@@ -106,6 +106,45 @@ padding-top: 60px;
 margin-top: -40px
 }
 
+
+.fa-stack.small { font-size: 1em; }
+i { vertical-align: middle; }
+
+.panel-default.card {
+
+    display: block;
+
+}
+.panel-default h4 {
+    padding-top: 30px !important;
+    color: black !important;
+    font-style: normal;
+    text-align: center;
+}
+
+.panel-topic {
+    padding-top: 30px !important;
+    color: black !important;
+    font-style: normal;
+    text-align: center;
+    font-size: 120%;
+    margin-top: -40px;
+}
+    .link {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+
+.panel-default.card:hover {
+background: #e1e1e1;
+border: 1px solid #d0d0d0;
+box-shadow: 5px 5px 3px  #0071EA;    
+}
+
 .post-content img {
     margin: 12px 0px 3px 0px;
     width: auto;
@@ -203,6 +242,23 @@ table tr td {
     hyphens: auto;
 }
 
+.tagtable tr:hover {
+    border: 1px solid #d0d0d0;
+    box-shadow: 2px 2px 3px  #0071EA;    
+  }
+
+  .tagtable tr {
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  .tagtable tr:not(:first-child) {
+    margin-top: -1px;
+  }
+  
+  .tagtable tr:hover {
+    z-index: 2;
+  }
 
 p.external a {
     text-align:right;
@@ -815,7 +871,44 @@ dd {margin-left:20px;}
 }
 .panel-heading {
     font-weight: bold;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
 }
+
+.panel-default.card {
+
+    box-sizing: border-box;
+    width: 250px;
+    height: 180px;
+    display: table; 
+    text-align: center;
+    position: relative;
+    border-radius: 25px;
+
+
+}
+
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #f0f8ff;
+    border-color: #ddd
+}
+
+.btn-primary {
+    position: absolute;
+    text-align: center;
+    left: 30%;
+    bottom: 3%;
+    border-radius: 12px;  
+}     
+
+.btn-tags {
+    text-align: center;
+    border-radius: 12px;
+    left: 33%;
+    font-size: 80%;  
+} 
 
 .note code, .alert code, .warning code, div#toc code, h2 code, h3 code, h4 code {
     color: inherit;

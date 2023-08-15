@@ -2427,7 +2427,7 @@ pre code {
     }
 }
 
-@media (min-width:992px) {
+@media (min-width:300px) {
     .col-md-1,
     .col-md-10,
     .col-md-11,
