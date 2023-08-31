@@ -169,7 +169,7 @@ To create a new role:
 4.  On **Select trusted entity** page, select **AWS account.**
 5.  Click **Another AWS account.**
 6.  For **Account ID** enter the nOps account ID (202279780353).
-    ![](https://nops-docs-img.s3.amazonaws.com/gettingstarted/gs-aws-s3-configure-name.png)
+    ![](/tmpimg/manual_trusted_entity.png)
 
 7.  Click **Require external ID**.
 8.  For **External ID**, enter the [external id](#externalid) that was auto-generated for you by nOps.

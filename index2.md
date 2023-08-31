@@ -106,4 +106,22 @@ Here's the sample knowledge-base style layout:
             </div>
         </div>
     </div>
+        <div class="col-md-4 col-sm-6">
+        <div class="panel panel-default card text-center">
+            <a href="tag_compliance.html">
+                <span class="link"></span>
+            </a> 
+            <div class="panel-heading">
+                <span class="fa-stack small">
+                   <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                   <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                </span>
+            </div>
+            <div class="panel-body">
+             <p class="panel-topic">Video Tutorials</p>
+                <p>Instructional videos to explain and demonstrate the platform</p>
+                <a href="tag_getting_started.html" class="btn btn-primary btn-tags">Learn More</a>
+            </div>
+        </div>
+    </div>
 </div>
