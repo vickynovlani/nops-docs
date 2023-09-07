@@ -108,6 +108,10 @@ entries:
     output: web
     folderitems:
 
+    - title: Service SLAs for Cost Consideration
+      url: /service-sla.html
+      output: web
+
     - title: Savings on Auto-Pilot
       url: /sharesave-overview.html
       output: web
