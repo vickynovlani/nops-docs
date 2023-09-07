@@ -1,5 +1,5 @@
 ---
-title: SLAs for Spot Cost Consideration Engine
+title: Cost Consideration Spot Instance Reliability SLA
 keywords: savings, recommendations, sharesave, spot
 tags: [savings, recommendations, sharesave]
 sidebar: mydoc_sidebar

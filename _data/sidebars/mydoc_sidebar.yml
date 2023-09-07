@@ -108,7 +108,7 @@ entries:
     output: web
     folderitems:
 
-    - title: Service SLAs for Cost Consideration
+    - title: Cost Consideration Spot Instance Reliability SLA
       url: /service-sla.html
       output: web
 
