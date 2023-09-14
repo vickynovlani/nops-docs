@@ -46,7 +46,7 @@ Please Backfill The CUR for the following:<br /><br />
 
 <b>CUR Report name</b>: nopsbilling-hourly-parquet<br />
 
-<b>Time Period</b>: <i>&lt;MAP Start Month&gt;</i> to <i>&lt;the Month prior to the data in nOps&gt;</i> <br />
+<b>Time Period</b>: <i>&lt;1 month prior to MAP Start date&gt;</i> to <i>&lt;the Month prior to the data in nOps&gt;</i> <br />
 
 <b>Reason</b>: We moved to a finance reporting engine for tracking MAP credits that requires all CURs to be in parquet format
 
