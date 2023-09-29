@@ -9,30 +9,33 @@ folder: ShareSave
 
 # Getting Started with ShareSave
 
-#### ShareSave provides risk-free Auto-pilot EC2, RDS, ElasticCache, OpenSearch, and Redshift Reserved Instances Management. ####
+The nOps' ShareSave module provides risk-free EC2 and RDS commitment management.  It's ideal for organizations that are growing rapidly and are having difficulties keeping track of everything ranging from server side, CMS stack, API stack, analytics, to linear playout engine.
 
-
-ShareSave is ideal for organizations that are growing rapidly and are having difficulties keeping track of everything ranging from server side, CMS stack, API stack, analytics, to linear playout engine.
-
-ShareSave is also ideal for organizations that, during their rapid expansion, over-buy reserved instances at an alarming rate to keep up with the demands and it is now difficult for them to wind down after everything settles. ShareSave can not only help during their expansion but also helps save a substantial percentage on monthly AWS costs with the help of ShareSave RI management, ShareSave Scheduler, and ShareSave Graviton programs.
+ShareSave is also ideal for organizations that, during their rapid expansion, over-buy reserved instances at an alarming rate to keep up with the demands and it is now difficult for them to wind down after everything settles. ShareSave can not only help during their expansion but also helps save a substantial percentage on monthly AWS costs with the help of ShareSave Risk-Free Commitment Management, nSwitch Scheduler, nSwitch Essentials, and nKS.
 
 ## ShareSave Automations ##
 =====================
 
 The following is the list of cost-saving automation under ShareSave:
 
-*   [Risk-Free Commitment](https://www.nops.io/sharesave-overview/)
-    
-*   Graviton
-    
+*   [nSwitch Essentials](essentials-overview.html)
 *   [nSwitch Resource Scheduler](https://www.nops.io/sharesave-scheduler-overview/)
+*   [nKS](https://www.nops.io/nks/)
+*   [Risk-Free Commitment Management](https://www.nops.io/sharesave-overview/)
     
-*   Amazon Relational Database Service
-    
+
+### Storage Essentials ###
+Switching EBS volumes from gp2 to gp3 to reduce storage costs.
+
+
+### nSwitch Resource Scheduler ###
+nOps ShareSave Resource Scheduler makes it easy to pause resources (EC2 instances, EC2 Autoscaler clusters, RDS instances, RDS clusters, and EKS noegroups) during inactivity and leverages the Amazon EventBridge bus to deliver signals to resources to stop them during inactivity and start them when they are most likely to be used automatically.  It can also pause non-production workloads during off-hours.
+
+
+### nKS ###
+nKS schedules your EKS workloads on the most cost optimal option for your environment in real-time. By integrating Karpenter with nOps' engine, it streamlines the management of RIs, Savings Plans, and Spot resources with ML-driven cost optimization.
 
 ### Risk-Free Commitment ###
---------------------
-
 Real-time, risk-free, hands-free automatic life-cycle management of Amazon EC2 and RDS commitments.
 
 The ShareSave AI engine collects Amazon CloudWatch and AWS CloudTrail logs and continuously monitors and analyzes infrastructure usage data points. It then automatically reacts in real time by purchasing RIs upon an increase in compute usage and selling RIs upon a decrease in compute usage. nOps continuously purchases and sells commitments on an hourly basis, depending on your infrastructure’s capacity changes.
@@ -40,27 +43,7 @@ The ShareSave AI engine collects Amazon CloudWatch and AWS CloudTrail logs and c
 ShareSave grabs the most lucrative discounts in the Amazon EC2 Reserved Instance Marketplace.
 
 
-
-### nSwitch Resource Scheduler ###
-------------------
-
-nOps ShareSave Resource Scheduler makes it easy to pause resources during inactivity and leverages the Amazon EventBridge bus to deliver signals to resources to stop them during inactivity and restart them when they are most likely to be used automatically.
-
-
-### Amazon Relational Database Service ###
-----------------------------------
-
-The RDS recommendations clearly describe the optimization approach you should take and shows the recommendations to implement.
-
-nOps looks at the utilization metrics and determines time periods when RDS instances are running but are inactive. The insights that nOps gather from your utilization partners turn into scheduling recommendations that you can implement to immediately start savings and reducing your spend.
-
-### Storage Essentials ###
---------
-
-Switching EBS volumes from gp2 to gp3 to reduce storage costs.
-
 ## ShareSave Dashboard ##
-===================
 
 The Sharesave Dashboard provides clear visibility of the potential savings that can be achieved using the nOps Platform. The ShareSave program is able to process 6 months' worth of data.
 
@@ -76,7 +59,6 @@ The ShareSave Dashboard consists of three sections:
     
 
 ### Savings Summary and Breakdown ###
------------------------------
 
 In the Savings Summary, you will find:
 
@@ -107,65 +89,62 @@ You can also select the following tabs within the **Saving Summary and Breakdown
     
 
 ### List of Opportunities ###
----------------------
 
-The **List of Opportunities section** consists of the following list:
 
-*   List of Risk-Free Commitments
-    
-*   List of Graviton
-    
-*   Resource Scheduler
-    
-*   Auto Scaling Groups
-    
-*   Amazon Relational Database Service
-    
+The **List of Opportinities** consists of the following list:
 
-### List of Risk-Free Commitments
+*   nSwitch Essentials
+    
+*   EC2 nSwitch Scheduler
+    
+*   RDS nSwitch Scheduler
+    
+*   nKS
+    
+*   Risk-Free Commitments
+
+On the left side menu, you can filter to one or more Opportunity Type.
+
+#### nSwitch Storage Essentials ####
+
+In **nSwitch Storage Essentials** section, click expand the list of cost saving migrations from gp2 to gp3 EBS Volume type:
+
+![](/tmpimg/sharesave-essentials-list.png)
+
+#### Amazon Elastic Compute Cloud ####
+
+In **Amazon Elastic Compute Cloud** section, click on _EC2 nSwitch_ to expand the list and see the details including instance type, account name, region, total savings, and **Create**:
+
+![](/tmpimg/sharesave-ec2nswitch-list.png)
+
+Click on the **Create** button to the right of an opportunity to create an automated schedule to turn the instance on and off with the help of EventBridge. 
+
+
+#### Amazon Relational Database Service ####
+
+In the **Amazon Relational Database Service** section, click on an opportunity name to expand the list and see the details including resource name, RDS type, instance size, account name, region, total savings, and **Create**:
+
+![](/tmpimg/sharesave-rdsnswitch-list.png)
+
+Click on the **Create** button to the right of an opportunity to create an automated schedule to turn the instance on and off with the help of EventBridge. 
+
+#### nKS ####
+
+In the **nKS** section, click on an opportunity name to expand the list and see the details including EKS cluster name, instance type, account name, region, total savings, and **Configure**:
+
+![](/tmpimg/sharesave-nks-list.png)
+
+Click on the **Configure** button to the right of an opportunity to start the configuration process for the nKS module. 
+
+
+
+#### List of Risk-Free Commitments ####
 
 Actions against the List of Risk-Free Commitments are automatic and are carried out by the nOps ShareSave AI.
 
-In the **List of Risk-Free Commitment**, click on an opportunity name to expand the list and see the details including resource name, account name, region, previous configuration, suggested configuration, detection date, total savings, and action:
+In the **Risk-Free Commitment** section, click on an opportunity name to expand the list and see the details including resource name, account name, region, previous configuration, suggested configuration, detection date, and total savings:
 
 ![](/tmpimg/sharesave-opp-list.png)
-
-
-#### Resource Scheduler
-
-In **Resource Scheduler,** click on an opportunity name to expand the list and see the details including instance type, account name, region, schedule name, new configuration, confidence level, total saving, and action:
-
-![](/tmpimg/sharesave-nswitch-list.png)
-
-Click on the **Schedule** button against an opportunity to create an automated schedule to turn the instance on and off with the help of EventBridge. To learn more about nSwitch see [Utilize nOps Resource Scheduler with EventBridge Integration to Reduce Costs Automatically](solutions-using-eventbridge-with-nswitch-to-reduce-costs.html).
-
-
-#### Amazon Relational Database Service
-
-In the **Amazon Relational Database Service**, click on an opportunity name to expand the list and see the details including resource name, RDS type, instance size, account name, region, current schedule, recommended schedule, total savings, and action:
-
-![](/tmpimg/rds-nswitch.png)
-
-Click on any opportunity name to see the details of the resource and its usage pattern:
-
-![](/tmpimg/rds-metrics.png)
-
-To schedule a recommendation, click the **Schedule** button against the recommendation. If you click the Schedule button, you will see two options:
-
-*   Create New Schedule
-    
-*   Attach Existing Schedule
-    
-
-To create a new schedule, based on the nOps recommendation, click **Create New Schedule**, all fields will be prepopulated according to the recommendation. Simply click **Create** to start reducing your spend:
-
-![](/tmpimg/2023-01-21_20-31-14.png)
-
-To attach an existing schedule to the RDS resource(s), click the **Attach Existing Schedule** button, select an existing schedule from the dropdown list, and click **Attach**.
-
-![](/tmpimg/create-schedule.png)
-
-
 
 
 ### Filters ###
@@ -178,9 +157,9 @@ Use the **Filter** section, to apply filters on the entire ShareSave dashboard b
 ## Prerequisites ##
 =============
 
-You must have access to your _AWS Master Payer Account ID_. With this ID, we will be able to generate a $5 Market Place Private Offer (MPPO) and send it over to you. It's very easy to accept the offer and onboard an account.
+You must have access to your _AWS Master Payer Account ID_. With this ID, we will be able to generate a $0 Market Place Private Offer (MPPO) and send it over to you, or you can accept the Marketplace Public Offer. 
 
-nOps recommends that you link your AWS accounts to nOps with [Automatic Setup](onboarding-aws-with-automatic-setup.html). If you are an advanced AWS user and have specific requirements, you can also link your account to nOps with [Manual Setup](onboarding-aws-with-manual-setup.html), [Multi-Account Setup with Terraform](onboarding-aws-with-terraform.html), and [Multi-Account Setup with CloudFormation](onboarding-aws-with-cloudformation.html).
+nOps recommends that you configure your AWS accounts to nOps with [Automatic Setup](onboarding-aws-with-automatic-setup.html) for your payer account and [Multi-Account Setup with CloudFormation](onboarding-aws-with-cloudformation.html) to configure linked accounts.
 
 If you are an existing nOps customer, in order to get access to all the cost saving features of ShareSave, you might need to update the IAM permissions for nOps. To update the IAM permissions:
 

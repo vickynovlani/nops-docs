@@ -141,14 +141,6 @@ entries:
           url: /cloudwatch-agent.html
           output: web
 
-        - title: Kubernetes Agent
-          url: /k8s-agent.html
-          output: web
-
-        - title: Lambda Forwarder Agent
-          url: /lambda-forwarder-agent.html
-          output: web
-
       - title: Integrations
         output: web
         subfolderitems:
