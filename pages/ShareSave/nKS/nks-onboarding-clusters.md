@@ -62,9 +62,9 @@ nKS even covers your commitments with a 100% money-back guarantee. If your usage
 8. Create Device Mapping by providing necessary details \[optional].
 9. Create Node Template.
 
-{%include note.html content="you can create multiple node templates"%}
-
     ![](https://lh5.googleusercontent.com/SP1sgMPmewYKjLGAK2JuOQ5HVYD6F2KFXgTbQIzrnyli_FflSsyh_AJtyv0RZQeud8c6Ns-aNK-sn1qC_O7JuNkVaoV_ackSRriFDbhqadtxc_l5InMnZpXnyFaHsGkbOnhYMob_tf3BJ3eV155g390)
+
+{%include note.html content="you can create multiple node templates"%}
 
 ### Create Provisioner: ###
 
