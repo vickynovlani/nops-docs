@@ -1,7 +1,7 @@
 ---
 title: Onboarding your EKS clusters to nKS
 keywords: savings, recommendations, sharesave, nks
-tags: [savings, recommendations, sharesave, eks]
+tags: [savings, recommendations, sharesave, eks, nks]
 sidebar: mydoc_sidebar
 permalink: nks-onboarding-clusters.html
 folder: ShareSave
