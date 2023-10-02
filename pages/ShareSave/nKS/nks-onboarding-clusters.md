@@ -9,7 +9,6 @@ folder: ShareSave
 
 ## Onboarding your EKS clusters to nKS ##
 
-
 ### Pre-requisites: ###
 
 1. You must be logged in to your [nOps account](https://app.nops.io/accounts/signin/). 
