@@ -27,6 +27,10 @@ entries:
       url: /index.html
       output: web
 
+    - title: nOps Customer Service SLAs
+      url: /nops-cs-sla.html
+      output: web      
+
   - title: Getting Started
     output: web
     folderitems:
