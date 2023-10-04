@@ -31,6 +31,10 @@ entries:
       url: /nops-cs-sla.html
       output: web      
 
+    - title: Open a support case with nOps
+      url: /nops-support-case.html
+      output: web 
+
   - title: Getting Started
     output: web
     folderitems:
