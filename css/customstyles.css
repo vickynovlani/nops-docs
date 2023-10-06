@@ -871,8 +871,8 @@ dd {margin-left:20px;}
 }
 .panel-heading {
     font-weight: bold;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 
 }
 
@@ -880,11 +880,12 @@ dd {margin-left:20px;}
 
     box-sizing: border-box;
     width: 250px;
-    height: 180px;
+    height: 150px;
     display: table; 
     text-align: center;
+    font-size: 12px;
     position: relative;
-    border-radius: 25px;
+    border-radius: 5px;
 
 
 }

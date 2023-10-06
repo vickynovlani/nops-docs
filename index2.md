@@ -9,7 +9,7 @@ folder: mydoc
 ---
 
 
-Here's the sample knowledge-base style layout:
+Click on a category to find relevant help documentation.
 
 
 <div class="row">
@@ -30,7 +30,6 @@ Here's the sample knowledge-base style layout:
             <div class="panel-body">
                 <p class="panel-topic">Getting started</p>
                 <p>All things onboarding and configuration</p>
-                <a href="tag_getting_started.html" class="btn btn-primary btn-tags">Learn More</a>
             </div>
         </div>
     </div>
@@ -48,7 +47,6 @@ Here's the sample knowledge-base style layout:
             <div class="panel-body">
                 <p class="panel-topic">ShareSave</p>
                 <p>Put your savings on auto-pilot so you can focus on innovation.</p>
-                <a href="tag_sharesave.html" class="btn btn-primary btn-tags">Learn More</a>
             </div>
         </div>
     </div>
@@ -66,7 +64,6 @@ Here's the sample knowledge-base style layout:
             <div class="panel-body">
              <p class="panel-topic">User Guides</p>
                 <p>Learn the ins and outs of the platform</p>
-                <a href="tag_solutions.html" class="btn btn-primary btn-tags">Learn More</a>
             </div>
         </div>
     </div>
@@ -84,7 +81,6 @@ Here's the sample knowledge-base style layout:
             <div class="panel-body">
              <p class="panel-topic">Security & Compliance</p>
                 <p>Well architected reviews and security compliance</p>
-                <a href="tag_getting_started.html" class="btn btn-primary btn-tags">Learn More</a>
             </div>
         </div>
     </div>
@@ -100,9 +96,8 @@ Here's the sample knowledge-base style layout:
                 </span>
             </div>
             <div class="panel-body">
-             <p class="panel-topic">Developers</p>
-                <p>Master the APIs and integrations</p>
-                <a href="tag_getting_started.html" class="btn btn-primary btn-tags">Learn More</a>
+             <p class="panel-topic">APIs</p>
+                <p>Master the APIs and integrations of nOps</p>
             </div>
         </div>
     </div>
@@ -120,7 +115,6 @@ Here's the sample knowledge-base style layout:
             <div class="panel-body">
              <p class="panel-topic">Video Tutorials</p>
                 <p>Instructional videos to explain and demonstrate the platform</p>
-                <a href="tag_getting_started.html" class="btn btn-primary btn-tags">Learn More</a>
             </div>
         </div>
     </div>
