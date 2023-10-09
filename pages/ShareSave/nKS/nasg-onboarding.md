@@ -111,7 +111,6 @@ nASG Lambda will begin  replacing on-demand instances in this ASG with Spot alt
 
 ### How does nASG replace on-demand instances? ####
 
-
 #### New On-Demand Instance Launch Handling ####
 
 ![](https://lh5.googleusercontent.com/dCAZl2OFacVZpUSTXMN6ZePeDX9YK9wuL8ORO-P4xgG5aewpXq-FjNgxxHmrCMxP5M81OBtqzUHtaf2Qzia5Aj2k5tDwlEo489_okBhIrLx3IY9gUM2K9v1wfCSYMmPHjUcdb0nRSgv4ymlNpiVUeQs)
@@ -136,12 +135,12 @@ nASG Lambda will begin  replacing on-demand instances in this ASG with Spot alt
 
 Instance families that are not compliant with the ASG you are attempting to configure are automatically hidden. For example, if your ASG uses instances with arm64 CPU architecture, other instance families that are x86\_64 will be filtered out from the list.
 
-
-### What is Auto Update Lambda, and how does it work? ###
-
+### What is Auto Update Lambda, and how does it work? ###
 When Auto Update is enabled, your Lambda will be automatically updated every time a new nASG version is released, (12 p.m. UTC). When you deploy nASG Lambda with Auto Update, the stack will also contain a Cross-Account role.  
 
 ### What permissions does Auto-Update Cross-Account policy have? ###
+
+The permissions are listed below
 
 ```yaml
 Action:
