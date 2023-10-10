@@ -29,10 +29,10 @@ nASG is an automation tool that leverages machine learning algorithms to minimiz
 
 ## Why nASG: ##
 
-nASG offers multiple advantages over other solutions. It:
+nASG offers multiple advantages over other solutions.
 
 - nASG predicts the spot market by analyzing its historical data and Spot Termination CT events, enabling it to select the cheapest Spot option with a low chance of being interrupted in the near future. Allows you to benefit from Spot savings with the same reliability as on-demand. By analyzing historical data and Spot Termination events, nASG automatically selects the most cost-effective and stable option — ensuring your critical workloads remain safe from interruption.
-- DnASG does not require your workload to be transferred to a proprietary system, but works directly with AWS ASG.
+- nASG does not require your workload to be transferred to a proprietary system, but works directly with AWS ASG.
 - nASG does not typically modify the ASG settings, allowing it to be disabled at any time without interrupting existing workflows.
 
 
@@ -47,14 +47,15 @@ nASG offers multiple advantages over other solutions. It:
 
 {%include note.html content="you can use one key for multiple AWS accounts or stacks."%}
 
-### Step #2: Launch ASG Lambda Stack in the AWS Account ###
+### Step #2: Launch ASG Lambda Stack ###
 
 1. Navigate to Organization Settings → Integrations → ASG Lambda.
 2. Select the AWS account where you want to run the ASG Lambda Stack.
-3. Select Launch ASG Lambda Stack. You will be redirected to the Cloud formation stack in AWS consoleInput the API key that you created in step 1.2 into the Token field.
-4. Acknowledge the capabilities and create the stack.
-5. After successful completion, return to the nOps platform and refresh the ASG Lambda page.
-6. You should see the updated version of Lambda, with the status showing a successful connection to the configured AWS account.
+3. Select Launch ASG Lambda Stack. You will be redirected to the Cloudformation stack within your AWS console.
+4. Input the API key that you created in step 1.2 into the Token field.
+5. Acknowledge the capabilities and create the stack.
+6. After successful completion, return to the nOps platform and refresh the ASG Lambda page.
+7. You should see the updated version of Lambda, with the status showing a successful connection to the configured AWS account.
      
     ![](https://lh4.googleusercontent.com/FceplIGrl0w6n3omY6rnZsmTb-bcqWWQrKBdiglQtRQKY1GzcB1BbrYEU0_XfimiFp8rkTYnidIZVDEWbMkEZVQRru2AtNCE_hbDUUGBhaHs88vXCRlY10vlJK26VZ_iSLmq9q2ewGi8Un9BbcPNtqw)
 
@@ -64,7 +65,7 @@ nASG offers multiple advantages over other solutions. It:
 
 
 
-### Select the ASG cluster and configure ###
+### Select and configure the ASG cluster ###
 
 1\. Navigate to the ASG Dashboard and select the ASG cluster to configure
 
@@ -78,11 +79,11 @@ nASG offers multiple advantages over other solutions. It:
 
 3\. Create an ASG Template.
 
-### Steps to create a new ASG Template ###
+### Create a new ASG Template ###
 
 1. Give the ASG template a unique name
-2. Choose the instance families, vCPU, and Memory that are potentially suitable for your workload. From this pool, nASG will select the most optimal choice for price and stability. O
-3. It is recommended to select as instance families as possible, to provide nASG witha wider recommendations pool
+2. Choose the instance families, vCPU, and Memory that are potentially suitable for your workload. From this pool, nASG will select the most optimal choice for price and stability.
+3. It is recommended to select as many instance families as possible, to provide nASG with a wider recommendations pool
 
     ![](https://lh3.googleusercontent.com/Xudgy760nePtwLiEnQQIh9KZjKOOCC74trVtqJ8Ds9JaF8qSSoy07bdbKvcIputTWBSg4cmeoaQZ6m5uqrjDEVRJCc0q8VuDKiSCdoCRfmywv3bCVzwAjh0dg019-7SRiKN4S0dkxKS42RMy_iLc-U8)
 
@@ -125,9 +126,9 @@ nASG Lambda will begin  replacing on-demand instances in this ASG with Spot alt
    2. In the copied Launch Template, modify Network   Interfaces / Tags / Block Device  Mappings from the instance Launch Template / Configuration if needed
    3. Fetch recommended instance types from nOps API
    4. Request Spot Fleet with the copied Launch Template and recommended instance types
-   5. Once the Spot request is fulfilled, get the Spot Instance and wait for it to its state `Running`
+   5. Once the Spot request is fulfilled, get the Spot Instance and wait for its state to be `Running`
    6. Attach the created Spot Instance to the ASG
-   7. Wait for the attached Spot Instance’s state to be the `InService`
+   7. Wait for the attached Spot Instance’s state to be `InService`
    8. Terminate the on-demand instance
 
 
@@ -164,23 +165,14 @@ Resource:
 Action:
 
   - cloudformation:CreateChangeSet
-
   - cloudformation:DescribeStackEvents
-
   - cloudformation:DescribeStackInstance
-
   - cloudformation:DescribeStackResources
-
   - cloudformation:DescribeStacks
-
   - cloudformation:DescribeStackSet
-
   - cloudformation:DescribeStackSetOperation
-
   - cloudformation:GetTemplateSummary
-
   - cloudformation:UpdateStackInstances
-
   - cloudformation:UpdateStackSet
 
 Resource:

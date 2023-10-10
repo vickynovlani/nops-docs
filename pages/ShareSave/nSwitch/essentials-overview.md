@@ -38,11 +38,6 @@ To ensure migration from gp2 to gp3 is successful, we recommend using the AWS [S
 
 
 
-
-
-
-
-
 ## Enabling Essentials for EventBridge ##
 =====================
 

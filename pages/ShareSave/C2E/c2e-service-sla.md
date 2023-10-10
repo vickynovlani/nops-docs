@@ -3,7 +3,7 @@ title: Cost Consideration Spot Instance Reliability SLA
 keywords: savings, recommendations, sharesave, spot
 tags: [savings, recommendations, sharesave]
 sidebar: mydoc_sidebar
-permalink: service-sla.html
+permalink: c2e-service-sla.html
 folder: ShareSave
 ---
 

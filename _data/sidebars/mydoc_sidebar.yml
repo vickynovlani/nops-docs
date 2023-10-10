@@ -116,22 +116,47 @@ entries:
     output: web
     folderitems:
 
-    - title: Cost Consideration Spot Instance Reliability SLA
-      url: /service-sla.html
-      output: web
-
     - title: Savings on Auto-Pilot
       url: /sharesave-overview.html
       output: web
 
-    - title: Configure Risk-Free Commitment Management
-      url: /rfcm-configure.html
-      output: web
+      subfolders:
+      - title: Cost Consideration
+        output: web
+        subfolderitems:
 
-    - title: nSwitch Essentials
-      url: /essentials-overview.html
-      output: web      
+        - title: Cost Consideration Spot Instance Reliability SLA
+          url: /c2e-service-sla.html
+          output: web
 
+        - title: Onboarding EKS clusters to nKS
+          url: /nks-onboarding-clusters.html
+          output: web
+
+        - title: Onboarding ASG clusters to nASG
+          url: /nasg-onboarding.html
+          output: web
+
+      - title: Risk-Free Commitment Management
+        output: web
+        subfolderitems:
+
+        - title: Configure Risk-Free Commitment Management
+          url: /rfcm-configure.html
+          output: web
+
+      - title: nSwitch
+        output: web
+        subfolderitems:
+
+        - title: EventBridge Integration for nSwitch
+          url: /nswitch-eventbridge-setup.html
+          output: web  
+
+        - title: nSwitch Essentials
+          url: /essentials-overview.html
+          output: web      
+          
   - title: Agents and Integrations
     output: web
     folderitems:
