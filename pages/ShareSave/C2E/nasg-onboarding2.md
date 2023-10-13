@@ -1,9 +1,9 @@
 ---
 title: Onboarding your ASG clusters to nOps
-keywords: savings, recommendations, sharesave, asg
+keywords: savings, recommendations, sharesave, asg, compute copilot
 tags: [savings, recommendations, sharesave, eks, asg]
 sidebar: mydoc_sidebar
-permalink: nasg-onboarding.html
+permalink: nasg-onboarding2.html
 folder: ShareSave
 ---
 
@@ -107,7 +107,58 @@ nASG offers multiple advantages over other solutions.
 nASG Lambda will begin  replacing on-demand instances in this ASG with Spot alternatives, either every 30 minutes or upon the launch of a new on-demand instance.
 
 
+
 ## FAQ ##
+
+<div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">How does nASG replace on-demand instances?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse noCrossRef">
+                            <div class="panel-body">
+
+                                New On-Demand Instance Launch Handling
+<br><br>
+<img src="https://lh5.googleusercontent.com/dCAZl2OFacVZpUSTXMN6ZePeDX9YK9wuL8ORO-P4xgG5aewpXq-FjNgxxHmrCMxP5M81OBtqzUHtaf2Qzia5Aj2k5tDwlEo489_okBhIrLx3IY9gUM2K9v1wfCSYMmPHjUcdb0nRSgv4ymlNpiVUeQs">
+
+<br><br>
+
+<ol>
+    <li> ASG launches new on-demand instance </li>
+    <li> Lambda intercepts `EC2 Instance State-change Notification` event from EventBridge </li>
+    <li> If the created instance is not protected from termination and should be replaced, nASG performs the following steps.  
+    <ul>
+        <li>1. Copy the Launch Template / Configuration from the ASG launch template</li>
+        <li>  2. In the copied Launch Template, modify Network   Interfaces / Tags / Block Device  Mappings from the instance Launch Template / Configuration if needed </li>
+        <li> 3. Fetch recommended instance types from nOps API</li>
+        <li>4. Request Spot Fleet with the copied Launch Template and recommended instance types</li>
+        <li>5. Once the Spot request is fulfilled, get the Spot Instance and wait for its state to be `Running`</li>
+        <li>6. Attach the created Spot Instance to the ASG</li>
+        <li>7. Wait for the attached Spot Instance’s state to be `InService`</li>
+        <li>8. Terminate the on-demand instance</li>
+   </ul>
+   </li>
+   </ol>                
+                        </div>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a class="noCrossRef accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Curabitur eget leo at velit imperdiet varius. In eu ipsum vitae velit congue iaculis vitae at risus?</a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse noCrossRef">
+                            <div class="panel-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.panel -->
 
 ### How does nASG replace on-demand instances? ####
 

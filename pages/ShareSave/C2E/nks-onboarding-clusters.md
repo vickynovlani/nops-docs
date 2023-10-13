@@ -1,6 +1,6 @@
 ---
 title: Onboarding your EKS clusters to nKS
-keywords: savings, recommendations, sharesave, nks
+keywords: savings, recommendations, sharesave, nks, karpenter, compute copilot
 tags: [savings, recommendations, sharesave, eks, nks]
 sidebar: mydoc_sidebar
 permalink: nks-onboarding-clusters.html

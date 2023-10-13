@@ -86,13 +86,13 @@ Click on a category to find relevant help documentation.
     </div>
     <div class="col-md-4 col-sm-6">
         <div class="panel panel-default card text-center">
-            <a href="tag_compliance.html">
+            <a href="tag_developer.html">
                 <span class="link"></span>
             </a> 
             <div class="panel-heading">
                 <span class="fa-stack small">
                    <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                   <i class="fa fa-book-open-reader fa-stack-1x fa-inverse"></i>
+                   <i class="fa fa-webhook fa-stack-1x fa-inverse"></i>
                 </span>
             </div>
             <div class="panel-body">
