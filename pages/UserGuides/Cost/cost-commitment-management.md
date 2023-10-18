@@ -1,9 +1,9 @@
 ---
 title: Commitment Management - Working with Reserved Instances
-keywords: cost reporting, cost history, cost allocation
-tags: [cost_visibility, reporting, savings]
+keywords: cost reporting, cost history, cost allocation, solutions
+tags: [cost_visibility, reporting, savings, solutions]
 sidebar: mydoc_sidebar
-permalink: cost-commitment-management-working-with-reserved-instances.html
+permalink: cost-commitment-management.html
 folder: UserGuides
 ---
 
@@ -41,7 +41,6 @@ See the AWS [Types of Reserved Instances](https://docs.aws.amazon.com/AWSEC2/lat
 nOps' _Commitment Management_ pages (Reserved Instances Planning, Reserved Instance Coverage) provide insight into your current utilization of reserved instances that you've purchased and provide planning insights to get even more cost savings from this important AWS feature.
 
 ## Accessing the Reserved Instance Pages via the Commitment Management Dashboard ##
-=============================================================================
 
 To access **Reserved Instances** management:
 
@@ -85,21 +84,6 @@ Recommended Instance Reservations
 *   The historical usage table lists – by instance type, availability zone, and OS – your instance usage over the past five months, to aid your RI planning.
     
 
-**Reserved Instance Coverage**
-==============================
-
-To use the Reserved Instance Coverage tab, you must first enable it.
-
-### Enabling the Reserved Instance Coverage Feature ###
------------------------------------------------
-
-This tab to manage Reserved Instance Usage is only available for Client Member users who subscribe to this feature. It is not available for Partners, or for Partner Clients. Only Client Members can subscribe to this feature and configure their environment to enable the Reserved Instance Coverage tab.
-
-This feature currently only shows coverage for EC2 instances.
-
-To use this dashboard, you must configure your AWS environment using an nOps-authored CloudFormation stack from the [nops-aws-forwarder](https://github.com/nops-io/nops-aws-forwarder) project in the nOps GitHub repository. The project contains a [ReadMe](https://github.com/nops-io/nops-aws-forwarder#readme) that describes requirements and installation, and includes a button that launches the CloudFormation stack.
-
-As noted in the ReadMe, you must configure [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-create-a-trail-using-the-console-first-time.html) with an S3 bucket for CloudTrail logs before deploying the CloudFormation stack. A CloudTrail events log in your AWS account provides nOps the information needed to calculate RI utilization and EC2 instances. Note that the S3 bucket for AWS CloudTrail and the nOps-aws-forwarder should be within the same region.
 
 ### The Reserved Instance Coverage Tab ###
 ----------------------------------

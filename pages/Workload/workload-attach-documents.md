@@ -1,7 +1,7 @@
 ---
 title: Attach Documents to Workloads
-keywords: reporting, assessment, compliance
-tags: [compliance, reporting]
+keywords: reporting, assessment, compliance, well architected
+tags: [compliance, reporting, well_architected]
 sidebar: mydoc_sidebar
 permalink: workload-attach-documents.html
 folder: UserGuides

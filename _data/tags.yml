@@ -16,4 +16,6 @@ allowed-tags:
   - compliance
   - agents_integrations
   - settings
-# Copyright 2021 Google LLC
+  - well_architected
+  - map
+# end

@@ -1,7 +1,7 @@
 ---
 title: Backfilling a CUR file for MAP
-keywords: reporting, integrations
-tags: [compliance, reporting]
+keywords: reporting, integrations, map, migration, modernization
+tags: [compliance, reporting, map]
 sidebar: mydoc_sidebar
 permalink: backfilling-a-cur-file.html
 folder: UserGuides

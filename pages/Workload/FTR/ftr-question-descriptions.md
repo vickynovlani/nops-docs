@@ -1,7 +1,7 @@
 ---
 title: FTR Question Descriptions
-keywords: reporting, assessment, compliance
-tags: [compliance, reporting]
+keywords: reporting, assessment, compliance, wafr, ftr, well architected
+tags: [compliance, reporting, well_architected]
 sidebar: mydoc_sidebar
 permalink: ftr-question-descriptions.html
 folder: UserGuides

@@ -23,7 +23,7 @@ entries:
     output: web
     folderitems:
 
-    - title: Connecting to nOps
+    - title: Help Categories
       url: /index.html
       output: web
 
@@ -62,10 +62,6 @@ entries:
 
         - title: Onboarding Linked Accounts
           url: /onboarding-aws-linked-accounts.html
-          output: web
-
-        - title: Onboarding Accounts with Terraform
-          url: /onboarding-aws-with-terraform.html
           output: web
 
         - title: Onboarding Accounts with CloudFormation
@@ -121,12 +117,12 @@ entries:
       output: web
 
       subfolders:
-      - title: Cost Consideration
+      - title: Compute Copilot
         output: web
         subfolderitems:
 
-        - title: Cost Consideration Spot Instance Reliability SLA
-          url: /c2e-service-sla.html
+        - title: Compute Copilot Spot Instance Reliability SLA
+          url: /copilot-service-sla.html
           output: web
 
         - title: Onboarding EKS clusters to nKS
@@ -212,20 +208,20 @@ entries:
         output: web
         subfolderitems:
 
-        - title: Commitment Management - Working with Reserved Instances
-          url: /cost-commitment-management-working-with-reserved-instances.html
+        - title: Working With Commitment Management
+          url: /cost-commitment-management.html
           output: web   
 
-        - title: Cost Reporting for Cloud Resources
-          url: /cost-reporting-for-cloud-resources.html
+        - title: Cost Analysis for Cloud Resources
+          url: /business-context-cost-analysis.html
           output: web
 
         - title: Resource Rightsizing
           url: /cost-resource-rightsizing.html
           output: web          
 
-        - title: Spot Advisor
-          url: /cost-spot-advisor.html
+        - title: Cost Change Management
+          url: /cost-change-management.html
           output: web
 
         - title: Tag Explorer

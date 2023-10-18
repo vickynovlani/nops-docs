@@ -1,7 +1,7 @@
 ---
 title: View IAM Violations
 keywords: reporting
-tags: [reporting]
+tags: [reporting, solutions]
 sidebar: mydoc_sidebar
 permalink: rules-view-iam-violations.html
 folder: UserGuides

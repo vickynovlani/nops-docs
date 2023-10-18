@@ -1,6 +1,6 @@
 ---
 title: The nSwitch Slackbot "How To" Guide
-keywords: setup, onboarding, nswitch, sharesave, slackbot
+keywords: setup, onboarding, nswitch, sharesave, slackbot, developer, api
 tags: [onboarding, sharesave, nswitch, developer]
 sidebar: mydoc_sidebar
 permalink: developer-nswitch-slackbot.html

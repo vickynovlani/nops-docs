@@ -1,7 +1,7 @@
 ---
 title: Export a WAFR Report
-keywords: reporting, assessment, compliance
-tags: [compliance, reporting]
+keywords: reporting, assessment, compliance, well architected
+tags: [compliance, reporting, well_architected]
 sidebar: mydoc_sidebar
 permalink: wafr-export.html
 folder: UserGuides

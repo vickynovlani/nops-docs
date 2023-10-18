@@ -1,7 +1,7 @@
 ---
 title: Well-Architected Framework Review
-keywords: reporting, assessment, compliance
-tags: [compliance, reporting]
+keywords: reporting, assessment, compliance, well architected
+tags: [compliance, reporting, well_architected]
 sidebar: mydoc_sidebar
 permalink: wafr-review.html
 folder: UserGuides

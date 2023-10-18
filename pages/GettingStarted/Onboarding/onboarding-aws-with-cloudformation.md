@@ -1,7 +1,7 @@
 ---
 title: Onboarding Multiple AWS Linked Accounts with CloudFormation
-keywords: setup, onboarding
-tags: [getting_started, onboarding]
+keywords: setup, onboarding, tutorial, walkthrough, video
+tags: [getting_started, onboarding, tutorials]
 sidebar: mydoc_sidebar
 permalink: onboarding-aws-with-cloudformation.html
 folder: GettingStarted

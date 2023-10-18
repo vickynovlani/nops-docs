@@ -1,7 +1,7 @@
 ---
 title: The nOps Data Explorer
 keywords: cost reporting, cost history, cost allocation
-tags: [cost_visibility, reporting]
+tags: [cost_visibility, reporting, solutions]
 sidebar: mydoc_sidebar
 permalink: nops-data-explorer.html
 folder: UserGuides

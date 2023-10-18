@@ -1,7 +1,7 @@
 ---
 title: Foundational Technical Review Report
-keywords: reporting, assessment, compliance
-tags: [compliance, reporting]
+keywords: reporting, assessment, compliance, ftr, well architected
+tags: [compliance, reporting, well_architected]
 sidebar: mydoc_sidebar
 permalink: ftr-aws-ftr-report.html
 folder: UserGuides

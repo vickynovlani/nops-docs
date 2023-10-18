@@ -1,7 +1,7 @@
 ---
 title: View Under-Utilized Network Resources
-keywords: reporting
-tags: [reporting]
+keywords: reporting, underutilization, waste
+tags: [reporting, solutions]
 sidebar: mydoc_sidebar
 permalink: rules-view-underutilized-network-resources.html
 folder: UserGuides

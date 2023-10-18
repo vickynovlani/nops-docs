@@ -1,7 +1,7 @@
 ---
 title: View Underutilized EBS Volumes
-keywords: reporting
-tags: [reporting]
+keywords: reporting, waste, underutilization
+tags: [reporting, solutions]
 sidebar: mydoc_sidebar
 permalink: rules-view-ebs.html
 folder: UserGuides

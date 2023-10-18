@@ -1,7 +1,7 @@
 ---
 title: The nOps Dashboard
-keywords: cost reporting, cost history, cost allocation
-tags: [cost_visibility, reporting]
+keywords: cost reporting, cost history, cost allocation, dashboard
+tags: [cost_visibility, reporting, solutions]
 sidebar: mydoc_sidebar
 permalink: dashboards-nops-dashboard.html
 folder: UserGuides

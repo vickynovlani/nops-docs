@@ -1,7 +1,7 @@
 ---
 title: Add Resources to Workloads
-keywords: reporting, assessment, compliance
-tags: [compliance, reporting]
+keywords: reporting, assessment, compliance, wafr, well architected
+tags: [compliance, reporting, well_architected]
 sidebar: mydoc_sidebar
 permalink: workload-add-new-resources.html
 folder: UserGuides

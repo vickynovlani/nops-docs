@@ -1,7 +1,7 @@
 ---
 title: Automated Tagging for AWS Migration Assistance Program
 keywords: reporting, integrations, map
-tags: [compliance, reporting]
+tags: [compliance, reporting, map]
 sidebar: mydoc_sidebar
 permalink: automated-tagging-for-aws-map.html
 folder: UserGuides

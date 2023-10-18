@@ -1,61 +1,50 @@
 ---
-title: Cost Reporting for Cloud Resources
-keywords: cost reporting, cost history, cost allocation
-tags: [cost_visibility, reporting, savings]
+title: Cost Analysis for Cloud Resources
+keywords: cost reporting, cost history, cost allocation, business context, cost analysis
+tags: [cost_visibility, reporting, savings, solutions]
 sidebar: mydoc_sidebar
-permalink: cost-reporting-for-cloud-resources.html
+permalink: business-context-cost-analysis.html
 folder: UserGuides
 ---
 
-# Cloud Resources Cost - Stay on Top of Cost Changes #
+# Stay on Top of Cost Changes #
 
 
 Choosing _Cloud Resources Cost_ from the Cost Control pull-down gives you a set of tabs that show your cloud spend broken out by:
 
 *   **Cloud Accounts** - spend by account in AWS, Azure, etc.
     
-*   **Regions** - spend by region in cloud vendor
-    
 *   **Cloud Services** - spend by service in each cloud vendor
+
+*   **Regions** - spend by region in cloud vendor
+
+*   **Operations** - spend by AWS operation
+
+*   **Usage Types** - spend by AWS _usage type_
     
 *   **Resources** - spend from cloud resources being used
     
 *   **Non-resources** - spend not specifically from cloud resources
     
-*   **Usage Types** - spend by AWS _usage type_
-    
-*   **Operations** - spend by AWS operation
-    
-    * * *
-    
 *   **Tags** - spend by tagged resource, with tagged resources grouped under key name
     
-*   **Change Management** - log of daily cost changes
+*   **Item Types** - spend by AWS cost type
     
 
-The first seven of these tabs (Cloud Accounts, Regions, Cloud Services, Resources, Non-resources, Usage Types, and Operations) each give you:
+The first seven of these tabs (Cloud Accounts, Cloud Services, Regions, Operations, Usage Types, Resources, Non Resources, Tags, and Item Types) each give you:
 
 *   A **Spend Summary** at the top :
     
     *   **Yesterday's Total Spend**
         
-    *   **Last Week's Spend**
-        
     *   **Month to Date Spend**
         
-    *   **AWS Credits** (applicable tabs only)
+    *   **Total Spend**
         
     
 *   An array of **Filters** in the vertical box at the left, enabling you to view cost trends over time, and to understand which resources contribute to higher costs.
     
-*   A **History** bar chart just below the Spend Summary. Note the two buttons above the right side of the chart:
-    
-    *   **See Spend Forecast**
-        
-    *   **See Spend History**
-        
-    
-*   Details of **Daily Spend** listed in a table below the History chart
+*   A **History** bar chart just below the Spend Summary. Note the button to the right side of the chart to change the level of granularity
     
 
 **Spend Summaries**
@@ -135,26 +124,3 @@ The **Tags** tab gives the spend for all tags by key name. Note that:
 *   A blue **Download** button (upper right) gives you a CSV file of the spend figures by key name, for all keys. The CSV does not break out by key value.
     
 *   The **Cost (total)** column gives the total spend for the time period specified in the Filters column at the left -- default, 1 month to date.
-    
-
-Change Management
------------------
-
-The **Change Management** tab lists the changes in your account and the potential billing impact of these changes. You can expand or collapse each day's list of changes by clicking the down arrow at the right, and you can click on the **Daily**, **Weekly**, or **Monthly** filter options to see the total spend change over daily, weekly, or monthly intervals for each resource type. Change the **Sort by** options to view increases or decreases by cost or by percent.  
-
-![](/tmpimg/change-mng-filter-sort.png)
-
-Finding Cost Changes
-====================
-
-Use one or a combination of the following methods to explore cost changes, compare what you paid this month vs last month, or investigate a spike in costs.
-
-*   **Check costs on the dashboard.** From the Dashboard, navigate to **Cost Control** / **Cloud Resources Cost.** Check the Cloud Accounts, Cloud Services, Resources, and Operations spends. Spend numbers flagged in red show are higher than in the previous time period. Check for variances. You might notice (for example) that unexpectedly higher costs stem from adding a number of new resources.
-    
-*   **Use the calendar tool.** For example, in the **Resources** tab, if the spend and usage look normal and there are no spikes, use the calendar tool to include costs for the prior month. This may show changes in resources. Also examine **Non-resources** tab to see how such items as support costs, usage costs for pausing and restarting an instance, egress costs, or tax costs are contributing to your spend.
-    
-*   Also in the **Resources** tab, use the various filters in the box at left – for example, to isolate key resources by tags, region, account, usage type, etc., so that you can evaluate a specific resource or a set of resources for changes in cost over time.
-    
-*   From the **Regions** tab, click on **See** **Spend Forecast** to see estimates based on your current spend.
-    
-*   **Set up Notifications.** From the Change Management tab click on **Subscribe** to be notified of cost changes. You can select a period of time, and a range for the cost comparison (by week or by month). Enter emails for people who will receive these notifications.

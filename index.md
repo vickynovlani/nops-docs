@@ -1,32 +1,153 @@
 ---
 title: "nOpsDocs - the home of nOps documentation"
-keywords: homepage
 tags: [getting_started]
+keywords: knowledge base, support portal, home, doc portal
 sidebar: mydoc_sidebar
 permalink: index.html
+toc: false
+folder: mydoc
 ---
-Welcome to the resource center for nOps.  If there is an article you'd like to see added, please let us know.  Help is only a click away in the platform with our chatbot if you still need help.
 
-## First Steps ##
+Click on a category to find relevant help documentation.
 
-Getting connected with the nOps platform only takes a few minutes:  
-
-1. Accept your AWS Marketplace Private Offer (MPPO) from within your AWS Payer/Management account.  If you do not have one, contact your nOps salesperson.
-1. Scroll up and click "Set up your account" in the banner across the top.
-1. In the new tab that opens, [register for an nOps account](https://app.nops.io/accounts/signup_user).
-1. Verify your account, and log back in to nOps.  Don't close your AWS tab.
-1. In the nOps tab, you will be prompted to start setting up your AWS account.
-    ![](https://nops-docs-img.s3.amazonaws.com/gettingstarted/gs-onboardingwizard.png)
-
-1. Follow the steps for [Automatic Setup](/onboarding-aws-with-automatic-setup.html) or [Manual Setup](/onboarding-aws-with-manual-setup) to get started with the nOps platform.
-
-Read about the necessary [IAM permissions](/iam-policy-nops-free-platform.html) for the free platform.
-
-
-## Next Steps ## 
-
-When you're ready to more out of the nOps platform:
-* [Start saving on auto-pilot](/sharesave-overview.html), by following the steps to configure [ShareSave Risk-Free Commitment Management](/rfcm-configure.html)
-* Turn idle and/or dev resources on and off with the nOps [nSwitch](/solutions-using-eventbridge-with-nswitch-to-reduce-costs.html) resource scheduler
-
-
+<div class="row">
+    <div class="col-lg-12">
+        <h2 class="page-header">Knowledge Base Categories</h2>
+    </div>
+    <div class="col-md-4 col-sm-6">
+        <div class="panel panel-default card text-center">
+            <a href="tag_getting_started.html">
+                <span class="link"></span>
+            </a>   
+            <div class="panel-heading">
+                <span class="fa-stack small">
+                       <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                       <i class="fa fa-gear fa-stack-1x fa-inverse"></i>                     
+                </span>
+            </div>
+            <div class="panel-body">
+                <p class="panel-topic">Getting started</p>
+                <p>All things onboarding and configuration</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+        <div class="panel panel-default card text-center">
+             <a href="tag_sharesave.html">
+                <span class="link"></span>
+             </a>   
+            <div class="panel-heading">
+                     <span class="fa-stack small">
+                           <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                           <i class="fa fa-money-check-dollar fa-stack-1x fa-inverse"></i>
+                     </span>
+            </div>
+            <div class="panel-body">
+                <p class="panel-topic">ShareSave</p>
+                <p>Put your savings on auto-pilot so you can focus on innovation.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+        <div class="panel panel-default card text-center">
+             <a href="tag_well_architected.html">
+                <span class="link"></span>
+             </a>   
+            <div class="panel-heading">
+                     <span class="fa-stack small">
+                           <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                           <i class="fa-sharp fa-regular fa-clipboard-list-check fa-stack-1x fa-inverse"></i>
+                     </span>
+            </div>
+            <div class="panel-body">
+                <p class="panel-topic">Well-Architected</p>
+                <p>Are you following the Well-Architected pillars?</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+        <div class="panel panel-default card text-center">
+            <a href="tag_solutions.html">
+                <span class="link"></span>
+            </a> 
+            <div class="panel-heading">
+                <span class="fa-stack small">
+                   <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                   <i class="fa fa-book-open-reader fa-stack-1x fa-inverse"></i>
+                </span>
+            </div>
+            <div class="panel-body">
+             <p class="panel-topic">Solutions & User Guides</p>
+                <p>Learn the ins and outs of the platform</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+        <div class="panel panel-default card text-center">
+            <a href="tag_compliance.html">
+                <span class="link"></span>
+            </a> 
+            <div class="panel-heading">
+                <span class="fa-stack small">
+                   <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                   <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                </span>
+            </div>
+            <div class="panel-body">
+             <p class="panel-topic">Security & Compliance</p>
+                <p>Well architected reviews and security compliance</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+        <div class="panel panel-default card text-center">
+            <a href="tag_developer.html">
+                <span class="link"></span>
+            </a> 
+            <div class="panel-heading">
+                <span class="fa-stack small">
+                   <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                   <i class="fa fa-webhook fa-stack-1x fa-inverse"></i>
+                </span>
+            </div>
+            <div class="panel-body">
+             <p class="panel-topic">APIs & Developer Area</p>
+                <p>Master the APIs and integrations of nOps</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+        <div class="panel panel-default card text-center">
+            <a href="tag_map.html">
+                <span class="link"></span>
+            </a> 
+            <div class="panel-heading">
+                <span class="fa-stack small">
+                   <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                   <i class="fa fa-map-location-dot fa-stack-1x fa-inverse"></i>
+                </span>
+            </div>
+            <div class="panel-body">
+             <p class="panel-topic">MAP</p>
+                <p>Track your MAP progress and credits</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+        <div class="panel panel-default card text-center">
+            <a href="tag_tutorials.html">
+                <span class="link"></span>
+            </a> 
+            <div class="panel-heading">
+                <span class="fa-stack small">
+                   <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                   <i class="fa fa-play fa-stack-1x fa-inverse"></i>
+                </span>
+            </div>
+            <div class="panel-body">
+             <p class="panel-topic">Video Tutorials</p>
+                <p>Instructional videos to explain and demonstrate the platform</p>
+            </div>
+        </div>
+    </div>
+</div>

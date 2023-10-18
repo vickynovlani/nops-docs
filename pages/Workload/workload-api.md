@@ -1,7 +1,7 @@
 ---
 title: Workload API
-keywords: reporting, assessment, compliance
-tags: [compliance, reporting]
+keywords: reporting, assessment, compliance, well architected, api
+tags: [compliance, reporting, well_architected, api]
 sidebar: mydoc_sidebar
 permalink: workload-api.html
 folder: UserGuides

@@ -1,7 +1,7 @@
 ---
 title: Configure Weekly Reports
 keywords: reporting
-tags: [reporting]
+tags: [reporting, solutions]
 sidebar: mydoc_sidebar
 permalink: weekly-reports.html
 folder: UserGuides

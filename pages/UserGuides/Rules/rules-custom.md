@@ -1,7 +1,7 @@
 ---
 title: Creating nOps Custom Rules
 keywords: reporting
-tags: [reporting]
+tags: [reporting, solutions]
 sidebar: mydoc_sidebar
 permalink: rules-custom.html
 folder: UserGuides

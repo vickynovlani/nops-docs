@@ -1,7 +1,7 @@
 ---
 title: Resource Rightsizing
 keywords: cost reporting, cost history, cost allocation
-tags: [cost_visibility, reporting, savings]
+tags: [cost_visibility, reporting, savings, solutions]
 sidebar: mydoc_sidebar
 permalink: cost-resource-rightsizing.html
 folder: UserGuides

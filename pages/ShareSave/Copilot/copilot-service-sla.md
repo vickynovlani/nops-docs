@@ -1,21 +1,21 @@
 ---
-title: Cost Consideration Spot Instance Reliability SLA
-keywords: savings, recommendations, sharesave, spot
+title: Compute Copilot Spot Instance Reliability SLA
+keywords: savings, recommendations, sharesave, spot, cost copilot
 tags: [savings, recommendations, sharesave]
 sidebar: mydoc_sidebar
-permalink: c2e-service-sla.html
+permalink: copilot-service-sla.html
 folder: ShareSave
 ---
 
 **Effective Date:** September 7th, 2023
 
-**Introducing the Cost Consideration Spot Instance Reliability SLA**
+**Introducing the Compute Copilot Spot Instance Reliability SLA**
 
-We are excited to announce a new and unique Service Level Agreement (SLA) that sets us apart in the market and underscores our commitment to your success with our Cost Consideration  engine.
+We are excited to announce a new and unique Service Level Agreement (SLA) that sets us apart in the market and underscores our commitment to your success with our Compute Copilot engine.
 
 **What is it?**
 
-Our new SLA focuses on ensuring the reliability of Spot Instances within our Cost Considration product for customers who have connected their Amazon Elastic Kubernetes Service (EKS), AutoScaling Group, or Databricks job to our service. ***You can run your workload on spot with the same confidence as AWS on-demand.*** 
+Our new SLA focuses on ensuring the reliability of Spot Instances within our Compute Copilot product for customers who have connected their Amazon Elastic Kubernetes Service (EKS), AutoScaling Group, or Databricks job to our service. ***You can run your workload on spot with the same confidence as AWS on-demand.*** 
 
 **What does it guarantee?**
 
