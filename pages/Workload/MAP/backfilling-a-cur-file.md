@@ -21,7 +21,7 @@ One thing to consider is a longer trail of data within your Cost and Usage Repor
 
 ## Creating the Ticket ##
 
-For each Payer account, log into your [Amazon Support Console](https://support.console.aws.amazon.com/support) to create a support ticket.  Please CC your point of contact at nOps in your supoprt ticket.
+For each Payer account, log into your [Amazon Support Console](https://support.console.aws.amazon.com/support) to create a support ticket.  Please CC your point of contact at nOps in your support ticket, or inform them when the backfill has been completed.
 
 ### Ticket Information ###
 
