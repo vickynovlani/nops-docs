@@ -103,7 +103,7 @@ nOps Terraform code is available in a public GitHub repository [nOps Cloud Accou
     
 2.  Navigate to \`nops-cloud-account-registration/nops-aws-account-register/\`.
     
-3.  Follow the instructions in [`terraform-master-payer-regiaster/`](https://github.com/nops-io/nops-cloud-account-registration/tree/main/nops-aws-account-register/terraform-master-payer-register) folder to add a Payer account. Follow the instruction in [`terraform-multiple-child-accs-register-via-stacksets/`](https://github.com/nops-io/nops-cloud-account-registration/tree/main/nops-aws-account-register/terraform-multiple-child-accs-register-via-stacksets) folder to add child account(s).
+3.  Follow the instructions in [`terraform-master-payer-register/`](https://github.com/nops-io/nops-cloud-account-registration/tree/main/nops-aws-account-register/terraform-master-payer-register) folder to add a Payer account. Follow the instruction in [`terraform-multiple-child-accs-register-via-stacksets/`](https://github.com/nops-io/nops-cloud-account-registration/tree/main/nops-aws-account-register/terraform-multiple-child-accs-register-via-stacksets) folder to add child account(s).
     
 
 After you've gone through the installation steps in the public GitHub repository ([nOps Cloud Account Registration](https://github.com/nops-io/nops-cloud-account-registration)), the data ingestion process will start.
