@@ -4,6 +4,7 @@ tags: [getting_started]
 keywords: knowledge base, support portal, home, doc portal
 sidebar: mydoc_sidebar
 permalink: index.html
+search: exclude
 toc: false
 folder: mydoc
 ---
