@@ -1,6 +1,6 @@
 ---
 title: Configure Risk-Free Commitment Management
-keywords: savings, recommendations, sharesave
+keywords: savings, recommendations, sharesave, nswitch
 tags: [savings, recommendations, sharesave]
 sidebar: mydoc_sidebar
 permalink: rfcm-configure.html
