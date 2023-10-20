@@ -1,6 +1,6 @@
 ---
 title: Cost Analysis for Cloud Resources
-keywords: cost reporting, cost history, cost allocation, business context, cost analysis
+keywords: cost reporting, cost history, cost allocation, business context, cost analysis, tags
 tags: [cost_visibility, reporting, savings, solutions]
 sidebar: mydoc_sidebar
 permalink: business-context-cost-analysis.html
