@@ -1,6 +1,6 @@
 ---
 title: Getting Started with ShareSave
-keywords: savings, recommendations, sharesave
+keywords: savings, recommendations, sharesave, nswitch, nks, ec2, rds
 tags: [savings, recommendations, sharesave]
 sidebar: mydoc_sidebar
 permalink: sharesave-overview.html
