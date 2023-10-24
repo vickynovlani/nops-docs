@@ -1,6 +1,6 @@
 ---
 title: Cloudwatch Agent
-keywords: reporting, integrations
+keywords: reporting, integrations, ec2, memory, metrics, usage, eks
 tags: [agents_integrations]
 sidebar: mydoc_sidebar
 permalink: cloudwatch-agent.html
