@@ -1,6 +1,6 @@
 ---
 title: "nOpsDocs - the home of nOps documentation"
-keywords: homepage
+keywords: homepage, setup, onboarding
 tags: [getting_started]
 sidebar: mydoc_sidebar
 search: exclude
