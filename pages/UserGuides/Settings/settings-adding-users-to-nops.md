@@ -1,6 +1,6 @@
 ---
 title: Adding users to nOps
-keywords: getting started, settings
+keywords: getting started, settings, setup, onboarding
 tags: [getting_started, settings]
 sidebar: mydoc_sidebar
 permalink: settings-adding-users-to-nops.html

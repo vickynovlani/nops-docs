@@ -1,6 +1,6 @@
 ---
 title: Commitment Management - Working with Reserved Instances
-keywords: cost reporting, cost history, cost allocation, solutions
+keywords: cost reporting, cost history, cost allocation, solutions, ris
 tags: [cost_visibility, reporting, savings, solutions]
 sidebar: mydoc_sidebar
 permalink: cost-commitment-management.html
