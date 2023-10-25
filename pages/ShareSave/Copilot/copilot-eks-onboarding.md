@@ -1,13 +1,13 @@
 ---
-title: Onboarding your EKS clusters to nKS
+title: Onboarding your EKS clusters to Compute Copilot for EKS
 keywords: savings, recommendations, sharesave, nks, karpenter, compute copilot
 tags: [savings, recommendations, sharesave, eks, nks]
 sidebar: mydoc_sidebar
-permalink: nks-onboarding-clusters.html
+permalink: copilot-eks-onboarding.html
 folder: ShareSave
 ---
 
-## Onboarding your EKS clusters to nKS ##
+## Onboarding your EKS clusters to Compute Copilot for EKS ##
 
 ### Pre-requisites: ###
 
@@ -15,32 +15,32 @@ folder: ShareSave
 2. Your AWS account must be configured to your nOps account.
 3. You must have Kubernetes cluster with Karpenter installed.
 
-### About nKS: ###
+### About Compute Copilot for EKS: ###
 
 Karpenter offers significant advancements in intelligent scaling, cluster awareness, and customization. However, it is often tuned as a one-and-done — whereas your ecosystem and market pricing are constantly changing. 
 
-That’s where nKS (nOps Karpenter Solution) comes in, constantly tuning your configuration for the best price and availability on autopilot. It allows engineering teams to take advantage of Karpenter’s more effective and granular scaling functionalities, for a fraction of the effort. 
+That’s where Compute Copilot for EKS comes in, constantly tuning your configuration for the best price and availability on autopilot. It allows engineering teams to take advantage of Karpenter’s more effective and granular scaling functionalities, for a fraction of the effort. 
 
-nKS ensures you are scheduled on the most cost-optimized and stable option at every moment — automatically updating your provisioning on the fly if not for 50+% EKS savings.
+Compute Copilot for EKS ensures you are scheduled on the most cost-optimized and stable option at every moment — automatically updating your provisioning on the fly if not for 50+% EKS savings.
 
-### Why nKS over legacy Autoscaler: ###
+### Why Compute Copilot for EKS over legacy Cluster Autoscaler: ###
 
 Optimizing your AWS costs is a key challenge today. Spot can be cheaper, but terminations pose the threat of outages to your critical workloads. RIs and Savings Plans require risky, long-term commitment and can lead to paying for capacity you don’t need.
 
-nKS continuously rightsizes, reconsiders, and re-evaluates your workload placement to available RIs, SPs, or Spot to maximize your savings on autopilot with complete reliability. It is aware of your entire dynamic AWS ecosystem and market pricing in real time. 
+Compute Copilot for EKS continuously rightsizes, reconsiders, and re-evaluates your workload placement to available RIs, SPs, or Spot to maximize your savings on autopilot with complete reliability. It is aware of your entire dynamic AWS ecosystem and market pricing in real time. 
 
-nKS even covers your commitments with a 100% money-back guarantee. If your usage changes, you change instance regions, or even leave the cloud, we buy back those commitments from you. You get all the cost savings of commitments, with all the flexibility of on-demand. In contrast, Cluster Autoscaler requires much more of your time and labor, lacks Karpenter’s advanced autoscaling automation, and makes you choose between cost savings and flexibility.
+Compute Copilot for EKS even covers your commitments with a 100% money-back guarantee. If your usage changes, you change instance regions, or even leave the cloud, we buy back those commitments from you. You get all the cost savings of commitments, with all the flexibility of on-demand. In contrast, Cluster Autoscaler requires much more of your time and labor, lacks Karpenter’s advanced autoscaling automation, and makes you choose between cost savings and flexibility.
 
 ## Steps to Configure Your EKS Cluster for Cost Optimization and Savings ##
 
 ### Install nOps Agent: ###
 
-1. Navigate to nKS from the nOps dashboard.
+1. Navigate to Compute Copilot → EKS from the nOps dashboard.
 2. Choose the EKS cluster you want to cost-optimize.
 3. Open detail view by clicking on →.
 4. Generate a new API key for nOps Agent. 
 5. Copy the custom command and run it in your command line. 
-6. Test Connectivity of nOps Agent in the nKS Dashboard.
+6. Test Connectivity of nOps Agent in the Compute Copilot for EKS Dashboard.
 
     ![](https://lh4.googleusercontent.com/7eISgP_ZiLo_JO2zGS8dOdp7HvYLBO4N5rMK1FC-szbc668pp-pCz_ysW2NKhvPylazv_3oRIden3mwgLG09eWT0XsbXX31dfsJ_Sot5PpBSJERDAsErwjI_wQC8kRseM_ezcQZ7JxzR05e8Gtdz328)
 
@@ -91,10 +91,10 @@ Once the Provisioner is created, the user can again Test Connectivity to confirm
 
      
 
-As soon as cluster status displays **Configured**, nKS will start its magic to generate savings on the connected EKS cluster. 
+As soon as cluster status displays **Configured**, Compute Copilot for EKS will start its magic to generate savings on the connected EKS cluster. 
 
 FAQ:
 
-1. Nks provisioner takes precedence over clients own provisioner?
-2. IaC/YAML template for configuring nKS?
+1. Compute Copilot for EKS provisioner takes precedence over clients own provisioner?
+2. IaC/YAML template for configuring Compute Copilot for EKS?
 3. Helping customers with Karpenter migration/devOps support?

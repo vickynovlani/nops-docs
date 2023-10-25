@@ -19,7 +19,7 @@ Getting connected with the nOps platform only takes a few minutes:
 1. In the nOps tab, you will be prompted to start setting up your AWS account.
     ![](https://nops-docs-img.s3.amazonaws.com/gettingstarted/gs-onboardingwizard.png)
 
-1. Follow the steps for [Automatic Setup](/onboarding-aws-with-automatic-setup.html) or [Manual Setup](/onboarding-aws-with-manual-setup) to get started with the nOps platform.
+1. Follow the steps for [Automatic Setup](https://docs.google.com/spreadsheets/d/11hnP6TmkxO-iPE_U3l39e2smjskxFOmttnAbWm69IYU/htmlview) or [Manual Setup](/onboarding-aws-with-manual-setup) to get started with the nOps platform.
 
 Read about the necessary [IAM permissions](/iam-policy-nops-free-platform.html) for the free platform.
 

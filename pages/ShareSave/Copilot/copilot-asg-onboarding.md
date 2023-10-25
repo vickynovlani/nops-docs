@@ -1,13 +1,13 @@
 ---
-title: Onboarding your ASG clusters to nOps
+title: Onboarding your ASG clusters to nOps Compute Copilot
 keywords: savings, recommendations, sharesave, asg
 tags: [savings, recommendations, sharesave, eks, asg]
 sidebar: mydoc_sidebar
-permalink: nasg-onboarding.html
+permalink: copilot-asg-onboarding.html
 folder: ShareSave
 ---
 
-# Onboarding your ASG clusters to nOps #
+# Onboarding your Auto Scaling Groups to nOps Compute Copilot #
 
 
 ## Prerequisites: ##
@@ -16,24 +16,24 @@ folder: ShareSave
 3. You must have an Auto Scaler cluster.
 
 
-## About nASG and how it works: ##
+## About Compute Copilot for Auto Scaling Groups and how it works: ##
 
-nASG is an automation tool that leverages machine learning algorithms to minimize your ASG costs by migrating its EC2 instances to Spot.
+Compute Copilot for Auto Scaling Groups (ASG) is an automation tool that leverages machine learning algorithms to minimize your ASG costs by migrating its EC2 instances to Spot.
 
-- Whenever AWS ASG launches a new on-demand instance (for example, in response to a desired capacity change), nASG Lambda will intercept this signal and launch a Spot instance with the same settings (Network Settings, User Data, Tags, etc.). It will then attach this Spot instance to the ASG, removing the on-demand instance after the newly created Spot instance is InService.
+- Whenever AWS ASG launches a new on-demand instance (for example, in response to a desired capacity change), Compute Copilot for ASG Lambda will intercept this signal and launch a Spot instance with the same settings (Network Settings, User Data, Tags, etc.). It will then attach this Spot instance to the ASG, removing the on-demand instance after the newly created Spot instance is InService.
 
-- nASG is an ML-powered tool that reduces your AWS ASG costs by automatically migrating EC2 instances to Spot. 
-- nASG Lambda is aware whenever ASG launches a new on-demand instance (such as in response to a desired capacity change). In response, it automatically launches a Spot instance with settings that mirror those of the on-demand instance, attaches it to the ASG, confirms it is in service, and removes the on-demand instance for you.
+- Compute Copilot for ASG is an ML-powered tool that reduces your AWS ASG costs by automatically migrating EC2 instances to Spot. 
+- Compute Copilot for ASG Lambda is aware whenever ASG launches a new on-demand instance (such as in response to a desired capacity change). In response, it automatically launches a Spot instance with settings that mirror those of the on-demand instance, attaches it to the ASG, confirms it is in service, and removes the on-demand instance for you.
 
 
 
-## Why nASG: ##
+## Why Compute Copilot for ASG: ##
 
-nASG offers multiple advantages over other solutions.
+Compute Copilot for ASG offers multiple advantages over other solutions.
 
-- nASG predicts the spot market by analyzing its historical data and Spot Termination CT events, enabling it to select the cheapest Spot option with a low chance of being interrupted in the near future. Allows you to benefit from Spot savings with the same reliability as on-demand. By analyzing historical data and Spot Termination events, nASG automatically selects the most cost-effective and stable option — ensuring your critical workloads remain safe from interruption.
-- nASG does not require your workload to be transferred to a proprietary system, but works directly with AWS ASG.
-- nASG does not typically modify the ASG settings, allowing it to be disabled at any time without interrupting existing workflows.
+- Compute Copilot for ASG predicts the spot market by analyzing its historical data and Spot Termination CT events, enabling it to select the cheapest Spot option with a low chance of being interrupted in the near future. Allows you to benefit from Spot savings with the same reliability as on-demand. By analyzing historical data and Spot Termination events, Compute Copilot for ASG automatically selects the most cost-effective and stable option — ensuring your critical workloads remain safe from interruption.
+- Compute Copilot for ASG does not require your workload to be transferred to a proprietary system, but works directly with AWS ASG.
+- Compute Copilot for ASG does not typically modify the ASG settings, allowing it to be disabled at any time without interrupting existing workflows.
 
 
 ## Steps to Configure Your ASG Cluster ##
@@ -61,7 +61,7 @@ nASG offers multiple advantages over other solutions.
 
 {%include note.html content="Before the ASG Lambda stack runs,
 <br><br> 1. The status of the version shows N/A by default.
-<br>2. Auto Update is enabled by default, allowing nASG to automtically update to the newest version of Lambda. This setting can be disabled by the user if desired."%}
+<br>2. Auto Update is enabled by default, allowing Compute Copilot for ASG to automtically update to the newest version of Lambda. This setting can be disabled by the user if desired."%}
 
 
 
@@ -82,8 +82,8 @@ nASG offers multiple advantages over other solutions.
 ### Create a new ASG Template ###
 
 1. Give the ASG template a unique name
-2. Choose the instance families, vCPU, and Memory that are potentially suitable for your workload. From this pool, nASG will select the most optimal choice for price and stability.
-3. It is recommended to select as many instance families as possible, to provide nASG with a wider recommendations pool
+2. Choose the instance families, vCPU, and Memory that are potentially suitable for your workload. From this pool, Compute Copilot for ASG will select the most optimal choice for price and stability.
+3. It is recommended to select as many instance families as possible, to provide Compute Copilot for ASG with a wider recommendations pool
 
     ![](https://lh3.googleusercontent.com/Xudgy760nePtwLiEnQQIh9KZjKOOCC74trVtqJ8Ds9JaF8qSSoy07bdbKvcIputTWBSg4cmeoaQZ6m5uqrjDEVRJCc0q8VuDKiSCdoCRfmywv3bCVzwAjh0dg019-7SRiKN4S0dkxKS42RMy_iLc-U8)
 
@@ -93,7 +93,7 @@ nASG offers multiple advantages over other solutions.
 
     **Spot percentage** defines the percentage of on-demand instances to be replaced with Spot. 
 
-    **Max Spot Instances** defines the maximum of Spot instances to be created by nASG.
+    **Max Spot Instances** defines the maximum of Spot instances to be created by Compute Copilot for ASG.
 
 5. Once values are defined, select Configure.  
 
@@ -104,12 +104,12 @@ nASG offers multiple advantages over other solutions.
 
 ### What to expect after configuring ASG ###
 
-nASG Lambda will begin  replacing on-demand instances in this ASG with Spot alternatives, either every 30 minutes or upon the launch of a new on-demand instance.
+Compute Copilot for ASG Lambda will begin  replacing on-demand instances in this ASG with Spot alternatives, either every 30 minutes or upon the launch of a new on-demand instance.
 
 
 ## FAQ ##
 
-### How does nASG replace on-demand instances? ####
+### How does Compute Copilot for ASG replace on-demand instances? ####
 
 #### New On-Demand Instance Launch Handling ####
 
@@ -119,7 +119,7 @@ nASG Lambda will begin  replacing on-demand instances in this ASG with Spot alt
 
 2. Lambda intercepts `EC2 Instance State-change Notification` event from EventBridge
 
-3. If the created instance is not protected from termination and should be replaced, nASG performs the following steps.
+3. If the created instance is not protected from termination and should be replaced, Compute Copilot for ASG performs the following steps.
 
    1. Copy the Launch Template / Configuration from the ASG launch template
    2. In the copied Launch Template, modify Network   Interfaces / Tags / Block Device  Mappings from the instance Launch Template / Configuration if needed
@@ -136,7 +136,7 @@ nASG Lambda will begin  replacing on-demand instances in this ASG with Spot alt
 Instance families that are not compliant with the ASG you are attempting to configure are automatically hidden. For example, if your ASG uses instances with arm64 CPU architecture, other instance families that are x86\_64 will be filtered out from the list.
 
 ### What is Auto Update Lambda, and how does it work? ###
-When Auto Update is enabled, your Lambda will be automatically updated every time a new nASG version is released, (12 p.m. UTC). When you deploy nASG Lambda with Auto Update, the stack will also contain a Cross-Account role.  
+When Auto Update is enabled, your Lambda will be automatically updated every time a new Compute Copilot for ASG version is released, (12 p.m. UTC). When you deploy Compute Copilot for ASG Lambda with Auto Update, the stack will also contain a Cross-Account role.  
 
 ### What permissions does Auto-Update Cross-Account policy have? ###
 
