@@ -1,7 +1,7 @@
 ---
 title: Onboarding your Autoscaling Groups to nOps Compute Copilot
-keywords: savings, recommendations, sharesave, asg
-tags: [savings, recommendations, sharesave, eks, asg]
+keywords: savings, recommendations, sharesave, asg, copilot
+tags: [savings, recommendations, sharesave, copilot, asg]
 sidebar: mydoc_sidebar
 permalink: copilot-asg-onboarding.html
 folder: ShareSave

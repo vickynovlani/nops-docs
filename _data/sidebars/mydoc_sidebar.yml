@@ -133,6 +133,10 @@ entries:
           url: /copilot-asg-onboarding.html
           output: web
 
+        - title: Compute Copilot for ASG Support Matrix
+          url: /copilot-asg-matrix.html
+          output: web
+
       - title: Risk-Free Commitment Management
         output: web
         subfolderitems:
