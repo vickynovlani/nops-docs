@@ -1,5 +1,5 @@
 ---
-title: Onboarding your ASG clusters to nOps Compute Copilot
+title: Onboarding your Autoscaling Groups to nOps Compute Copilot
 keywords: savings, recommendations, sharesave, asg
 tags: [savings, recommendations, sharesave, eks, asg]
 sidebar: mydoc_sidebar
