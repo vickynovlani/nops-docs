@@ -49,7 +49,7 @@ The automated setup is simple, easy and takes only 5 minutes:
         4.  _IAM Policy for the Role_: [IAM Policy](#sharesave-iam-role)
         5.  _Automated Creation_: NA – preloaded
 
-**How to kick off the automated setup and to begin Saving!**
+**How to kick off the automated setup and begin saving!**
 
 
 To begin savings via **nOps ShareSave – Auto-Pilot Risk-free Commitment Management**, follow these steps:
