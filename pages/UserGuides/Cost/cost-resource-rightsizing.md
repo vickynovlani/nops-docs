@@ -1,6 +1,6 @@
 ---
 title: Resource Rightsizing
-keywords: cost reporting, cost history, cost allocation, ec2
+keywords: cost reporting, cost history, cost allocation, ec2, tags
 tags: [cost_visibility, reporting, savings, solutions]
 sidebar: mydoc_sidebar
 permalink: cost-resource-rightsizing.html
