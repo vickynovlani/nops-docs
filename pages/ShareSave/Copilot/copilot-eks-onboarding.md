@@ -9,6 +9,10 @@ folder: ShareSave
 
 ## Onboarding your EKS clusters to Compute Copilot for EKS ##
 
+### Why use Compute Copilot EKS ###
+
+Learn more abou how Compute Copilot for EKS can help you to put your EKS cost optimization on auto-pilot [here](https://www.nops.io/nks/)
+
 ### Pre-requisites: ###
 
 1. You must be logged in to your [nOps account](https://app.nops.io/accounts/signin/). 
