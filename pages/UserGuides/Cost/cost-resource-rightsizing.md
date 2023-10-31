@@ -65,7 +65,7 @@ Click on **Resource Details** to look at Resource Details, Cost History, and Con
 
 ![](/tmpimg/rightsizing-ec2-metrics.png)
 
-## How does nOps Rightsizing Algorithm Work? ##
+## How does the nOps Rightsizing Algorithm Work? ##
 =========================================
 
 **With CloudWatch Enabled**
