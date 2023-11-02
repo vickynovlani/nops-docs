@@ -97,7 +97,7 @@ Once the Provisioner is created, the user can again Test Connectivity to confirm
 
 As soon as cluster status displays **Configured**, Compute Copilot for EKS will start its magic to generate savings on the connected EKS cluster. 
 
-FAQ:
+## FAQ ##
 
 1. Is Karpenter mandatory to install EKS Compute Copilot?
 * Yes, currently EKS Compute Copilot works only if the clusters are being managed by Karpenter. We do have Cluster Autoscaler in our roadmap but it is not available as of now.
