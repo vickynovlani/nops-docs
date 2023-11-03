@@ -103,9 +103,9 @@ As soon as cluster status displays **Configured**, Compute Copilot for EKS will 
 * Yes, currently EKS Compute Copilot works only if the clusters are being managed by Karpenter. We do have Cluster Autoscaler in our roadmap but it is not available as of now.
 2. Do EKS Compute Copilot Karpenter provisioners take precedence over my own Karpenter provisioners?
 * Yes. Once onboarded to Compute Copilot, the provisioners already existing in the cluster are not going to be used anymore. But you don’t necessarily need to delete them. It’s just that they will not be used while Compute Copilot provisioners are there.
-    Note: It may not always be true depending on the existing provisioners configuration.
+    **Note**: It may not always be true depending on the existing provisioners configuration.
 3. Can we import the YAML for existing node templates and provisioners to configure Compute Copilot EKS provisioners?
-* Yes. That is absolutely possible and is shown in the above document within the “Manual Config” steps. By clicking on Manual Config, you can just copy-paste your existing YAML templates to configure nOps Karpenter provisioners
+* Yes. That is absolutely possible and is shown in the above document within the “Manual Config” steps. By clicking on Manual Config, you can just copy-paste your existing YAML templates to configure nOps Karpenter provisioner
 4. Does nOps provide DevOps support to customers migrating from cluster autoscaler to Karpenter?
 * nOps has experienced engineers who provide free of cost support to all clients to help them with Karpenter migration. You can get as much on-call support as you need to review your Karpenter settings. We also conduct monthly “Karpenter Office Hours” with our existing customer audience to build a community where we can share our experience, customers can ask questions in an open forum, see hands-on to some basic Karpenter implementation practices and much more. However, nOps is not a Service company and therefore, we do not take responsibility for your migration project or provide dedicated DevOps resources or do managed services. Our support is limited to only providing guidance and reviews.
     **Note**: If you want a recording of the most recent “Karpenter Office Hours” then please drop us an email on ‘support@nops.io’.
