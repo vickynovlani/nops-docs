@@ -154,7 +154,7 @@ entries:
           output: web  
 
         - title: nSwitch Essentials
-          url: /essentials-overview.html
+          url: /nswitch-essentials-configuration.html
           output: web      
           
   - title: Agents and Integrations
