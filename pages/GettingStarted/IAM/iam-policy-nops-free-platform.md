@@ -5,6 +5,8 @@ tags: [getting_started, onboarding, iam]
 sidebar: mydoc_sidebar
 permalink: iam-policy-nops-free-platform.html
 folder: GettingStarted
+series: [Onboarding, IAM]
+weight: 4.0
 ---
 
 ## IAM Policy Permissions for the nOps Platform ##
@@ -1170,3 +1172,5 @@ IAM policy for nOps _Last Updated: 12/17/2022_
 }
 
 ```
+
+{% include custom/series_related.html %}

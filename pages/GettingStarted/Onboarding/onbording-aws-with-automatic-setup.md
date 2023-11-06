@@ -5,8 +5,9 @@ tags: [getting_started, onboarding, tutorials]
 sidebar: mydoc_sidebar
 permalink: onboarding-aws-with-automatic-setup.html
 folder: GettingStarted
+series: [Onboarding]
+weight: 1.0
 ---
-
 
 # Adding your AWS payer account to nOps with Automatic Setup #
 
@@ -151,3 +152,5 @@ If you are not comfortable with using the automated setup, you can use the [manu
 * There may have been a disconnect when creating the S3 stack causing the stack to have an error of **ROLLBACK_ERROR.** In this case, re-try the automatic setup, then delete the first one.
 * Is it pulling in incorrect data? Make sure that you are logging into the correct account. When you have multiple access to AWS accounts, it can import the wrong data. Ensure that you’re logged in to the correct account prior to starting the integration process.
 * If you belong to an Organization ( multiple accounts linked to a Master Account) ensure that you are logged into the Master account before running the wizard (so the billing data is populated) or having organizational billing data files exported to one of your buckets.
+
+{% include custom/series_related.html %}

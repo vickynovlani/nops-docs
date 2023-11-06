@@ -5,6 +5,8 @@ tags: [savings, recommendations, sharesave, copilot]
 sidebar: mydoc_sidebar
 permalink: copilot-service-sla.html
 folder: ShareSave
+series: [Copilot]
+weight: 3.0
 ---
 
 **Effective Date:** September 7th, 2023
@@ -39,3 +41,6 @@ The nKS Spot Instance Reliability SLA is effective from September 6th, and we ca
 - You must diversify by selecting at least five instance families as part of your node template configuration.
 
 At nOps, we are always striving for excellence, and this SLA is another step in that direction. If you have any questions or need further clarification, please don't hesitate to reach out to our support team.
+
+
+{% include custom/series_related.html %}

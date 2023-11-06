@@ -5,7 +5,10 @@ tags: [getting_started, onboarding, tutorials]
 sidebar: mydoc_sidebar
 permalink: onboarding-aws-with-cloudformation.html
 folder: GettingStarted
+series: [Onboarding]
+weight: 2.0
 ---
+
 
 ## Onboarding Multiple AWS Linked Accounts to nOps with CloudFormation ##
 
@@ -142,3 +145,6 @@ On initial ingestion, nOps will pull the data from AWS accounts based on the fol
 *   Rules: Current date.
     
 *   CloudTrail Events: 14 day look back.
+
+
+{% include custom/series_related.html %}

@@ -5,6 +5,8 @@ tags: [getting_started, onboarding]
 sidebar: mydoc_sidebar
 permalink: onboarding-service-control-policies.html
 folder: GettingStarted
+series: [Onboarding]
+weight: 9.0
 ---
 
 # Onboarding to nOps with Service Control Policies (SCP) #
@@ -31,3 +33,5 @@ This can be done by adding an ArnNotLike statement for the Nops-Integration role
                     ]
                 }
 ```
+
+{% include custom/series_related.html %}

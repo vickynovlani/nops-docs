@@ -5,6 +5,8 @@ tags: [getting_started, onboarding, iam]
 sidebar: mydoc_sidebar
 permalink: iam-minimum-platform-permissions.html
 folder: GettingStarted
+series: [Onboarding, IAM]
+weight: 6.0
 ---
 
 ## IAM Policy Minimum Permissions for the nOps Platform in YAML ##
@@ -49,3 +51,5 @@ NopsIntegrationPolicy:
               - !Sub "arn:aws:s3:::${SystemBucketID}-nops-${AWS::AccountId}/*"
       Roles: [!Ref NopsIntegrationRole]
 ```
+
+{% include custom/series_related.html %}

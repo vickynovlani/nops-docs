@@ -5,6 +5,8 @@ tags: [savings, recommendations, sharesave]
 sidebar: mydoc_sidebar
 permalink: rfcm-configure.html
 folder: ShareSave
+series: [ShareSave, Savings]
+weight: 2.0
 ---
 
 # ShareSave Risk-Free Commitment Management Configuration #
@@ -84,3 +86,6 @@ When this has completed and the stacks have run successfully, please contact nOp
 
 
 To learn about **ShareSave - nSwitch Resource Scheduler** and its configuration, see [Utilize nOps nSwitch Resource Scheduler with EventBridge Integration to Reduce Costs Automatically](solutions-using-eventbridge-with-nswitch-to-reduce-costs.html).
+
+
+{% include custom/series_related.html %}

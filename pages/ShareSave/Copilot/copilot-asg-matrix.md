@@ -5,6 +5,8 @@ tags: [savings, recommendations, sharesave, copilot]
 sidebar: mydoc_sidebar
 permalink: copilot-asg-matrix.html
 folder: ShareSave
+series: [Copilot, Onboarding]
+weight: 2.0
 ---
 
 # ASG Support Matrix #
@@ -31,3 +33,5 @@ folder: ShareSave
 
 ⏳ - In-Progress\
 ✅ - Supports with current version
+
+{% include custom/series_related.html %}

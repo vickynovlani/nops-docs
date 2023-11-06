@@ -5,6 +5,8 @@ tags: [savings, recommendations, sharesave]
 sidebar: mydoc_sidebar
 permalink: sharesave-overview.html
 folder: ShareSave
+series: [ShareSave, Savings]
+weight: 30
 ---
 
 # Getting Started with ShareSave
@@ -174,3 +176,6 @@ If you are an existing nOps customer, in order to get access to all the cost sav
 5.  Click the **Update on AWS** button against all associated accounts. Make sure that you are already logged in to the respective AWS account before you click the button **(optional)**.
     
 Follow the steps to configure [Risk-Free Commitment Management](/rfcm-configure.html)
+
+
+{% include custom/series_related.html %}

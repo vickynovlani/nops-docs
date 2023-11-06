@@ -1,0 +1,17 @@
+<table class="tagtable"><thead><tr><th>### Related articles ###</th></tr></thead>
+    <tbody>
+
+        {% assign pages = site.pages | sort:"weight"  %}
+        {% for p in pages %}
+        {% if p.series == page.series %}
+        {% if p.url == page.url %}
+        <tr><td><a href="{{ p.url | remove: "/" }}"> → {{p.title}}</a></td></tr>
+        {% else %}
+        <tr><td><a href="{{ p.url | remove: "/" }}">{{p.title}}</a></td></tr>
+
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+
+   </tbody>
+</table>
