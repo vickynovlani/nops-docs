@@ -119,9 +119,6 @@ As soon as cluster status displays **Configured**, Compute Copilot for EKS will 
 * Yes, we allow users to set the minimum CPU and Memory metrics
 8. Can I put my Stateful workloads on EKS Compute Copilot?
 * EKS Compute Copilot does not come with any limitation on Stateful workloads. However, we do not recommend putting Stateful Workloads on Spot Instances if they are running mission critical operations.
-<<<<<<< Updated upstream
-=======
-
 
 {% include custom/series_related.html %}
->>>>>>> Stashed changes
+
