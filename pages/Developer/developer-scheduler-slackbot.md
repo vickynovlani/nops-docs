@@ -1,16 +1,18 @@
 ---
-title: The nSwitch Slackbot "How To" Guide
+title: The Scheduler Slackbot "How To" Guide
 keywords: setup, onboarding, nswitch, sharesave, slackbot, developer, api
 tags: [onboarding, sharesave, nswitch, developer]
 sidebar: mydoc_sidebar
 permalink: developer-nswitch-slackbot.html
 folder: Developer
+series: [API]
+weight: 3.0
 ---
 
 
 ### Prerequisites: ###
 
-* Access to nOps nSwitch  
+* Access to nOps Scheduler  
       
     Scheduler API doc:  
     [https://app.nops.io/svc/notifications/api/schema/swagger-ui/#/](https://app.nops.io/svc/notifications/api/schema/swagger-ui/#/)  
@@ -25,13 +27,13 @@ folder: Developer
     * Click the copy button on the right of the key, and save the key.You must download a copy of the key when it is generated as you will not be able to access it again.
 * Access to AWS account. It is advisable to have an admin access
 
-### Steps to create the nSwitch SlackBot:
+### Steps to create the Scheduler SlackBot:
 
 1.  Login to nOps platform
 2.  Go to Organization Settings > API Key > On the top right you will find a button “Generate New API Key” > Click to generate a new API Key and save it somewhere. We will need this later.
 3.  Login to your AWS account Go to AWS Lambda > Create a aws chatbot that will integrate with the dedicated slack channel we setup to communicate with aws
 
-**Use the following Lambda code to create the nSwitch SlackBot Lambda Function:**
+**Use the following Lambda code to create the Scheduler SlackBot Lambda Function:**
 ```lambda
     import boto3
     import urllib3
@@ -84,14 +86,14 @@ folder: Developer
             "text": response_message
         }
 ```
-### **IAM Permissions to be attached to the nSwitch SlackBot Lambda Function:** ###
+### **IAM Permissions to be attached to the Scheduler SlackBot Lambda Function:** ###
 
 ![](https://nops-docs-img.s3.amazonaws.com/solutions/dev-slackbot-lambda.png)
 
 
 We need to set the ACCESS_KEY above in the Lambda configuration under _**‘Environment Variables’**_
 
-4.  Once the chatbot is created, go to the nSwitch SlackBot Lambda Function channel and use the following command to invoke the Lambda function:
+4.  Once the chatbot is created, go to the Scheduler SlackBot Lambda Function channel and use the following command to invoke the Lambda function:
 
 ```
     @aws
@@ -100,3 +102,5 @@ We need to set the ACCESS_KEY above in the Lambda configuration under _**‘Envi
 ```
 
 > **Note:** You can use the following link to know “How to create an aws chatbot using Lambda”: [https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-run-lambda-function-remotely-tutorial.html](https://docs.aws.amazon.com/chatbot/latest/adminguide/chatbot-run-lambda-function-remotely-tutorial.html)
+
+{% include custom/series_related.html %}

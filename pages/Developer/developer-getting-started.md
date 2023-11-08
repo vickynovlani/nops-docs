@@ -5,6 +5,8 @@ tags: [getting_started, api, sharesave, developer]
 sidebar: mydoc_sidebar
 permalink: developer-getting-started.html
 folder: Developer
+series: [API]
+weight: 2.0
 ---
 
 # How to create an API key and how to sign your API requests #
@@ -119,3 +121,5 @@ API requests should use the following format.
 `<enter_REST-URI>` is the location of the endpoint for example: /c/admin/projectaws/
 
 `<Client_key>` is the API key you generated within nOps in the **Create a public/private key pair** procedure earlier in this document.
+
+{% include custom/series_related.html %}

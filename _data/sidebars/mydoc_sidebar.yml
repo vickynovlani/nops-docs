@@ -429,8 +429,12 @@ entries:
       url: /developer-getting-started.html
       output: web
 
-    - title: nSwitch Slackbot "How To" Guide
-      url: /developer-nswitch-slackbot.html
+    - title: Scheduler Slackbot "How To" Guide
+      url: /developer-scheduler-slackbot.html
+      output: web
+
+    - title: nOps Scheduler API Guide
+      external_url: /scheduler-api.html
       output: web
 
     - title: nOps Application API Swagger File
