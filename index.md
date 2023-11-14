@@ -51,23 +51,6 @@ Click on a category to find relevant help documentation.
     </div>
     <div class="col-md-4 col-sm-6">
         <div class="panel panel-default card text-center">
-             <a href="tag_well_architected.html">
-                <span class="link"></span>
-             </a>   
-            <div class="panel-heading">
-                     <span class="fa-stack small">
-                           <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                           <i class="fa-sharp fa-regular fa-clipboard-list-check fa-stack-1x fa-inverse"></i>
-                     </span>
-            </div>
-            <div class="panel-body">
-                <p class="panel-topic">Well-Architected</p>
-                <p>Are you following the Well-Architected pillars?</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4 col-sm-6">
-        <div class="panel panel-default card text-center">
             <a href="tag_solutions.html">
                 <span class="link"></span>
             </a> 
@@ -80,23 +63,6 @@ Click on a category to find relevant help documentation.
             <div class="panel-body">
              <p class="panel-topic">Solutions & User Guides</p>
                 <p>Learn the ins and outs of the platform</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-4 col-sm-6">
-        <div class="panel panel-default card text-center">
-            <a href="tag_compliance.html">
-                <span class="link"></span>
-            </a> 
-            <div class="panel-heading">
-                <span class="fa-stack small">
-                   <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                   <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                </span>
-            </div>
-            <div class="panel-body">
-             <p class="panel-topic">Security & Compliance</p>
-                <p>Well architected reviews and security compliance</p>
             </div>
         </div>
     </div>

@@ -102,7 +102,7 @@ h4[id],
 h5[id],
 h6[id],
 dt[id]{
-padding-top: 60px;
+padding-top: 50px;
 margin-top: -40px
 }
 
@@ -189,7 +189,7 @@ th {
     text-align: left;
 }
 table {
-    max-width: 90%;
+    max-width: 100%;
     margin-bottom: 20px;
     border: 1px solid #dedede;
 }
@@ -260,9 +260,13 @@ table tr td {
     z-index: 2;
   }
 
+.tagtable {
+  width: 100% !important;
+}
+
   table h2.related {
-        font-size:24px;
-        line-height:29px; 
+        font-size:18px;
+        line-height:20px; 
   }
 
 
@@ -415,7 +419,7 @@ a.accordion-toggle, a.accordion-collapsed {
 }
 
 .nav > li li {
-    margin: 2px 0;
+    margin: 0px 0;
 }
 
 .nav a {
@@ -452,8 +456,8 @@ background-color: #0071EA;
 
 .nav li a {
     font-size: 12px;
-    line-height: 18px;
-    padding: 2px 10px;
+    line-height: 30px;
+    padding: 0px 10px;
     background-color: #e2e7eb;
 }
 
@@ -997,7 +1001,7 @@ span.soft {
 @media (min-width: 1000px) {
 
     ul#mysidebar {
-        width: 225px;
+        width: 250px;
     }
 }
 
@@ -1333,4 +1337,167 @@ h4.panel-title {
     .collapse.in{
         display:block !important;
     }
+}
+
+
+.navbar.navbar-inverse.navbar-static-top {
+    background-color: transparent;
+    background-image: linear-gradient(275deg, #0071E9 0%, #002163 58%);
+    padding: 13px 0px 15px 0px;
+}
+#tg-sb-content h1.post-title-main {
+    color: #0C1218;
+    font-family: "Poppins", Sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 44px;
+}
+#tg-sb-content #knowledge-base-categories {
+    color: #0C1218;
+    font-family: "Poppins", Sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 28px;
+}
+#tg-sb-content .btn.btn-default.githubEditButton {
+    font-family: "Archivo", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    background-color: transparent;
+    background-image: linear-gradient(130deg, #E5926A 22%, #D2563E 56%);
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #E5926A;
+}
+
+#tg-sb-content .btn.btn-default.action {
+    font-family: "Archivo", Sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    background-color: transparent;
+    background-image: linear-gradient(130deg, #E5926A 22%, #D2563E 56%);
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: #E5926A;
+}
+
+#tg-sb-content .panel-default.card {
+    border-radius: 10px !important;
+    box-shadow: 1px 12px 20px 0px rgba(0, 0, 0, 0.13) !important;
+    border: 0 !important;
+}
+#tg-sb-content .panel-heading {
+    background-color: transparent !important;
+    background-image: linear-gradient(275deg, #0071E9 0%, #002163 58%) !important;
+    height: 45px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#tg-sb-content .text-primary {
+    color: #fff;
+}
+#tg-sb-content .fa-inverse {
+    color: #000;
+}
+#tg-sb-content .panel-body .panel-topic {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: "Poppins", Sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    padding-bottom: 8px !important;
+}
+.panel-default.card:hover {
+    border: 0 !important;
+    background-color: #e2e7eb !important;
+}
+
+#tg-sb-content .post-content .tags a {
+    background: transparent;
+    border: 1px solid #333;
+    border-radius: 50px;
+    color: #333;
+    padding: 6px 12px;
+}
+#tg-sb-content .row {
+    padding-bottom: 30px;
+}
+#tg-sb-content .post-content a i.fa {
+    padding-right: 6px;
+    line-height: 23px;
+}
+#tg-sb-content .post-content .tags {
+    margin-top: 10px;
+}
+#tg-sb-content a.anchorjs-link {
+    color: #000 !important;
+    background: transparent !important;
+    padding: 0 !important;
+    padding-left: 10px !important;
+}
+#tg-sb-content .row a {
+    font-size: 0 !important;
+    line-height: 0 !important;
+    border: 0 !important;
+    font-weight: unset !important;
+    padding: 0 !important;
+}
+.nav.affix li a {
+    background-color: #002163;
+    color: #fff;
+}
+.nav.affix li ul li a {
+    background-color: #fff !important;
+    color: #000;
+    border-bottom: 1px solid;
+}
+.nav > li.active > a {
+    background-color: #002163 !important;
+    color: #fff !important;
+}
+
+ul#mysidebar li.active ul .subfolders.active a {
+    background-color: #002163 !important;
+    color: #fff !important;
+}
+.nav.affix li ul li.subfolders.active ul li a {
+    background-color: #fff !important;
+    color: #000 !important;
+    border-bottom: 1px solid !important;
+}
+
+
+
+ul#mysidebar li.active ul .subfolders.active ul li a {
+    background: #fff !important;
+    color: #000 !important;
+    border-bottom: 1px solid !important;
+}
+#search-demo-container input#search-input {
+    border-radius: 8px;
+}
+
+
+
+
+
+
+
+.nav.affix ul li a:hover {
+    background-image: linear-gradient(275deg, #0071E9 0%, #002163 78%);
+    color: #fff;
+}
+ul#mysidebar li.active ul .subfolders.active ul li a:hover {
+    background-image: linear-gradient(275deg, #002163 0%, #0071E9 78%) !important;
+    color: #fff !important;
 }

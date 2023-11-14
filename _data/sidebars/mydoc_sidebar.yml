@@ -48,23 +48,23 @@ entries:
         output: web
         subfolderitems:
 
-        - title: Onboarding with Automatic Setup
+        - title: With Automatic Setup
           url: /onboarding-aws-with-automatic-setup.html
           output: web
 
-        - title: Onboarding Service Control Policies
+        - title: Service Control Policies
           url: /onboarding-service-control-policies.html
           output: web
 
-        - title: Onboarding with Manual Setup
+        - title: With Manual Setup
           url: /onboarding-aws-with-manual-setup.html
           output: web
 
-        - title: Onboarding Linked Accounts
+        - title: Linked Accounts
           url: /onboarding-aws-linked-accounts.html
           output: web
 
-        - title: Onboarding Accounts with CloudFormation
+        - title:  With CloudFormation
           url: /onboarding-aws-with-cloudformation.html
           output: web
 
@@ -72,11 +72,11 @@ entries:
         output: web
         subfolderitems:
 
-        - title: nOps platform IAM permissions
+        - title: Platform Permissions
           url: /iam-policy-nops-free-platform.html
           output: web
 
-        - title: nOps platform minimum IAM permissions
+        - title: Minimum IAM Permissions
           url: /iam-minimum-platform-permissions.html
           output: web
 
@@ -96,15 +96,15 @@ entries:
           url: /sso-integration.html
           output: web
 
-        - title: SSO integration with Okta
+        - title: SSO with Okta
           url: /sso-okta.html
           output: web
 
-        - title: SSO integration with OneLogin
+        - title: SSO with OneLogin
           url: /sso-onelogin.html
           output: web
 
-        - title: SSO integration with AWS
+        - title: SSO with AWS
           url: /sso-aws.html
           output: web
 
@@ -137,11 +137,11 @@ entries:
           url: /copilot-asg-matrix.html
           output: web
 
-      - title: Risk-Free Commitment Management
+      - title: Commitment Management
         output: web
         subfolderitems:
 
-        - title: Configure Risk-Free Commitment Management
+        - title: Configure Commitment Management
           url: /rfcm-configure.html
           output: web
 
