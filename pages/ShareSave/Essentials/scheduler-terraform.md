@@ -5,7 +5,7 @@ tags: [savings, recommendations, sharesave]
 sidebar: mydoc_sidebar
 permalink: scheduler-terraform.html
 folder: ShareSave
-series: Essentials, Scheduler
+series: [Essentials, Scheduler]
 weight: 3.0
 ---
 # nOps Scheduler with Terraform Guide #

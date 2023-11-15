@@ -1,5 +1,5 @@
 ---
-title: Convert GP2 type volumes to GP3 using Essentials
+title: Essentials for Storage
 keywords: savings, recommendations, sharesave, essentials
 tags: [savings, recommendations, sharesave]
 sidebar: mydoc_sidebar
