@@ -1413,7 +1413,7 @@ h4.panel-title {
     margin: 0 !important;
     padding: 0 !important;
     font-family: "Poppins", Sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 22px;
     padding-bottom: 8px !important;
 }
@@ -1488,11 +1488,6 @@ ul#mysidebar li.active ul .subfolders.active ul li a {
 }
 
 
-
-
-
-
-
 .nav.affix ul li a:hover {
     background-image: linear-gradient(275deg, #0071E9 0%, #002163 78%);
     color: #fff;
@@ -1500,4 +1495,88 @@ ul#mysidebar li.active ul .subfolders.active ul li a {
 ul#mysidebar li.active ul .subfolders.active ul li a:hover {
     background-image: linear-gradient(275deg, #002163 0%, #0071E9 78%) !important;
     color: #fff !important;
+}
+
+
+
+#tg-sb-content .post-content table thead tr th {
+    background-color: transparent;
+    border-left: 1px solid;
+}
+#tg-sb-content .post-content table thead {
+    background-color: transparent;
+    background-image: linear-gradient(275deg, #0071E9 0%, #002163 58%);
+}
+#tg-sb-content .post-content table tbody tr td {
+    border-left: 1px solid #ddd;
+    color: #404A58;
+    font-family: "Arial", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 29px;
+    vertical-align: middle !important;
+}
+#tg-sb-content .post-content h2 {
+    color: #0C1218;
+    font-family: "Poppins", Sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+#tg-sb-content .post-content p {
+    color: #404A58;
+    font-family: "Arial", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 29px;
+}
+#tg-sb-content .post-content ul li {
+    color: #404A58;
+    font-family: "Arial", Sans-serif;
+    font-size: 14px !important;
+    font-weight: 400;
+    line-height: 25px;
+}
+#tg-sb-content .post-content ul li p {
+    color: #404A58;
+    font-family: "Arial", Sans-serif;
+    font-size: 14px !important;
+    font-weight: 400;
+    line-height: 25px;
+}
+#tg-sb-content .post-content table thead tr th h2 {
+    color: #fff;
+}
+#tg-sb-content .post-content h1 {
+    color: #0C1218;
+    font-family: "Poppins", Sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 44px;
+}
+#tg-sb-content .post-content h3 {
+    color: #0C1218;
+    font-family: "Poppins", Sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 20px;
+}
+#tg-sb-content .post-content a {
+    color: #0071EA;
+}
+#tg-sb-content .post-content div#toc ul {
+    max-width: unset !IMPORTANT;
+}
+div#toc >ul::before {
+    content: "Table of Contents";
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    color: #0C1218;
+    font-size: 20px;
+    font-weight: 600;
 }
