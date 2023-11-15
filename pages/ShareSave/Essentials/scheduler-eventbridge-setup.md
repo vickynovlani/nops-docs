@@ -1,12 +1,14 @@
 ---
-title: EventBridge Integration for nSwitch
+title: EventBridge Integration for Scheduler
 keywords: savings, recommendations, sharesave, essentials, nswitch, eventbridge
 tags: [savings, recommendations, sharesave, nswitch]
 sidebar: mydoc_sidebar
-permalink: nswitch-eventbridge-setup.html
+permalink: scheduler-eventbridge-setup.html
 folder: ShareSave
+series: [Essentials, Scheduler]
+weight: 1.0
 ---
-# Configuring EventBridge for nSwitch #
+# Configuring EventBridge for Scheduler #
 
 ## Prerequisites ##
 
@@ -101,3 +103,8 @@ Users have the capability to create an EventBridge per AWS account. Once an Even
 To select that AWS account again in the Eventbridge creation user needs to remove the previous EventBridge and try again the whole process.  
 
 In nOps, the integration with EventBridge is intricately linked with the nOps Resource Scheduler. The Resource Scheduler comprises various layers, and one of these pivotal layers involves the integration and configuration with EventBridge.
+
+
+<br/><br/>
+
+{% include custom/series_related.html %}

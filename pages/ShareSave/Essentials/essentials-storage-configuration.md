@@ -1,28 +1,28 @@
 ---
-title: Convert GP2 type volumes to GP3 using nSwitch essentials
+title: Convert GP2 type volumes to GP3 using Essentials
 keywords: savings, recommendations, sharesave, essentials
 tags: [savings, recommendations, sharesave]
 sidebar: mydoc_sidebar
-permalink: nswitch-essentials-configuration.html
+permalink: essentials-storage-configuration.html
 folder: ShareSave
+series: [Essentials]
+weight: 2.0
 ---
 
-## Introduction: ##
+# Introduction #
 
-
-
-1. **What is nSwitch Essentials for EBS volume migration GP2 to GP3 type?**
+## What is nSwitch Essentials for EBS volume migration GP2 to GP3 type? ##
 
     The nOps Essentials module allows you to automatically migrate candidate volumes from gp2 to gp3 volumes via EventBridge or nSwitch Changeset.
 
-1. **Why migrate your volumes with nSwitch Essentials?**
+## Why migrate your volumes with nSwitch Essentials? ##
 
     Managing EBS storage volumes can be a complex and costly task, especially when dealing with resources not controlled by Infrastructure as Code (IaC). Organizations often find themselves spending more than necessary on storage and struggling to enact bulk automated updates efficiently. This monopolizes hours of engineering time while leading to high operational costs.
 
 
     That’s why we added a new feature to [nSwitch Essentials](https://www.nops.io/essentials/) allowing you to automate the laborious task of changing candidate volumes from gp2 to gp3 volumes, freeing up your time to focus on building and innovation.
 
-1. **How it works:**
+## How it works ##
 
     If your resources are controlled by Infrastructure as Code (IaC), nSwitch Essentials integrates with Git and Terraform to streamline the process of identifying and fixing code related to storage optimization. This reduces manual work, making it fast and easy for engineers to take action on implementing cost-saving measures.
 
@@ -30,7 +30,7 @@ folder: ShareSave
     Utilizing nOps’ certified integration with Amazon EventBridge, nSwitch Essentials can also intelligently update configurations on resources that are not controlled by IaC. This can result in up to 20% cost savings and enables organizations to efficiently enact bulk automated updates of storage.
 
 
-## Steps to Configure Your nSwitch to Optimize Costs##
+## Steps to Configure Your nSwitch to Optimize Costs ##
 
 
 
@@ -164,3 +164,8 @@ Steps :
 4. By default, nSwitch status would be ‘**changeset submitted’**
 5. Once nOps generates the PR in your Gitlab account, the generated PR link can be viewed from the nSwitch dashboard beside the Action column, which redirects the user to the Gitlab account’s merge requests section. In this case, the nSwitch status would be ‘**changeset created’**.
 6. Users can simply review and merge the changeset into their codebase to optimize storage and savings. 
+
+
+<br/><br/>
+
+{% include custom/series_related.html %}

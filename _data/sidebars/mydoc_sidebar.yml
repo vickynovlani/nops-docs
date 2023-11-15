@@ -145,17 +145,21 @@ entries:
           url: /rfcm-configure.html
           output: web
 
-      - title: nSwitch
+      - title: Essentials
         output: web
         subfolderitems:
 
-        - title: EventBridge Integration for nSwitch
-          url: /nswitch-eventbridge-setup.html
+        - title: Scheduler Using EventBridge
+          url: /scheduler-eventbridge-setup.html
           output: web  
 
-        - title: nSwitch Essentials
-          url: /nswitch-essentials-configuration.html
-          output: web      
+        - title: Essentials for Storage
+          url: /essentials-storage-configuration.html
+          output: web    
+
+        - title: Scheduler Using Terraform
+          url: /scheduler-terraform.html
+          output: web              
           
   - title: Agents and Integrations
     output: web
