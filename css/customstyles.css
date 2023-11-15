@@ -1487,7 +1487,6 @@ ul#mysidebar li.active ul .subfolders.active ul li a {
     border-radius: 8px;
 }
 
-
 .nav.affix ul li a:hover {
     background-image: linear-gradient(275deg, #0071E9 0%, #002163 78%);
     color: #fff;
@@ -1496,8 +1495,6 @@ ul#mysidebar li.active ul .subfolders.active ul li a:hover {
     background-image: linear-gradient(275deg, #002163 0%, #0071E9 78%) !important;
     color: #fff !important;
 }
-
-
 
 #tg-sb-content .post-content table thead tr th {
     background-color: transparent;
