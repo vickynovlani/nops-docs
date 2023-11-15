@@ -62,7 +62,7 @@ Utilizing nOps’ certified integration with Amazon EventBridge, nSwitch Essenti
 5. Click ‘**Request’**.
 6. Repeat this for each region and account for which you are planning on migrating gp2 to gp3.
 
-### **nSwitch Essentials EventBridge approach to cost optimization (Used for non IaC managed resources)** ###
+### Essentials EventBridge for cost optimization (non IaC managed resources) ###
 
 nOps is a certified partner event source in Amazon EventBridge. Create an EventBridge in your AWS account with just one click to deploy a small Lambda in your account via the CloudFormation template. 
 
@@ -112,9 +112,7 @@ Steps :
 
 
 
-### **2. nSwitch Essentials Changeset approach to cost optimization (Used for IaC managed resources)** ###
-
-
+### nSwitch Essentials Changeset approach to cost optimization (Used for IaC managed resources) ###
 
 * The feature works in two stages. First, it connects to your platforms and reads your data. It then identifies repositories and detects branches and state files within these repositories. This process is quick and seamless, with the system intelligently grouping recommendations and applying changes.
 
