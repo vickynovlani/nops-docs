@@ -1,5 +1,5 @@
 ---
-title: How to do EC2 Rightsizing with nOps with DataDog integration
+title: EC2 Rightsizing with nOps with DataDog integration
 keywords: savings, recommendations, datadog, essentials, rightsizing
 tags: [savings, recommendations, datadog, essentials, rightsizing]
 sidebar: mydoc_sidebar
@@ -59,3 +59,8 @@ weight: 2.0
 - EC2 rightsizing requires a downtime, AWS has no SLA but in our experience it takes 2-3 minutes. It depends on the size of the instance.
 - EC2 rightsizing currently has recommendations for only downsizing, however, potentially we can add upsizing recommendations as well in future.
 - EC2 rightsizing can fail for instance with Encrypted EBS volumes or instances where hibernation is enabled. Currently we mark those instances on the recommendations page in the UI and disabled them from getting rightsized. We are working on a feature to support those types as well.
+
+
+<br/><br/>
+
+{% include custom/series_related.html %}

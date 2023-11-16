@@ -160,7 +160,11 @@ entries:
         - title: Scheduler Using Terraform
           url: /scheduler-terraform.html
           output: web              
-          
+
+        - title: EC2 Rightsizing with DataDog
+          url: /ec2-rightisizing-with-nops-using-datadog.html
+          output: web             
+
   - title: Agents and Integrations
     output: web
     folderitems:
@@ -181,6 +185,10 @@ entries:
       - title: Integrations
         output: web
         subfolderitems:
+
+        - title: DataDog Integration
+          url: /integrate-datadog-with-nops-platform.html
+          output: web
 
         - title: Eventbridge Integration
           url: /eventbridge-integration.html

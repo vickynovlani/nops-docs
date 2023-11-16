@@ -4,8 +4,8 @@ keywords: savings, recommendations, datadog, essentials, rightsizing
 tags: [savings, recommendations, datadog, essentials, rightsizing]
 sidebar: mydoc_sidebar
 permalink: integrate-datadog-with-nops-platform.html
-folder: ShareSave
-series: [Essentials, ShareSave]
+folder: Integrations_and_Agents
+series: [Essentials, ShareSave, Integrations]
 weight: 2.0
 ---
 
@@ -65,3 +65,7 @@ weight: 2.0
 **Step 5:** Hit save. 
 
 ![](https://lh7-us.googleusercontent.com/zNUIUY76pvYB9J7kYr1bSlAF3sd_Nl-2CmuRxEg5RA2g6IACZg3zk8AWRzKr3KBuyRz17-5WxlgnN63Zu3m28YznRh0cxBrT3PzyVB391j1FJRxaOnmcqaNJPATcdUCf6-_aWN_RTryC9Eh1OebAimU)
+
+<br/><br/>
+
+{% include custom/series_related.html %}
