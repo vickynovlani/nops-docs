@@ -50,13 +50,13 @@ _With service-managed permissions, you can deploy stack instances to accounts ma
 - From within the **AWS Console > CloudFormation > Stacksets page**, click **Create Stackset**.
 - In the **Specify template** section, choose **Amazon S3 URL**. 
 
-Add the following S3 URL: __**_https\://nops-prd-asg-lambda-us-east-1.s3.amazonaws.com/v0.2.0/cloudformation/lambda-v0.2.0.yaml_**\
+Add the following S3 URL: **_https\://nops-prd-asg-lambda-us-east-1.s3.amazonaws.com/v0.2.0/cloudformation/lambda-v0.2.0.yaml_**\
 ![](https://lh7-us.googleusercontent.com/BBQWD1rQA4d2DGO3dFwUgIEgBfg30PauFszqDZO4em0eGXdv3QNBFvggVJhiTVyo_J_Iz-UVxykZ2ALJ-4wGwm0mNLh5NFrKeONRmoOsOyuFomK90hs3lCmjUPzlius68Bol74rLjkrEadt8J4e8RNA)
 
 
 ### Step 3: Specify StackSet details, parameters, and deployment
 
-- Enter the StackSet name as **nOps-ASG-Main**(**Note:** This name must be entered exactly as defined for Auto Update to function. 
+- Enter the StackSet name as **nOps-ASG-Main** (**Note:** This name must be entered exactly as defined for Auto Update to function.)
 - (Optional) Include a **StackSet description**
 - **Parameters:** The following parameters need to be passed to the CF template
 
@@ -87,10 +87,10 @@ Add the following S3 URL: __**_https\://nops-prd-asg-lambda-us-east-1.s3.amazon
 
 ### Step 4: (If deploying to Organization):
 
-Select this option if you want to deploy the stack into all the child accounts of the organization. Upon completion, you will see a stack in all of the child accounts except the management (master-payer) account.\
+Select this option if you want to deploy the stack into all the child accounts of the organization. Upon completion, you will see a stack in all of the child accounts except the management (master-payer) account.
 
 
-- Once you select **Deploy to Organization** do not modify the         **Auto-deployment options**
+- Once you select **Deploy to Organization** do not modify the **Auto-deployment options**
 - Under the **Specify regions** select either **us-east-1** (N.Virginia) or **us-west-2** (Oregon)
 - Change the **Deployment options** to the following:
 
@@ -106,7 +106,7 @@ Select this option if you want to deploy the stack into all the child accounts o
 
 - Log in to any of the child accounts to verify the deployments
 
-****![](https://lh7-us.googleusercontent.com/Y3VDxKEObQ8HyaxjnQYtMc5tqRUrrnmIayjEN3lWj62pKHSR81yXlyM-uN9UftVdkPm_d9LqQDqiHb0hAXMsnwBpecze3I5OXzLsu_q0uT06ZrXLOgd2i-AjOjA15lm-In9rHkS4uB2Gi9nHpgd_ffY)****
+![](https://lh7-us.googleusercontent.com/Y3VDxKEObQ8HyaxjnQYtMc5tqRUrrnmIayjEN3lWj62pKHSR81yXlyM-uN9UftVdkPm_d9LqQDqiHb0hAXMsnwBpecze3I5OXzLsu_q0uT06ZrXLOgd2i-AjOjA15lm-In9rHkS4uB2Gi9nHpgd_ffY)
 
 - Stackset creation successful
 
@@ -119,8 +119,8 @@ Select this option to deploy the stack into a specific Organizational Unit of th
 
 - Choose **Deploy to Organizational Units (OUs)** and add the **OU id**.
 
-Note: Organization Unit IDs are located in **AWS Console > AWS Organizations**.\
-2.2 You can choose different accounts based on the **Account filter type** and add the account ids that you want to configure, separated by commas.\
+Note: Organization Unit IDs are located in **AWS Console > AWS Organizations**.
+2.2 You can choose different accounts based on the **Account filter type** and add the account ids that you want to configure, separated by commas.
 Note: Account IDs are located in the **AWS Console > AWS Organizations**.
 
 ![](https://lh7-us.googleusercontent.com/FjDOtUzE55N3zq8EBrIB0T6hL4ggrwfP6P_-nBhfW37GaxM2JLUBvFjvs4opeja5FqyiG8VUusNS3eQoZvFNFH7B2Kz8UBMCA59toyfALRARB1m7rU3VpMGuYffkm_co4hYleoz0hBgmrDIwnezV-Xg)
@@ -128,7 +128,7 @@ Note: Account IDs are located in the **AWS Console > AWS Organizations**.
 - Under **Specify regions** select either **us-east-1** (N.Virginia) or **us-west-2** (Oregon)
 - Change the **Deployment options** to the following:
 
-1. **Maximum concurrent accounts** (Optional):  **change to percentage** >- **100**
+1. **Maximum concurrent accounts** (Optional):  **change to percentage** > **100**
 2. **Failure tolerance** (Optional): **change to percentage** > **20**
 3. **Region concurrency** > **Parallel**
 
@@ -169,18 +169,18 @@ Let’s say you have already created AWS accounts in your Organization and want 
 
 ### Step-by-step guide
 
-1. Log in to your **Master Payer AWS Console** with admin permissions.
-2. From within the **AWS Console > CloudFormation > Stacksets page**, click on the created StackSet.
-3. Click on **Actions** and **Add stacks to Stackset**.
-4. Choose **Deploy to Organizational Units (OUs)** and add **OU id**.\
+- Log in to your **Master Payer AWS Console** with admin permissions.
+- From within the **AWS Console > CloudFormation > Stacksets page**, click on the created StackSet.
+- Click on **Actions** and **Add stacks to Stackset**.
+- Choose **Deploy to Organizational Units (OUs)** and add **OU id**.
    Note: you can find Organization Unit IDs in **AWS Console > AWS Organizations**.
 
 ![](https://lh7-us.googleusercontent.com/AN3BUs5_3cw0bGtohGuKrcLIoJ2niS53KIACNdRtWSj7ge6GwnLfRrimsk-a0MwDg8f_CY36jaVCey2hvRcE5bL2tMQYR87d2YNfiwzA1Qd_1PUKTABXM8V4F49DOG8hLx7Lm3uWuWQSCYBJo8tZCWI)
 
-5. Choose **Intersection** in **Account filter type** and add the Account Ids (separated by commas) that you would like to configure.\
+- Choose **Intersection** in **Account filter type** and add the Account Ids (separated by commas) that you would like to configure.
    Note: you can find Account IDs in **AWS Console > AWS Organizations**.
-6. Under **Specify regions** select either **us-east-1** (N.Virginia) or **us-west-2** (Oregon)
-7. Please change the Deployment options as following:
+- Under **Specify regions** select either **us-east-1** (N.Virginia) or **us-west-2** (Oregon)
+- Please change the Deployment options as following:
 
 a. Maximum concurrent accounts (Optional): change to percentage >- 100
 
@@ -188,16 +188,16 @@ b. Failure tolerance (Optional): change to percentage > 20
 
 c. Region concurrency > Parallel
 
-8. Click on **Next**.
+- Click on **Next**.
 
 ![](https://lh7-us.googleusercontent.com/Ugpq7HtSnexcA7r2auLqaAJnW18kZUAD20YgAwQnioX07tVc3toyUuqvkh1stOwukOiaYAj7CBdUrrxA6jXkuMlTZ_UkgnkVBoJSFfTPhn6OKsJpxj0__7S47EOR_9SBUiwyBZZ6Lkb6f5A54tlvVEk)
 
-9. Click **Submit**.
-10. After some time you will see the list of new **SUCCEEDED Stack Instances** for all new affected accounts. It means that all needed resources are created. 
+- Click **Submit**.
+- After some time you will see the list of new **SUCCEEDED Stack Instances** for all new affected accounts. It means that all needed resources are created. 
 
 ![](https://lh7-us.googleusercontent.com/0LnA-MELsxbzJNXnpVLg8ZMD64r6tGPquFMRgljKEW6ji8uNlX_blko7xmQTfPKENsUmzKXol0BN6VrUcYN4F82vqIBBgt_t919nuilEm9cUV3mCMqfnu-zaG2DuKZi5BdCetTSFCASL4FR4QASeV6g)
 
-11. New affected accounts will have a **Connected** status.
+- New affected accounts will have a **Connected** status.
 
 ![](https://lh7-us.googleusercontent.com/5RN8K4wVvYnjHszWZHzgI5Sf-o2-a_8n-lnXtDa-N7xl9xZwDEPWbpeVO1GBch-amwsO06XpzplFs16tVDziUi2hZv6E551ovXuy-5mcn1h0HGbS9PUKTdPFhcfNHWoKfBr0XcQmtDkIXlRm2kkm_CI)
 
