@@ -169,18 +169,18 @@ Let’s say you have already created AWS accounts in your Organization and want 
 
 ### Step-by-step guide
 
-1. Log in to your **Master Payer AWS Console** with admin permissions.
-2. From within the **AWS Console > CloudFormation > Stacksets page**, click on the created StackSet.
-3. Click on **Actions** and **Add stacks to Stackset**.
-4. Choose **Deploy to Organizational Units (OUs)** and add **OU id**.
+- Log in to your **Master Payer AWS Console** with admin permissions.
+- From within the **AWS Console > CloudFormation > Stacksets page**, click on the created StackSet.
+- Click on **Actions** and **Add stacks to Stackset**.
+- Choose **Deploy to Organizational Units (OUs)** and add **OU id**.
    Note: you can find Organization Unit IDs in **AWS Console > AWS Organizations**.
 
 ![](https://lh7-us.googleusercontent.com/AN3BUs5_3cw0bGtohGuKrcLIoJ2niS53KIACNdRtWSj7ge6GwnLfRrimsk-a0MwDg8f_CY36jaVCey2hvRcE5bL2tMQYR87d2YNfiwzA1Qd_1PUKTABXM8V4F49DOG8hLx7Lm3uWuWQSCYBJo8tZCWI)
 
-5. Choose **Intersection** in **Account filter type** and add the Account Ids (separated by commas) that you would like to configure.
+- Choose **Intersection** in **Account filter type** and add the Account Ids (separated by commas) that you would like to configure.
    Note: you can find Account IDs in **AWS Console > AWS Organizations**.
-6. Under **Specify regions** select either **us-east-1** (N.Virginia) or **us-west-2** (Oregon)
-7. Please change the Deployment options as following:
+- Under **Specify regions** select either **us-east-1** (N.Virginia) or **us-west-2** (Oregon)
+- Please change the Deployment options as following:
 
 a. Maximum concurrent accounts (Optional): change to percentage >- 100
 
@@ -188,16 +188,16 @@ b. Failure tolerance (Optional): change to percentage > 20
 
 c. Region concurrency > Parallel
 
-8. Click on **Next**.
+- Click on **Next**.
 
 ![](https://lh7-us.googleusercontent.com/Ugpq7HtSnexcA7r2auLqaAJnW18kZUAD20YgAwQnioX07tVc3toyUuqvkh1stOwukOiaYAj7CBdUrrxA6jXkuMlTZ_UkgnkVBoJSFfTPhn6OKsJpxj0__7S47EOR_9SBUiwyBZZ6Lkb6f5A54tlvVEk)
 
-9. Click **Submit**.
-10. After some time you will see the list of new **SUCCEEDED Stack Instances** for all new affected accounts. It means that all needed resources are created. 
+- Click **Submit**.
+- After some time you will see the list of new **SUCCEEDED Stack Instances** for all new affected accounts. It means that all needed resources are created. 
 
 ![](https://lh7-us.googleusercontent.com/0LnA-MELsxbzJNXnpVLg8ZMD64r6tGPquFMRgljKEW6ji8uNlX_blko7xmQTfPKENsUmzKXol0BN6VrUcYN4F82vqIBBgt_t919nuilEm9cUV3mCMqfnu-zaG2DuKZi5BdCetTSFCASL4FR4QASeV6g)
 
-11. New affected accounts will have a **Connected** status.
+- New affected accounts will have a **Connected** status.
 
 ![](https://lh7-us.googleusercontent.com/5RN8K4wVvYnjHszWZHzgI5Sf-o2-a_8n-lnXtDa-N7xl9xZwDEPWbpeVO1GBch-amwsO06XpzplFs16tVDziUi2hZv6E551ovXuy-5mcn1h0HGbS9PUKTdPFhcfNHWoKfBr0XcQmtDkIXlRm2kkm_CI)
 
