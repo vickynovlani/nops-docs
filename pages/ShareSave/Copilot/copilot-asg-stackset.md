@@ -6,33 +6,35 @@ sidebar: mydoc_sidebar
 permalink: copilot-asg-stackset.html
 folder: ShareSave
 series: [ShareSave, Copilot, Onboarding]
-weight: 1.0
+weight: 5.0
 ---
 
 
-**Configuring Multiple AWS Linked Accounts with CloudFormation for ASG** 
+# Configuring Multiple AWS Linked Accounts with CloudFormation for ASG #
 
 Using CloudFormation, it’s easy to automatically onboard and configure multiple linked AWS accounts to nOps. 
 
 Creating a [StackSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-concepts.html) in your AWS Management (Master) Account will deploy Stack Instances in all child accounts automatically. It allows you to save time by configuring many accounts simultaneously (following the service-managed permissions model). 
 
 
-## More information on service-managed permissions 
+## More information on service-managed permissions ##
 
 _With service-managed permissions, you can deploy stack instances to accounts managed by AWS Organizations. Using this permissions model, you don't have to create the necessary IAM roles; StackSets creates the IAM roles on your behalf. With this model, you can also turn on automatic deployments to accounts that you add to your organization in the future._
 
 
-### How to configure via StackSet
+## How to configure via StackSet ##
 
-#### Prerequisites
+### Prerequisites
 
 - You must have an **Admin role** in your **AWS Master Account**.
 - Navigate to **AWS Organizations > Services > CloudFormation StackSets** and enable access for **CloudFormation StackSets**
 
-****![](https://lh7-us.googleusercontent.com/xc1Nun3L75e_X2-RM2WgIlu1hVspfQBFxQfRVdaN82nB92MYuPZW64uGUgTT4OrobSu6GnzRRTeITuu75cgi3RJzC6QGRanXtg7EGdLYqs0U0KcaOxxu7TECERbQR-AzHqkVPV3CKA0H45UU6SZKzfs)****Step-by-step guide
+![](https://lh7-us.googleusercontent.com/xc1Nun3L75e_X2-RM2WgIlu1hVspfQBFxQfRVdaN82nB92MYuPZW64uGUgTT4OrobSu6GnzRRTeITuu75cgi3RJzC6QGRanXtg7EGdLYqs0U0KcaOxxu7TECERbQR-AzHqkVPV3CKA0H45UU6SZKzfs)
+
+## Step-by-step guide
 
 
-#### Step1: API Key Generation
+### Step1: API Key Generation
 
 - Log in to your **nOps** dashboard.
 - Navigate to **Organization Settings** **> API key > Generate New API Key.**
@@ -40,9 +42,9 @@ _With service-managed permissions, you can deploy stack instances to accounts ma
 - Save the key as we will be using it shortly.
 
 
-#### ![](https://lh7-us.googleusercontent.com/sivo4QqRUDjh9qYfwgiINlGaACt2FMmyKZC1Cj_Bf9V18ogdyRerK2SvmRK8lhRlT1yUq7ZAFetv2GqRU61KSFsQXuOlakQn5TcFzEPEtMa1hCmwpIn6Lkbn45H5eCvpvgwlGVVDD_L6mNiGgV5KNj0)
+![](https://lh7-us.googleusercontent.com/sivo4QqRUDjh9qYfwgiINlGaACt2FMmyKZC1Cj_Bf9V18ogdyRerK2SvmRK8lhRlT1yUq7ZAFetv2GqRU61KSFsQXuOlakQn5TcFzEPEtMa1hCmwpIn6Lkbn45H5eCvpvgwlGVVDD_L6mNiGgV5KNj0)
 
-#### Step 2: Deploying StackSet
+### Step 2: Deploying StackSet
 
 - Log in to your **AWS Master Payer account** with admin permissions.
 - From within the **AWS Console > CloudFormation > Stacksets page**, click **Create Stackset**.
@@ -52,15 +54,15 @@ Add the following S3 URL: __**_https\://nops-prd-asg-lambda-us-east-1.s3.amazon
 ![](https://lh7-us.googleusercontent.com/BBQWD1rQA4d2DGO3dFwUgIEgBfg30PauFszqDZO4em0eGXdv3QNBFvggVJhiTVyo_J_Iz-UVxykZ2ALJ-4wGwm0mNLh5NFrKeONRmoOsOyuFomK90hs3lCmjUPzlius68Bol74rLjkrEadt8J4e8RNA)
 
 
-#### Step 3: Specify StackSet details, parameters, and deployment
+### Step 3: Specify StackSet details, parameters, and deployment
 
 - Enter the StackSet name as **nOps-ASG-Main**(**Note:** This name must be entered exactly as defined for Auto Update to function. 
 - (Optional) Include a **StackSet description**
 - **Parameters:** The following parameters need to be passed to the CF template
 
-|              |                              |                                                                                                                                                                     |
-| ------------ | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ParameterKey | ParameterValue               | Modifiable?                                                                                                                                                         |
+
+| ParameterKey | ParameterValue               | Modifiable?  |
+| --- | --- | --- |
 | AutoUpdate   | true                         | We highly recommend not modifying. AutoUpdate will ensure you have the latest version of Lambda in your account at all times without the need for manual updating.  |
 | ClientID     |                              | This value is the clientID with nOps. It is not modifiable. You can find this by login to **nOps Dashboard > Profile**                                              |
 | Environment  | prd                          | This should not be modified, as this environment has been vigorously and thoroughly tested for stability.                                                           |
@@ -80,10 +82,10 @@ Add the following S3 URL: __**_https\://nops-prd-asg-lambda-us-east-1.s3.amazon
 1. Deploy to Organization
 2. Deploy to Organizational Units (OUs)
 
-****![](https://lh7-us.googleusercontent.com/2eS6ZDNnsQp-ePdHnJUUvyL8-Hzz44zXrlmgePpBQc_C8sLPD7lq8LbJWGvqOUmpO3gDGMiwzXALiEwk7vw0ka4FmmomPWIrbhz9St27zMzPb0V-w2fkFRF_homgTD3Jkv_RmggsjfGYfkjuUBGH-CY)****
+![](https://lh7-us.googleusercontent.com/2eS6ZDNnsQp-ePdHnJUUvyL8-Hzz44zXrlmgePpBQc_C8sLPD7lq8LbJWGvqOUmpO3gDGMiwzXALiEwk7vw0ka4FmmomPWIrbhz9St27zMzPb0V-w2fkFRF_homgTD3Jkv_RmggsjfGYfkjuUBGH-CY)
 
 
-##### __Step 4: (If deploying to Organization):
+### Step 4: (If deploying to Organization):
 
 Select this option if you want to deploy the stack into all the child accounts of the organization. Upon completion, you will see a stack in all of the child accounts except the management (master-payer) account.\
 
@@ -111,7 +113,7 @@ Select this option if you want to deploy the stack into all the child accounts o
 ![](https://lh7-us.googleusercontent.com/a8jON88MPo88OhpINZ2l9YGY3t54K5psjQPK75IzASpoUkahGWxdB6J1nT3yCZ22wm7qeJRKlrCntouqVWNpZ5aqO11oR_xo7XUDbUsytXc4ZHo_AaDO2BFlCC7cwgaEqLjUZ8aH_sPnA0h98cg1Sfo)
 
 
-##### Step 4: (If deploying to Organizational Units):
+### Step 4: (If deploying to Organizational Units):
 
 Select this option to deploy the stack into a specific Organizational Unit of the Organization. Upon completion, you will see CloudFormation stacks in all the accounts that belong to that specific OU.
 
@@ -130,7 +132,7 @@ Note: Account IDs are located in the **AWS Console > AWS Organizations**.
 2. **Failure tolerance** (Optional): **change to percentage** > **20**
 3. **Region concurrency** > **Parallel**
 
-****![](https://lh7-us.googleusercontent.com/aIQY185v6ofnP4njSOT41hBH2UkwJHJip3gBaZPy1NFn0qUIdu6sabW7cvy1AJ4z5es21EbwQ12MdcRAF6hQOjR7frbt2cz3m6nCy0YGN66GsOR7XTwSZyWzRQq54zrB4eg9nvxhaECpuNVTO8G_LkY)****
+![](https://lh7-us.googleusercontent.com/aIQY185v6ofnP4njSOT41hBH2UkwJHJip3gBaZPy1NFn0qUIdu6sabW7cvy1AJ4z5es21EbwQ12MdcRAF6hQOjR7frbt2cz3m6nCy0YGN66GsOR7XTwSZyWzRQq54zrB4eg9nvxhaECpuNVTO8G_LkY)
 
 - Acknowledge and submit
 
@@ -138,34 +140,34 @@ Note: Account IDs are located in the **AWS Console > AWS Organizations**.
 
 - Log in to any of the child accounts to verify the deployments
 
-****![](https://lh7-us.googleusercontent.com/Y3VDxKEObQ8HyaxjnQYtMc5tqRUrrnmIayjEN3lWj62pKHSR81yXlyM-uN9UftVdkPm_d9LqQDqiHb0hAXMsnwBpecze3I5OXzLsu_q0uT06ZrXLOgd2i-AjOjA15lm-In9rHkS4uB2Gi9nHpgd_ffY)****
+![](https://lh7-us.googleusercontent.com/Y3VDxKEObQ8HyaxjnQYtMc5tqRUrrnmIayjEN3lWj62pKHSR81yXlyM-uN9UftVdkPm_d9LqQDqiHb0hAXMsnwBpecze3I5OXzLsu_q0uT06ZrXLOgd2i-AjOjA15lm-In9rHkS4uB2Gi9nHpgd_ffY)
 
 - Stackset creation successful 
 
 ![](https://lh7-us.googleusercontent.com/a8jON88MPo88OhpINZ2l9YGY3t54K5psjQPK75IzASpoUkahGWxdB6J1nT3yCZ22wm7qeJRKlrCntouqVWNpZ5aqO11oR_xo7XUDbUsytXc4ZHo_AaDO2BFlCC7cwgaEqLjUZ8aH_sPnA0h98cg1Sfo)
 
 
-#### Step 5: Verifying connection status on the nOps Dashboard
+### Step 5: Verifying connection status on the nOps Dashboard
 
 ![](https://lh7-us.googleusercontent.com/6IrAKEPr9ogAAqd8NlD2YMVVFs8ajEoc-NcxK5ao_EILLWo44SPHuz1fSjwYkJ0zsrRcqwZyD6q_HcwST7jgKbEcUWuqfNTBgvrHzjWENwqWStWv2l1fY1dY_ZNeAe5g9qwOqYO3y3mPNtbpxvpwyNA)
 
 
-###
 
-### How to configure more accounts
+
+## How to configure more accounts
 
 Note: this guide will work only if you choose **Deploy to Organization Units** in the previous guide.
 
 Let’s say you have already created AWS accounts in your Organization and want to onboard more AWS accounts. In this case, you don’t need to create a new StackSet. You just need to add more stacks to the existing one. This process is easier and faster than creating from scratch.
 
 
-#### Prerequisites
+### Prerequisites
 
 - StackSet configured
 - Deployed to Organizational Units
 
 
-#### Step-by-step guide
+### Step-by-step guide
 
 1. Log in to your **Master Payer AWS Console** with admin permissions.
 2. From within the **AWS Console > CloudFormation > Stacksets page**, click on the created StackSet.
@@ -200,11 +202,10 @@ c. Region concurrency > Parallel
 ![](https://lh7-us.googleusercontent.com/5RN8K4wVvYnjHszWZHzgI5Sf-o2-a_8n-lnXtDa-N7xl9xZwDEPWbpeVO1GBch-amwsO06XpzplFs16tVDziUi2hZv6E551ovXuy-5mcn1h0HGbS9PUKTdPFhcfNHWoKfBr0XcQmtDkIXlRm2kkm_CI)
 
 
-### Resource Description
+## Resource Description
 
-|                                               |                               |                                                                                                                                                                                                                                                   |
-| --------------------------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Resource Name                                 | Resource Type                 | Description                                                                                                                                                                                                                                       |
+| Resource Name | Resource Type | Description  |
+| --- | --- | --- |
 | NASGEventBus                                  | EventBus                      | An event bus that receives events                                                                                                                                                                                                                 |
 | NASGEventRuleEC2InstanceStateChange           | Events Rule                   | An event rule that monitors the change in the state of EC2 Instances (triggered on a new ASG instance launch)                                                                                                                                     |
 | NASGEventRuleEC2InstanceStateChangePermission | Lambda Permission             | Grants _events.amazonaws.com_ permissions to invoke the _NASGFunction_ lambda function based on the _NASGEventRuleEC2InstanceStateChange_ Events Rule                                                                                             |
