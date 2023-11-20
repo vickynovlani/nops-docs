@@ -119,7 +119,7 @@ entries:
       output: web
 
       subfolders:
-      - title: Copilot for EKS
+      - title: EKS
         output: web
         subfolderitems:
 
@@ -127,7 +127,7 @@ entries:
           url: /copilot-eks-onboarding.html
           output: web
 
-      - title: Copilot for ASG
+      - title: ASG
         output: web
         subfolderitems:
 
@@ -157,13 +157,13 @@ entries:
         url: /scheduler-eventbridge-setup.html
         output: web  
 
-      - title: Essentials for Storage
-        url: /essentials-storage-configuration.html
-        output: web    
-
       - title: Scheduler Using Terraform
         url: /scheduler-terraform.html
-        output: web              
+        output: web 
+
+      - title: Storage
+        url: /essentials-storage-configuration.html
+        output: web                 
 
       - title: EC2 Rightsizing with DataDog
         url: /ec2-rightisizing-with-nops-using-datadog.html
