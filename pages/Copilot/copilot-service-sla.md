@@ -4,8 +4,8 @@ keywords: savings, recommendations, sharesave, spot, cost copilot, asg, eks, nks
 tags: [savings, recommendations, sharesave, copilot]
 sidebar: mydoc_sidebar
 permalink: copilot-service-sla.html
-folder: ShareSave
-series: [ShareSave, Copilot]
+folder: Copilot
+series: [Copilot]
 weight: 3.0
 ---
 

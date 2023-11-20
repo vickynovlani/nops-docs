@@ -1,5 +1,5 @@
 ---
-title: "nOpsDocs - the home of nOps documentation"
+title: "nOpsDocs - nOps documentation"
 tags: [getting_started]
 keywords: knowledge base, support portal, home, doc portal
 sidebar: mydoc_sidebar

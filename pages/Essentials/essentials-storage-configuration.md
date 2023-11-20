@@ -4,8 +4,8 @@ keywords: savings, recommendations, sharesave, essentials
 tags: [savings, recommendations, sharesave]
 sidebar: mydoc_sidebar
 permalink: essentials-storage-configuration.html
-folder: ShareSave
-series: [Essentials, ShareSave]
+folder: Essentials
+series: [Essentials, Storage]
 weight: 2.0
 ---
 

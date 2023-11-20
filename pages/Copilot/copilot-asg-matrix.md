@@ -1,11 +1,11 @@
 ---
 title: Compute Copilot For ASG Support Matrix
-keywords: savings, recommendations, sharesave, copilot, asg
-tags: [savings, recommendations, sharesave, copilot]
+keywords: savings, recommendations, copilot, asg
+tags: [savings, recommendations, copilot]
 sidebar: mydoc_sidebar
 permalink: copilot-asg-matrix.html
-folder: ShareSave
-series: [ShareSave, Copilot, Onboarding]
+folder: Copilot
+series: [Copilot, Onboarding]
 weight: 2.0
 ---
 

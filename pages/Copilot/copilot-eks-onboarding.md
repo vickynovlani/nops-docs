@@ -4,8 +4,8 @@ keywords: savings, recommendations, sharesave, nks, karpenter, compute copilot
 tags: [savings, recommendations, sharesave, eks, nks, copilot]
 sidebar: mydoc_sidebar
 permalink: copilot-eks-onboarding.html
-folder: ShareSave
-series: [ShareSave, Onboarding, Copilot]
+folder: Copilot
+series: [Copilot, Onboarding]
 weight: 1.0
 ---
 

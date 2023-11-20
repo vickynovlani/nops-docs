@@ -1,10 +1,10 @@
 ---
 title: nOps Scheduler with Terraform
-keywords: savings, recommendations, sharesave, essentials
-tags: [savings, recommendations, sharesave]
+keywords: savings, recommendations, scheduler, essentials, terraform
+tags: [savings, recommendations, scheduler, essentials]
 sidebar: mydoc_sidebar
 permalink: scheduler-terraform.html
-folder: ShareSave
+folder: Essentials
 series: [Essentials, Scheduler]
 weight: 3.0
 ---

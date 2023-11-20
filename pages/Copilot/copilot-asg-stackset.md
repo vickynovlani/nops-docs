@@ -4,8 +4,8 @@ keywords: savings, recommendations, sharesave, asg, copilot, autoscaling
 tags: [savings, recommendations, sharesave, copilot, asg]
 sidebar: mydoc_sidebar
 permalink: copilot-asg-stackset.html
-folder: ShareSave
-series: [ShareSave, Copilot, Onboarding]
+folder: Copilot
+series: [Copilot, Onboarding]
 weight: 5.0
 ---
 

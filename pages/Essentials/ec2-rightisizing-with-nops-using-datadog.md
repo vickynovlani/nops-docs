@@ -4,18 +4,18 @@ keywords: savings, recommendations, datadog, essentials, rightsizing
 tags: [savings, recommendations, datadog, essentials, rightsizing]
 sidebar: mydoc_sidebar
 permalink: ec2-rightisizing-with-nops-using-datadog.html
-folder: ShareSave
-series: [Essentials, ShareSave]
+folder: Essentials
+series: [Essentials, Rightsizing]
 weight: 2.0
 ---
 
 ## Instructions
 
 
-1 - To have rightsizing recommendations generated we need to follow the datadog integration guide – [click here](https://help.nops.io/integrate-datadog-with-nops-platform.html). 
+1 - To have rightsizing recommendations generated we need to follow the [datadog integration guide](https://help.nops.io/integrate-datadog-with-nops-platform.html). 
 
 
-2 – To perform rightsizing, you first need to configure EventBridge for Essentials for all your accounts by following this guide – [click here](https://help.nops.io/essentials-storage-configuration.html). 
+2 – To perform rightsizing, you first need to configure EventBridge for Essentials for all your accounts by [following this guide](https://help.nops.io/essentials-storage-configuration.html). 
 
 
 3 – Once the EventBridge is setup and DataDog is integrated as per Step 1 and Step 2 – you should start seeing recommendations in Rightising page within 24 hours of DataDog Integration

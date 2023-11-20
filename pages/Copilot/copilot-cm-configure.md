@@ -1,25 +1,25 @@
 ---
-title: Configure Risk-Free Commitment Management
-keywords: savings, recommendations, sharesave, nswitch
+title: Configure Commitment Management
+keywords: savings, recommendations, sharesave, savings plans, commitment management
 tags: [savings, recommendations, sharesave]
 sidebar: mydoc_sidebar
-permalink: rfcm-configure.html
-folder: ShareSave
-series: [ShareSave, Savings]
+permalink: copilot-cm-configure.html
+folder: Copilot
+series: [Copilot, Savings]
 weight: 2.0
 ---
 
-# ShareSave Risk-Free Commitment Management Configuration #
+# Copilot Commitment Management Configuration #
 
 
-To walk through configuring **ShareSave - Risk-Free Commitment Management**, please contact your nOps Sales representative.
+To walk through configuring **Commitment Management**, please contact your nOps Sales representative.
 
-If you're prefer to do configure on your own, please follow the steps outlined below.
+If you're prefer to do configuration on your own, please follow the steps outlined below.
 
 ## Prerequisites ##
 
 1. Access to the management account of the Organization
-1. Ability to create and access a new email account
+1. Ability to create and access a new email account or address
 
 
 ## Create an email address ##

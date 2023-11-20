@@ -1,10 +1,10 @@
 ---
 title: EventBridge Integration for Scheduler
-keywords: savings, recommendations, sharesave, essentials, nswitch, eventbridge
-tags: [savings, recommendations, sharesave, nswitch]
+keywords: savings, recommendations, scheduler, essentials, nswitch, eventbridge
+tags: [savings, recommendations, scheduler, nswitch]
 sidebar: mydoc_sidebar
 permalink: scheduler-eventbridge-setup.html
-folder: ShareSave
+folder: Essentials
 series: [Essentials, Scheduler]
 weight: 1.0
 ---
