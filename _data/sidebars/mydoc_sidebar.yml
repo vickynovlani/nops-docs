@@ -114,7 +114,7 @@ entries:
     output: web
     folderitems:
 
-    - title: Copilot Spot Instance Reliability SLA
+    - title: Spot Instance Reliability SLA
       url: /copilot-service-sla.html
       output: web
 
@@ -123,7 +123,7 @@ entries:
         output: web
         subfolderitems:
 
-        - title: Onboarding EKS clusters to Compute Copilot
+        - title: Onboarding EKS clusters
           url: /copilot-eks-onboarding.html
           output: web
 
@@ -131,15 +131,15 @@ entries:
         output: web
         subfolderitems:
 
-        - title: Compute Copilot for ASG Support Matrix
+        - title: ASG Support Matrix
           url: /copilot-asg-matrix.html
           output: web
 
-        - title: Onboarding Auto Scale Groups to Compute Copilot
+        - title: Onboarding Auto Scale Groups
           url: /copilot-asg-onboarding.html
           output: web
 
-        - title: Onboarding Auto Scale Groups to Compute Copilot using Stackset
+        - title: Onboarding Auto Scale Groups using Stackset
           url: /copilot-asg-stackset.html
           output: web          
 
