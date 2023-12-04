@@ -143,6 +143,10 @@ entries:
           url: /copilot-asg-stackset.html
           output: web          
 
+        - title: Configuring ASGs by Tag
+          url: /copilot-asg-by-tag.html
+          output: web  
+
 
     - title: Configure Commitment Management
       url: /copilot-cm-configure.html
