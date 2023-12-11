@@ -190,6 +190,18 @@ For further reference, please refer to [AWS Documentation](https://docs.aws.amaz
 Compute Copilot Lambda will begin replacing on-demand instances in this ASG with Spot alternatives, either every 30 minutes or upon the launch of a new on-demand instance.
 
 
+### Spot Launched by nOps Tagging structure
+
+When ASG Compute Copilot launches a Spot EC2 to replace an On-Demand EC2 instance in an ASG, it copies all the tags attached to the On-Demand instance being replaced, except for AWS reserved tags (which start with `aws:`).
+
+Additionally, it adds three new tags to the EC2 Spot instance:
+
+| **Tag Key**                        | **Description**                                                            |
+|------------------------------------|----------------------------------------------------------------------------|
+| launched\_by\_nops\_asg            | Tag to track that this instance was launched by ASG Compute Copilot        |
+| launched\_for\_asg                 | Tag to track the ASG name for which this instance is launched              |
+| launched\_for\_replacing\_instance | Tag to track the On-Demand EC2 instance ID that this instance is replacing |
+
 
 ## FAQ ##
 
