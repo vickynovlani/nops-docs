@@ -14,7 +14,7 @@ weight: 2.0
 
 To walk through configuring **Commitment Management**, please contact your nOps Sales representative.
 
-If you're prefer to do configuration on your own, please follow the steps outlined below.
+If you'd prefer to configure on your own, please follow the steps outlined below.
 
 ## Prerequisites ##
 
