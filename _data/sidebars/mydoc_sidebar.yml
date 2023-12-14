@@ -80,12 +80,12 @@ entries:
           url: /iam-minimum-platform-permissions.html
           output: web
 
-        - title: nSwitch IAM permissions
-          url: /iam-policy-nswitch.html
+        - title: Scheduler IAM permissions
+          url: /iam-policy-scheduler.html
           output: web
 
-        - title: YAML file for ShareSave Setup
-          url: /iam-yaml-sharesave.html
+        - title: YAML file for Commitment Management Setup
+          url: /iam-yaml-cm.html
           output: web
 
       - title: SSO
@@ -437,8 +437,8 @@ entries:
       url: /solutions-evaluating-changeset-costs.html
       output: web
 
-    - title: Using EventBridge with nSwitch to Reduce Costs
-      url: /solutions-using-eventbridge-with-nswitch-to-reduce-costs.html
+    - title: Using EventBridge with Scheduler to Reduce Costs
+      url: /solutions-using-eventbridge-with-scheduler-to-reduce-costs.html
       output: web
 
   - title: Developer

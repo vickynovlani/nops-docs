@@ -1,9 +1,9 @@
 ---
-title: YAML file for nOps ShareSave
+title: YAML file for nOps Commitment Management
 keywords: iam policies, iam, setup, onboarding, sharesave
 tags: [getting_started, onboarding, iam, sharesave]
 sidebar: mydoc_sidebar
-permalink: iam-yaml-sharesave.html
+permalink: iam-yaml-cm.html
 folder: GettingStarted
 ---
 

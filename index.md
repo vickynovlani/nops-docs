@@ -35,7 +35,7 @@ Click on a category to find relevant help documentation.
     </div>
     <div class="col-md-4 col-sm-6">
         <div class="panel panel-default card text-center">
-             <a href="tag_sharesave.html">
+             <a href="tag_copilot.html">
                 <span class="link"></span>
              </a>   
             <div class="panel-heading">
@@ -45,8 +45,25 @@ Click on a category to find relevant help documentation.
                      </span>
             </div>
             <div class="panel-body">
-                <p class="panel-topic">ShareSave</p>
+                <p class="panel-topic">Compute Copilot</p>
                 <p>Put your savings on auto-pilot so you can focus on innovation.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+        <div class="panel panel-default card text-center">
+             <a href="tag_essentials.html">
+                <span class="link"></span>
+             </a>   
+            <div class="panel-heading">
+                     <span class="fa-stack small">
+                           <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                           <i class="fa fa-screwdriver-wrench fa-stack-1x fa-inverse"></i>
+                     </span>
+            </div>
+            <div class="panel-body">
+                <p class="panel-topic">Essentials</p>
+                <p>No effort cost reduction.  Set up your savings in a few clicks</p>
             </div>
         </div>
     </div>

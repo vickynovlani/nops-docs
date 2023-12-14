@@ -4,8 +4,8 @@ keywords: savings, recommendations, sharesave, copilot, asg
 tags: [savings, recommendations, sharesave, copilot]
 sidebar: mydoc_sidebar
 permalink: copilot-asg-by-tag.html
-folder: ShareSave
-series: [ShareSave, Copilot, Onboarding]
+folder: Copilot
+series: [Copilot, Onboarding]
 weight: 2.0
 ---
 

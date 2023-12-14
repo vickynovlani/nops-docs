@@ -1,10 +1,12 @@
 ---
-title: Using EventBridge with nSwitch to Reduce Costs Automatically
+title: Using EventBridge with Scheduler to Reduce Costs Automatically
 keywords: savings, recommendations, solutions
 tags: [savings, recommendations, solutions]
 sidebar: mydoc_sidebar
-permalink: solutions-using-eventbridge-with-nswitch-to-reduce-costs.html
+permalink: solutions-using-eventbridge-with-scheduler-to-reduce-costs.html
 folder: Solutions
+series: [Solutions, IAM, Essentials]
+weight: 4.0
 ---
 
 The nOps EventBridge integration allows our customers to act on optimization recommendations provided by our AI-driven platform. Use our simple to deploy lambdas to automatically remediate or schedule remediation for common cloud waste issues, customize events to build your own workflow, or use our scheduler app to automatically enable and disable groups of EC2 and RDS instances.
