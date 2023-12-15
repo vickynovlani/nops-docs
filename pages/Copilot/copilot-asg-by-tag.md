@@ -74,7 +74,7 @@ _Note: if you delete the Compute Copilot Launch Template used in one or more ASG
 ### 1. What happens to my ASGs if I delete the Launch Template in nOps Compute Copilot?
 If you delete the Compute Copilot Launch Template used in one or more ASGs, these ASGs will no longer be processed by nOps Compute Copilot.
 
-### 2. Why don’t I see Spot instances as soon as I create the ASG using IAC while leveraging Configure by Tag ?
+### 2. Why don’t I see Spot instances as soon as I create the ASG using IAC while leveraging Configure by Tag?
 If a reliable and cheaper Spot is available in the Spot market and in the same AZ, it will take up to 30 minutes to see a Spot instance as part of your ASG.
 
 ### 3. Can I use both “nops\_copilot\_max\_spot\_percentage” and “nops\_copilot\_max\_spot\_instances” tags on the same ASG?
