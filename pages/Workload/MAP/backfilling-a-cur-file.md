@@ -54,6 +54,7 @@ Please Backfill The CUR for the following:<br /><br />
 </tr>
 </table>
 
+{%include note.html content="After the process has completed, please confirm it's been completed with your nOps point of contact."%}
 
 
 
