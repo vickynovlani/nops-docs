@@ -1,5 +1,5 @@
 ---
-title: Backfilling a CUR file for MAP
+title: Backfilling a CUR file
 keywords: reporting, integrations, map, migration, modernization
 tags: [compliance, reporting, map]
 sidebar: mydoc_sidebar
@@ -19,7 +19,7 @@ One thing to consider is a longer trail of data within your Cost and Usage Repor
 - TOC
 {:toc}
 
-## Creating the Ticket ##
+## Creating the Ticket for MAP CUR backfill ##
 
 For each Payer account, log into your [Amazon Support Console](https://support.console.aws.amazon.com/support) to create a support ticket.  Please CC your point of contact at nOps in your support ticket, or inform them when the backfill has been completed.
 
@@ -53,5 +53,46 @@ Please Backfill The CUR for the following:<br /><br />
 </td>
 </tr>
 </table>
+
+
+
+
+## Creating the Ticket for CUR backfill ##
+
+For each Payer account, log into your [Amazon Support Console](https://support.console.aws.amazon.com/support) to create a support ticket.  Please CC your point of contact at nOps in your support ticket, or inform them when the backfill has been completed.
+
+### Ticket Information ###
+
+<table>
+<tr>
+<td> <b>Item</b> </td><td> <b>What to enter</b> </td>
+</tr>
+<tr>
+<td> <b>Type</b> </td><td> Billing </td>
+</tr>
+<tr>
+<td> <b>Category</b> </td><td> Invoices and Reports </td>
+</tr>
+<tr>
+<td> <b>Subject</b>: </td><td> Backfill CUR reports </td>
+</tr>
+<tr>
+<td> <b>Description</b>: </td>
+<td>
+
+Please Backfill The CUR for the following:<br /><br />
+
+<b>CUR Report name</b>: nopsbilling-hourly-parquet<br />
+
+<b>Time Period</b>: <i>&lt;Month you want data backfilled from&gt;</i> to <i>&lt;the Month prior to the data in nOps&gt;</i> <br />
+
+<b>Reason</b>: We are leveraging a FinOps solution that requires all CURs to be in parquet format, and would like historical information for the dates listed to be backfilled.
+
+</td>
+</tr>
+</table>
+
+
+
 
 {%include note.html content="After the process has completed, please confirm it's been completed with your nOps point of contact."%}
