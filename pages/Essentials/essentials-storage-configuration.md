@@ -39,7 +39,8 @@ Utilizing nOps’ certified integration with Amazon EventBridge, nSwitch Essenti
 * Your AWS account must be linked to your nOps account.
 * By default, AWS has a soft limit of 50 TB in gp3 EBS Volumes per region per account. Exceeding that limit with a migration through EventBridge will cause the migration to fail. Make sure to increase this limit if the total size of GP2 EBS volumes to be migrated is more than 50 TB in an account.
 
-**Note: How to Increase EBS service quote in case your post-migration gp3 EBS volume size exceeds that limit:**
+
+### How to Increase EBS service quote in case your post-migration gp3 EBS volume size exceeds that limit: ###
 
 
 
