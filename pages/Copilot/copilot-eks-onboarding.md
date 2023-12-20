@@ -82,7 +82,7 @@ Compute Copilot for EKS even covers your commitments with a 100% money-back guar
     ![](https://lh6.googleusercontent.com/2mI3pZSbhuJE3VPcmNPJF_TYHC2_0RLC2kNP9zOvdItw5_V9HrdOlPnkVUT-v1hEdCNGXublDDLmW6n_aUdg8Vffz03EEz0c-9j1MmqY4KnqU2JQ9JUQLEJkdDyd1MiqO1N76ZeNQi-U9218KL68xHA)
 
 5. Select Max Limit of vCPUs & Memory.
-6. Create Tents and Labels if required \[for specific provisioner service].
+6. Create Taints and Labels if required \[for specific provisioner service].
 7. Choose the range of vCPUs and Memory for the instance.
 8. Select the appropriate instance family.
 9. Create Provisioners. 
