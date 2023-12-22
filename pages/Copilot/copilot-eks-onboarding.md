@@ -1,5 +1,5 @@
 ---
-title: Onboarding your EKS clusters to Compute Copilot for EKS
+title: Onboarding your EKS clusters to Compute Copilot for EKS Karpenter
 keywords: savings, recommendations, sharesave, nks, karpenter, compute copilot
 tags: [savings, recommendations, sharesave, eks, nks, copilot]
 sidebar: mydoc_sidebar
