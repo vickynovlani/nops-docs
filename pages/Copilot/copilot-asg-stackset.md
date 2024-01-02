@@ -17,9 +17,9 @@ Using CloudFormation, it’s easy to automatically onboard and configure multipl
 Creating a [StackSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-concepts.html) in your AWS Management (Master) Account will deploy Stack Instances in all child accounts automatically. It allows you to save time by configuring many accounts simultaneously (following the service-managed permissions model). 
 
 
-## More information on service-managed permissions ##
+## More information on service-managed permissions ##
 
-_With service-managed permissions, you can deploy stack instances to accounts managed by AWS Organizations. Using this permissions model, you don't have to create the necessary IAM roles; StackSets creates the IAM roles on your behalf. With this model, you can also turn on automatic deployments to accounts that you add to your organization in the future._
+With service-managed permissions, you can deploy stack instances to accounts managed by AWS Organizations. Using this permissions model, you don't have to create the necessary IAM roles; StackSets creates the IAM roles on your behalf. With this model, you can also turn on automatic deployments to accounts that you add to your organization in the future.
 
 
 ## How to configure via StackSet ##

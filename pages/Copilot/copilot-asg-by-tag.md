@@ -15,6 +15,11 @@ weight: 2.0
  <a id="configuring-asgs-by-tag-to-use-the-compute-co-pilot-asg"></a>
 =====================================================================
 
+
+## Prerequisites ##
+
+1. You must have already configured the appropriate Lambda roles for Copilot as per [these instructions](/copilot-asg-stackset.html)
+
 ## The new nOps feature Configure By Tag offers increased ease-of-use to users of Compute Copilot. Onboard your ASG to Copilot with Configure By Tag for the following benefits:<a id="the-new-nops-feature-configure-by-tag-offers-increased-ease-of-use-to-users-of-compute-copilot-onboard-your-asg-to-copilot-with-configure-by-tag-for-the-following-benefits"></a>
 
 - **Integration with any IaC tool**, such as Terraform.
