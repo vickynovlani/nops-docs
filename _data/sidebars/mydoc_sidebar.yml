@@ -108,6 +108,9 @@ entries:
           url: /sso-aws.html
           output: web
 
+        - title: SSO with Azure
+          url: /sso-azure.html
+          output: web
 
 
   - title: Compute Copilot

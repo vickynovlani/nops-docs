@@ -5,6 +5,8 @@ tags: [getting_started, onboarding, sso]
 sidebar: mydoc_sidebar
 permalink: sso-aws.html
 folder: GettingStarted
+series: [Onboarding, SSO]
+weight: 1.0
 ---
 
 
