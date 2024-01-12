@@ -180,7 +180,7 @@ entries:
         output: web                 
 
       - title: EC2 Rightsizing with DataDog
-        url: /ec2-rightisizing-with-nops-using-datadog.html
+        url: /ec2-rightsizing-with-nops-using-datadog.html
         output: web             
 
   - title: Agents and Integrations
