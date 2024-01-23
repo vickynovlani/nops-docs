@@ -1,7 +1,7 @@
 ---
 title: Tag Explorer to Manage Tag Competency
 keywords: cost reporting, cost history, cost allocation
-tags: [cost_visibility]
+tags: [cost_visibility, solutions]
 sidebar: mydoc_sidebar
 permalink: cost-tag-explorer.html
 folder: UserGuides
