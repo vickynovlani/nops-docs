@@ -1,7 +1,7 @@
 ---
 title: Essentials for Storage
 keywords: savings, recommendations, sharesave, essentials
-tags: [savings, recommendations, sharesave]
+tags: [essentials]
 sidebar: mydoc_sidebar
 permalink: essentials-storage-configuration.html
 folder: Essentials

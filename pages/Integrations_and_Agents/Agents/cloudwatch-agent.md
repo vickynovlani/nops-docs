@@ -5,6 +5,8 @@ tags: [agents_integrations]
 sidebar: mydoc_sidebar
 permalink: cloudwatch-agent.html
 folder: Integrations_and_Agents
+series: [agents_integrations]
+weight: 2.0
 ---
 
 The Cloudwatch agent will run in your EC2 instances to collect metrics and send them to nOps.
@@ -140,3 +142,8 @@ To view metrics and usage
 8.  To see information about this resource on AWS, click the **View Resource on AWS Console** button. You will be required to log into the AWS console to do this.
     
     ![](/tmpimg/view-on-console.png)
+
+
+<br/><br/>
+
+{% include custom/series_related.html %}

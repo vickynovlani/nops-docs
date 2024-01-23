@@ -1,7 +1,9 @@
 ---
 title: Change Password
 keywords: getting started, settings
-tags: [getting_started, settings]
+series: [Visibility]
+weight: 8.2
+tags: [cost_visibility]
 sidebar: mydoc_sidebar
 permalink: settings-change-password.html
 folder: UserGuides
@@ -23,3 +25,7 @@ How to Change nOps Password
 1. Enter your old password and new sassword, and the new password again to confirm. 
 
 1. Click the **Change password** button to save the new password.
+
+<br/><br/>
+
+{% include custom/series_related.html %}

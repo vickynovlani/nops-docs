@@ -5,6 +5,8 @@ tags: [agents_integrations]
 sidebar: mydoc_sidebar
 permalink: pagerduty-integration.html
 folder: Integrations_and_Agents
+series: [agents_integrations]
+weight: 5.0
 ---
 
 Integrating PagerDuty into your cloud optimization workflow for better alerting.

@@ -1,7 +1,7 @@
 ---
 title: Onboarding your EKS clusters to Copilot for EKS Cluster Autoscaler
 keywords: savings, recommendations, sharesave, nks, karpenter, compute copilot
-tags: [savings, recommendations, sharesave, eks, nks, copilot]
+tags: [copilot, eks]
 sidebar: mydoc_sidebar
 permalink: copilot-eks-cas-guide.html
 folder: Copilot

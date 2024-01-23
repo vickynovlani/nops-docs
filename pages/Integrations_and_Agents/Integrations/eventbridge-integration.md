@@ -5,6 +5,8 @@ tags: [agents_integrations]
 sidebar: mydoc_sidebar
 permalink: eventbridge-integration.html
 folder: Integrations_and_Agents
+series: [agents_integrations]
+weight: 3.0
 ---
 
 EventBridge Integration makes it easier for nOps to automate workflows in the client’s environment.

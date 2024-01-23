@@ -1,7 +1,7 @@
 ---
 title: Compute Copilot Spot Instance Reliability SLA
 keywords: savings, recommendations, sharesave, spot, cost copilot, asg, eks, nks
-tags: [savings, recommendations, sharesave, copilot]
+tags: [copilot]
 sidebar: mydoc_sidebar
 permalink: copilot-service-sla.html
 folder: Copilot

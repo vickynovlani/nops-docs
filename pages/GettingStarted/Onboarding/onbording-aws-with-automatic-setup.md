@@ -1,7 +1,7 @@
 ---
 title: Onboarding AWS with Automatic Setup
 keywords: setup, onboarding, tutorials, video, walkthrough
-tags: [getting_started, onboarding, tutorials]
+tags: [getting_started, onboarding]
 sidebar: mydoc_sidebar
 permalink: onboarding-aws-with-automatic-setup.html
 folder: GettingStarted

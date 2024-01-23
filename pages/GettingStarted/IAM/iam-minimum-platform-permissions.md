@@ -1,12 +1,12 @@
 ---
 title: Minimum IAM permissions for the nOps platform
 keywords: iam policies, iam, setup, onboarding, permissions
-tags: [getting_started, onboarding, iam]
+tags: [onboarding, iam]
 sidebar: mydoc_sidebar
 permalink: iam-minimum-platform-permissions.html
 folder: GettingStarted
 series: [Onboarding, IAM]
-weight: 6.0
+weight: 1.0
 ---
 
 ## IAM Policy Minimum Permissions for the nOps Platform in YAML ##

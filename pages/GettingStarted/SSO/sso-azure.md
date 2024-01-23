@@ -1,13 +1,14 @@
 ---
 title: Azure SSO Integration
 keywords: sso, setup, onboarding
-tags: [getting_started, onboarding, sso]
+tags: [onboarding, sso]
 sidebar: mydoc_sidebar
 permalink: sso-azure.html
 folder: GettingStarted
 series: [Onboarding, SSO]
 weight: 2.0
 ---
+## Azure SSO Integration ##
 
 While implementing SSO (single sign on), we recommend opening 2 browser tabs. In one tab open and log into your nOps account, in the other open your OneLogin account. You will need to copy information from one application to the other in order to sync the information and to allow SSO access with OneLogin.
 
@@ -211,3 +212,6 @@ To test this group integration where a member of a group is automatically logged
 
 You are directed to the nOps Web app login page and are automatically logged in since SSO was set up from the Azure portal.
 
+<br/><br/>
+
+{% include custom/series_related.html %}

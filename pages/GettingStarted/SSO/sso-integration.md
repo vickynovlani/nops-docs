@@ -1,10 +1,12 @@
 ---
 title: SSO Integration
 keywords: sso, setup, onboarding
-tags: [getting_started, onboard, sso]
+tags: [onboarding, sso]
 sidebar: mydoc_sidebar
 permalink: sso-integration.html
 folder: GettingStarted
+series: [Onboarding, SSO]
+weight: 3.0
 ---
 
 
@@ -127,3 +129,8 @@ Lastly, you can update your SSO configuration or delete it entirely.
 ![](https://nops-docs-img.s3.amazonaws.com/gettingstarted/sso-save-or-delete.png)
 
 {% include warning.html content="Deleting your SSO integration is irreversible. You cannot undo the deletion."%}
+
+
+<br/><br/>
+
+{% include custom/series_related.html %}

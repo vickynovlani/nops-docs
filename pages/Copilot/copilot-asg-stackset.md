@@ -1,7 +1,7 @@
 ---
 title: Onboarding your Autoscaling Groups to nOps Compute Copilot via Stackset
 keywords: savings, recommendations, sharesave, asg, copilot, autoscaling
-tags: [savings, recommendations, sharesave, copilot, asg]
+tags: [copilot, asg]
 sidebar: mydoc_sidebar
 permalink: copilot-asg-stackset.html
 folder: Copilot

@@ -1,10 +1,12 @@
 ---
 title: OneLogin SSO Integration
 keywords: sso, setup, onboarding
-tags: [getting_started, onboarding, sso]
+tags: [onboarding, sso]
 sidebar: mydoc_sidebar
 permalink: sso-onelogin.html
 folder: Getting Started
+series: [Onboarding, SSO]
+weight: 6.0
 ---
 
 # How to use OneLogin SSO for nOps #
@@ -159,3 +161,9 @@ Users added in OneLogin can be added to nOps for SSO. However you must first set
     nOps sends an email requiring the user to confirm the SSO login.
     
 10. Once the confirmation is received, the user is able to log into nOps.
+
+
+
+<br/><br/>
+
+{% include custom/series_related.html %}

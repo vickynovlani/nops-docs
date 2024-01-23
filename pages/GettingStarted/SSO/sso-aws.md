@@ -1,14 +1,13 @@
 ---
 title: AWS SSO Integration
 keywords: sso, setup, onboarding
-tags: [getting_started, onboarding, sso]
+tags: [onboarding, sso]
 sidebar: mydoc_sidebar
 permalink: sso-aws.html
 folder: GettingStarted
 series: [Onboarding, SSO]
 weight: 1.0
 ---
-
 
 # How to use AWS SSO for nOps #
 
@@ -67,7 +66,9 @@ Within AWS:
 
 
 
+<br/><br/>
 
+{% include custom/series_related.html %}
 
 
 

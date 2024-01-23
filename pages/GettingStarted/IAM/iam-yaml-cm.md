@@ -1,10 +1,12 @@
 ---
 title: YAML file for nOps Commitment Management
 keywords: iam policies, iam, setup, onboarding, sharesave
-tags: [getting_started, onboarding, iam, sharesave]
+tags: [onboarding, iam]
 sidebar: mydoc_sidebar
 permalink: iam-yaml-cm.html
 folder: GettingStarted
+series: [Onboarding, IAM, Copilot]
+weight: 4.0
 ---
 
 **YAML file for CUR, S3 bucket, IAM Policy and nOps ShareSave linked accounts to your AWS Organization**
@@ -248,3 +250,8 @@ Resources:
 }
 
 ```
+
+
+<br/><br/>
+
+{% include custom/series_related.html %}

@@ -1,12 +1,12 @@
 ---
 title: IAM permissions for the nOps platform
 keywords: iam policies, iam, setup, onboarding
-tags: [getting_started, onboarding, iam]
+tags: [onboarding, iam]
 sidebar: mydoc_sidebar
 permalink: iam-policy-nops-free-platform.html
 folder: GettingStarted
 series: [Onboarding, IAM]
-weight: 4.0
+weight: 2.0
 ---
 
 ## IAM Policy Permissions for the nOps Platform ##

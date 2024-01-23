@@ -1,10 +1,12 @@
 ---
 title: Cost Analysis for Cloud Resources
 keywords: cost reporting, cost history, cost allocation, business context, cost analysis
-tags: [cost_visibility, reporting, savings, solutions]
+tags: [cost_visibility]
 sidebar: mydoc_sidebar
 permalink: business-context-cost-analysis.html
 folder: UserGuides
+series: [Visibility]
+weight: 1.0
 ---
 
 # Stay on Top of Cost Changes #
@@ -124,3 +126,8 @@ The **Tags** tab gives the spend for all tags by key name. Note that:
 *   A blue **Download** button (upper right) gives you a CSV file of the spend figures by key name, for all keys. The CSV does not break out by key value.
     
 *   The **Cost (total)** column gives the total spend for the time period specified in the Filters column at the left -- default, 1 month to date.
+
+
+<br/><br/>
+
+{% include custom/series_related.html %}

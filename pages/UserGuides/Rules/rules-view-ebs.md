@@ -1,10 +1,12 @@
 ---
 title: View Underutilized EBS Volumes
 keywords: reporting, waste, underutilization
-tags: [reporting, solutions]
+tags: [cost_visibility]
 sidebar: mydoc_sidebar
 permalink: rules-view-ebs.html
 folder: UserGuides
+series: [Visibility]
+weight: 6.0
 ---
 
 ## View Under-Utilized EBS Volumes
@@ -30,3 +32,7 @@ On the **nOps Rules** dashboard. There are series of tabs with labels **_Securit
 This will show a list of items that can be re-configured to save your overall AWS cost. From the list, identify the item **_unused Amazon EBS volumes detected_**
 
 ![](/tmpimg/rules3.png)
+
+<br/><br/>
+
+{% include custom/series_related.html %}

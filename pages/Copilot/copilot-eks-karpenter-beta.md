@@ -1,7 +1,7 @@
 ---
 title: Compute Copilot for EKS -  Karpenter Beta Support
 keywords: savings, recommendations, karpenter, compute copilot
-tags: [savings, recommendations, eks, copilot]
+tags: [copilot, eks]
 sidebar: mydoc_sidebar
 permalink: copilot-eks-karpenter-beta.html
 folder: Copilot

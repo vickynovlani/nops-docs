@@ -1,10 +1,12 @@
 ---
 title: Backfilling a CUR file
 keywords: reporting, integrations, map, migration, modernization
-tags: [compliance, reporting, map]
+tags: [map]
 sidebar: mydoc_sidebar
 permalink: backfilling-a-cur-file.html
 folder: UserGuides
+series: [Visibility]
+weight: 9.3
 ---
 
 {: .no_toc }
@@ -97,3 +99,8 @@ Please Backfill The CUR for the following:<br /><br />
 
 
 {%include note.html content="After the process has completed, please confirm it's been completed with your nOps point of contact."%}
+
+
+<br/><br/>
+
+{% include custom/series_related.html %}

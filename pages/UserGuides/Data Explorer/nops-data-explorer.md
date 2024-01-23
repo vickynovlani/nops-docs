@@ -1,10 +1,12 @@
 ---
 title: The nOps Data Explorer
 keywords: cost reporting, cost history, cost allocation
-tags: [cost_visibility, reporting, solutions]
+tags: [cost_visibility]
 sidebar: mydoc_sidebar
 permalink: nops-data-explorer.html
 folder: UserGuides
+series: [Visibility]
+weight: 3.0
 ---
 
 {: .no_toc }
@@ -142,3 +144,9 @@ Following are a few sample queries that you can use to get data for your own clo
 | All Encrypted EC2 Snapshots and their Associated EC2 | This shows all snapshots that are encrypted and which EC2 machine these snapshots are associated with. | query MyQuery {  <br>    ec2\_snapshots(where: {encrypted: {\_eq: true}}) {  <br>        description  <br>        encrypted  <br>        state   <br>        snapshot_id  <br>        ec2_volume {  <br>            ec2_instances {  <br>                instance_id  <br>                state  <br>            }  <br>        }  <br>    }  <br>} |
 | All CloudFormation Stacks That Failed to Delete | A query that shows all the CloudFormation stacks that failed to delete after being queued up for deletion. | query MyQuery {  <br>    cloudformation\_stacks(where: {stack\_status: {\_eq: "DELETE\_FAILED"}}) {  <br>        role_arn  <br>        stack_id  <br>        stack_name  <br>        stack_status  <br>        stack\_status\_reason  <br>    }  <br>} |
 | All IAM Roles Created Between Dates | This query shows you all of the IAM Roles that were created between two date ranges. The date ranges can be edited to show different results. | query MyQuery {  <br>    iam\_roles(where: {create\_date: {\_lt: "2020-01-01", \_gt: "2019-01-01"}}) {  <br>        arn  <br>        role_name  <br>        create_date  <br>        description  <br>    }  <br>} |
+
+
+
+<br/><br/>
+
+{% include custom/series_related.html %}

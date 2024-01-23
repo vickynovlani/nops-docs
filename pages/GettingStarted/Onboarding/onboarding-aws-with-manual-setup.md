@@ -5,6 +5,7 @@ tags: [getting_started, onboarding]
 sidebar: mydoc_sidebar
 permalink: onboarding-aws-with-manual-setup.html
 folder: GettingStarted
+weight: 9.0
 ---
 
 # Setting up an AWS nOps account (Manual Setup) #
@@ -215,3 +216,8 @@ After the initial data validation is complete, the setup process will automatica
 To onboard a child account, click either **Automatic Setup** or **Manual Setup**. If you don’t want to add a specific child account, click **Proceed and Setup later**
 
 See [Onboarding Linked Accounts](onboarding-aws-linked-accounts.html) and [Onboarding With CloudFormation](onboarding-aws-with-cloudformation.html) for more information about configuring Linked Accounts.
+
+
+<br/><br/>
+
+{% include custom/series_related.html %}

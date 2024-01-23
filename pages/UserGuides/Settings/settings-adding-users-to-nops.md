@@ -1,10 +1,12 @@
 ---
 title: Adding users to nOps
 keywords: getting started, settings, setup, onboarding
-tags: [getting_started, settings]
 sidebar: mydoc_sidebar
 permalink: settings-adding-users-to-nops.html
 folder: UserGuides
+series: [Visibility]
+weight: 8.1
+tags: [cost_visibility]
 ---
 
 {: .no_toc }
@@ -43,3 +45,8 @@ The user whose email address is added will receive an invite from nOps.
 The user can set up their account entering the details as per below screen
 
 ![](/tmpimg/invited-user-form.png)
+
+
+<br/><br/>
+
+{% include custom/series_related.html %}

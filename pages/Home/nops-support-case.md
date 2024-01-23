@@ -5,6 +5,8 @@ tags: [customer_service, sla]
 sidebar: mydoc_sidebar
 permalink: nops-support-case.html
 folder: Home
+series: [sla]
+weight: 2.0
 ---
 
 ## How to open a support case with nOps ##
@@ -38,3 +40,8 @@ Customers can also create a support case by themselves, track the constant progr
     ![](https://lh5.googleusercontent.com/I0S9rPBfvQyPp8ObCBFlNi2sC4u6lZxMZI8CQAP4sEJrontnkOn3enWs-n1KXRVRMUqafPedkpvK2In_MdmUVbr-tICjFmzj7RxcdYeToSYC6yJmPPU1_AN_lJ_byDssnDwsELcShA_dByvyA7yHuA)
 
 That’s how easy it is to create support cases within nOps. I strongly recommend using between 8:00 pm ET – 12:00 am ET as those are our non-working hours. Logging a ticket will get you a better and faster response as soon as a customer success manager comes online.
+
+
+<br/><br/>
+
+{% include custom/series_related.html %}

@@ -1,10 +1,12 @@
 ---
 title: Creating nOps Custom Rules
 keywords: reporting
-tags: [reporting, solutions]
+tags: [rules]
 sidebar: mydoc_sidebar
 permalink: rules-custom.html
 folder: UserGuides
+series: [Visibility]
+weight: 5.0
 ---
 
 {: .no_toc }
@@ -29,3 +31,7 @@ Create your own custom queries for specific resources. The Custom Rule will be a
 1. Click the **_Save_ button** to save the rule. The new rule will be in the list of **_Custom Rules_** on the side bar. 
 
 1. Click on the created rule to see the evaluations based on that has been configured on that rule.
+
+<br/><br/>
+
+{% include custom/series_related.html %}

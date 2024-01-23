@@ -1,12 +1,12 @@
 ---
 title: IAM permissions for Essentials
 keywords: iam policies, iam, setup, onboarding, nswitch, sharesave
-tags: [getting_started, onboarding, iam, sharesave, nswitch]
+tags: [onboarding, iam]
 sidebar: mydoc_sidebar
 permalink: iam-policy-nswitch.html
 folder: GettingStarted
 series: [Onboarding, IAM, Essentials]
-weight: 4.0
+weight: 3.0
 ---
 
 
@@ -98,3 +98,8 @@ These permissions are required on the **_child account or master account where t
 ```
 
 To get the full CloudFormation YAML template, see [nOps Essentials Lambda Function](https://github.com/nops-io/nops-rules-lambda/blob/master/scheduler/scheduler.yml).
+
+
+<br/><br/>
+
+{% include custom/series_related.html %}

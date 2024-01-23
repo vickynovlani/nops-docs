@@ -1,7 +1,7 @@
 ---
 title: The Scheduler Slackbot "How To" Guide
 keywords: setup, onboarding, nswitch, sharesave, slackbot, developer, api
-tags: [onboarding, sharesave, nswitch, developer]
+tags: [developer]
 sidebar: mydoc_sidebar
 permalink: developer-nswitch-slackbot.html
 folder: Developer

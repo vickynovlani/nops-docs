@@ -1,10 +1,12 @@
 ---
 title: Automated Tagging for AWS Migration Assistance Program
 keywords: reporting, integrations, map
-tags: [compliance, reporting, map]
+tags: [map]
 sidebar: mydoc_sidebar
 permalink: automated-tagging-for-aws-map.html
 folder: UserGuides
+series: [Visibility]
+weight: 9.2
 ---
 
 {: .no_toc }
@@ -225,3 +227,7 @@ What to do if you don’t have the permissions to tag your migration project res
 * Ask your AWS admin to grant you permissions.
     
 * Check if you have the permissions for the resource that you are trying to tag.
+
+<br/><br/>
+
+{% include custom/series_related.html %}

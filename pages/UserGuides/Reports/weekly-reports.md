@@ -1,10 +1,12 @@
 ---
 title: Configure Weekly Reports
 keywords: reporting
-tags: [reporting, solutions]
+tags: [cost_visibility]
 sidebar: mydoc_sidebar
 permalink: weekly-reports.html
 folder: UserGuides
+series: [Visibility]
+weight: 4.0
 ---
 
 {: .no_toc }
@@ -28,3 +30,8 @@ To enable a weekly report based on any of the different aspects of nOps; click o
 ![](/tmpimg/rep3.png)
 
 After selecting the email and then select the **Weekly** option in the **Notify** labeled item, click the **Subscribe** _or_ **Update Preferences**. This will active weekly reports for that section of nOps.
+
+
+<br/><br/>
+
+{% include custom/series_related.html %}

@@ -1,12 +1,13 @@
 ---
 title: Configuring ASGs by Tag
 keywords: savings, recommendations, sharesave, copilot, asg
-tags: [savings, recommendations, sharesave, copilot]
+tags: [copilot, asg]
 sidebar: mydoc_sidebar
 permalink: copilot-asg-by-tag.html
 folder: Copilot
 series: [Copilot, Onboarding]
 weight: 2.0
+Category: [Copilot]
 ---
 
 

@@ -1,6 +1,5 @@
 ---
 title: "nOpsDocs - nOps documentation"
-tags: [getting_started]
 keywords: knowledge base, support portal, home, doc portal
 sidebar: mydoc_sidebar
 permalink: index.html
