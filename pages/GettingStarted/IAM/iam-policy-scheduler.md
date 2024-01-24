@@ -3,7 +3,7 @@ title: IAM permissions for Essentials
 keywords: iam policies, iam, setup, onboarding, nswitch, sharesave
 tags: [onboarding, iam]
 sidebar: mydoc_sidebar
-permalink: iam-policy-nswitch.html
+permalink: iam-policy-scheduler.html
 folder: GettingStarted
 series: [Onboarding, IAM, Essentials]
 weight: 3.0
