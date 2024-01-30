@@ -9,47 +9,58 @@ series: [Onboarding, IAM]
 weight: 1.0
 ---
 
-## IAM Policy Minimum Permissions for the nOps Platform in YAML ##
+## IAM Policy Minimum Permissions for the nOps Platform in JSON ##
 
-The following yaml file shows the minimum permissions necessary for the nOps free platform.
+The following json file shows the minimum permissions necessary for the nOps free platform.
 
-```yaml
-NopsIntegrationPolicy:
-    Type: AWS::IAM::Policy
-    Properties:
-      PolicyName: NopsIntegrationPolicy
-      PolicyDocument:
-        Version: "2012-10-17"
-        Statement:
-          - Action:
-              - ce:GetSavingsPlansUtilizationDetails
-              - ce:GetSavingsPlansUtilization
-              - ce:GetSavingsPlansPurchaseRecommendation
-              - ce:GetSavingsPlansCoverage
-              - ce:GetReservationUtilization
-              - ce:GetReservationPurchaseRecommendation
-              - ce:GetReservationCoverage
-              - ce:GetCostAndUsage
-            Effect: Allow
-            Resource: "*"
-      Roles: [!Ref NopsIntegrationRole]
+```json
 
-  NopsSystemBucketPolicy:
-    Type: AWS::IAM::Policy
-    Properties:
-      PolicyName: NopsSystemBucketPolicy
-      PolicyDocument:
-        Version: "2012-10-17"
-        Statement:
-          - Effect: Allow
-            Action:
-              - s3:*
-            Resource:
-              - !Sub "arn:aws:s3:::${SystemBucketID}"
-              - !Sub "arn:aws:s3:::${SystemBucketID}/*"
-              - !Sub "arn:aws:s3:::${SystemBucketID}-nops-${AWS::AccountId}"
-              - !Sub "arn:aws:s3:::${SystemBucketID}-nops-${AWS::AccountId}/*"
-      Roles: [!Ref NopsIntegrationRole]
+{
+	"Version": "2012-10-17",
+	"Statement": [
+	    {
+			"Sid": "VisualEditor1",
+			"Effect": "Allow",
+			"Action": "s3:*",
+			"Resource": [
+				"arn:aws:s3:::[INSERT CUR S3 BUCKET]",
+				"arn:aws:s3:::[INSERT CUR S3 BUCKET]/*"
+			]
+		},
+		{
+			"Sid": "VisualEditor0",
+			"Effect": "Allow",
+			"Action": [
+				"organizations:InviteAccountToOrganization",
+				"tag:GetResources",
+				"ec2:DescribeInstances",
+				"rds:DescribeDbClusters",
+				"s3:ListBucket",
+				"cloudwatch:GetMetricStatistics",
+				"cur:PutReportDefinition",
+				"rds:DescribeDbInstances",
+				"cur:DeleteReportDefinition",
+				"ec2:DescribeSecurityGroups",
+				"eks:DescribeNodegroup",
+				"ec2:DescribeNetworkInterfaces",
+				"autoscaling:DescribeAutoScalingGroups",
+				"ec2:DescribeVpcs",
+				"ec2:DescribeVolumes",
+				"eks:DescribeCluster",
+				"ec2:DescribeReservedInstances",
+				"eks:ListClusters",
+				"ce:*",
+				"ec2:DescribeSubnets",
+				"cur:DescribeReportDefinitions"
+			],
+			"Resource": "*"
+		}
+	]
+}
+
 ```
+
+
+
 
 {% include custom/series_related.html %}
