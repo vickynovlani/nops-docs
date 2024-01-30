@@ -5,7 +5,7 @@ tags: [tutorials]
 sidebar: mydoc_sidebar
 permalink: tutorial_showbacks.html
 folder: UserGuides
-series: [Visibility]
+series: [tutorials]
 weight: 1.0
 ---
 
