@@ -60,7 +60,4 @@ The following json file shows the minimum permissions necessary for the nOps fre
 
 ```
 
-
-
-
 {% include custom/series_related.html %}
