@@ -1,7 +1,7 @@
 ---
 title: Using Showbacks
 keywords: cost reporting, showbacks, cost allocation, business context, cost analysis
-tags: [cost_visibility, solutions]
+tags: [tutorials]
 sidebar: mydoc_sidebar
 permalink: tutorial_showbacks.html
 folder: UserGuides
