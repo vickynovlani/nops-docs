@@ -58,7 +58,7 @@ After adding your Payer account with the automatic setup, to add more accounts l
 In this section, you need to select the account setup method. In the scope of this article, we will deal with the **Automatic Setup**. Select the **nOps Wizard Setup** and click **Next**.
 
 
-To learn more about **Manual Setup**, see [Manual Setup](onboarding-aws-with-manual-setup.html). To learn more about **IaaC Setup**, see [Onboarding with CloudFormation](onboarding-aws-with-cloudformation.html).
+To learn more about **Manual Setup**, see [Manual Setup](onboarding-aws-with-manual-setup.html). To learn more about **IaaC Setup**, see [Onboarding with CloudFormation](onboarding-aws-with-cloudformation.html). To learn more about **StackSet Multiple Accounts Setup**, see [StackSet Setup](onboarding-aws-with-stackset.html)
 
 
 ## Link AWS Accounts ##
