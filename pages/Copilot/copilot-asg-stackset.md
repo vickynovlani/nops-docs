@@ -64,7 +64,6 @@ Add the following S3 URL: **_https\://nops-prd-asg-lambda-us-east-1.s3.amazonaw
 | ParameterKey | ParameterValue               | Modifiable?  |
 | --- | --- | --- |
 | AutoUpdate   | true                         | We highly recommend not modifying. AutoUpdate will ensure you have the latest version of Lambda in your account at all times without the need for manual updating.  |
-| ClientID     |                              | This value is the clientID with nOps. It is not modifiable. You can find this by login to **nOps Dashboard > Profile**                                              |
 | Environment  | prd                          | This should not be modified, as this environment has been vigorously and thoroughly tested for stability.                                                           |
 | MemorySize   | 1024                         | This is the total memory for the Lambda Function. We recommend that you have this at 1024 MB for stable performance.                                                |
 | ProjectID    | 0                            | NO                                                                                                                                                                  |
