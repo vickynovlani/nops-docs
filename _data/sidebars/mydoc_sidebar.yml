@@ -158,6 +158,14 @@ entries:
           url: /copilot-asg-by-tag.html
           output: web  
 
+      - title: ECS
+        output: web
+        subfolderitems:
+
+        - title: Copilot for ECS
+          url: /copilot-ecs.html
+          output: web
+
     - title: Configure Commitment Management
       url: /copilot-cm-configure.html
       output: web
