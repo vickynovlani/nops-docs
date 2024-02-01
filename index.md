@@ -9,7 +9,7 @@ folder: mydoc
 ---
 
 
-Click on a category to find relevant help documentation.
+Click on a category to view relevant help documentation.
 
 <div class="row">
     <div class="col-lg-12">
