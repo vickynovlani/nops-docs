@@ -37,13 +37,14 @@ Now you need to add an SSO configuration on the Azure portal.
 To Set Up SSO on Azure
 ----------------------
 
-1.  Login to the Microsoft Azure portal and click the **Azure Active Directory** widget to go to the **Overview** page
-    
+1.  Login to the Microsoft Azure portal and click the **Microsoft Entra ID** widget to go to the **Overview** page
+    ![alt text](image.png)
 2.  Click **\+ Add** and select **Enterprise Application**.
     
-3.  At the **Browse Azure AD Gallery**, search for **SAML toolkit** and click the icon when it’s displayed.
+3.  At the **Browse Microsoft Entra Gallery**, search for **SAML toolkit** and click the icon when it’s displayed.
+![alt text](image-1.png)
     
-4.  At the **Azure AD SAML Toolkit** dialog enter a **Name** for this application and press enter. This may take a few minutes to save.  
+4.  At the **Microsoft Entra SAML Toolkit** dialog enter a **Name** for this application and click **Create**. This may take a few minutes to save.  
     Suggestion for name: **nops-SSO**  
     
     After the name is entered you will be taken to the **Overview** page to continue to set up this application.
@@ -53,19 +54,20 @@ Assign users and groups and set up the single sign on (SSO)
 -----------------------------------------------------------
 
 1.  Begin assigning users by clicking the link in **1\. Assign users and groups** widget.
+
+![alt text](image-2.png)
     
-2.  At the **Add Assignment** page click **\+ Add** **user/group** from the toolbar.
+2.  At the **Users and groups** page click **\+ Add** **user/group** from the toolbar.
     
 3.  Click **None Selected** link and at the **Users** dialog enter search criteria to find and add users.
     
     The system may identify users that you can select.
     
-4.  Click on the user/s to add them.
+4.  Select the users to be added and click **Select**.
     
 5.  At the **Add Assignment** page, click the **Assign** button to add the users you selected. You will see a success dialog and return to the **Users and groups** page.
     
 6.  Once you have completed adding all users click the **Overview** tab in the left pane.
-    
 
 Set up the single sign on (SSO) widget
 --------------------------------------
