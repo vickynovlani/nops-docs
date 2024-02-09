@@ -20,7 +20,7 @@ To Set Up SSO on nOps
 1.  Login to nOps and navigate to **Organizational Settings** from the profile link.  
     Or as a Partner Admin role click on the SSO link.
     
-2.  From the Settings pane click the **SSO** option.
+2.  From the Settings panel click the **SSO** option.
     
 
 If you do not have SSO configured you will see a dialog to enable it
