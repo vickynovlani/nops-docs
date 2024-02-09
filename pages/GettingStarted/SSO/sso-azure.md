@@ -12,7 +12,7 @@ weight: 2.0
 
 While implementing SSO (single sign on), we recommend opening 2 browser tabs. In one tab open and log into your nOps account, in the other open your Azure account. You will need to copy information from one application to the other in order to sync the information and to allow SSO access with Azure.
 
-This topic is for Clients who log in using an Administrator Role. It assumes that you have nOps configured on your [Azure AD portal](https://docs.nops.io/en/articles/5562969-nops-azure-documentation).
+This topic is for Clients who log in using an Administrator Role. It assumes that you have nOps configured on your [Azure AD portal](https://portal.azure.com/#home).
 
 To Set Up SSO on nOps
 ---------------------
