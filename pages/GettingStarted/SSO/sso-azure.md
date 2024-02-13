@@ -160,8 +160,10 @@ To create and add a Group configuration
 ---------------------------------------
 
 1.  Click the **Single sign-on** tab in the left pane.
+
+2. Click on **Edit** in the **Attributes & Claims** section 2.
     
-2.  **Click + Add a group claim** to add a group.
+3.  **Click + Add a group claim** to add a group.
     
 
 You will need to enter some advanced options for this claim.
@@ -170,13 +172,13 @@ You will need to enter some advanced options for this claim.
     
 2.  Then click the **Advanced options** link.
     
-3.  Click the **Filter groups (preview)** checkbox and enter information for the 3 fields:  
+3.  Click the **Filter groups** checkbox and enter information for the 3 fields:  
     Attribute to match: **Display name**  
     Match with: **Contains**  
     String: **nops**  
     The _string_ should match the name of the group you entered.
     
-4.  Check the **Customize the name of the group claim** box
+4.  Check the **Customize the name of the group claim** checkbox
     
 5.  Enter the Name for the attribute as: **User.Groups**
     
