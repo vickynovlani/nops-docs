@@ -84,7 +84,7 @@ Set up the single sign on (SSO) widget
 3.  In **Basic SAML Configuration** click **Edit**.
 
 ![](https://lh7-us.googleusercontent.com/fJvSRJe7FSmjLl-k9IJZSn-OJmLUIzA80yaSFm_z49S1ZLO8aI4wuZbWZ_rKdAVaYBHGb5ojB7IVYVvMaepQWVxa2k4COcdvTv13p65TNWnA_7pi3j4pC2p0UevQUPSJB3v9whGqc4pHIGEM0EV6rao)
-    
+
 4.  Replace or Add the **Identifier (Entity ID)** field with the **Entity ID** url from the nOps SSO page
     
 5.  Replace or Add the **Reply URL (Assertion Consumer Service URL)** with the **Assertion Consumer Service URL** from nOps
@@ -197,11 +197,11 @@ Add the group to the Azure portal.
     
 2.  From the Home page find and click **Groups**.
     
-3.  At the **Groups | All groups** page click **New group**.
+3.  At the **Groups \| All groups** page click **New group**.
     
 4.  For **Group name**, enter a name containing the String you entered earlier (nops). For example nops-group
     
-5.  Click **Create** to return to the **Groups | All groups** page. And refresh the page to see the group you added. You can also search for it.
+5.  Click **Create** to return to the **Groups \| All groups** page. And refresh the page to see the group you added. You can also search for it.
     
 6.  Copy the **Object ID** for the group and enter it in the **nOps SSO** page under **User Roles/Groups** \> **Client Admin Groups** field.
     
