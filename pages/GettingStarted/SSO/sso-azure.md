@@ -38,12 +38,13 @@ To Set Up SSO on Azure
 ----------------------
 
 1.  Login to the Microsoft Azure portal and click the **Microsoft Entra ID** widget to go to the **Overview** page
-    ![alt text](image.png)
+![](https://lh7-us.googleusercontent.com/Ex-rl7vRfbL8DJ4r0nLNVFcnnWjHlUkuLjTjeFBfWGNjdeHOm98twXWGT7q6tFiXIt_qgszip5EsD-lH1Ev7X1_AUoJyJasl-r4rrjQCLqJSf4cAHBEOHnzCr36PePj4L3wxaz7qXYxiOCeBZXpRZDc)
+
 2.  Click **\+ Add** and select **Enterprise Application**.
     
 3.  At the **Browse Microsoft Entra Gallery**, search for **SAML toolkit** and click the icon when it’s displayed.
-![alt text](image-1.png)
-    
+![](https://lh7-us.googleusercontent.com/TCkkhumwY8j3eJG8xppR7G8TmhO_YkehKCra2f4GRo4uVwyVmdLeAyIB39_xUY5YNmU_hpZNUiD-QfJUtgrvzsGXAOvF95oIkwv_2--5IBeLIWYShaofT1n-WRgocd8LgyWMzex41sbsySOYf5qZ6ls)
+
 4.  At the **Microsoft Entra SAML Toolkit** dialog enter a **Name** for this application and click **Create**. This may take a few minutes to save.  
     Suggestion for name: **nops-SSO**  
     
@@ -55,8 +56,8 @@ Assign users and groups and set up the single sign on (SSO)
 
 1.  Begin assigning users by clicking the link in **1\. Assign users and groups** widget.
 
-![alt text](image-2.png)
-    
+![](https://lh7-us.googleusercontent.com/QBMbISNtc46mNBeKPL8HRGPtfBoj-W7acVzMLeFpUosRXpHl9127wtZrkidZgqaN6kuhfDX20NsENGTuV6PF70tW5rRq8g6UW_yThNzPBQuaJ2aMgsuAefe-3_T-DIfWHJAaCEPKj3m3hWFQ9NQ-to8)
+
 2.  At the **Users and groups** page click **\+ Add** **user/group** from the toolbar.
     
 3.  Click **None Selected** link and at the **Users** dialog enter search criteria to find and add users.
@@ -74,15 +75,15 @@ Set up the single sign on (SSO) widget
 
 1.  At the **Get Started** section click the link in the **2\. Set up single sign on** widget.
 
-![alt text](image-3.png)
-    
+![](https://lh7-us.googleusercontent.com/7X2sgF0YghoHfdiPaqA-LFFeXoF-1arz85jS-HBQgFNGjnylYJzASYpUX9mHtDiei_jNg-O39bPuBxRW7tkiUh7QJiwAhMjAgy1nZIhlbI0CD2FdHLC_YcK6n2nP6PZyOs4SktSTwtjfn05GbQMf_LE)
+
 2.  At the **Single sign-on** page select the **SAML** widget to open the **SAML-based Sign-on** page
     
     You will configure URLs and attributes by copying the information from nOps and pasting it into the Basic SAML Configuration page in Azure.
     
 3.  In **Basic SAML Configuration** click **Edit**.
 
-![alt text](image-4.png)
+![](https://lh7-us.googleusercontent.com/fJvSRJe7FSmjLl-k9IJZSn-OJmLUIzA80yaSFm_z49S1ZLO8aI4wuZbWZ_rKdAVaYBHGb5ojB7IVYVvMaepQWVxa2k4COcdvTv13p65TNWnA_7pi3j4pC2p0UevQUPSJB3v9whGqc4pHIGEM0EV6rao)
     
 4.  Replace or Add the **Identifier (Entity ID)** field with the **Entity ID** url from the nOps SSO page
     
