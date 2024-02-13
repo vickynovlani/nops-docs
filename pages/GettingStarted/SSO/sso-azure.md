@@ -72,19 +72,23 @@ Assign users and groups and set up the single sign on (SSO)
 Set up the single sign on (SSO) widget
 --------------------------------------
 
-1.  Click the **Get Started** link in the **2\. Set up single sign on** widget.
+1.  At the **Get Started** section click the link in the **2\. Set up single sign on** widget.
+
+![alt text](image-3.png)
     
 2.  At the **Single sign-on** page select the **SAML** widget to open the **SAML-based Sign-on** page
     
-    You will configure URLs and attributes by copying the information from nOps and pasting it into theBasic SAML Configuration page in Azure.
+    You will configure URLs and attributes by copying the information from nOps and pasting it into the Basic SAML Configuration page in Azure.
     
-3.  From **Basic SAML Configuration** click **Edit**, then click **Add identifier**.
+3.  In **Basic SAML Configuration** click **Edit**.
+
+![alt text](image-4.png)
     
-4.  Replace the **Identifier (Entity ID)** field with the **Entity ID** url from the nOps SSO page
+4.  Replace or Add the **Identifier (Entity ID)** field with the **Entity ID** url from the nOps SSO page
     
-5.  Replace the **Reply URL (Assertion Consumer Service URL)** with the **Assertion Consumer Service URL** from nOps
+5.  Replace or Add the **Reply URL (Assertion Consumer Service URL)** with the **Assertion Consumer Service URL** from nOps
     
-6.  Replace the **Sign on URL** in Azure with the **Shareable Link for IDP Login** url from nOps.
+6.  Replace or Add the **Sign on URL** in Azure with the **Shareable Link for IDP Login** url from nOps.
     
     [![](https://nops-b92747f563e0.intercom-attachments-7.com/i/o/470977253/7f70ec59bc3118b0895f978a/A5yZYagWUUpEJbobPQChTML6YPPn-ZTasWBYcn00U2awelJFTgqWpyNQ91waaUlfXhzekG9N4peDvk48xU_sDn4aEgBCpXPme6DXs0WW9K4lB7_4avX3lKxyYC543JbOXIi32pfH)](https://nops-b92747f563e0.intercom-attachments-7.com/i/o/470977253/7f70ec59bc3118b0895f978a/A5yZYagWUUpEJbobPQChTML6YPPn-ZTasWBYcn00U2awelJFTgqWpyNQ91waaUlfXhzekG9N4peDvk48xU_sDn4aEgBCpXPme6DXs0WW9K4lB7_4avX3lKxyYC543JbOXIi32pfH)
     
@@ -129,13 +133,13 @@ To complete the set up, copy the following items from the Azure portal to the nO
     
     [![](https://nops-b92747f563e0.intercom-attachments-7.com/i/o/470977266/c74b32ff0b9b81660f270322/JczXNi-NV-bm-1-KEF1i9T-O6O0Klcf9wsbrbo5NdE6OBpIxqnjCwUXQ1em5ggu9Ol9rZmXK8KUO6FU2VK1hLtf45qoblgLvJmGGH-hJqai0ECLGV8ul0QxRIEWfYBTJinC9l4aj)](https://nops-b92747f563e0.intercom-attachments-7.com/i/o/470977266/c74b32ff0b9b81660f270322/JczXNi-NV-bm-1-KEF1i9T-O6O0Klcf9wsbrbo5NdE6OBpIxqnjCwUXQ1em5ggu9Ol9rZmXK8KUO6FU2VK1hLtf45qoblgLvJmGGH-hJqai0ECLGV8ul0QxRIEWfYBTJinC9l4aj)
     
-4.  Copy the **Azure AD Identifier** URL into the nOps **Issuer URL (entityId).**
+4.  Copy the **Microsoft Entra Identifier** URL into the nOps **Issuer URL (entityId).**
     
     [![](https://nops-b92747f563e0.intercom-attachments-7.com/i/o/470977267/4aeb5713db52169bda1bc167/CDCtK1fdBZcPALzmxKMfpKgybddB4cF4CJ-A9j7YGkfKKNse6d3U_pOygIsTw9jFcZupK5Ud7GQ7P9-5-t5b9pzo4yAnjXqjccdX57qwAS8TNSWMy58hl9-48hKNXkJCPDZa5xnD)](https://nops-b92747f563e0.intercom-attachments-7.com/i/o/470977267/4aeb5713db52169bda1bc167/CDCtK1fdBZcPALzmxKMfpKgybddB4cF4CJ-A9j7YGkfKKNse6d3U_pOygIsTw9jFcZupK5Ud7GQ7P9-5-t5b9pzo4yAnjXqjccdX57qwAS8TNSWMy58hl9-48hKNXkJCPDZa5xnD)
     
 5.  In the **nOps SSO** dialog navigate to **User Roles/Groups**. For **Default role** select **client-admin** to apply this role as a default for all users logging in from the Azure portal.
     
-6.  Click **Setup SSO Configuration** to complete the setup.
+6.  Click **Setup SSO Configuration** or **Update SSO Configuration** to complete the setup.
     
     You have now completed the SSO set up on both nOps and on the Microsoft Azure portal.
     
@@ -150,7 +154,7 @@ You can now test your setup.
 2.  At the **Test single sign-on** dialog click the **Sign in as current user** and click **Test sign in**.
     
 3.  Navigate to the nOps webpage to see that you are being signed in through the Azure single sign on.
-    
+
 
 To create and add a Group configuration
 ---------------------------------------
