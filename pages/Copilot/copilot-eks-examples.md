@@ -11,7 +11,7 @@ weight: 1.0
 
 # Examples of good configuration templates for EKS Copilot #
 
-The following are examples of versatile node templates and provisioner templates that work well to maximiz savings with nOps.
+The following are examples of versatile node templates and provisioner templates that work well to maximize savings with nOps.
 
 
 ## EKS Node Templates ##
