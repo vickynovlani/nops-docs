@@ -10,9 +10,9 @@ weight: 2.0
 ---
 ## Azure SSO Integration ##
 
-While implementing SSO (single sign on), we recommend opening 2 browser tabs. In one tab open and log into your nOps account, in the other open your OneLogin account. You will need to copy information from one application to the other in order to sync the information and to allow SSO access with OneLogin.
+While implementing SSO (single sign on), we recommend opening 2 browser tabs. In one tab open and log into your nOps account, in the other open your Azure account. You will need to copy information from one application to the other in order to sync the information and to allow SSO access with Azure.
 
-This topic is for Clients who log in using an Administrator Role. It assumes that you have nOps configured on your [Azure AD portal](https://docs.nops.io/en/articles/5562969-nops-azure-documentation).
+This topic is for Clients who log in using an Administrator Role. It assumes that you have nOps configured on your [Microsoft Entra ID](https://portal.azure.com/#home) (This was formerly known as Azure AD).
 
 To Set Up SSO on nOps
 ---------------------
@@ -20,7 +20,7 @@ To Set Up SSO on nOps
 1.  Login to nOps and navigate to **Organizational Settings** from the profile link.  
     Or as a Partner Admin role click on the SSO link.
     
-2.  From the Settings pane click the **SSO** option.
+2.  From the Settings panel click the **SSO** option.
     
 
 If you do not have SSO configured you will see a dialog to enable it
@@ -37,13 +37,15 @@ Now you need to add an SSO configuration on the Azure portal.
 To Set Up SSO on Azure
 ----------------------
 
-1.  Login to the Microsoft Azure portal and click the **Azure Active Directory** widget to go to the **Overview** page
-    
+1.  Login to the Microsoft Azure portal and click the **Microsoft Entra ID** widget to go to the **Overview** page
+![](https://lh7-us.googleusercontent.com/Ex-rl7vRfbL8DJ4r0nLNVFcnnWjHlUkuLjTjeFBfWGNjdeHOm98twXWGT7q6tFiXIt_qgszip5EsD-lH1Ev7X1_AUoJyJasl-r4rrjQCLqJSf4cAHBEOHnzCr36PePj4L3wxaz7qXYxiOCeBZXpRZDc)
+
 2.  Click **\+ Add** and select **Enterprise Application**.
     
-3.  At the **Browse Azure AD Gallery**, search for **SAML toolkit** and click the icon when it’s displayed.
-    
-4.  At the **Azure AD SAML Toolkit** dialog enter a **Name** for this application and press enter. This may take a few minutes to save.  
+3.  At the **Browse Microsoft Entra Gallery**, search for **SAML toolkit** and click the icon when it’s displayed.
+![](https://lh7-us.googleusercontent.com/TCkkhumwY8j3eJG8xppR7G8TmhO_YkehKCra2f4GRo4uVwyVmdLeAyIB39_xUY5YNmU_hpZNUiD-QfJUtgrvzsGXAOvF95oIkwv_2--5IBeLIWYShaofT1n-WRgocd8LgyWMzex41sbsySOYf5qZ6ls)
+
+4.  At the **Microsoft Entra SAML Toolkit** dialog enter a **Name** for this application and click **Create**. This may take a few minutes to save.  
     Suggestion for name: **nops-SSO**  
     
     After the name is entered you will be taken to the **Overview** page to continue to set up this application.
@@ -53,36 +55,41 @@ Assign users and groups and set up the single sign on (SSO)
 -----------------------------------------------------------
 
 1.  Begin assigning users by clicking the link in **1\. Assign users and groups** widget.
-    
-2.  At the **Add Assignment** page click **\+ Add** **user/group** from the toolbar.
+
+![](https://lh7-us.googleusercontent.com/QBMbISNtc46mNBeKPL8HRGPtfBoj-W7acVzMLeFpUosRXpHl9127wtZrkidZgqaN6kuhfDX20NsENGTuV6PF70tW5rRq8g6UW_yThNzPBQuaJ2aMgsuAefe-3_T-DIfWHJAaCEPKj3m3hWFQ9NQ-to8)
+
+2.  At the **Users and groups** page click **\+ Add** **user/group** from the toolbar.
     
 3.  Click **None Selected** link and at the **Users** dialog enter search criteria to find and add users.
     
     The system may identify users that you can select.
     
-4.  Click on the user/s to add them.
+4.  Select the users to be added and click **Select**.
     
 5.  At the **Add Assignment** page, click the **Assign** button to add the users you selected. You will see a success dialog and return to the **Users and groups** page.
     
 6.  Once you have completed adding all users click the **Overview** tab in the left pane.
-    
 
 Set up the single sign on (SSO) widget
 --------------------------------------
 
-1.  Click the **Get Started** link in the **2\. Set up single sign on** widget.
-    
+1.  At the **Get Started** section click the link in the **2\. Set up single sign on** widget.
+
+![](https://lh7-us.googleusercontent.com/7X2sgF0YghoHfdiPaqA-LFFeXoF-1arz85jS-HBQgFNGjnylYJzASYpUX9mHtDiei_jNg-O39bPuBxRW7tkiUh7QJiwAhMjAgy1nZIhlbI0CD2FdHLC_YcK6n2nP6PZyOs4SktSTwtjfn05GbQMf_LE)
+
 2.  At the **Single sign-on** page select the **SAML** widget to open the **SAML-based Sign-on** page
     
-    You will configure URLs and attributes by copying the information from nOps and pasting it into theBasic SAML Configuration page in Azure.
+    You will configure URLs and attributes by copying the information from nOps and pasting it into the Basic SAML Configuration page in Azure.
     
-3.  From **Basic SAML Configuration** click **Edit**, then click **Add identifier**.
+3.  In **Basic SAML Configuration** click **Edit**.
+
+![](https://lh7-us.googleusercontent.com/fJvSRJe7FSmjLl-k9IJZSn-OJmLUIzA80yaSFm_z49S1ZLO8aI4wuZbWZ_rKdAVaYBHGb5ojB7IVYVvMaepQWVxa2k4COcdvTv13p65TNWnA_7pi3j4pC2p0UevQUPSJB3v9whGqc4pHIGEM0EV6rao)
+
+4.  Replace or Add the **Identifier (Entity ID)** field with the **Entity ID** url from the nOps SSO page
     
-4.  Replace the **Identifier (Entity ID)** field with the **Entity ID** url from the nOps SSO page
+5.  Replace or Add the **Reply URL (Assertion Consumer Service URL)** with the **Assertion Consumer Service URL** from nOps
     
-5.  Replace the **Reply URL (Assertion Consumer Service URL)** with the **Assertion Consumer Service URL** from nOps
-    
-6.  Replace the **Sign on URL** in Azure with the **Shareable Link for IDP Login** url from nOps.
+6.  Replace or Add the **Sign on URL** in Azure with the **Shareable Link for IDP Login** url from nOps.
     
     [![](https://nops-b92747f563e0.intercom-attachments-7.com/i/o/470977253/7f70ec59bc3118b0895f978a/A5yZYagWUUpEJbobPQChTML6YPPn-ZTasWBYcn00U2awelJFTgqWpyNQ91waaUlfXhzekG9N4peDvk48xU_sDn4aEgBCpXPme6DXs0WW9K4lB7_4avX3lKxyYC543JbOXIi32pfH)](https://nops-b92747f563e0.intercom-attachments-7.com/i/o/470977253/7f70ec59bc3118b0895f978a/A5yZYagWUUpEJbobPQChTML6YPPn-ZTasWBYcn00U2awelJFTgqWpyNQ91waaUlfXhzekG9N4peDvk48xU_sDn4aEgBCpXPme6DXs0WW9K4lB7_4avX3lKxyYC543JbOXIi32pfH)
     
@@ -127,13 +134,13 @@ To complete the set up, copy the following items from the Azure portal to the nO
     
     [![](https://nops-b92747f563e0.intercom-attachments-7.com/i/o/470977266/c74b32ff0b9b81660f270322/JczXNi-NV-bm-1-KEF1i9T-O6O0Klcf9wsbrbo5NdE6OBpIxqnjCwUXQ1em5ggu9Ol9rZmXK8KUO6FU2VK1hLtf45qoblgLvJmGGH-hJqai0ECLGV8ul0QxRIEWfYBTJinC9l4aj)](https://nops-b92747f563e0.intercom-attachments-7.com/i/o/470977266/c74b32ff0b9b81660f270322/JczXNi-NV-bm-1-KEF1i9T-O6O0Klcf9wsbrbo5NdE6OBpIxqnjCwUXQ1em5ggu9Ol9rZmXK8KUO6FU2VK1hLtf45qoblgLvJmGGH-hJqai0ECLGV8ul0QxRIEWfYBTJinC9l4aj)
     
-4.  Copy the **Azure AD Identifier** URL into the nOps **Issuer URL (entityId).**
+4.  Copy the **Microsoft Entra Identifier** URL into the nOps **Issuer URL (entityId).**
     
     [![](https://nops-b92747f563e0.intercom-attachments-7.com/i/o/470977267/4aeb5713db52169bda1bc167/CDCtK1fdBZcPALzmxKMfpKgybddB4cF4CJ-A9j7YGkfKKNse6d3U_pOygIsTw9jFcZupK5Ud7GQ7P9-5-t5b9pzo4yAnjXqjccdX57qwAS8TNSWMy58hl9-48hKNXkJCPDZa5xnD)](https://nops-b92747f563e0.intercom-attachments-7.com/i/o/470977267/4aeb5713db52169bda1bc167/CDCtK1fdBZcPALzmxKMfpKgybddB4cF4CJ-A9j7YGkfKKNse6d3U_pOygIsTw9jFcZupK5Ud7GQ7P9-5-t5b9pzo4yAnjXqjccdX57qwAS8TNSWMy58hl9-48hKNXkJCPDZa5xnD)
     
 5.  In the **nOps SSO** dialog navigate to **User Roles/Groups**. For **Default role** select **client-admin** to apply this role as a default for all users logging in from the Azure portal.
     
-6.  Click **Setup SSO Configuration** to complete the setup.
+6.  Click **Setup SSO Configuration** or **Update SSO Configuration** to complete the setup.
     
     You have now completed the SSO set up on both nOps and on the Microsoft Azure portal.
     
@@ -148,14 +155,16 @@ You can now test your setup.
 2.  At the **Test single sign-on** dialog click the **Sign in as current user** and click **Test sign in**.
     
 3.  Navigate to the nOps webpage to see that you are being signed in through the Azure single sign on.
-    
+
 
 To create and add a Group configuration
 ---------------------------------------
 
 1.  Click the **Single sign-on** tab in the left pane.
+
+2. Click on **Edit** in the **Attributes & Claims** section 2.
     
-2.  **Click + Add a group claim** to add a group.
+3.  **Click + Add a group claim** to add a group.
     
 
 You will need to enter some advanced options for this claim.
@@ -164,13 +173,13 @@ You will need to enter some advanced options for this claim.
     
 2.  Then click the **Advanced options** link.
     
-3.  Click the **Filter groups (preview)** checkbox and enter information for the 3 fields:  
+3.  Click the **Filter groups** checkbox and enter information for the 3 fields:  
     Attribute to match: **Display name**  
     Match with: **Contains**  
     String: **nops**  
     The _string_ should match the name of the group you entered.
     
-4.  Check the **Customize the name of the group claim** box
+4.  Check the **Customize the name of the group claim** checkbox
     
 5.  Enter the Name for the attribute as: **User.Groups**
     
@@ -188,11 +197,11 @@ Add the group to the Azure portal.
     
 2.  From the Home page find and click **Groups**.
     
-3.  At the **Groups | All groups** page click **New group**.
+3.  At the **Groups \| All groups** page click **New group**.
     
 4.  For **Group name**, enter a name containing the String you entered earlier (nops). For example nops-group
     
-5.  Click **Create** to return to the **Groups | All groups** page. And refresh the page to see the group you added. You can also search for it.
+5.  Click **Create** to return to the **Groups \| All groups** page. And refresh the page to see the group you added. You can also search for it.
     
 6.  Copy the **Object ID** for the group and enter it in the **nOps SSO** page under **User Roles/Groups** \> **Client Admin Groups** field.
     
