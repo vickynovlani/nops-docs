@@ -14,33 +14,25 @@ weight: 1.0
 
 In the nOps platform, [navigate to the SSO Configuration settings](https://app.nops.io/v3/settings?tab=SSO) to enable SSO
 
-1. **Introduction**
 
-- Prerequisites 
+ # Steps to configure AWS SSO integration with nOps #
 
-- About AWS SSO
 
-- Using AWS SSO with nOps
-
-2.   **Steps to configure AWS SSO integration with nOps**
-
-    **Introduction:**
-
-- Prerequisites: 
+- **Prerequisites:** 
 
 1. You must be logged in to your nOps and AWS management account account. 
 
 2. IAM Identity Center must be enabled.
 
-- About AWS SSO: 
+- **About AWS SSO:** 
 
 AWS SSO (Amazon Web Services Single Sign-On) is a service offered by Amazon Web Services (AWS) that simplifies access management for AWS accounts and business applications. It is designed to centrally manage user access, permissions, and authentication across multiple AWS accounts and third-party applications.
 
-- Using AWS SSO with nOps
+- **Using AWS SSO with nOps**
 
 It’s now quick and easy to integrate SSO from your preferred SAML 2.0 provider, for enhanced security and simplified access management. Here are the steps. 
 
-**Steps to configure AWS SSO integration with nOps**
+**Steps to configure**
 
 Note: We suggest that you keep both the AWS and nOps platform open in the same browser to switch between during the steps. 
 
@@ -56,7 +48,7 @@ Note: We suggest that you keep both the AWS and nOps platform open in the same b
 
 ![](https://lh7-us.googleusercontent.com/_Ej88Q-JIC0kMqVsoVWw_23ISVqrx4Bi-nJdchpkGk1DAiVn2KrP3oKspgVjPK5U0rTLr8ZIrvQvDTtv6FYShp0N1X9IDWk-42L6plr5BUmH28aUz8VvlNtSQZ5EGInpsFRvIUxZBXXe1oXjGcHXnFY)
 
-2. **On the nOps platform, and navigate to _Organizational Settings_ → _SSO_ to __Enable SSO.** 
+2. **On the nOps platform, and navigate to Organizational Settings → SSO to Enable SSO.** 
 
 ![](https://lh7-us.googleusercontent.com/wp4Od6Ghlklv2C7edo1WyxfU92n-HI2iBRFESJ2TVix5lOiHB-XGjaIABSxqAptAeM2NQR0YByDtrbS-MPGYc6VodSYdqRpR1b_ROCpGRH9n5jSkAbtiwJ4VjNQC1hTXec2HcVbkOnbzBIv-mo7XUTo)
 
