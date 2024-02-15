@@ -46,12 +46,3 @@ weight: 5.0
 
    ![](https://lh7-us.googleusercontent.com/m--Q_mj_au0e7fopae8ZCqOk8RRJ7RKLutCh-IfGVoCy22o7Pf6eYzzmi9kyzsbgFq51CGLuGEBW2cdDAffHD-zkY5MGwlZpnk01tvdYiP9huWysNiy6fTd-Q-9ulos0w95QtpQepu2xSgoUvhyv2XY)
 
-
-## Steps to Enable Managed Instance Draining via Terraform<a id="steps-to-enable-managed-instance-draining-via-terraform"></a> ##
-
-Alternatively, this can also be achieved via [Terraform](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ecs_capacity_provider#managed_draining) by adding `managed_termination_protection = "ENABLED"` into to your block of ECS cluster as shown below 
-
-    auto_scaling_group_provider { 
-    auto_scaling_group_arn = aws_autoscaling_group.test.arn
-          managed_termination_protection = "ENABLED"
-    }
