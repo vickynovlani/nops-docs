@@ -1,6 +1,5 @@
 ---
 title: "nOpsDocs - nOps documentation"
-tags: [getting_started]
 keywords: knowledge base, support portal, home, doc portal
 sidebar: mydoc_sidebar
 permalink: index.html
@@ -10,7 +9,7 @@ folder: mydoc
 ---
 
 
-Click on a category to find relevant help documentation.
+Click on a category to view relevant help documentation.
 
 <div class="row">
     <div class="col-lg-12">

@@ -5,6 +5,8 @@ tags: [getting_started, onboarding]
 sidebar: mydoc_sidebar
 permalink: onboarding-aws-linked-accounts.html
 folder: GettingStarted
+series: [Onboarding]
+weight: 3.0
 ---
 
 # Onboarding AWS Linked Accounts #
@@ -69,3 +71,8 @@ Use the Terraform Multi Account Registration process when, along with your AWS O
 You can simply provide the Organizational Unit IDs (OUs) of your linked accounts during this setup and nOps will take care of the rest.
 
 To learn about this onboarding process, see [Adding Multiple AWS Accounts to nOps with Terraform](onboarding-aws-with-terraform.html).
+
+
+<br/><br/>
+
+{% include custom/series_related.html %}

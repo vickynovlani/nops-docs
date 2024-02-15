@@ -1,10 +1,12 @@
 ---
 title: View IAM Violations
 keywords: reporting
-tags: [reporting, solutions]
+tags: [cost_visibility]
 sidebar: mydoc_sidebar
 permalink: rules-view-iam-violations.html
 folder: UserGuides
+series: [Visibility]
+weight: 7.0
 ---
 
 # View IAM Violations
@@ -29,3 +31,7 @@ On the left side-bar, there is a section called **Filters**. Under Filters, ther
 ![](/tmpimg/rules4.png)
 
 This will show a list of IAM violations on the right-hand side. From the screenshot we can see at least 4 sections of violations; 266 AWS IAM roles aren't attached to any resource, 36 users have not been granted least privilege permissions in AWS IAM, 11 active root account access key(s) detected, 6 AWS IAM users aren't using MFA-enabled sign in
+
+<br/><br/>
+
+{% include custom/series_related.html %}

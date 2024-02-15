@@ -1,9 +1,9 @@
 ---
 title: EC2 Rightsizing with nOps with DataDog integration
 keywords: savings, recommendations, datadog, essentials, rightsizing
-tags: [savings, recommendations, datadog, essentials, rightsizing]
+tags: [essentials]
 sidebar: mydoc_sidebar
-permalink: ec2-rightisizing-with-nops-using-datadog.html
+permalink: ec2-rightsizing-with-nops-using-datadog.html
 folder: Essentials
 series: [Essentials, Rightsizing]
 weight: 2.0

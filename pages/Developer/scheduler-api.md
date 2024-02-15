@@ -1,7 +1,7 @@
 ---
 title: The nOps Scheduler API Guide
 keywords: setup, onboarding, nswitch, sharesave, slackbot, developer, api
-tags: [onboarding, sharesave, nswitch, developer]
+tags: [developer]
 sidebar: mydoc_sidebar
 permalink: scheduler-api.html
 folder: Developer

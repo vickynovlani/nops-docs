@@ -1,10 +1,12 @@
 ---
 title: Okta SSO Integration
 keywords: sso, setup, onboarding
-tags: [getting_started, onboarding, sso]
+tags: [onboarding, sso]
 sidebar: mydoc_sidebar
 permalink: sso-okta.html
 folder: GettingStarted
+series: [Onboarding, SSO]
+weight: 4.0
 ---
 
 
@@ -167,3 +169,7 @@ You can also check the box to specify whether the SAML group configuration can o
 ![](/tmpimg/okta-roles.png)
 
 When you are done click **Setup SSO Configuration.**
+
+<br/><br/>
+
+{% include custom/series_related.html %}

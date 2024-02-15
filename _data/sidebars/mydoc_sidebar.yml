@@ -108,6 +108,9 @@ entries:
           url: /sso-aws.html
           output: web
 
+        - title: SSO with Azure
+          url: /sso-azure.html
+          output: web
 
 
   - title: Compute Copilot
@@ -123,9 +126,17 @@ entries:
         output: web
         subfolderitems:
 
-        - title: Onboarding EKS clusters
+        - title: Onboarding EKS with Karpenter
           url: /copilot-eks-onboarding.html
           output: web
+
+        - title: Onboarding EKS with Cluster Autoscaler
+          url: /copilot-eks-cas-guide.html
+          output: web          
+
+        - title: Karpenter Beta Support
+          url: /copilot-eks-karpenter-beta.html
+          output: web        
 
       - title: ASG
         output: web
@@ -147,6 +158,13 @@ entries:
           url: /copilot-asg-by-tag.html
           output: web  
 
+      - title: ECS
+        output: web
+        subfolderitems:
+
+        - title: Copilot for ECS
+          url: /copilot-ecs.html
+          output: web
 
     - title: Configure Commitment Management
       url: /copilot-cm-configure.html
@@ -170,7 +188,7 @@ entries:
         output: web                 
 
       - title: EC2 Rightsizing with DataDog
-        url: /ec2-rightisizing-with-nops-using-datadog.html
+        url: /ec2-rightsizing-with-nops-using-datadog.html
         output: web             
 
   - title: Agents and Integrations
@@ -228,41 +246,13 @@ entries:
       output: skip
 
       subfolders:
-      - title: Cost
+      - title: Business Context
         output: web
         subfolderitems:
 
-        - title: Working With Commitment Management
-          url: /cost-commitment-management.html
-          output: web   
-
-        - title: Cost Analysis for Cloud Resources
+        - title: Cost Analysis
           url: /business-context-cost-analysis.html
-          output: web
-
-        - title: Resource Rightsizing
-          url: /cost-resource-rightsizing.html
-          output: web          
-
-        - title: Cost Change Management
-          url: /cost-change-management.html
-          output: web
-
-        - title: Tag Explorer
-          url: /cost-tag-explorer.html
-          output: web  
-
-      - title: Dashboards
-        output: web
-        subfolderitems:
-
-        - title: The nOps Dashboard
-          url: /dashboards-nops-dashboard.html
-          output: web
-
-        - title: nOps DSL
-          url: /dashboards-nops-dsl.html
-          output: web
+          output: web   
 
       - title: Data Explorer
         output: web
@@ -300,18 +290,6 @@ entries:
           url: /rules-view-iam-violations.html
           output: web
 
-      - title: Security
-        output: web
-        subfolderitems:
-
-        - title: View Security Violations
-          url: /security-view-violations.html
-          output: web
-
-        - title: Check Multi-Factor Authentication
-          url: /security-mfa-activated.html
-          output: web
-
       - title: Settings
         output: web
         subfolderitems:
@@ -340,105 +318,17 @@ entries:
           url: /settings-notification-center.html
           output: web
 
-  - title: Workload
+
+  - title: MAP
     output: web
     folderitems:
 
-    - title: skip
-      url:
-      output: skip
-
-      subfolders:
-      - title: Workloads
-        output: web
-        subfolderitems:
-
-        - title: Add Resources to Workloads
-          url: /workload-add-new-resources.html
-          output: web
-
-        - title: Workload API
-          url: /workload-api.html
-          output: web
-
-        - title: Attach Documents to Workloads
-          url: /workload-attach-documents.html
-          output: web
-
-        - title: Create Workloads
-          url: /workload-create.html
-          output: web
-
-        - title: Evaluate Risk for a Workload
-          url: /workload-evaluate-risk.html
-          output: web
-
-        - title: View and Manage Workloads
-          url: /workload-view-and-manage.html
-          output: web
-
-      - title: Well Architected Framework
-        output: web
-        subfolderitems:
-
-        - title: Export a WAFR Report
-          url: /wafr-export.html
-          output: web
-
-        - title: WAFR Report
-          url: /wafr-report.html
-          output: web
-
-        - title: WAFR Review
-          url: /wafr-review.html
-          output: web
-
-      - title: MAP
-        output: web
-        subfolderitems:
-
-        - title: Automated Tagging for AWS MAP
-          url: /automated-tagging-for-aws-map.html
-          output: web
-
-        - title: Backfill a CUR for AWS MAP
-          url: /backfilling-a-cur-file.html
-          output: web
-
-      - title: FTR
-        output: web
-        subfolderitems:
-
-        - title: The AWS Foundational Technical Review
-          url: /ftr-aws-foundational-technical-review.html
-          output: web
-
-        - title: The FTR Report
-          url: /ftr-aws-ftr-report.html
-          output: web          
-
-        - title: FTR Question Descriptions
-          url: /ftr-question-descriptions.html
-          output: web  
-
-  - title: Solutions
-    output: web
-    folderitems:
-
-    - title: Cost Optimization Recommendations
-      url: /solutions-cost-optimization-rec.html
+    - title: Automated Tagging for AWS MAP
+      url: /automated-tagging-for-aws-map.html
       output: web
 
-    - title: NAT Gateway Visibility
-      url: /solutions-nat-gateway-visibility.html
-      output: web
-
-    - title: Evaluating the Cost Impact of a Changeset
-      url: /solutions-evaluating-changeset-costs.html
-      output: web
-
-    - title: Using EventBridge with Scheduler to Reduce Costs
-      url: /solutions-using-eventbridge-with-scheduler-to-reduce-costs.html
+    - title: Backfill a CUR for AWS MAP
+      url: /automated-tagging-for-aws-map.html
       output: web
 
   - title: Developer

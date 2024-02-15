@@ -1,7 +1,7 @@
 ---
 title: EKS Provisioner Examples
 keywords: savings, recommendations, sharesave, nks, karpenter, compute copilot, examples
-tags: [savings, recommendations, sharesave, eks, nks, copilot]
+tags: [copilot, eks]
 sidebar: mydoc_sidebar
 permalink: copilot-eks-examples.html
 folder: Copilot
@@ -11,7 +11,7 @@ weight: 1.0
 
 # Examples of good configuration templates for EKS Copilot #
 
-The following are examples of versatile node templates and provisioner templates that work well to maximiz savings with nOps.
+The following are examples of versatile node templates and provisioner templates that work well to maximize savings with nOps.
 
 
 ## EKS Node Templates ##
@@ -107,3 +107,7 @@ metadata:
   name: nops-eks-karpenter-1-provisioner-001
 apiVersion: karpenter.sh/v1alpha5
 ```
+
+
+
+{% include custom/series_related.html %}

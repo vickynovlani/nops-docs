@@ -1,7 +1,9 @@
 ---
 title: Disable Notifications
 keywords: getting started, settings
-tags: [getting_started, settings]
+series: [Visibility]
+weight: 8.7
+tags: [cost_visibility]
 sidebar: mydoc_sidebar
 permalink: settings-disable-notifications.html
 folder: UserGuides
@@ -31,3 +33,8 @@ To delete a user from getting a notification to take the following steps
 1. Click the **X** next to the email that should be removed from receiving notifications. Next, go through each section to make sure they are not listed on the other tabs **(Cost Changes, nOps Rules, Security Dashboard, SOC2 Readiness Report, HIPAA Readiness Report, CIS Readiness Report)**
 
 1. Click **Update Preferences.**
+
+
+<br/><br/>
+
+{% include custom/series_related.html %}

@@ -5,6 +5,8 @@ tags: [agents_integrations]
 sidebar: mydoc_sidebar
 permalink: webhook-integration.html
 folder: Integrations_and_Agents
+series: [agents_integrations]
+weight: 7.0
 ---
 
 {: .no_toc }

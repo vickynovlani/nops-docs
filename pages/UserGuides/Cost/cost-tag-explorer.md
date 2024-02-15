@@ -1,10 +1,12 @@
 ---
 title: Tag Explorer to Manage Tag Competency
 keywords: cost reporting, cost history, cost allocation
-tags: [cost_visibility, reporting, savings, solutions]
+tags: [cost_visibility, solutions]
 sidebar: mydoc_sidebar
 permalink: cost-tag-explorer.html
 folder: UserGuides
+series: [Visibility]
+weight: 2.0
 ---
 
 # Tag Explorer - Manage Tag Competency
@@ -75,3 +77,7 @@ A pop-up dialog provides details on when the Service was created and last used.
     
 
 ![](/tmpimg/resource-jira-console.png)
+
+<br/><br/>
+
+{% include custom/series_related.html %}

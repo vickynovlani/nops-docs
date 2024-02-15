@@ -5,6 +5,7 @@ tags: [getting_started, onboarding]
 sidebar: mydoc_sidebar
 permalink: onboarding-aws-with-terraform.html
 folder: GettingStarted
+weight: 8.0
 ---
 
 # Adding AWS Account(s) to nOps with Terraform #
@@ -130,3 +131,8 @@ On initial ingestion, nOps will pull the data from AWS accounts based on the fol
 * **Rules:** Current date.
     
 * **CloudTrail Events:** 14 days look back.
+
+
+<br/><br/>
+
+{% include custom/series_related.html %}

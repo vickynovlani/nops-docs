@@ -1,7 +1,9 @@
 ---
 title: Data Purge
 keywords: getting started, settings
-tags: [getting_started, settings]
+series: [Visibility]
+weight: 8.5
+tags: [cost_visibility]
 sidebar: mydoc_sidebar
 permalink: settings-data-purge.html
 folder: UserGuides
@@ -60,3 +62,7 @@ The data purge policy describes how we purge data after you delete an account an
     
 
 For more information on our Privacy Policy please visit here: [nOps Privacy Policy](https://nops.io/privacy-policy/)
+
+<br/><br/>
+
+{% include custom/series_related.html %}

@@ -6,7 +6,7 @@ sidebar: mydoc_sidebar
 permalink: onboarding-service-control-policies.html
 folder: GettingStarted
 series: [Onboarding]
-weight: 9.0
+weight: 7.0
 ---
 
 # Onboarding to nOps with Service Control Policies (SCP) #

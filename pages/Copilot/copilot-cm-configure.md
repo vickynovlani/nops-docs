@@ -1,7 +1,7 @@
 ---
 title: Configure Commitment Management
 keywords: savings, recommendations, sharesave, savings plans, commitment management
-tags: [savings, recommendations, sharesave]
+tags: [copilot]
 sidebar: mydoc_sidebar
 permalink: copilot-cm-configure.html
 folder: Copilot

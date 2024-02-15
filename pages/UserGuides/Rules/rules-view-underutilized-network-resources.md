@@ -1,10 +1,12 @@
 ---
 title: View Under-Utilized Network Resources
 keywords: reporting, underutilization, waste
-tags: [reporting, solutions]
+tags: [cost_visibility]
 sidebar: mydoc_sidebar
 permalink: rules-view-underutilized-network-resources.html
 folder: UserGuides
+series: [Visibility]
+weight: 8.0
 ---
 # View Under-Utilized Network Resources
 
@@ -44,3 +46,8 @@ Under the **Rule Name** there is an option to view the underutilized resource in
 On the **Unused Resource Details** will list in detail the resources. By clicking the 3 dots on the right-hand side of the resource detail, it will list actions to resolve this issue.
 
 ![](/tmpimg/rules8.png)
+
+
+<br/><br/>
+
+{% include custom/series_related.html %}

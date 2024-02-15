@@ -1,7 +1,7 @@
 ---
 title: Getting started with the nOps developer API
 keywords: setup, onboarding, sharesave, api, developer
-tags: [getting_started, api, sharesave, developer]
+tags: [developer]
 sidebar: mydoc_sidebar
 permalink: developer-getting-started.html
 folder: Developer

@@ -1,11 +1,11 @@
 ---
 title: Integrate DataDog with nOps Platform
 keywords: savings, recommendations, datadog, essentials, rightsizing
-tags: [savings, recommendations, datadog, essentials, rightsizing]
+tags: [agents_integrations, essentials]
 sidebar: mydoc_sidebar
 permalink: integrate-datadog-with-nops-platform.html
 folder: Integrations_and_Agents
-series: [Essentials, ShareSave, Integrations]
+series: [agents_integrations]
 weight: 2.0
 ---
 

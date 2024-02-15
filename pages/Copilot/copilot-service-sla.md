@@ -1,7 +1,7 @@
 ---
 title: Compute Copilot Spot Instance Reliability SLA
 keywords: savings, recommendations, sharesave, spot, cost copilot, asg, eks, nks
-tags: [savings, recommendations, sharesave, copilot]
+tags: [copilot]
 sidebar: mydoc_sidebar
 permalink: copilot-service-sla.html
 folder: Copilot
@@ -32,7 +32,7 @@ This SLA goes beyond the ordinary and demonstrates our unwavering commitment to 
 Never. Any credit will be automatically applied as part of our monthly billing cycle. If, by any chance, you think we missed a credit, simply report the incident to our support team within 72 hours of final monthly billing, and we'll take care of the rest.
 
 ### When does it take effect? ###
-The nKS Spot Instance Reliability SLA is effective from September 6th, and we can't wait to show you the difference it makes in your experience with our service.
+The Compute Copilot Spot Instance Reliability SLA is effective from September 6th, and we can't wait to show you the difference it makes in your experience with our service.
 
 
 ### Are there any other considerations? ###

@@ -1,7 +1,9 @@
 ---
 title: Customize Settings
 keywords: getting started, settings
-tags: [getting_started, settings]
+series: [Visibility]
+weight: 8.3
+tags: [cost_visibility]
 sidebar: mydoc_sidebar
 permalink: settings-customize.html
 folder: UserGuides
@@ -37,3 +39,7 @@ There are multiple options to choose which settings should be enabled. Below is 
 **Default Tagging:** Create Tags for your Resources
 
 If you need further assistance please follow the help articles below or email: [help@nops.io](mailto:help@nops.io)
+
+<br/><br/>
+
+{% include custom/series_related.html %}

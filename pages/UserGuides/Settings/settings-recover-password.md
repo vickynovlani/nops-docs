@@ -1,7 +1,9 @@
 ---
 title: Recover Your Password
 keywords: getting started, settings
-tags: [getting_started, settings]
+series: [Visibility]
+weight: 9.0
+tags: [cost_visibility]
 sidebar: mydoc_sidebar
 permalink: settings-recover-password.html
 folder: UserGuides
@@ -23,3 +25,8 @@ How Recover a lost password
 
 ![](/tmpimg/pword-reset.png)
 
+
+
+<br/><br/>
+
+{% include custom/series_related.html %}

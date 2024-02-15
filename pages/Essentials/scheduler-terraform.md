@@ -1,7 +1,7 @@
 ---
 title: nOps Scheduler with Terraform
 keywords: savings, recommendations, scheduler, essentials, terraform
-tags: [savings, recommendations, scheduler, essentials]
+tags: [essentials, scheduler]
 sidebar: mydoc_sidebar
 permalink: scheduler-terraform.html
 folder: Essentials

@@ -1,7 +1,9 @@
 ---
 title: Notifications Center
 keywords: getting started, settings
-tags: [getting_started, settings]
+series: [Visibility]
+weight: 8.9
+tags: [cost_visibility]
 sidebar: mydoc_sidebar
 permalink: settings-notification-center.html
 folder: UserGuides
@@ -35,3 +37,8 @@ In the **_Notifications Center,_** you can configure different notifications bas
 ===================================
 
 ![](/tmpimg/notification-email.png)
+
+
+<br/><br/>
+
+{% include custom/series_related.html %}
