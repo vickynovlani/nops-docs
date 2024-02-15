@@ -1,7 +1,7 @@
 ---
 title: Onboarding your Autoscaling Groups to nOps Compute Copilot via Stackset
 keywords: savings, recommendations, sharesave, asg, copilot, autoscaling
-tags: [savings, recommendations, sharesave, copilot, asg]
+tags: [copilot, asg]
 sidebar: mydoc_sidebar
 permalink: copilot-asg-stackset.html
 folder: Copilot
@@ -17,9 +17,9 @@ Using CloudFormation, it’s easy to automatically onboard and configure multipl
 Creating a [StackSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-concepts.html) in your AWS Management (Master) Account will deploy Stack Instances in all child accounts automatically. It allows you to save time by configuring many accounts simultaneously (following the service-managed permissions model). 
 
 
-## More information on service-managed permissions ##
+## More information on service-managed permissions ##
 
-_With service-managed permissions, you can deploy stack instances to accounts managed by AWS Organizations. Using this permissions model, you don't have to create the necessary IAM roles; StackSets creates the IAM roles on your behalf. With this model, you can also turn on automatic deployments to accounts that you add to your organization in the future._
+With service-managed permissions, you can deploy stack instances to accounts managed by AWS Organizations. Using this permissions model, you don't have to create the necessary IAM roles; StackSets creates the IAM roles on your behalf. With this model, you can also turn on automatic deployments to accounts that you add to your organization in the future.
 
 
 ## How to configure via StackSet ##
@@ -50,7 +50,7 @@ _With service-managed permissions, you can deploy stack instances to accounts ma
 - From within the **AWS Console > CloudFormation > Stacksets page**, click **Create Stackset**.
 - In the **Specify template** section, choose **Amazon S3 URL**. 
 
-Add the following S3 URL: **_https\://nops-prd-asg-lambda-us-east-1.s3.amazonaws.com/v0.4.6/cloudformation/lambda-v0.4.6.yaml_**\
+Add the following S3 URL: **_https\://nops-prd-asg-lambda-us-east-1.s3.amazonaws.com/v0.4.6/cloudformation/lambda-v0.4.6yaml_**\
 ![](https://lh7-us.googleusercontent.com/BBQWD1rQA4d2DGO3dFwUgIEgBfg30PauFszqDZO4em0eGXdv3QNBFvggVJhiTVyo_J_Iz-UVxykZ2ALJ-4wGwm0mNLh5NFrKeONRmoOsOyuFomK90hs3lCmjUPzlius68Bol74rLjkrEadt8J4e8RNA)
 
 
@@ -64,7 +64,6 @@ Add the following S3 URL: **_https\://nops-prd-asg-lambda-us-east-1.s3.amazonaw
 | ParameterKey | ParameterValue               | Modifiable?  |
 | --- | --- | --- |
 | AutoUpdate   | true                         | We highly recommend not modifying. AutoUpdate will ensure you have the latest version of Lambda in your account at all times without the need for manual updating.  |
-| ClientID     |                              | This value is the clientID with nOps. It is not modifiable. You can find this by login to **nOps Dashboard > Profile**                                              |
 | Environment  | prd                          | This should not be modified, as this environment has been vigorously and thoroughly tested for stability.                                                           |
 | MemorySize   | 1024                         | This is the total memory for the Lambda Function. We recommend that you have this at 1024 MB for stable performance.                                                |
 | ProjectID    | 0                            | NO                                                                                                                                                                  |
