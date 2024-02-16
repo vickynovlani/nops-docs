@@ -34,7 +34,7 @@ weight: 5.0
 
 3. You must have the correct permissions. 
 
-4. You must have an ECS cluster with ASG as a capacity provider.
+4. You must have an ECS cluster with ASG as a capacity provider. 
 
 
 ## Steps to Enable Managed Instance Draining via the AWS console<a id="steps-to-enable-managed-instance-draining-via-the-aws-console"></a> ##
