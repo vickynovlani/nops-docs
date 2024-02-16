@@ -45,7 +45,7 @@ Note: We suggest that you keep both the AWS and nOps platform open in the same b
 - Select **Application Type: SAML 2.0**
 
 - Provide a suitable **Display name** & **Description** to configure
-
+<br>
 ![](https://lh7-us.googleusercontent.com/_Ej88Q-JIC0kMqVsoVWw_23ISVqrx4Bi-nJdchpkGk1DAiVn2KrP3oKspgVjPK5U0rTLr8ZIrvQvDTtv6FYShp0N1X9IDWk-42L6plr5BUmH28aUz8VvlNtSQZ5EGInpsFRvIUxZBXXe1oXjGcHXnFY)
 <br>
 2. **On the nOps platform, and navigate to Organizational Settings → SSO to Enable SSO.** 
@@ -59,7 +59,7 @@ Note: We suggest that you keep both the AWS and nOps platform open in the same b
 * Copy the **Assertion Consumer Service URL** from **nOps** **SSO Integration Details** and paste it into  **Application ACS URL**.
 
 - Copy the **Entity ID** from **nOps SSO integration Details** and paste it into the  **Application MetaData** field **Application SAML audience**
-
+<br>
 ![](https://lh7-us.googleusercontent.com/73lg69U2gUGKpd-afGO8vZN_GWZX6F9Cwr8_-eJCzcILWc-R4mHpSV27F4Zm23mnFJ6lJwN8kfafG7fFRampimPZIVjNApjoRV7OPMgm4lXsVRXKJi8sOYLSy5eNOIsgc1cYS86pwyZ5uXMkfNxO8s4)
 
 <br>
@@ -72,7 +72,7 @@ Note: We suggest that you keep both the AWS and nOps platform open in the same b
 - Open the IAM Identity Certificate into a text editor such as Notepad 
 
 - Copy the Certificate data and paste it into the **nOps platform** **→** **Organization Settings** **→** **SSO** **→** **Your** **SSO** **Details** section field: **X.509 Certificate**
-
+<br>
 ![](https://lh7-us.googleusercontent.com/n32Id8ZKiboWjKWQaTVtHj-X4KeKsPbI-Gz88thJOh3vpdCg5r9k4SztuB-DykdqbNxZFHxBKtRRaz8TLEfJPvQQ7eKuTO8PYEkrit0FgF5SZYSA-NR0BR5lwbLU986ZQaZQHU8ZIb0wxdSry9p71_M)
 
 <br>
@@ -124,17 +124,22 @@ Note: We suggest that you keep both the AWS and nOps platform open in the same b
 
 8\. **Accept the Invitation in your \[added users in nOps application] email received from AWS with the subject: Invitation to join AWS IAM Identity Center (successor to AWS Single Sign-On).**
 
-- Accept the invitation
+- Accept the invitation received on your email as shown below.
 
 - Using the AWS access portal URL given in the email, set up the credentials **\[note: use the given username in the email]**
 
 - Once you set up the credentials, you will be redirected to the AWS portal where you can view the created **nOps Application** 
 
-- Click on the nOps Application to be redirected to the nOps platform with no Sign-in required. 
+
 
 ![](https://lh7-us.googleusercontent.com/vE_zj6Dp52B-D8_dqQCBhYIWOtGRq3dNw_BZs3K5SML_0KjfyGBr1w5H8XtrvO9SZ7083TU8tuCmQVK5mLJpdRWss7CwPEM5T2oeRbFv8FnitmriPaRO2MMEtKHJ2NUpu_YkhTplN5pqYU4aC4f0AfI)
 
-Email Copy
+<br>
+<br>
+- Click on the nOps Application to be redirected to the nOps platform with no Sign-in required. 
+
+<br> <br>
+
 
 ![](https://lh7-us.googleusercontent.com/iVs_UcQNc_OCh1zy2EzotOUSxB3ZpcMUl-86YMC9L8cgLq5V1uIRakKRFCdR-sh6BmMh5up3yyN11SLj5sAvpfJiwJIJ0TBKlS7k9Wb-5CEOWH5pfrT_k4jiYxNKJI5Cl2iVdIaFRMECFgAPmY6w5yk)
 
