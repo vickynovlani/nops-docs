@@ -9,7 +9,7 @@ series: [Essentials, Rightsizing]
 weight: 2.0
 ---
 
-##How to Install Amazon CloudWatch Agent on an EC2 Instance for Enhanced Rightsizing Recommendations
+## How to Install Amazon CloudWatch Agent on an EC2 Instance for Enhanced Rightsizing Recommendations
 
 
 
@@ -98,7 +98,7 @@ This command checks the version of the AWS CLI installed on the instance.
 
 
 
-****![](https://lh7-us.googleusercontent.com/D4QzWSTJt2nQuBoVUMiLYBWPOTBu8NYyn5omgqyQGRey__ydFkNXBE-su0uqG1clL7KGJrWsfWzXOp_afYbluZOomnPlx33A9gREkpyWH9uI984aNd1OsFmJrJGTrpub498E5PZiAjs7mnWM1dzHASQ)****
+![](https://lh7-us.googleusercontent.com/D4QzWSTJt2nQuBoVUMiLYBWPOTBu8NYyn5omgqyQGRey__ydFkNXBE-su0uqG1clL7KGJrWsfWzXOp_afYbluZOomnPlx33A9gREkpyWH9uI984aNd1OsFmJrJGTrpub498E5PZiAjs7mnWM1dzHASQ)
 
 
 
