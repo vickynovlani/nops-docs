@@ -66,6 +66,19 @@ weight: 2.0
 
 ![](https://lh7-us.googleusercontent.com/zNUIUY76pvYB9J7kYr1bSlAF3sd_Nl-2CmuRxEg5RA2g6IACZg3zk8AWRzKr3KBuyRz17-5WxlgnN63Zu3m28YznRh0cxBrT3PzyVB391j1FJRxaOnmcqaNJPATcdUCf6-_aWN_RTryC9Eh1OebAimU)
 
+
+**Note:** If the instance ID is missing in DataDog,
+
+Please make sure that DataDog can identify instance\_ids for your instances. You can check it here <https://app.datadoghq.com/infrastructure>. If that is not the case, try the following:
+
+1. Adding this line to your DataDog agent configuration file:
+
+    **ec2_prefer_imdsv2: true**
+
+    <br>
+    Referring to 
+    https://docs.datadoghq.com/integrations/guide/aws-integration-troubleshooting/#ec2-metadata-with-imds-v2
+
 <br/><br/>
 
 {% include custom/series_related.html %}
