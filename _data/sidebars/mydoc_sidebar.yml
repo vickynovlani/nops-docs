@@ -183,7 +183,7 @@ entries:
         url: /ec2-rightsizing-with-nops-using-datadog.html
         output: web     
 
-      - title: CloudWatch Agent Configuration for Linux Ec2
+      - title: CloudWatch Configuration for Linux EC2
         url: /cloudwatch-agent-configuration-on-linux-based-ec2.html
         output: web        
 
