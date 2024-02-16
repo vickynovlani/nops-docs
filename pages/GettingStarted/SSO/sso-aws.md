@@ -47,22 +47,25 @@ Note: We suggest that you keep both the AWS and nOps platform open in the same b
 - Provide a suitable **Display name** & **Description** to configure
 
 ![](https://lh7-us.googleusercontent.com/_Ej88Q-JIC0kMqVsoVWw_23ISVqrx4Bi-nJdchpkGk1DAiVn2KrP3oKspgVjPK5U0rTLr8ZIrvQvDTtv6FYShp0N1X9IDWk-42L6plr5BUmH28aUz8VvlNtSQZ5EGInpsFRvIUxZBXXe1oXjGcHXnFY)
-
+<br>
 2. **On the nOps platform, and navigate to Organizational Settings → SSO to Enable SSO.** 
-
+<br>
 ![](https://lh7-us.googleusercontent.com/wp4Od6Ghlklv2C7edo1WyxfU92n-HI2iBRFESJ2TVix5lOiHB-XGjaIABSxqAptAeM2NQR0YByDtrbS-MPGYc6VodSYdqRpR1b_ROCpGRH9n5jSkAbtiwJ4VjNQC1hTXec2HcVbkOnbzBIv-mo7XUTo)
-
+<br>
 3.  **Perform the following steps on the AWS platform where Application creation is in progress.**
 
 - Copy the **IAM Identity Center SAML Issuer URL** from AWS. In the nOps platform browser tab, paste the URL into the fields: **Issuer URL (entityId)** & **SAML 2.0 Endpoint (HTTP) (singleSignOnService: URL)**
 
 * Copy the **Assertion Consumer Service URL** from **nOps** **SSO Integration Details** and paste it into  **Application ACS URL**.
 
-- Copy the **Entity ID** from **nOps SSO integration Details** and paste it into the  **Application MetaData** field **Application SAML audience**.
+- Copy the **Entity ID** from **nOps SSO integration Details** and paste it into the  **Application MetaData** field **Application SAML audience**
 
 ![](https://lh7-us.googleusercontent.com/73lg69U2gUGKpd-afGO8vZN_GWZX6F9Cwr8_-eJCzcILWc-R4mHpSV27F4Zm23mnFJ6lJwN8kfafG7fFRampimPZIVjNApjoRV7OPMgm4lXsVRXKJi8sOYLSy5eNOIsgc1cYS86pwyZ5uXMkfNxO8s4)
 
-4\.  **Download the IAM Identity Certificate.**
+<br>
+<b>
+4. Download the IAM Identity Certificate
+</b>
 
 - Switch to the AWS platform and download the IAM Identity Certificate
 
@@ -71,6 +74,8 @@ Note: We suggest that you keep both the AWS and nOps platform open in the same b
 - Copy the Certificate data and paste it into the **nOps platform** **→** **Organization Settings** **→** **SSO** **→** **Your** **SSO** **Details** section field: **X.509 Certificate**
 
 ![](https://lh7-us.googleusercontent.com/n32Id8ZKiboWjKWQaTVtHj-X4KeKsPbI-Gz88thJOh3vpdCg5r9k4SztuB-DykdqbNxZFHxBKtRRaz8TLEfJPvQQ7eKuTO8PYEkrit0FgF5SZYSA-NR0BR5lwbLU986ZQaZQHU8ZIb0wxdSry9p71_M)
+
+<br>
 
 5\. **Create an Application in the IAM Identity Center with filled configuration details and configure Attribute mappings.**
 
@@ -86,7 +91,11 @@ Note: We suggest that you keep both the AWS and nOps platform open in the same b
 | User.FirstName  | ${user:givenName}  | basic        |
 | User.LastName   | ${user:familyName} | basic        |
 
+<br>
+
 ![](https://lh7-us.googleusercontent.com/39XtfaWyScJVMNsBmdr_xM4sGSEJkj9IKEEbWAl45x-cbrSZgHSZ_43UK-jKloIwg44qYtD2v866xskEjlvY4bp0Wzmh3MGXTy5HwKu5Fo7w8TVnbNtjPQJ-9Mq6vQ3dTRzCKhWB6x2Dao28wnwV1EQ)
+
+<br>
 
 6.  **Provide default roles in the nOps platform.**
 
@@ -95,6 +104,8 @@ Note: We suggest that you keep both the AWS and nOps platform open in the same b
 - Click on **Setup SSO Configuration**.
 
 ![](https://lh7-us.googleusercontent.com/0OHLPR0GJgJETZ_M65UdiZ-0sT_xf4-eoNxhSr8AgBdDbfF9pimUntFDJ9O1-NXpiqaMjFOLMZ6BxIrs2mMcpSJCR8om7yeVg0Aux9h1uNHyPsstuBk9H-w1wb0dRYNbo4VuF3lf3xR8S7iRkbvQI48)
+
+<br>
 
 7\. **Switch to AWS IAM Identity Center to Create Groups and Users, and assign them in the nOps Application.** 
 
@@ -105,10 +116,11 @@ Note: We suggest that you keep both the AWS and nOps platform open in the same b
 - Create **Users** in the left panel of the **IAM Identity Center** and add these users to the created **Group**.
 
 - Redirect to **Application → Application → Customer Managed →** open ****nOps Application and **Assign Users or Group** to this Application.
+<br>
 
 ![](https://lh7-us.googleusercontent.com/jwYMhP04aclYsPhm__PLhRphXMg7G-QYY-5AzsTsbVAPNEOoIY6D7ib-ynCoGDFQ9YJaU0rPvP1LlkGBGoUC1_fqOelnNqYyGH3RhDzCXECT_a_pnf4GVkCCDHVLpwRBQZgoal727MstiTVyVRLqTA4)
 
-Note: Ensure user access and user status are enabled.
+**Note**: Ensure user access and user status are enabled.
 
 8\. **Accept the Invitation in your \[added users in nOps application] email received from AWS with the subject: Invitation to join AWS IAM Identity Center (successor to AWS Single Sign-On).**
 
@@ -124,15 +136,15 @@ Note: Ensure user access and user status are enabled.
 
 Email Copy
 
-****![](https://lh7-us.googleusercontent.com/iVs_UcQNc_OCh1zy2EzotOUSxB3ZpcMUl-86YMC9L8cgLq5V1uIRakKRFCdR-sh6BmMh5up3yyN11SLj5sAvpfJiwJIJ0TBKlS7k9Wb-5CEOWH5pfrT_k4jiYxNKJI5Cl2iVdIaFRMECFgAPmY6w5yk)****
+![](https://lh7-us.googleusercontent.com/iVs_UcQNc_OCh1zy2EzotOUSxB3ZpcMUl-86YMC9L8cgLq5V1uIRakKRFCdR-sh6BmMh5up3yyN11SLj5sAvpfJiwJIJ0TBKlS7k9Wb-5CEOWH5pfrT_k4jiYxNKJI5Cl2iVdIaFRMECFgAPmY6w5yk)
 
 **9.  You will receive an email confirming that you wish to allow SSO access.** 
 
-****![](https://lh7-us.googleusercontent.com/SXmg4bNvn-eFRGPRvxr7COdWsI0PyYZnNF2hif5lbueM-nSw-Jj3AlSXe8F3kCLVwmSE22JWBzfWAxIutcJC-KD66X1uxkaZkBMvaQC_QqVWn0AvfPLCi4t0CYwLMXoUVrMldyVS8VtBRXqGsGXczcg)****
+![](https://lh7-us.googleusercontent.com/SXmg4bNvn-eFRGPRvxr7COdWsI0PyYZnNF2hif5lbueM-nSw-Jj3AlSXe8F3kCLVwmSE22JWBzfWAxIutcJC-KD66X1uxkaZkBMvaQC_QqVWn0AvfPLCi4t0CYwLMXoUVrMldyVS8VtBRXqGsGXczcg)
 
 **10. You will be able to use the AWS access portal URL given in the email to directly access the nOps Application.** 
 
-****
+
 
 
 
