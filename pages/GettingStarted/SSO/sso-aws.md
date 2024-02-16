@@ -115,7 +115,8 @@ Note: We suggest that you keep both the AWS and nOps platform open in the same b
 
 - Create **Users** in the left panel of the **IAM Identity Center** and add these users to the created **Group**.
 
-- Redirect to **Application → Application → Customer Managed →** open ****nOps Application and **Assign Users or Group** to this Application.
+- Redirect to **Application → Application → Customer Managed →** open **nOps Application** and **Assign Users or Group** to this Application.
+
 <br>
 
 ![](https://lh7-us.googleusercontent.com/jwYMhP04aclYsPhm__PLhRphXMg7G-QYY-5AzsTsbVAPNEOoIY6D7ib-ynCoGDFQ9YJaU0rPvP1LlkGBGoUC1_fqOelnNqYyGH3RhDzCXECT_a_pnf4GVkCCDHVLpwRBQZgoal727MstiTVyVRLqTA4)
