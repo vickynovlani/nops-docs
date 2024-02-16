@@ -1,5 +1,5 @@
 ---
-title:Cloudwatch Agent Configuration On your Linux based EC2
+title: Cloudwatch Agent Configuration On your Linux based EC2
 keywords: savings, recommendations, cloudwatch, essentials, rightsizing
 tags: [essentials]
 sidebar: mydoc_sidebar

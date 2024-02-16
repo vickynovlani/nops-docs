@@ -181,7 +181,11 @@ entries:
 
       - title: EC2 Rightsizing with DataDog
         url: /ec2-rightsizing-with-nops-using-datadog.html
-        output: web             
+        output: web     
+
+      - title: CloudWatch Agent Configuration for Linux Based Ec2
+        url: /cloudwatch-agent-configuration-on-linux-based-ec2.html
+        output: web        
 
   - title: Agents and Integrations
     output: web
