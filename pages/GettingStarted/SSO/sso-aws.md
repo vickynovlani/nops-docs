@@ -56,9 +56,9 @@ Note: We suggest that you keep both the AWS and nOps platform open in the same b
 
 - Copy the **IAM Identity Center SAML Issuer URL** from AWS. In the nOps platform browser tab, paste the URL into the fields: **Issuer URL (entityId)** & **SAML 2.0 Endpoint (HTTP) (singleSignOnService: URL)**
 
-* Copy the **Assertion Consumer Service URL** from **nOps** **SSO Integration Details** and paste it into **AWS IAM Identity Center** **→** **Application** **→** **Configure** **→** Application MetaData field **Application ACS URL**
+* Copy the **Assertion Consumer Service URL** from **nOps** **SSO Integration Details** and paste it into  **Application ACS URL**.
 
-- Copy the **Entity ID** from **nOps SSO integration Details** and paste it into the **AWS IAM Identity Center** **→** **Application** **→** **Configure** **→** **Application MetaData** field **Application SAML audience**
+- Copy the **Entity ID** from **nOps SSO integration Details** and paste it into the  **Application MetaData** field **Application SAML audience**.
 
 ![](https://lh7-us.googleusercontent.com/73lg69U2gUGKpd-afGO8vZN_GWZX6F9Cwr8_-eJCzcILWc-R4mHpSV27F4Zm23mnFJ6lJwN8kfafG7fFRampimPZIVjNApjoRV7OPMgm4lXsVRXKJi8sOYLSy5eNOIsgc1cYS86pwyZ5uXMkfNxO8s4)
 
