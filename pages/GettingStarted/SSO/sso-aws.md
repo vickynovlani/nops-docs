@@ -15,7 +15,7 @@ weight: 1.0
 In the nOps platform, [navigate to the SSO Configuration settings](https://app.nops.io/v3/settings?tab=SSO) to enable SSO
 
 
- # Steps to configure AWS SSO integration with nOps #
+ **Steps to configure AWS SSO integration with nOps**
 
 
 - **Prerequisites:** 
