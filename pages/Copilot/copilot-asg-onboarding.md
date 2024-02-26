@@ -262,6 +262,10 @@ Resource:
 
 ```
 
+5. **Will instances protected by ASG `Scale-in Protection` and EC2 `Termination Protection` be terminated?**
+    
+    No, instances protected with ASG `Scale-in Protection` or EC2 `Termination Protection` will not be terminated. All instances protected by these settings within configured ASGs will not be replaced or terminated by Compute Copilot.
+
 
 
 {% include custom/series_related.html %}
