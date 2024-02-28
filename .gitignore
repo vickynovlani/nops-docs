@@ -3,3 +3,4 @@ UserGuides/.DS_Store
 _site
 gemfile
 gemfile.lock
+.idea
