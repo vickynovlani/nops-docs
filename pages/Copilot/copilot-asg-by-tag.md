@@ -16,11 +16,6 @@ Category: [Copilot]
  <a id="configuring-asgs-by-tag-to-use-the-compute-co-pilot-asg"></a>
 =====================================================================
 
-
-## Prerequisites ##
-
-1. You must have already configured the appropriate Lambda roles for Copilot as per [these instructions](/copilot-asg-stackset.html)
-
 ## The new nOps feature Configure By Tag offers increased ease-of-use to users of Compute Copilot. Onboard your ASG to Copilot with Configure By Tag for the following benefits:<a id="the-new-nops-feature-configure-by-tag-offers-increased-ease-of-use-to-users-of-compute-copilot-onboard-your-asg-to-copilot-with-configure-by-tag-for-the-following-benefits"></a>
 
 - **Integration with any IaC tool**, such as Terraform.
@@ -29,6 +24,9 @@ Category: [Copilot]
 
 - **Effortless Configuration**: Configure by Tag feature helps clients who frequently modify Auto Scaling Groups (ASGs) save significant time. It eliminates the need to manually go to the nOps dashboard and reconfigure ASGs each time they create, destroy, or recreate ASGs. Tags are automatically managed, for a seamless and time-efficient process.
 
+## Prerequisites ##
+
+1. You must have already configured the appropriate Lambda roles for Copilot as per [these instructions](/copilot-asg-stackset.html)
 
 ## Integrate nOps Compute Copilot with your ASGs by adding the following Tags:<a id="integrate-nops-compute-copilot-with-your-asgs-by-adding-the-following-tags"></a>
 
@@ -39,9 +37,9 @@ Category: [Copilot]
 |  nops\_copilot\_max\_spot\_instances  |                                 Integer (0-N)                                |       ❌      |
 |  nops\_copilot\_max\_spot\_percentage |                                Integer (0-100)                               |       ❌      |
 
-nops\_copilot\_max\_spot\_instances - Maximum number of Spot instances that Compute Copilot will place as part of your Auto Scaling Group
+**nops\_copilot\_max\_spot\_instances:** Maximum number of Spot instances that Compute Copilot will place as part of your Auto Scaling Group
 
-nops\_copilot\_max\_spot\_percentage - Maximum percentage of Spot instances that Compute Copilot will place as part of your Auto Scaling Group.
+**nops\_copilot\_max\_spot\_percentage:** Maximum percentage of Spot instances that Compute Copilot will place as part of your Auto Scaling Group.
 
 _Note: if you delete the Compute Copilot Launch Template used in one or more ASGs, these ASGs will no longer be processed by nOps Compute Copilot._
 
@@ -54,26 +52,28 @@ _Note: if you delete the Compute Copilot Launch Template used in one or more ASG
 
 ![](https://lh7-us.googleusercontent.com/UouzjCSllCtBUg3s7lukfPzEK7iMk_TX-vpnRrJEeK0TeiIwzrECGTydSsnEA9pk1DLZW7W2ek0v0hlpVjzyAZrr87Pa02SazL7NZTemNn8xZ4_dBhHKjJOyd36pOtBxKFPCjCztXAvgy5fT9l0PWO0M1lx1obmwGe4mKefIzYT9R-82XdrUEfKY2iK5yA)
 
-3. Give the ASG template a unique name
+1. Give the ASG template a unique name
 
-4. Select the CPU architecture based on the AMIs of the ASG you are going to attach this template with
+2. Select the CPU architecture based on the AMIs of the ASG you are going to attach the template to
 
-5. (Optional) Exclude unsupported instances for ENI Trunking 
+3. By default “Dynamic min VCpuCount & MemoryMiB” is checked, setting minimum vCPU and RAM requirements based on the size of the On-Demand EC2 instance being replaced. You can disable this option and set CPU or Memory suitable for your workload from the Instance Requirements list.
 
-6. Choose the instance families, vCPU, and Memory suitable for your workload. From this pool, Compute Copilot will select the most optimal choice for price and stability.
+4. (Optional) When selecting instance requirements, eligible instance families will be highlighted based on your criteria. To simplify the selection process, you can choose all highlighted options by clicking on the "Select All Eligible Instance Families" link.
 
-7. Create and Copy the name of the template
-    ![](https://lh7-us.googleusercontent.com/o7TFEg-g9LX6FRMiNALyQudCaET-RRf5YfSfUIvrGxNuGvdU0QBa_5s_MQPUwaPP8jCUJwKFSl6EfbDSZRdx8rFPTi-1ieERzpW0zQlVS-cHYle8-XaGtl_0rOXI8rO5gTo5EBbiNqfBNo091vmEUSu18P8oweRDW38RT_-jIJtcdgmN-OFChrGDq8mjDw)
+5. You can also directly choose the instance families. Compute Copilot will select the most optimal choice for price and stability out of the provided options.
 
-8. Attach “_nops\_copilot\_enabled = true”_ and “_nops\_copilot\_launch\_template\_name =_ _\*name you have copied from above\*”_ tags to your ASG 
+6. Create and Copy the name of the template
+    ![](https://lh7-us.googleusercontent.com/CugpeTPCXgu_JhjIOZpTfvmhf3S4apoKadmbRb06m6qC-G8uC18ldhdOTe7XRuipBl8fDAREeJJCznfrzs1kQ0M1H5ZAmJvw75GH1RmWKweo2_cj0i5cPezKLSx3VoYrJ8nkZXCTWAHEI3uz3t8ExIc)
 
-9. Optional tags are _“nops\_copilot\_max\_spot\_instances”_ and _“nops\_copilot\_max\_spot\_percentage”_
+7. Attach “_nops\_copilot\_enabled = true”_ and “_nops\_copilot\_launch\_template\_name =_ _\*name you have copied from above\*”_ tags to your ASG 
+
+8. Optional tags are _“nops\_copilot\_max\_spot\_instances”_ and _“nops\_copilot\_max\_spot\_percentage”_
 
     ![](https://lh7-us.googleusercontent.com/IFrv5Wl_1dC4f0uWTjTeGslLpFrDEvKX5kmS6m2Zoh-jhNuxzgUd5xQVK_SEBNe8ncaZ-7wMrQmj6LT5h13mZVQy4H7PgLqEPkBDz12GWKNVR0-YgaVsUEkVJswIRVc0wV8UKhmxzBkA131HKgRGLeDbxpWlDvainf1aFoERWPnBBQmimpbdyKvgm7J6-Q)
 
-10. After creating the ASG using IaC with the tags specified, within a few minutes the ASG will reflect a “connected” status with the all the appropriate information (template name, Spot percentage / number of Spot instances) 
+9. After creating the ASG using IaC with the tags specified, within a few minutes the ASG will reflect a “connected” status with the all the appropriate information (template name, Spot percentage / number of Spot instances) 
 
-    ![](https://lh7-us.googleusercontent.com/GBg8CBWhCFtkBbWWJ-QaGMp_rj8VU7J87IgTLrofKH6jtdXs1Svf3H82wSUvxu57PzpTCwxaNW-alfyaQL9AZwSwAqqhYUAF-oDZfSSb8tsQZz6OpGbEBnxxvkO8NeNpWvOHwNIX82znGiKTGpm75nKXq1SSfxNzXerIL7_eHSndUDtkl-Pxj9UckYQ9ug)
+    ![](https://lh7-us.googleusercontent.com/m3VEDEamTGKq7UGUUM1-GfBAsTCjkPAwqx_JNeMpMP9JqciG285R0WkY8W4oqW3P3diXvyO04owaoUwHcI6YI_uQ7LZAOXSF0lJ2v5qsZvko8zX21iI0Oz4lzvnZr3XeHtRZmRk5sjnVBsjKFHoWk84)
 
 ## FAQ
 
