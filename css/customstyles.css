@@ -300,6 +300,9 @@ p.post-meta {font-size: 80%; color: #404a58;}
 
 ul#results-container a {
     background-color: transparent;
+    border-top:1px solid #0071EA;
+    padding-left:10px;
+
 }
 
 ul#results-container a:hover {
