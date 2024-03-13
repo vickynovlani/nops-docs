@@ -35,89 +35,6 @@ weight: 1.0
 In the Compute Copilot Auto Scaling Groups Onboarding call, we will launch a CloudFormation Stack to create (1) a Lambda and its associated resources, and (2) a StackSet to create an EventBridge Forwarder in the same account but in all the SCP enabled regions of the same account.
 
 
-Two primary roles are needed to create this CloudFormation Stack:
-
-1. AWSCloudFormationStackSetAdministrationRole
-2. AWSCloudFormationStackSetExecutionRole
-
-
-These roles should exist in the AWS account where most of your ASGs are present, with these exact names. Before the Onboarding call, we ask that you verify that the above roles exist to ensure we can proceed successfully. 
-
-
-- If these roles exist, no further action is required prior to the Onboarding call. 
-
-- If these roles do not exist, please follow the below steps involving IAM Roles and Policy Creation:
-
-1. In the **AWS account**, create a **Policy** with the name “AssumeRole-AWSCloudFormationStackSetExecutionRole” as following:&#x20;
-
-
-```json
-{
-"Version": "2012-10-17",
-"Statement": [
-	{
-	  "Action": [
-			"sts:AssumeRole"
-	],
-	  "Resource": [
-			"arn:*:iam::*:role/AWSCloudFormationStackSetExecutionRole"
-	],
-	  "Effect": "Allow"
-	}
-  ]
-}
-```
-
-2. Create a new **IAM Role** with the name “AWSCloudFormationStackSetAdministrationRole” and attach the **Policy** we created in the above step (“AssumeRole-AWSCloudFormationStackSetExecutionRole”). Once it is attached, create the **IAM Role**.
-3. Navigate to the **IAM Role** we created →  **Trust Relationships** tab. Edit the trust relationship to the following:
-
-```json 
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Principal": {
-                "Service": "cloudformation.amazonaws.com"
-            },
-            "Action": "sts:AssumeRole"
-        }
-    ]
-}
-```
-
-4. Navigate back to **IAM Roles**, and create another new **IAM Role** named “AWSCloudFormationStackSetExecutionRole.” and for the policies we will be giving “AdministratorAccess” Permission Policy and let’s go ahead and create the role \
-   ![](https://lh7-us.googleusercontent.com/Q2TBm3_s2aBb4M5VEwlnA1C3qmygDP3lqAP3vaBE3lupf-Q_N2SzZ_RoSl-5AXdYZxk31VJtwZokbQbJeG3P9A2faK65PtiqPsv1rYBW6z0ifKX7nl9Ke3JUT_sI8_t4h-sFFkDDcKj227hRcVzO0XI)\
-   5\. Navigate to **Trust Relationships** tab of the “AWSCloudFormationStackSetExecutionRole” and edit the trust relationship to the following:&#x20;
-
-```json
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Principal": {
-                "AWS": "arn:aws:iam::accountnumber:root"
-            },
-            "Action": "sts:AssumeRole"
-        }
-    ]
-}
-
-
-```
-
-In the above Principal, the account number should be that of the account you are currently logged in to.
-
-
-
-We have now successfully created the roles and policies necessary to create StackSets in this AWS Account. 
-
-
-
-For further reference, please refer to [AWS Documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-prereqs-self-managed.html)
-
-
 
 ## Steps to Configure Your ASG Cluster ##
 
@@ -143,7 +60,7 @@ For further reference, please refer to [AWS Documentation](https://docs.aws.amaz
         
     _Under Stacks, you should be able to see the above in Stack instances in the same region as stacks._
     ![](https://lh7-us.googleusercontent.com/lwMnfBrpJZR_blrNdWoHK9NMkDguDxq1RElS80U5SUBxYRgWf26O6761sBvVdTGBZZUfUd86hOEXPI5boVZ8lYAQqQIPn18A7H7xl0wIPRvmOJmMx-SVJacikpb5__EM4EA4KVB_HteL6oHLsCbJX-c)\
-    Notes: _Under StackSets, you should be able to see the above in Stackset in the same region as stacks. Please verify the status._ _You might see the stackset creating a stack only in few regions instead of all regions and this is not of concern as stackset fails to create a stack in other regions due to SCP’s_
+    Notes: Within StackSets, the above should be visible in the StackSet within the same region as the stacks. Please confirm the status. It may be observed that the StackSet is creating stacks in only a few regions, rather than all intended regions. This is not of concern, as the failure to create stacks in other regions could be due to Service Control Policies (SCPs).
 
 1. After successful completion, return to the nOps platform and refresh the ASG Lambda page.
 1. You should see the updated version of Lambda, with the status showing a successful connection to the configured AWS account.
@@ -162,17 +79,21 @@ For further reference, please refer to [AWS Documentation](https://docs.aws.amaz
     - The AWS Lambda configuration section will show the version detail and current status of the Lambda Stack to confirm it is properly configured on the AWS account. 
     - You can create or choose an existing ASG template in the Spot detail section.
 
-1. Create an ASG Template.
+2. Create an ASG Template.
     - Give the ASG template a unique name
-    - Choose the instance families, vCPU, and Memory suitable for your workload. From this pool, Compute Copilot will select the most optimal choice for price and stability.
-    - It is recommended to select as many instance families as possible, to provide Compute Copilot with a wider recommendations pool
-    ![](https://lh7-us.googleusercontent.com/dnUIMeRRJHeoELoRW9Z_3ZfCiguNzJR1FTUQFLSXCvJpjTYa1bvhaeKyygjfShvlXnCloRmAcwoXPQIyXRvrjWZKJTu8HzOMARAIVrw1qS0GyJaqHYFK9HhDujZTvvTKK84htHhQzhxyB27BE3U6sb0)
+    - Select the CPU architecture based on the AMIs of the ASG you are going to attach the template to
+    - By default **Dynamic min VCpuCount & MemoryMiB** is checked, setting the minimum vCPU and RAM requirements based on the size of the On-Demand EC2 instance being replaced**.** You can disable this option ****and set the CPU or Memory suitable for your workload from the **Instance Requirements** list.
+    - (Optional) When selecting instance requirements, eligible instance families will be highlighted based on your criteria. To simplify the selection process, you can choose all highlighted options by clicking on the "Select All Eligible Instance Families" link. 
+    - You can also directly choose instance families. Compute Copilot will select the most optimal choice for price and stability out of the provided options.
+    - Now select **Create**\
+
+    ![](https://lh7-us.googleusercontent.com/Q9GKw25eU6EurrlMYzWLmSFVGyZ7TsNHeshn11McNoGkgd1U2xL0GRc58OUueykpQdarSPhPBIoFqdBngCeNLDuopSM4LXqaHSKC09FiMr8zohEeot1RoHV4EBlvRHj0EPgQvNJeMAmToVS9Vl9qwHA)
     
     _Note: you can also clone an existing template to fetch pre-defined configurations to apply to a new template._ 
 
 
 
-1. Set the Spot percentage and Max Spot Instances using the draggable bars. 
+3. Set the **Spot percentage** and **Max Spot Instances** using the draggable bars.
 
 **Spot percentage** defines the percentage of on-demand instances to be replaced with Spot. 
 
@@ -181,18 +102,25 @@ For further reference, please refer to [AWS Documentation](https://docs.aws.amaz
 
 1. Once values are defined, select Configure.  
 
-1. ASG status will now display **Configured.**
-    ![](https://lh7-us.googleusercontent.com/7HPFh5aoXx0mdrFmDFAeBq4nXfoWIfVO_ZndTglaaqGA8r6VJdoQBI2FQ6HaZQ0rIhg8N9nCJbPdMPzKCHJAW0OwgnRWJO247MegWvYd4cyLj4j3bJgEP_05QBgrv8923jvp9EgCuSil61zLNsXMv7o)
+2. ASG status will now display **Configured.**
+    ![](https://lh7-us.googleusercontent.com/U2xtN7tt92anEVo_K9LdMhxYHrCTnR3wspIX1FOdC3RzLUGoaH0AJepjKtkwU2BKPrzm9OY0C8l9xHlIdwtsyBCcgx_lkSg6CL_EkinPPvGQqFHyI8AFfJsUTtQM3OC1tn51UMIPe3QZbE93cOAZeDY)
 
 
-### What to expect after configuring ASG ###
+### What to expect after configuring ASG
 
 Compute Copilot Lambda will begin replacing on-demand instances in this ASG with Spot alternatives, either every 30 minutes or upon the launch of a new on-demand instance.
 
+**History of Actions**
+After configuring your ASG, Lambda starts replacing On-Demand instances with Spot instances, either every 30 minutes or on the launch of a new On-Demand instance.To capture the replacement in logs there is “History” button on the ASG-dashboard beside the Configured ASGs which shows the “History of Actions” for the ASGs. 
 
-### Spot Launched by nOps Tagging structure
+If there are any logs about the replacements in the past 24 hours then the History button will be in Green; otherwise, it is disabled.
 
-When ASG Compute Copilot launches a Spot EC2 to replace an On-Demand EC2 instance in an ASG, it copies all the tags attached to the On-Demand instance being replaced, except for AWS reserved tags (which start with `aws:`).
+To check the “History of Actions” click on **History** and you can see the list of all the actions that have taken place with the date and time.The system also identifies issues with Auto Scaling Groups (ASGs), such as when they are associated with an incorrect (non-existent) Launch Template specified in the tags. ASGs with such errors will be marked with an error icon and their background color set to red in the list. \
+![](https://lh7-us.googleusercontent.com/Vs9kRrsWbXfqUEmCBGpSbZ7ndN5RtUJZ42cZ3nvQWagjswCf3ksDJWmWOm1INJzHtBe4ZpX_DD-sEqKW0Uw0RnYDbbuw4t9jaDw-f19Mw4xtffejF_TTyNOJWDu50_hFpSBhL8UJn-rviRxEOq985Zo)
+
+### Tagging Structure of Spot Instances Launched by nOps
+
+When Compute Copilot launches a Spot EC2 instance to replace an On-Demand EC2 instance in an ASG, it copies all the tags attached to the On-Demand instance being replaced, except for AWS reserved tags (prefixed with aws:).
 
 Additionally, it adds three new tags to the EC2 Spot instance:
 
@@ -203,7 +131,7 @@ Additionally, it adds three new tags to the EC2 Spot instance:
 | launched\_for\_replacing\_instance | Tag to track the On-Demand EC2 instance ID that this instance is replacing |
 
 
-## FAQ ##
+## FAQ
 
 
 
