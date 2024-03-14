@@ -50,7 +50,9 @@ With service-managed permissions, you can deploy stack instances to accounts man
 - From within the **AWS Console > CloudFormation > Stacksets page**, click **Create Stackset**.
 - In the **Specify template** section, choose **Amazon S3 URL**. 
 
+
 Add the following S3 URL: **_https\://nops-prd-asg-lambda-us-east-1.s3.amazonaws.com/v0.5.0/cloudformation/lambda-v0.5.0.yaml_**\
+
 ![](https://lh7-us.googleusercontent.com/BBQWD1rQA4d2DGO3dFwUgIEgBfg30PauFszqDZO4em0eGXdv3QNBFvggVJhiTVyo_J_Iz-UVxykZ2ALJ-4wGwm0mNLh5NFrKeONRmoOsOyuFomK90hs3lCmjUPzlius68Bol74rLjkrEadt8J4e8RNA)
 
 
@@ -63,6 +65,7 @@ Add the following S3 URL: **_https\://nops-prd-asg-lambda-us-east-1.s3.amazonaw
 
 | ParameterKey | ParameterValue               | Modifiable?  |
 | --- | --- | --- |
+| AdditionalPolicy   | true                         | We highly recommend not modifying.This will ensure to create an additional policy for the Lambda Function Role giving access to KMS to attach the EBS volumes if the encryption is present in the Launch Configuration or Launch Template.  |
 | AutoUpdate   | true                         | We highly recommend not modifying. AutoUpdate will ensure you have the latest version of Lambda in your account at all times without the need for manual updating.  |
 | Environment  | prd                          | This should not be modified, as this environment has been vigorously and thoroughly tested for stability.                                                           |
 | MemorySize   | 1024                         | This is the total memory for the Lambda Function. We recommend that you have this at 1024 MB for stable performance.                                                |
