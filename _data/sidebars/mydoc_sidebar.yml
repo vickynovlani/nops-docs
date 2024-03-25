@@ -332,7 +332,7 @@ entries:
       output: web
 
     - title: Backfill a CUR for AWS MAP
-      url: /automated-tagging-for-aws-map.html
+      url: /backfilling-a-cur-file.html
       output: web
 
   - title: Developer
