@@ -72,13 +72,16 @@ Add the following S3 URL: **_https\://nops-prd-asg-lambda-us-east-1.s3.amazonaw
 | ProjectID    | 0                            | NO                                                                                                                                                                  |
 | Timeout      | 240                          | This is the Lambda function timeout in seconds. The timeout must be between 120 and 900 seconds                                                                     |
 | Token        | Generated via nOps Dashboard | This is the token generated from the nOps Dashboard in **Step1**. It is not modifiable.                                                                             |
+| ExcludeRegions        | comma-separated list of AWS region codes | the parameter 'ExcludeRegions' enables users to specify regions to be excluded from deployment by listing them, separated by commas.The value for this parameter can be blank or a comma-separated list of AWS region codes, for example, 'eu-west-2,eu-west-3'. If no value is provided during stack creation, it will default to an empty value, including all active regions by default..                                                                             |
 
-![](https://lh7-us.googleusercontent.com/DqrBMme1Yld6I1wscLhKaWXjSrxmEMac-MfwMH-2i4gaep89IpSHwSYTpc47fRQN2R5DYOaqUS7OyLsm47PnlSrdMXdVgdQUVjw4KC0MTjxBbCb6cijcrxKUzkNX_ZJU6kmYwhJZi0dCj-6ICbCKHq4)
+
+
+![](https://lh7-us.googleusercontent.com/gtDIG4dR3VomtdhF4QWIYMHlYqBylpdkrKpUKy77AV2mhrA1MnrzfxMiKZH_YeOdm1WIWCUiR7kkRltIYwxwfXgHE4rFGUtgLciGUBoVQQVJl9hXkMX72veyEysY6gIHgQMOut94aQTNp7tt3T7EMJ0)
 
 - Click **Next**.
 - In the **Configure StackSet options** add **Tags** if needed
 - Leave the **Execution configuration** as **Inactive**
-- Click **Next**In **Set deployment options**  Select **Deploy new Stacks**
+- Click **Next** In **Set deployment options**  Select **Deploy new Stacks**
 - In **Deploy Targets** there will be 2 options 
 
 1. Deploy to Organization

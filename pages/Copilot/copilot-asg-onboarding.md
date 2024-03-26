@@ -62,14 +62,16 @@ In the Compute Copilot Auto Scaling Groups Onboarding call, we will launch a Clo
     ![](https://lh7-us.googleusercontent.com/lwMnfBrpJZR_blrNdWoHK9NMkDguDxq1RElS80U5SUBxYRgWf26O6761sBvVdTGBZZUfUd86hOEXPI5boVZ8lYAQqQIPn18A7H7xl0wIPRvmOJmMx-SVJacikpb5__EM4EA4KVB_HteL6oHLsCbJX-c)\
     Notes: Within StackSets, the above should be visible in the StackSet within the same region as the stacks. Please confirm the status. It may be observed that the StackSet is creating stacks in only a few regions, rather than all intended regions. This is not of concern, as the failure to create stacks in other regions could be due to Service Control Policies (SCPs).
 
-1. After successful completion, return to the nOps platform and refresh the ASG Lambda page.
-1. You should see the updated version of Lambda, with the status showing a successful connection to the configured AWS account.
+2. After successful completion, return to the nOps platform and refresh the ASG Lambda page.
+3. You should see the updated version of Lambda, with the status showing a successful connection to the configured AWS account.
 
-    ![](https://lh7-us.googleusercontent.com/4-Ufml5d-uWKQskNwDKrWxQgQ0wUF6PSm66Hb1kUv3WsfkuLyfDeC9VLKxFHQbQJkobMVTDrUElM_Q3P4GMMMUCf9LBHMq2D3PIPEFsH8Wva-yY1E2SNcKs6fDhF5mmdq7kgBA3NIcV_uat7hcD5ptw)
+    ![](https://lh7-us.googleusercontent.com/_ybOWytEHm4GzM5u7JQEXpHCj05GsKTAJkPU21YddvDzJhZ5eFlRwaRmSOuZbFTgGSPw4udDuKKVFt7C9lyAy_U8bQQA7RVeE956p8pL7-EAzEfUAjXLe5CFSbANW25A75_UCWvmz1FwUU00Aye16DI)
     
-    Note: Before the ASG Lambda stack runs,
+    **Note:** 
+    1. Before the ASG Lambda stack runs,
     - The status of the version shows N/A by default.
     - Auto Update is enabled by default, allowing Compute Copilot to automatically update to the newest version of Lambda. This setting can be disabled by the user if desired.
+    2. **Redeploy button for lambda:** After deleting a stack from your AWS account, it may take up to 30 minutes for the status to update on the nOps platform. To expedite this process, we've introduced a redeploy button 'Redeploy ASG Lambda Stack' enabling you to swiftly relaunch the ASG Lambda stack.
 
 
 ### Select the ASG cluster and configure ###
