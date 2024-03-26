@@ -79,7 +79,7 @@ Add the following S3 URL: **_https\://nops-prd-asg-lambda-us-east-1.s3.amazonaw
 - Click **Next**.
 - In the **Configure StackSet options** add **Tags** if needed
 - Leave the **Execution configuration** as **Inactive**
-- Click **Next**In **Set deployment options**  Select **Deploy new Stacks**
+- Click **Next** In **Set deployment options**  Select **Deploy new Stacks**
 - In **Deploy Targets** there will be 2 options 
 
 1. Deploy to Organization
