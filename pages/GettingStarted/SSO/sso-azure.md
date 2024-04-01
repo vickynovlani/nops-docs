@@ -81,6 +81,8 @@ Note: We suggest that you keep both the AWS and nOps platform open in the same b
 
 ![](https://lh7-us.googleusercontent.com/Eqq5JPbsAb8sWxsjT2evMUmUgHYWpBtC77CMzfI4ehSsd_NBMCwL4HM-ADgqGxyAUPXkpll1X8PGcs-tCQiYjSpHZi6QyvW4Sgoo_peBNYx0Kme6XoAezeeVosqdEQkq61LxdOWU8931buMValTyBPc)
 
+**Note :** The namespace field must be blank, if you are editing existing attributes make sure to delete the namespace.
+
 6.  **Provide Default roles in the nOps platform.**
 
 - Navigate to **Organization Settings** **→** **SSO** and select **Default roles** for your User/Groups
