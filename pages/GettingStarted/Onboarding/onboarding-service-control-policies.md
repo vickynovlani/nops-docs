@@ -28,7 +28,7 @@ This can be done by adding an ArnNotLike statement for the Nops-Integration role
                 },
                 "ArnNotLike": {
                     "aws:PrincipalARN": [
-                        "arn:aws:iam::*:role/Role1AllowedToBypassThisSCP",
+                        "arn:aws:iam::*:role/StackSet-nOps-Integration*",
                         "arn:aws:iam::*:role/Nops-Integration*"
                     ]
                 }
