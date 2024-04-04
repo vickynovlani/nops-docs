@@ -36,12 +36,18 @@ Category: [Copilot]
 | nops\_copilot\_launch\_template\_name | Name of the Launch Template you created in the Compute Copilot ASG Dashboard |       ✅      |
 |  nops\_copilot\_max\_spot\_instances  |                                 Integer (0-N)                                |       ❌      |
 |  nops\_copilot\_max\_spot\_percentage |                                Integer (0-100)                               |       ❌      |
+nops\_copilot\_replace\_protected\_instances |                                True                                |       ❌      |
+nops\_copilot\_min\_ondemand\_number |                                Integer (0-N)                               |       ❌      |
 
 **nops\_copilot\_max\_spot\_instances:** Maximum number of Spot instances that Compute Copilot will place as part of your Auto Scaling Group
 
 **nops\_copilot\_max\_spot\_percentage:** Maximum percentage of Spot instances that Compute Copilot will place as part of your Auto Scaling Group.
 
-_Note: if you delete the Compute Copilot Launch Template used in one or more ASGs, these ASGs will no longer be processed by nOps Compute Copilot._
+**nops_copilot_replace_protected_instances:** This tag allows ASG Lambda to replace the instances that have Scale-in protection or its instances are protected from Scale-in. 
+
+**nops_copilot_min_ondemand_number:** This tag sets the minimum number of On-Demand instances that should be left in the ASG. ASG Lambda won’t do any replacements (On-Demand to Spot) if it has less number of On-Demand instances than specified in the Tag value.
+
+**Note:** if you delete the Compute Copilot Launch Template used in one or more ASGs, these ASGs will no longer be processed by nOps Compute Copilot.
 
 
 ## Step-by-Step guide to Configure by Tag:<a id="step-by-step-guide-to-configure-by-tag"></a>
@@ -88,6 +94,9 @@ Yes, you can use both tags. 
 
 ### 4. What happens if I don't use either of the tags “nops\_copilot\_max\_spot\_percentage” and “nops\_copilot\_max\_spot\_instances” on my ASG?
 If you don’t use either tag, by default, Compute Copilot will try to replace all your On-Demand instances as part of ASG to the Spot instances
+
+### 5. What happens if I don’t use the tag “nops_copilot_replace_protected_instances” on my ASG protected with Scale-In protection?
+If you don’t use the tag, by default it is set to FALSE, so Compute Copilot will not replace protected instances due to Scale-In protection.
 
 
 {% include custom/series_related.html %}
