@@ -32,7 +32,7 @@ Here's a detailed breakdown of how the feature operates:
 
 **Is this automation reversible?**
 
-Users can reverse the automation if needed by restarting EC2 instances through the AWS Management Console or AWS Command Line Interface (CLI). It's crucial to exercise caution to ensure the continuity of operations, particularly regarding associated resources like volumes and Elastic IPs. nOps Essentials' Idle Instance Cleanup feature is designed to leave associated resources untouched, preserving operational continuity and minimizing any potential disruptions.
+Users can reverse the automation if needed by restarting EC2 instances through the AWS Management Console or AWS Command Line Interface (CLI). It is crucial to exercise caution to ensure the continuity of operations, particularly regarding associated resources like volumes and Elastic IPs. nOps Essentials' Idle Instance Cleanup feature is designed to leave associated resources untouched, preserving operational continuity and minimizing any potential disruptions.
 
 **Step-by-Step Guide on How to Stop Idle Instances with nOps Essentials**
 
