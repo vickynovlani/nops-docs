@@ -42,8 +42,12 @@ Users can reverse the automation if needed by restarting EC2 instances through t
 
 3. **Review Recommendations:** Take a moment to review your recommendations.  You can also view details such as Resources Details and its usage Chart, Environment, Resource Count, Yearly Savings, and an action button to view more details and create the automation.
 
-![](https://lh7-us.googleusercontent.com/y321ceMULow29EdnGZ5gIFKfPE0FqV8LpbBc3cXTvLfwLsCxqeYp9gz_RSNTTCJvxtHglzCUx7T9jZgUn_LSgkddmBpCpRHGNlSDJRYc5TrQ5H6RSDuoIp39zINOCgg2dnYpvA4_Y15QGXVsiOugGlc)\
-![](https://lh7-us.googleusercontent.com/YIthTW99AH0CVwUwTX2pZRL8z29Z6Ishc8qF0qvh7lRJh96doNKrTNfrTe2QaAYsDJKiMbborLN8L1t2yYKkcDxMtGOkcGqYePWF2xNGkBmNBwnrJMZSQMNY2ZWP-w-ocf7_cDYbB8TfoIZr2CwPbK0) ![](https://lh7-us.googleusercontent.com/1kNkebywfZFaMh78jzITfcnNqH48rUoKviE4dLFXmmZ41DTQEPbqSwdUjMruZse7O_rbqkVvI-KL7Upsr_D6gy_Cj_iX8U_Yb5nBRoRnsozHGgX4xT8KNckcza7cMBKHIZi89PD0QKv2CJK4DNVopTw)
+![](https://lh7-us.googleusercontent.com/y321ceMULow29EdnGZ5gIFKfPE0FqV8LpbBc3cXTvLfwLsCxqeYp9gz_RSNTTCJvxtHglzCUx7T9jZgUn_LSgkddmBpCpRHGNlSDJRYc5TrQ5H6RSDuoIp39zINOCgg2dnYpvA4_Y15QGXVsiOugGlc)
+
+
+![](https://lh7-us.googleusercontent.com/Q3P6jPSHxWq1NCAMLo6zOiIoXqPRLZcHFiSoMrAKgCerrYHP574MknBp6gH3gq4gOqlg3SL4AOaZ49pXNYyrFlp8WGRuYgO90kI-NFCBsBZmmvRz85PTY-YCDqLmI45NYHePOF33pwJ4gXMgBqGJzx8)
+ 
+![](https://lh7-us.googleusercontent.com/lfArgTfrMYeIRiVr_jUG-4cD5pjPndB6-g5BJIY6lnE5FSIuREbMDYkFLaHjH78mqHXA76q43_2XoFckoL-HHV7TIZxBiRaF71DwuQK2wnsg9JPqmWRRho3ef8hivPw71iYSTvxTPGDHeDF8ZP9S3lM)
 
 4. **On Action Page:** Here, you'll need to either select EventBridge or configure it if it's not available. This step is crucial for automation. Additionally, choose the desired time frame for the automation to run, ensuring it aligns with your operational needs.
 
