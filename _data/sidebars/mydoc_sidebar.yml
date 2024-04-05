@@ -189,7 +189,11 @@ entries:
 
       - title: EC2 Rightsizing with DataDog
         url: /ec2-rightsizing-with-nops-using-datadog.html
-        output: web     
+        output: web 
+
+      - title: Maximizing Cost Efficiency with nOps Essentials Idle Instance Feature
+        url: /Maximizing-Cost-Efficiency-with-nOps-Essentials-Idle-Instance-Feature.html
+        output: web
 
       - title: CloudWatch Configuration for Linux EC2
         url: /cloudwatch-agent-configuration-on-linux-based-ec2.html

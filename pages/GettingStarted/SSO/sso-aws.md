@@ -20,7 +20,7 @@ In the nOps platform, [navigate to the SSO Configuration settings](https://app.n
 
 - **Prerequisites:** 
 
-1. You must be logged in to your nOps and AWS management account account. 
+1. You must be logged in to your nOps and AWS management account. 
 
 2. IAM Identity Center must be enabled.
 
