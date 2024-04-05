@@ -23,16 +23,16 @@ An idle instance, as defined by nOps, is an EC2 instance exhibiting less than 1%
 Here's a detailed breakdown of how the feature operates:
 
 1. **CloudWatch Integration:** nOps integrates with your AWS-native CloudWatch to collect usage data. It continuously monitors relevant resource-level metrics such as CPU to find idle instances.
-#
+<br />
 2. **Identification of Idle Instances:** Through advanced algorithms and analysis, nOps sifts through the collected data to identify instances exhibiting consistently low CPU utilization over a specified period. These instances are flagged as idle and earmarked for optimization.
-#
+<br />
 3. **EventBridge and Lambda Functions:** nOps uses EventBridge and Lambda to automate tasks by triggering serverless functions based on specific events, facilitating seamless communication with AWS services.
-#
+<br />
 4. **Initiating the Stopping Process:** Once idle instances are identified, nOps utilizes EventBridge and Lambda functions to trigger the process of pausing them. This involves sending commands to the AWS infrastructure to stop the identified instances, preventing them from consuming resources unnecessarily while retaining the flexibility to roll back if needed
 
 **Is this automation reversible?**
 
-Users can reverse the automation if needed by restarting EC2 instances through the AWS Management Console or AWS Command Line Interface (CLI). It's crucial to exercise caution to ensure the continuity of operations, particularly regarding associated resources like volumes and Elastic IPs. nOps Essentials' Idle Instance Cleanup feature is designed to leave associated resources untouched, preserving operational continuity and minimizing any potential disruptions.
+Users can reverse the automation if needed by restarting EC2 instances through the AWS Management Console or AWS Command Line Interface (CLI). It is crucial to exercise caution to ensure the continuity of operations, particularly regarding associated resources like volumes and Elastic IPs. nOps Essentials' Idle Instance Cleanup feature is designed to leave associated resources untouched, preserving operational continuity and minimizing any potential disruptions.
 
 **Step-by-Step Guide on How to Stop Idle Instances with nOps Essentials**
 
