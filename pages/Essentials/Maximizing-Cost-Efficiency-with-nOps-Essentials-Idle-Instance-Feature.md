@@ -22,13 +22,13 @@ An idle instance, as defined by nOps, is an EC2 instance exhibiting less than 1%
 
 Here's a detailed breakdown of how the feature operates:
 
-1. **CloudWatch Integration:** nOps integrates with your AWS-native CloudWatch to collect usage data. It continuously monitors relevant resource-level metrics such as CPU to find idle instances. 
-
-2) **Identification of Idle Instances:** Through advanced algorithms and analysis, nOps sifts through the collected data to identify instances exhibiting consistently low CPU utilization over a specified period. These instances are flagged as idle and earmarked for optimization.
-
+1. **CloudWatch Integration:** nOps integrates with your AWS-native CloudWatch to collect usage data. It continuously monitors relevant resource-level metrics such as CPU to find idle instances.
+#
+2. **Identification of Idle Instances:** Through advanced algorithms and analysis, nOps sifts through the collected data to identify instances exhibiting consistently low CPU utilization over a specified period. These instances are flagged as idle and earmarked for optimization.
+#
 3. **EventBridge and Lambda Functions:** nOps uses EventBridge and Lambda to automate tasks by triggering serverless functions based on specific events, facilitating seamless communication with AWS services.
-
-4) **Initiating the Stopping Process:** Once idle instances are identified, nOps utilizes EventBridge and Lambda functions to trigger the process of pausing them. This involves sending commands to the AWS infrastructure to stop the identified instances, preventing them from consuming resources unnecessarily while retaining the flexibility to roll back if needed
+#
+4. **Initiating the Stopping Process:** Once idle instances are identified, nOps utilizes EventBridge and Lambda functions to trigger the process of pausing them. This involves sending commands to the AWS infrastructure to stop the identified instances, preventing them from consuming resources unnecessarily while retaining the flexibility to roll back if needed
 
 **Is this automation reversible?**
 
