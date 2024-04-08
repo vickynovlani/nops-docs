@@ -92,7 +92,7 @@ Click on **Save** once you have added all parameters.
 
 ## Step 6: Adding Users on OneLogin
 
-1. From the OneLogin app click the **Users** tab from the top toolbar
+1. From the OneLogin app click the **Users** tab from the top toolbar.
 
 2. Click **New User**.
 
