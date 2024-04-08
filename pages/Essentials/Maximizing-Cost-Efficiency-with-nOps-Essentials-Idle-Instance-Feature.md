@@ -1,5 +1,5 @@
 ---
-title: Maximizing-Cost-Efficiency-with-nOps-Essentials-Idle-Instance-Feature
+title: Maximizing Cost Efficiency with nOps Essentials Idle Instance Feature
 keywords: savings, recommendations, sharesave, essentials
 tags: [essentials]
 sidebar: mydoc_sidebar
