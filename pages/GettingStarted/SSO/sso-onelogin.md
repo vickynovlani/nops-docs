@@ -24,6 +24,7 @@ weight: 6.0
 Log in to nOps as an Admin user. Navigate to **Settings**, click on **SSO** in the left panel, then click on the **Enable SSO toggle**, and select OneLogin as the **SSO type**.
 
 ![](https://lh7-us.googleusercontent.com/jWPY02150rVXIm-jscc57bqVRRAFiXNF0Rq-CDl9_XSj_V-eF-3u_63rmjPRX8WOI3ZugzGd-0E3ABON3ygjArODVEeE3n1w4czzItNlm9PFIAlNsiom1GPyFKGPwA0t1-dzS0H5R3bshrHC0WBCebo)
+<br/>
 
 **Step 2: Sign in to OneLogin and set up nOps**
 
@@ -37,7 +38,8 @@ Log in to nOps as an Admin user. Navigate to **Settings**, click on **SSO** in t
 
 5. Click **save**. Once saved, new tabs will appear in the left pane.
 
-****![](https://lh7-us.googleusercontent.com/u0KZIVc5Sc_5yZaV8CWphI9HcQ5n7lzWB7ZjD-kxNucFshLgztRSSZpt9TV1YzYSDqX_iuPAkrmgY5UbA4F7zLqnnmJpx688TJrKJ0aFn0sQl03P21LsDHgqcV7bri13urwk_7Qhps6p6LJF0iNzOx4)****
+![](https://lh7-us.googleusercontent.com/u0KZIVc5Sc_5yZaV8CWphI9HcQ5n7lzWB7ZjD-kxNucFshLgztRSSZpt9TV1YzYSDqX_iuPAkrmgY5UbA4F7zLqnnmJpx688TJrKJ0aFn0sQl03P21LsDHgqcV7bri13urwk_7Qhps6p6LJF0iNzOx4)
+<br/>
 
 **Step 3: Go to the SSO tab from the left panel to copy the configuration details from OneLogin to nOps**
 
@@ -50,8 +52,10 @@ Log in to nOps as an Admin user. Navigate to **Settings**, click on **SSO** in t
 
 ![](https://lh7-us.googleusercontent.com/iHimlIGs1Lv6nWriv8rsWsEZap4IahznSzJq_LLcBVQNmDHUXLfFLzckR6L3TuVQZeHSIOaSnRlQgLXN4Epbix2FR2JCL2b3qC6EEMDFoq-ygYSNL4CNpIuIBWMLmqPI0twnO5gBCc4F6UAgHn6z8Hs)
 
+<br/>
 
 ## Step 4: Set up OneLogin configurations from nOps
+<br/>
 
 1. Click on the **Save** button at the top right corner after you finish 
 
@@ -62,13 +66,15 @@ Log in to nOps as an Admin user. Navigate to **Settings**, click on **SSO** in t
 | AssertionConsumerService | Recipient, ACS (Consumer) URL\*, ACS (Consumer) URL Validator\*  |
 
 ![](https://lh7-us.googleusercontent.com/8vzFJKtDNQPdlrZl7fwqRzVcovMdCJrsCYhuuMTBjigqZBQ7suUoErVabIESh3LZVAV10PVe9yZrR5JBVKGPVAJuKNLVc5bIcfWHqlaDjXZXkomGbjzrc26kQcxWT6GudEkHcqJBLufgaJmgQdKttdw)
+<br/>
 
-2\. On the nOps platform, select the default role for the users and click on **Setup SSO Configuration**.
+2. On the nOps platform, select the default role for the users and click on **Setup SSO Configuration**.
 
 ![](https://lh7-us.googleusercontent.com/T9xR5a80RQauqNQjceTnzBD0B-7v5h4BU-QqZreLoPvrQ00yhxWsGLhkltaD38uzZYMvE2xWm0eGck6rrGThEO_apXeSd9RPcSZJW2KhuKj0Bd1YfGqaLRlyBHVyOXh79eCU1fCioQoZBio_-tI-du8)
 
+<br/>
 
-## Step 5: Adding Parameters on OneLogin<a id="step-5-adding-parameters-on-onelogin"></a>
+## Step 5: Adding Parameters on OneLogin
 
 Add parameters to OneLogin so that you can sync the user names and other attributes between the two applications.
 
@@ -81,7 +87,7 @@ Click on **Save** once you have added all parameters.
 | User.FirstName | First Name | **✅**               |
 | User.LastName  | Last Name  | **✅**               |
 
-****![](https://lh7-us.googleusercontent.com/bJoE2NxL08MRUrF-ah5yym7h_7-Xag2PMbLW-jTy0OvCWNHq4YYf7eg09GmbmK0qg411Bta21WiS4EUuiG5XN5IZNYU5RWXy5QLCF-SfOZdEv86W25v6sWsT7_XmDF0h5uAeqy-eOX-EKpp_D9fyT0I)****
+![](https://lh7-us.googleusercontent.com/bJoE2NxL08MRUrF-ah5yym7h_7-Xag2PMbLW-jTy0OvCWNHq4YYf7eg09GmbmK0qg411Bta21WiS4EUuiG5XN5IZNYU5RWXy5QLCF-SfOZdEv86W25v6sWsT7_XmDF0h5uAeqy-eOX-EKpp_D9fyT0I)
 
 
 ## Step 6: Adding Users on OneLogin
