@@ -9,49 +9,72 @@ series: [Essentials, Rightsizing]
 weight: 2.0
 ---
 
-## Instructions
+# Overview
+
+The nOps EC2 Rightsizing feature is designed to help organizations optimize their AWS EC2 instances for cost efficiency without sacrificing performance. By analyzing detailed utilization metrics from the Datadog Agent, such as CPU, memory, and network usage over a specific timeframe, nOps generates customized recommendations to downsize EC2 instances where possible.
+
+To ensure accuracy and relevance, only resources with at least 15 days of data within a 30-day slot are considered for rightsizing recommendations.
 
 
-1 - To have rightsizing recommendations generated we need to follow the [datadog integration guide](https://help.nops.io/integrate-datadog-with-nops-platform.html). 
+### Getting Started
+
+#### Prerequisites
+
+- A functioning Datadog integration with metrics collection enabled for your EC2 instances.
+
+- EventBridge for Essentials configured across all your AWS accounts.
 
 
-2 – To perform rightsizing, you first need to configure EventBridge for Essentials for all your accounts by [following this guide](https://help.nops.io/essentials-storage-configuration.html). 
+#### Instructions
 
+Step 1: Datadog Integration
 
-3 – Once the EventBridge is setup and DataDog is integrated as per Step 1 and Step 2 – you should start seeing recommendations in Rightising page within 24 hours of DataDog Integration
+To begin generating rightsizing recommendations, ensure that your environment is integrated with Datadog. Follow the [Datadog integration guide](https://help.nops.io/integrate-datadog-with-nops-platform.html) closely to set up and start metrics collection from your EC2 instances.
 
+Step 2: Configure EventBridge for Essentials
 
-4 – To go to rightsizing Recommendations – Go to Essentials Tab in the Main Menu > Rightsizing.
+Configure EventBridge for Essentials for all your accounts by following the provided [guide](https://help.nops.io/scheduler-eventbridge-setup.html). This step is crucial for enabling the rightsizing feature to communicate and implement changes within your AWS environment.
 
-****
+Step 3: Viewing Recommendations
 
-![](https://lh7-us.googleusercontent.com/XATGhgiB7mlZRLBSnw77_4wCIt4qGSFEd4lZCEyPGwBQznXIjHNukTcTK9i30ltj-54SWuII6w3p_BNHL9j6riTbH83UcDItvnCnuMBXGKicwww7neycwTKXzal_Sm5B8dfTC9V8rxWZ2G88r6JSyBs)
+After setting up Datadog and EventBridge as instructed, rightsizing recommendations should appear on the Rightsizing page within 24 hours of completing the Datadog integration. Navigate to this page by selecting the **Essentials tab** from the main menu, then choosing **Rightsizing**.
 
-****
+The Rightsizing Recommendations page currently supports EC2 instances Only.
 
-5 – This is the Recommendations Page. Currently we Support only EC2, in future you can see more tabs for RDS, etc. The page has Columns that show us The Instance ID and Instance Name, ENv, Current size, recommended size, and region. Along with Annual and Monthly Savings. Lastly you’ve Actions button. 
+This page displays:
 
-****
- ![](https://lh7-us.googleusercontent.com/ET6a7ZMyTn6XK6Yy7xUWO6lSA-0_TVkz67GyVyA9jYRiP2Wwzcv1OJLAwdlvwkpqOt1vQAKC4W7eiHRCOCZe4kgAZW4q606O5n28myOqGjVKv9UR3-xL7TA-5l0Djuygb_WQluFRuiARFVrrOkcqnzM)
-****
+- AWS Account Name
 
-6 – To rightsize please click the Actions button for selected Resource or Group of Resources. That leads you to this details page.
+- Instance ID and Name
 
-****
-![](https://lh7-us.googleusercontent.com/YlTrBTzg11fU8xwt5bROTB8xH3bPaM9-5kB5NIggrUI321aoBW_k7o8RaYZ6xkZ6vYlw5sCKKCpKV-7AFGegSO_jcGbxmwexisa8lfPQZ6jMwL-dOGhuvsi-oKTULTY83oA2hKk2l8loSo0tzui1BGE)
-****
+- Environment (Env)
 
-7 – The details page, you have the account and target selected by default, if you’ve finished the Step 2 successfully. If not you’ll see a message to set up Eventbridge first to select a valid Target. That takes you back to Step 2. If everything is good the only thing needs to be done here is check resource details and click the Rightsize button.
+- Current and Recommended Size
 
-8 – Above step will redirect you to the nSwitch page. Where it has created and scheduled an nSwitch for 10 minutes in future if you selected “Now” as an option or your selected date and time if you choose “Later” as an option.
+- Region
 
-9 – This is the nSwitch page where you can monitor your scheduled Rightsize trigger. You can delete it before it has run or is scheduled to run. But once it’s triggered you can’t delete it.
+- Estimated Annual and Monthly Savings
 
-****
-![](https://lh7-us.googleusercontent.com/t6jnA75NPjpBk1YfiHLd1R3SFXb2ldlZPax3ZOpXpcSaowPi3TAZfq7r2k9L5yzNU-FgKiKosMeeHJGpMGeyupsUqI1eQE-kBW0wDqxUVxgaP3fhSuNw9xX3BTEX6fiHKFQYY65PpyLDvpMOcusCo3k)
-****
+Each listing includes an **Action** button for further steps.
 
-10 – Next you can move to AWS to check if the Instance has rightsized to the recommended family type.
+![](https://lh7-us.googleusercontent.com/5Vacknqkj5FJ_1VIrPfFdjnKty7rhnOknHqhqNLBwT1TK2PTLeeJp2e71NkQr_aFZf6sJm51yV11DLHMmsiqnrhUZchr-Gjtz2CvXsPyA0vRvbJ2d1A69_Vp5DjC_UkGmNCHq5MK8GJHr-Z_1JLIsNU)
+
+Step 5: Rightsizing Your Instances
+
+To rightsize an instance or group of instances, click the **Action** button associated with your chosen resource. This will take you to a detailed page where, assuming EventBridge is properly configured, your account and target event bridge are pre-selected. Verify the resource details and schedule the trigger time if needed. Otherwise, “Now” is selected by default (this will automatically schedule rightsizing to take place in 10 minutes from now). Click the Rightsize button to proceed.
+
+![](https://lh7-us.googleusercontent.com/r_rbTw7srrt3HH0kLoMLoOmhs1gXtStNw4tbDWt1Azdaup1vBbgDtRcDpWkAghTOvSHJqdfrM3ML4MEA7pusFWvEep0XIluVhLP8SYBw3644VdPUXHUoZQVopuQVNTdAagczspX87l9JRJ3diKETuDE)
+
+Step 6: Scheduling with Summary
+
+You will be redirected to the Summary page, where a rightsizing operation is scheduled. Here, you can monitor or cancel the scheduled rightsizing operation within 10 minutes before it triggers.
+
+![](https://lh7-us.googleusercontent.com/MpIowNiOZyK14N0yq0uRnv6MHdQ_297CdKm7UfKF-ZqBlJJ5-fvEzN7Ohr4wO_fCV33mRvBrD9_UAJauJzstg7aJxLiCIjk70bDl4wBXDhBY6E0XciKNZk4dhidOHuHyvYGWz7__Dj5QZDdFjFrzrlc)
+
+Step 7: Finalizing and Verification
+
+Once the rightsizing operation is triggered, it cannot be canceled. To verify the changes, log into your AWS account and check the instance sizes against the recommendations provided. This ensures that the rightsizing has been completed as expected.
+
 
 
 ## Notes & FAQs
