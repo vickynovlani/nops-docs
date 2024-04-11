@@ -278,6 +278,10 @@ entries:
           url: /weekly-reports.html
           output: web
 
+        - title: DSL Query Builder
+          url: /dsl-query-builder.html
+          output: web
+
       - title: Rules
         output: web
         subfolderitems:
