@@ -57,8 +57,8 @@ These pages display:
 
 - Estimated Annual and Monthly Savings
 
-![](https://photos.app.goo.gl/hGMSHBVbS4kaKXWd7)
-![](https://photos.app.goo.gl/FayMsJRLVcsuvYW4A)
+![](https://lh3.googleusercontent.com/pw/AP1GczMzb2t4lWh9m1gxnFN6UMhPQf1RqLqtxdpf_m_6a4lnr5V1dQV7pusuUpPkDQogqd2FtBi8RohoeOdkBA66LIOtUmUc6e0TcZerWnn5_eAJBij7I748tIq1D-HqpEVQEJzt9nNXjfHxLEhf4Dyss2j2=w3254-h1298-s-no-gm?authuser=0)
+![](https://lh3.googleusercontent.com/pw/AP1GczOdMtl2Gsragu_3uWSiPAcc118tiYnXJV5jGxKA8y2lTQH_yHgqaTN7lEM-6ecRWF_-ePSWDb87Ze-E4RnG_JV5LSmC-Fqbr5je5KvRH2oZ4M8J7Fwhkfi88x3ATdfJc_s6Tqbs8XDeCKm1fpVMBPG6=w3046-h1166-s-no-gm?authuser=0)
 
 Each EC2 listing includes an **Action** button for further steps.
 
@@ -66,13 +66,13 @@ Step 5: Rightsizing Your EC2 Instances
 
 To rightsize an instance or group of instances, click the **Action** button associated with your chosen recommendation group. This will take you to a detailed page where, assuming EventBridge is properly configured, your account and target event bridge are pre-selected. Verify the resource details and schedule the trigger time if needed. Otherwise, “Now” is selected by default (this will automatically schedule rightsizing to take place in 10 minutes from now). Click the Rightsize button to proceed.
 
-![](https://photos.app.goo.gl/rV6RKaaU85Ydbnc97)
+![](https://lh3.googleusercontent.com/pw/AP1GczP-u18xn55DayUr2LdBmZSzMabbzBukIJ5NdoRGvWfuef0eranyvF520snJiDoEUX9wD8EMr0rE_Pb755UJOfzEMj_iIdP7wm8VIwi1fbLGEk5fzsZh4rxOiph3dsQhf43lUk02v1Ig-1v1Cmb8wcEV=w3046-h1208-s-no-gm?authuser=0)
 
 Step 6: Scheduling with Summary
 
 You will be redirected to the Summary page, where a rightsizing operation is scheduled. Here, you can monitor or cancel the scheduled rightsizing operation within 10 minutes before it triggers.
 
-![](https://photos.app.goo.gl/ZzbzDh7iqSv3ExhB8)
+![](https://lh3.googleusercontent.com/pw/AP1GczN6Km3fon2MgwJJLlRCWo2HBZ0QPmyZgozWURe2pdeTOBb3RKQQHwMXnw88EOlsbWg25PgjF6ZJeDDz-gTTQl7TVZEE-HkkaLt4ifDTEubsFiBSD1otglnPF96Mn10Mx7M30v-Y6Z9uW4U6iNRME1Wy=w3040-h1080-s-no-gm?authuser=0)
 
 Step 7: Finalizing and Verification
 
