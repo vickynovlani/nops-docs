@@ -187,8 +187,8 @@ entries:
         url: /essentials-storage-configuration.html
         output: web                 
 
-      - title: EC2 Rightsizing with DataDog
-        url: /ec2-rightsizing-with-nops-using-datadog.html
+      - title: EC2 and ASG Rightsizing with DataDog
+        url: /ec2-asg-rightsizing-with-nops-using-datadog.html
         output: web 
 
       - title: Maximizing Cost Efficiency with nOps Essentials Idle Instance Feature
