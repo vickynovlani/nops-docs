@@ -1,9 +1,9 @@
 ---
-title: Installing the Datadog Agent in ASG for Enhanced Rightsizing Recommendation
+title: Datadog Agent in ASG for Enhanced Rightsizing
 keywords: savings, recommendations, datadog, essentials
 tags: [essentials]
 sidebar: mydoc_sidebar
-permalink: Installing-the-Datadog-Agent-in-ASG-for-Enhanced -Rightsizing-Recommendation.html
+permalink: Datadog-Agent-in-ASG-for-Enhanced -Rightsizing.html
 folder: Essentials
 series: [Essentials, Storage]
 weight: 2.0

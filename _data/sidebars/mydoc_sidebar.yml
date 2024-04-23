@@ -191,8 +191,8 @@ entries:
         url: /ec2-rightsizing-with-nops-using-datadog.html
         output: web 
       
-      - title: Installing the Datadog Agent in ASG for Enhanced Rightsizing Recommendation
-        url: Installing-the-Datadog-Agent-in-ASG-for-Enhanced-Rightsizing-Recommendation.html
+      - title: Datadog Agent in ASG for Enhanced Rightsizing
+        url: Datadog-Agent-in-ASG-for-Enhanced -Rightsizing.html
         output: web 
 
       - title: Maximizing Cost Efficiency with nOps Essentials Idle Instance Feature
