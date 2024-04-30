@@ -190,6 +190,10 @@ entries:
       - title: EC2 and ASG Rightsizing with DataDog
         url: /ec2-asg-rightsizing-with-nops-using-datadog.html
         output: web 
+      
+      - title: Datadog Agent in ASG for Enhanced Rightsizing
+        url: Datadog-Agent-in-ASG-for-Enhanced -Rightsizing.html
+        output: web 
 
       - title: Maximizing Cost Efficiency with nOps Essentials Idle Instance Feature
         url: /Maximizing-Cost-Efficiency-with-nOps-Essentials-Idle-Instance-Feature.html
@@ -236,8 +240,8 @@ entries:
           url: /pagerduty-integration.html
           output: web
 
-        - title: Slack Integration
-          url: /slack-integration.html
+        - title: Configure the Notification Center to get scheduled alerts
+          url: /Configure-the-Notification-Center-to-get-scheduled-alerts.html
           output: web
 
         - title: Webhook Integration
