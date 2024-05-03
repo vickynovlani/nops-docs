@@ -137,6 +137,10 @@ entries:
         - title: Karpenter Beta Support
           url: /copilot-eks-karpenter-beta.html
           output: web        
+        
+        - title: Commitment utilization
+          url: /copilot-eks-optimizing-commitment-utilization.html
+          output: web
 
       - title: ASG
         output: web
