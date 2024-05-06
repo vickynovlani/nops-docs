@@ -137,6 +137,10 @@ entries:
         - title: Karpenter Beta Support
           url: /copilot-eks-karpenter-beta.html
           output: web        
+        
+        - title: Commitment utilization
+          url: /copilot-eks-optimizing-commitment-utilization.html
+          output: web
 
       - title: ASG
         output: web
@@ -187,8 +191,8 @@ entries:
         url: /essentials-storage-configuration.html
         output: web                 
 
-      - title: EC2 Rightsizing with DataDog
-        url: /ec2-rightsizing-with-nops-using-datadog.html
+      - title: EC2 and ASG Rightsizing with DataDog
+        url: /ec2-asg-rightsizing-with-nops-using-datadog.html
         output: web 
       
       - title: Datadog Agent in ASG for Enhanced Rightsizing
@@ -290,6 +294,10 @@ entries:
           url: /weekly-reports.html
           output: web
 
+        - title: DSL Query Builder
+          url: /dsl-query-builder.html
+          output: web
+
       - title: Rules
         output: web
         subfolderitems:
@@ -348,7 +356,7 @@ entries:
       output: web
 
     - title: Backfill a CUR for AWS MAP
-      url: /automated-tagging-for-aws-map.html
+      url: /backfilling-a-cur-file.html
       output: web
 
   - title: Developer

@@ -4,6 +4,10 @@
 allowed-tags:
   - getting_started
   - essentials
+  - scheduler
+  - storage
+  - rightsizing
+  - idle_resources
   - onboarding
   - iam
   - sso
