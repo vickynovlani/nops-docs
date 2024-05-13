@@ -50,7 +50,9 @@ With service-managed permissions, you can deploy stack instances to accounts man
 - From within the **AWS Console > CloudFormation > Stacksets page**, click **Create Stackset**.
 - In the **Specify template** section, choose **Amazon S3 URL**. 
 
+
 Add the following S3 URL: https://nops-prd-asg-lambda-us-east-1.s3.us-east-1.amazonaws.com/v0.6.1/cloudformation/lambda-v0.6.1.yaml
+
 
 ![](https://lh7-us.googleusercontent.com/BBQWD1rQA4d2DGO3dFwUgIEgBfg30PauFszqDZO4em0eGXdv3QNBFvggVJhiTVyo_J_Iz-UVxykZ2ALJ-4wGwm0mNLh5NFrKeONRmoOsOyuFomK90hs3lCmjUPzlius68Bol74rLjkrEadt8J4e8RNA)
 
