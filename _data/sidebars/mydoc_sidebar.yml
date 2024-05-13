@@ -179,8 +179,8 @@ entries:
     output: web
     folderitems:
 
-      - title: Scheduler Using EventBridge
-        url: /scheduler-eventbridge-setup.html
+      - title: EventBridge Integration for Essentials
+        url: /essentials-eventbridge-setup.html
         output: web  
 
       - title: Scheduler Using Terraform
