@@ -54,7 +54,7 @@ Compute Copilot for EKS even covers your commitments with a 100% money-back guar
 
 EC2NodeClass/AWSNodeTemplate can be created in two ways-
 
-1. Auto Configuration
+i. Auto Configuration
 
    - For the selected EKS cluster, Select create a EC2NodeClass/AWSNodeTemplate
 
@@ -81,7 +81,7 @@ EC2NodeClass/AWSNodeTemplate can be created in two ways-
 {%include note.html content="you can create multiple node templates"%}
 
 
-2. Manual Configuration
+ii. Manual Configuration
 
    - For the selected EKS cluster, select create a EC2NodeClass/AWSNodeTemplate.
 
@@ -90,9 +90,13 @@ EC2NodeClass/AWSNodeTemplate can be created in two ways-
 
 ![](https://lh7-us.googleusercontent.com/Q5M2eifyPkPPzSvWYTf6gEyPoVIMZYzu2iDgqT0z5-zwjR8Bmqe9OJ2WI_IV68hU-Y_xZmsu4XdsigsGTUpJt5QfFV_FOvqOOLOYVAQcn0YniqXmiB-KD9GF5R0JagMBD_0J-Qgzfz9xB4m1r4921Sk)
 
+{%include note.html content="In the NodeClasses list you can find resources created without nOps if there are any. These are going to be shown without the nOps icons and will be available only in Yaml format in View Mode. When creating NodePools, you can select any NodeClass as reference, either created via nOps or directly created in the cluster by you or your team."%}
+
+![](https://lh7-us.googleusercontent.com/bxBYFqZ5p8Ynlgmxq8coQqVB-PB9TtUxT7ARjpvZK_KBAJm59bs-uJ0YT7_Pkbo1LAJRmfq_MXWlnP7ztJSRqC-lXhOwAfJymFKmD4F6O1z9UwUcW8_VmK5V1UrTtJvxVhOMK2cisjAjKSXDeOlV_Bs)
+
 ### Create NodePool/Provisioner: ###
 
-1. Auto Configuration
+i. Auto Configuration
 
    -  For the selected EKS cluster, select create NodePool/Provisioner.
 
@@ -122,7 +126,7 @@ EC2NodeClass/AWSNodeTemplate can be created in two ways-
 
 {%include note.html content="You can create multiple Provisioners, but each Provisioner will have only 1 Node Template" %}
 
-2. Manual Configuration
+ii. Manual Configuration
 
    -  For the selected EKS cluster, select create NodePool/Provisioner.
 
@@ -134,6 +138,7 @@ EC2NodeClass/AWSNodeTemplate can be created in two ways-
    -  Now select Create manually.
 
 ![](https://lh7-us.googleusercontent.com/83nIckfwgkYK8_biIC02LWkGEO00bGfxwcsckLCs74MompU2f2hl0FGGugk4CN3gBmg4FWn3SbyWoDP2QqVWgoceWr6UEeRknaJmftHKCQfAvlq9uoB4afQoxUNP1SOyYYSehRPS4mmAxldbXSqNoSo)
+
 
 Once the Provisioner is created, the user can again Test Connectivity to confirm that the  EKS cluster is configured correctly.
 
