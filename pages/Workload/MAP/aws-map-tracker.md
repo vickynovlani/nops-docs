@@ -27,14 +27,14 @@ Tagging for MAP Credits
 
 In order to get your AWS MAP credits, all your resources must be tagged according to the MAP rules. If your resources are not tagged properly, you won’t get the credits – and credits will only accrue on spends that occur _after_ the tags are applied. nOps helps you to list the resources migrating for your various workloads, identify those that have been tagged, and then track your AWS incentive credits over the course of your migration. And in so doing, you'll be setting up all your workloads for the required Well Architected Review, which nOps can also help you conduct.
 
-To use the nOps MAP facitliy, from the nOps dashboard go to **Workload > AWS MAP:**
+To use the nOps MAP functionality, from the nOps dashboard go to **Workload > AWS MAP:**
 
 ![](/tmpimg/map-menu.png)
 
 Defining Your Migration Projects
 --------------------------------
 
-The nOps MAP featue starts with the page **_AWS MAP 2.0 Summary_**, where you’ll find three sections:
+The nOps MAP feature starts with the page **_AWS MAP 2.0 Summary_**, where you’ll find three sections:
 
 * **Overall Migration Resource Spend Summary** – displays AWS on tagged MAP migrated resources and earned MAP credits.
     
@@ -64,7 +64,7 @@ In the dialog, fill out the details:
     
 * **Credit % —** Prefilled for you to the typical 25%, however you may edit this if your contract terms state a different discount for standard MAP resources.
     
-* **Tag Value —** Must be the _exact_ value string from your AWS contract. This value should be _mig_ followed by the 5 or 10-digit MAP ID.  If it's an older MAP contract, you may also use the server-id (typcally d- followed by 9 digits).
+* **Tag Value —** Must be the _exact_ value string from your AWS contract. This value should be _mig_ followed by the 5 or 10-digit MAP ID.  If it's an older MAP contract, you may also use the server-id (typically d- followed by 9 digits).
 
 * **Additional options —** Select any options for additional MAP incentives specified in your contract, such as Windows optimization or Commercial DB&A
     
@@ -171,7 +171,7 @@ Troubleshooting
 Matching Spend and Credit Numbers with AWS
 ------------------------------------------
 
-What to do if numbers don’t match what see in AWS:
+What to do if the numbers in nOps don’t match what shows in AWS:
 
 \- Check dates of tagging vs Amazon
 
