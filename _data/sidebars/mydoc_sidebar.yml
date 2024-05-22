@@ -187,9 +187,13 @@ entries:
         url: /scheduler-terraform.html
         output: web 
 
-      - title: Storage
+      - title: EBS Volume Type Change
         url: /essentials-storage-configuration.html
         output: web                 
+
+      - title: EBS Idle Cleanup
+        url: /ebs-idle-cleanup.html
+        output: web    
 
       - title: EC2 and ASG Rightsizing with DataDog
         url: /ec2-asg-rightsizing-with-nops-using-datadog.html
@@ -351,8 +355,8 @@ entries:
     output: web
     folderitems:
 
-    - title: Automated Tagging for AWS MAP
-      url: /automated-tagging-for-aws-map.html
+    - title: AWS MAP Tracker
+      url: /aws-map-tracker.html
       output: web
 
     - title: Backfill a CUR for AWS MAP
