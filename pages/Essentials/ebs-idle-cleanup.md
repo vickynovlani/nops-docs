@@ -1,6 +1,6 @@
 ---
 title: Idle EBS Volume Cleanup
-keywords: savings, recommendations, cloudwatch, essentials, rightsizing
+keywords: savings, recommendations, cloudwatch, essentials, ebs, idle ebs, waste cleanup, cleanups
 tags: [essentials]
 sidebar: mydoc_sidebar
 permalink: ebs-idle-cleanup.html
