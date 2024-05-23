@@ -62,8 +62,7 @@ i. Auto Configuration
 
    - Choose the AMI Family from the dropdown menu.
 
-
-    ![](https://lh7-us.googleusercontent.com/89Q2Nu6V1qFpI6tj2li1vAo8r_GjlzIh2kjkJIcAgCpMviS6PEdHyGfzA2LVZusY484UBJ7JaNBs7-pr5MJDhFGCc3_ag9DTn4RocZ9Q1WCnAkRfTxYxQtT0ziDJlCgRMwrNjiebJx6Fd7_bcAbKSaA)
+ ![](https://lh7-us.googleusercontent.com/89Q2Nu6V1qFpI6tj2li1vAo8r_GjlzIh2kjkJIcAgCpMviS6PEdHyGfzA2LVZusY484UBJ7JaNBs7-pr5MJDhFGCc3_ag9DTn4RocZ9Q1WCnAkRfTxYxQtT0ziDJlCgRMwrNjiebJx6Fd7_bcAbKSaA)
 
    - Add Subnet IDs manually or with Search by tags. 
    - Add Security Group IDs manually or with Search by tags 
