@@ -118,7 +118,7 @@ AWS needs a place to save your cost and usage report. In this step, you will cre
 
     * Enter the **report path prefix** (required) – Suggestion: _nopsbilling_
     * Choose **Hourly** (mandatory) for **Time granularity**.
-    * Select an option for **Report versioning** (optional) — Suggestion: Overwrite existing report.
+    * Select an option for **Report versioning** (optional) — Overwrite existing report.
     * Select **Parquet** as **Compression type** (mandatory).  
         **Important:** You will need the **Report Path Prefix name** later when you are adding the AWS Account in nOps
 

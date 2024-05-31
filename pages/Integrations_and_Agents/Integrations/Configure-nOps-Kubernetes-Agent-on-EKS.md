@@ -62,5 +62,5 @@ After successfully configuration, you gain complete visibility into your workloa
 **FAQs**
 
 1. I have prometheus installed and I use it for a variety of purposes in my cluster, will this affect that?
- **Ans:** No, our agent leverages it's own prometheus in it's own namespace so that doesn't affect your current deployments.
+ **Ans:** No, the agent installation process deploys it's own Prometheus with it's own namespace so there's no interference with current Prometheus deployments.
 
