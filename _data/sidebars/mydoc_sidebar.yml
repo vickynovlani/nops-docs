@@ -132,7 +132,11 @@ entries:
 
         - title: Onboarding EKS with Cluster Autoscaler
           url: /copilot-eks-cas-guide.html
-          output: web          
+          output: web       
+
+        - title: Managing Resources With Karpenter GitOps Support
+          url: /Managing-Resources-With-Karpenter-GitOps-Support.html
+          output: web    
 
         - title: Karpenter Beta Support
           url: /copilot-eks-karpenter-beta.html
