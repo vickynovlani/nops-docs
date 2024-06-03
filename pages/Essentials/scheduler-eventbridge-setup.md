@@ -1,6 +1,6 @@
 ---
 title: EventBridge Integration for Essentials
-keywords: savings, recommendations, scheduler, essentials, nswitch, eventbridge
+keywords: savings, recommendations, scheduler, essentials, eventbridge
 tags: [essentials, scheduler]
 sidebar: mydoc_sidebar
 permalink: essentials-eventbridge-setup.html

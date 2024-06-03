@@ -375,13 +375,26 @@ entries:
       url: /developer-getting-started.html
       output: web
 
-    - title: Scheduler Slackbot "How To" Guide
-      url: /developer-scheduler-slackbot.html
-      output: web
+    - title: skip
+      url:
+      output: skip
 
-    - title: nOps Scheduler API Guide
-      external_url: /scheduler-api.html
-      output: web
+      subfolders:
+      - title: Essentials API
+        output: web
+        subfolderitems:
+
+        - title: Create and configure EventBridge
+          url: /create-and-configure-eventbridge.html
+          output: web
+
+        - title: Essentials Scheduler API
+          url: /essentials-scheduler-api.html
+          output: web
+
+        - title: Scheduler Slackbot "How To" Guide
+          url: /developer-scheduler-slackbot.html
+          output: web
 
     - title: nOps Application API Swagger File
       external_url: https://app.nops.io/swagger/
