@@ -134,8 +134,8 @@ entries:
           url: /copilot-eks-cas-guide.html
           output: web       
 
-        - title: Managing Resources With Karpenter GitOps Support
-          url: /Managing-Resources-With-Karpenter-GitOps-Support.html
+        - title: Managing Karpenter Configurations With nOps GitOps support
+          url: /Managing-Karpenter-Configurations-With-nOps-GitOps-support.html
           output: web    
 
         - title: Karpenter Beta Support
