@@ -1,16 +1,16 @@
 ---
-title: Managing Resources With Karpenter GitOps Support
+title: Managing Karpenter Configurations With nOps GitOps support
 keywords: GitOps, savings, recommendations, sharesave, nks, karpenter, compute copilot
 tags: [copilot, eks]
 sidebar: mydoc_sidebar
-permalink: Managing-Resources-With-Karpenter-GitOps-Support.html
+permalink: Managing-Karpenter-Configurations-With-nOps-GitOps -support.html
 folder: Copilot
 series: [Copilot, Onboarding]
 weight: 2.0
 Category: [Copilot]
 ---
 
-## Managing Resources With Karpenter GitOps Support
+## Managing Karpenter Configurations With nOps GitOps Support
 
 With GitOps support, you can now manage Karpenter configurations either through the nOps dashboard, the CLI, or IaC tools (such as Terraform and CloudFormation). nOps automatically detects and syncs any changes to onboarded NodePools and NodeClasses, allowing you to automatically maintain all your configurations seamlessly through your chosen tools.
 
