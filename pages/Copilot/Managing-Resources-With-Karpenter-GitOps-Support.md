@@ -3,7 +3,7 @@ title: Managing Karpenter Configurations With nOps GitOps support
 keywords: GitOps, savings, recommendations, sharesave, nks, karpenter, compute copilot
 tags: [copilot, eks]
 sidebar: mydoc_sidebar
-permalink: Managing-Karpenter-Configurations-With-nOps-GitOps -support.html
+permalink: Managing-Karpenter-Configurations-With-nOps-GitOps-support.html
 folder: Copilot
 series: [Copilot, Onboarding]
 weight: 2.0
