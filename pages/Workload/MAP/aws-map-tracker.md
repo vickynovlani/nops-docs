@@ -27,7 +27,9 @@ Tagging for MAP Credits
 
 In order to get your AWS MAP credits, all your resources must be tagged according to the MAP rules. If your resources are not tagged properly, you won’t get the credits – and credits will only accrue on spends that occur _after_ the tags are applied. nOps helps you to list the resources migrating for your various workloads, identify those that have been tagged, and then track your AWS incentive credits over the course of your migration. And in so doing, you'll be setting up all your workloads for the required Well Architected Review, which nOps can also help you conduct.
 
+
 To use the nOps MAP functionality, from the nOps dashboard go to **Workload > AWS MAP:**
+
 
 ![](/tmpimg/map-menu.png)
 
@@ -171,7 +173,9 @@ Troubleshooting
 Matching Spend and Credit Numbers with AWS
 ------------------------------------------
 
+
 What to do if the numbers in nOps don’t match what shows in AWS:
+
 
 \- Check dates of tagging vs Amazon
 
