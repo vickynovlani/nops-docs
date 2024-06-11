@@ -1,5 +1,5 @@
 ---
-title: Onboarding AWS with Manual Setup
+title: Onboarding AWS with Manual Setup-Contact Us
 keywords: setup, onboarding
 tags: [getting_started, onboarding]
 sidebar: mydoc_sidebar
