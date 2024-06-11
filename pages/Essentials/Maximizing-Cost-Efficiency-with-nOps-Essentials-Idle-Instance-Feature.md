@@ -66,3 +66,8 @@ Users can reverse the automation if needed by restarting EC2 instances through t
 **Conclusion**
 
 With nOps Essentials' Idle Instance feature, businesses can proactively manage their AWS costs by identifying and halting idle EC2 instances. By streamlining this process into a single click, nOps empowers users to optimize their cloud expenditure without compromising operational efficiency.
+
+
+<br/><br/>
+
+{% include custom/series_related.html %}

@@ -3,7 +3,7 @@ title: Datadog Agent in ASG for Enhanced Rightsizing
 keywords: savings, recommendations, datadog, essentials
 tags: [essentials]
 sidebar: mydoc_sidebar
-permalink: Datadog-Agent-in-ASG-for-Enhanced -Rightsizing.html
+permalink: Datadog-Agent-in-ASG-for-Enhanced-Rightsizing.html
 folder: Essentials
 series: [Essentials, Storage]
 weight: 2.0
@@ -51,3 +51,8 @@ Save Launch Template: Review settings and "Create launch template".
 Final Steps:
 
 After updating the ASG with the new launch template, any new instances launched by the ASG will have the chosen agent installed and configured. This setup enhances monitoring capabilities for these instances, allowing for better insights and optimization recommendations through nOps Rightsizing.
+
+
+<br/><br/>
+
+{% include custom/series_related.html %}

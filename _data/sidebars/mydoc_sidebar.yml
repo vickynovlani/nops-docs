@@ -195,6 +195,10 @@ entries:
         url: /essentials-storage-configuration.html
         output: web                 
 
+      - title: Essentials Summary
+        url: /essentials-summary-page.html
+        output: web    
+
       - title: EBS Idle Cleanup
         url: /ebs-idle-cleanup.html
         output: web    
