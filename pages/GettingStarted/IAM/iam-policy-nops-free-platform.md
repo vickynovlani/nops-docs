@@ -933,6 +933,16 @@ IAM policy for nOps _Last Updated: 12/17/2022_
             ],
             "Resource": "*",
             "Effect": "Deny"
+        },
+        {
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::[INSERT CUR S3 BUCKET]",
+                "arn:aws:s3:::[INSERT CUR S3 BUCKET]/*"
+            ],
+            "Effect": "Allow"
         }
     ]
 }
