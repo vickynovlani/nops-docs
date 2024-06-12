@@ -59,3 +59,8 @@ And to execute:./script\_name.sh
 
 After successfully configuration, you gain complete visibility into your workloads, tailored to your preferred level of detail. While your EKS expenditure typically remains opaque, pinpointing cloud inefficiencies can be a challenge. nOps streamlines this process by automatically detecting wastage through CPU and memory metrics, empowering you to optimize resources and realize immediate cost savings.
 
+**FAQs**
+
+1. I have prometheus installed and I use it for a variety of purposes in my cluster, will this affect that?
+ **Ans:** No, the agent installation process deploys it's own Prometheus with it's own namespace so there's no interference with current Prometheus deployments.
+
