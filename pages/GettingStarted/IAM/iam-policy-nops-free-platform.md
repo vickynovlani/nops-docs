@@ -14,21 +14,14 @@ weight: 2.0
 nOps requires safe, secure, and AWS-approved cross account access to your AWS accounts in order to give you the analysis, dashboards, and reports that you need. We only see what you want us to see in order to provide our services, no more, and we need you to give us permission first. 
 
 
-**For AWS Payer/Management Account, nOps uses the following policies:**
+**For AWS Payer/Management Account and AWS Linked accounts, nOps uses the following policies:**
 
 1.  AWS managed [ReadOnlyAccess](https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/ReadOnlyAccess) policy, which is completely managed by AWS and is updated periodically as AWS adds new services.
 2.  Since the AWS managed ReadOnlyAccess policy contains some read access to sensitive data, nOps uses an explicit deny list which can be easily update for your own security requires. – [Explicit Deny List](#explicit-deny)
 3.  Lastly, few other policies that are necessary to create the Cost and Usage Report for Cost Visibility, Well-Architected Review and placeholders to support automating the setup for nOps ShareSave Program. [CUR](#cur),  [S3](#s3bucket), [Well-Architected](#well-architected), [EventBridge](#eventbridge), and [Organization](#organizations)
 
-**For the AWS Linked accounts, nOps uses the following policies:**
 
-1.  AWS managed [ReadOnlyAccess](https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/ReadOnlyAccess) policy, which is completely managed by AWS and is updated periodically as AWS adds new services.
-2.  Since the AWS managed ReadOnlyAccess policy contains some read access to sensitive data, nOps uses an explicit deny list which can be easily update for your own security requires. – [Explicit Deny List](#explicit-deny)
-3.  Lastly, few other policies that are necessary for Well-Architected Review and placeholders to automating the setup for nOps ShareSave Program. [Well-Architected](#well-architected) and [EventBridge](#eventbridge)
-
-**Payer Account** – IAM Policy JSON – [Payer Account – JSON](#payer-account-iam-policy-json)
-
-**Linked Account** – IAM Policy JSON – [Linked Account – JSON](#linked-account-iam-policy-json)
+**IAM Policy JSON** – [Policy – JSON](#IAM-Policy-JSON)
 
 ## What? Why? and How Much? ##
 The following tables describe each permission within the IAM policy:
@@ -722,7 +715,7 @@ The following is the list of services for which nOps explicitly denies the permi
 IAM policy for nOps _Last Updated: 12/17/2022_
 
 
-## **Payer Account IAM Policy JSON** ##
+## **IAM Policy JSON** ##
 
 ```json
 {
@@ -733,17 +726,18 @@ IAM policy for nOps _Last Updated: 12/17/2022_
                 "cur:DescribeReportDefinitions",
                 "cur:DeleteReportDefinition",
                 "cur:PutReportDefinition",
-                "events:CreateEventBus",
+                "ce:ListCostAllocationTags",
+                "ce:UpdateCostAllocationTagsStatus",
                 "organizations:InviteAccountToOrganization",
-                "s3:HeadBucket",
-                "s3:HeadObject",
+                "s3:ListBucket",
                 "support:DescribeTrustedAdvisorCheckRefreshStatuses",
                 "support:DescribeTrustedAdvisorCheckResult",
                 "support:DescribeTrustedAdvisorChecks",
-                "wellarchitected:*"
+                "wellarchitected:*",
+                "ce:*"
             ],
-            "Effect": "Allow",
-            "Resource": "*"
+            "Resource": "*",
+            "Effect": "Allow"
         },
         {
             "Action": [
@@ -878,7 +872,6 @@ IAM policy for nOps _Last Updated: 12/17/2022_
                 "macie2:GetMacieSession",
                 "macie2:SearchResources",
                 "macie2:GetSensitiveDataOccurrences",
-                "mobilehub:ExportProject",
                 "nimble:GetStreamingSession",
                 "polly:SynthesizeSpeech",
                 "proton:GetEnvironmentTemplate",
@@ -938,8 +931,8 @@ IAM policy for nOps _Last Updated: 12/17/2022_
                 "workmail:GetMailUserDetails",
                 "workmail:ListUsers"
             ],
-            "Effect": "Deny",
-            "Resource": "*"
+            "Resource": "*",
+            "Effect": "Deny"
         },
         {
             "Action": [
@@ -952,223 +945,6 @@ IAM policy for nOps _Last Updated: 12/17/2022_
             "Effect": "Allow"
         }
     ]
-}
-
-```
-
-## **Linked Account IAM Policy JSON** ##
-
-```json
- {
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Action": [
-        "support:DescribeTrustedAdvisorCheckRefreshStatuses",
-        "support:DescribeTrustedAdvisorCheckResult",
-        "support:DescribeTrustedAdvisorChecks",
-        "wellarchitected:*"
-      ],
-      "Effect": "Allow",
-      "Resource": "*"
-    },
-    {
-      "Action": [
-        "acm-pca:Describe*",
-        "acm-pca:Get*",
-        "acm-pca:List*",
-        "acm:Describe*",
-        "acm:Get*",
-        "acm:List*",
-        "apigateway:GET",
-        "appconfig:GetConfiguration*",
-        "appflow:DescribeConnector*",
-        "appflow:ListConnector*",
-        "appstream:DescribeDirectoryConfigs",
-        "appstream:DescribeUsers",
-        "appstream:DescribeSessions",
-        "appsync:Get*",
-        "appsync:List*",
-        "athena:Get*",
-        "athena:List*",
-        "backup:GetBackupVaultAccessPolicy",
-        "cassandra:Select",
-        "chime:Describe*",
-        "chime:Get*",
-        "chime:List*",
-        "cloud9:Describe*",
-        "cloud9:Get*",
-        "cloud9:List*",
-        "clouddirectory:Get*",
-        "clouddirectory:List*",
-        "cloudfront:GetCloudFrontOriginAccessIdentity",
-        "cloudfront:GetFieldLevelEncryption*",
-        "cloudfront:GetKeyGroupConfig",
-        "cloudwatch:GetMetricData",
-        "cloudwatch:GetMetricStream",
-        "cloudwatch:ListMetricStreams",
-        "codeartifact:GetAuthorizationToken",
-        "codeartifact:ReadFromRepository",
-        "codebuild:BatchGet*",
-        "codebuild:ListSourceCredentials",
-        "codecommit:BatchGet*",
-        "codecommit:Get*",
-        "codecommit:GitPull",
-        "codedeploy:BatchGet*",
-        "codedeploy:Get*",
-        "codestar:DescribeUserProfile",
-        "codestar:ListUserProfiles",
-        "cognito-identity:*",
-        "cognito-idp:*",
-        "cognito-sync:*",
-        "comprehend:Describe*",
-        "comprehend:List*",
-        "config:BatchGetAggregateResourceConfig",
-        "config:BatchGetResourceConfig",
-        "config:SelectAggregateResourceConfig",
-        "config:SelectResourceConfig",
-        "connect:Describe*",
-        "connect:Get*",
-        "connect:List*",
-        "datapipeline:DescribeObjects",
-        "datapipeline:EvaluateExpression",
-        "datapipeline:QueryObjects",
-        "dax:BatchGetItem",
-        "dax:GetItem",
-        "dax:Query",
-        "deepcomposer:Get*",
-        "deepcomposer:List*",
-        "devicefarm:GetRemoteAccessSession",
-        "devicefarm:ListRemoteAccessSessions",
-        "directconnect:Describe*",
-        "directconnect:List*",
-        "discovery:Describe*",
-        "discovery:Get*",
-        "discovery:List*",
-        "dms:Describe*",
-        "dms:List*",
-        "ds:Get*",
-        "dynamodb:GetItem",
-        "dynamodb:BatchGetItem",
-        "dynamodb:Query",
-        "dynamodb:Scan",
-        "ec2:GetConsoleScreenshot",
-        "ecr:BatchGetImage",
-        "ecr:GetAuthorizationToken",
-        "ecr:GetDownloadUrlForLayer",
-        "ecr-public:GetAuthorizationToken",
-        "eks:DescribeIdentityProviderConfig",
-        "elasticbeanstalk:DescribeConfigurationOptions",
-        "elasticbeanstalk:DescribeConfigurationSettings",
-        "es:ESHttpGet*",
-        "fis:GetExperimentTemplate",
-        "fms:GetAdminAccount",
-        "frauddetector:BatchGetVariable",
-        "frauddetector:Get*",
-        "gamelift:GetGameSessionLogUrl",
-        "gamelift:GetInstanceAccess",
-        "geo:ListDevicePositions",
-        "glue:GetSecurityConfiguration*",
-        "glue:SearchTables",
-        "glue:GetTable*",
-        "guardduty:GetIPSet",
-        "guardduty:GetMasterAccount",
-        "guardduty:GetMembers",
-        "guardduty:ListMembers",
-        "guardduty:ListOrganizationAdminAccounts",
-        "inspector2:GetConfiguration",
-        "imagebuilder:GetImage",
-        "iotroborunner:Get*",
-        "iotsitewise:ListAccessPolicies",
-        "ivs:GetPlaybackKeyPair",
-        "ivs:GetStreamSession",
-        "kafka:GetBootstrapBrokers",
-        "kendra:Query*",
-        "kinesis:Get*",
-        "kms:DescribeKey",
-        "kms:GetPublicKey",
-        "lex:Get*",
-        "lambda:GetFunctionConfiguration",
-        "license-manager:GetGrant",
-        "license-manager:GetLicense",
-        "license-manager:ListTokens",
-        "lightsail:GetBucketAccessKeys",
-        "lightsail:GetCertificates",
-        "lightsail:GetContainerImages",
-        "lightsail:GetKeyPair",
-        "lightsail:GetRelationalDatabaseLogStreams",
-        "logs:GetLogEvents",
-        "logs:StartQuery",
-        "machinelearning:GetMLModel",
-        "macie2:GetAdministratorAccount",
-        "macie2:GetMember",
-        "macie2:GetMacieSession",
-        "macie2:SearchResources",
-        "macie2:GetSensitiveDataOccurrences",
-        "mobilehub:ExportProject",
-        "nimble:GetStreamingSession",
-        "polly:SynthesizeSpeech",
-        "proton:GetEnvironmentTemplate",
-        "proton:GetServiceTemplate",
-        "proton:ListServiceTemplates",
-        "proton:ListEnvironmentTemplates",
-        "qldb:GetBlock",
-        "qldb:GetDigest",
-        "rds:Download*",
-        "rekognition:CompareFaces",
-        "rekognition:Detect*",
-        "rekognition:Search*",
-        "resiliencehub:DescribeAppVersionTemplate",
-        "resiliencehub:ListRecommendationTemplates",
-        "robomaker:GetWorldTemplateBody",
-        "s3-object-lambda:GetObject",
-        "sagemaker:Search",
-        "schemas:GetDiscoveredSchema",
-        "sdb:Get*",
-        "sdb:Select*",
-        "secretsmanager:*",
-        "securityhub:GetFindings",
-        "securityhub:GetMembers",
-        "securityhub:ListMembers",
-        "ses:GetTemplate",
-        "ses:GetEmailTemplate",
-        "ses:GetContact",
-        "ses:GetContactList",
-        "ses:ListTemplates",
-        "ses:ListEmailTemplates",
-        "ses:ListVerifiedEmailAddresses",
-        "signer:GetSigningProfile",
-        "signer:ListProfilePermissions",
-        "signer:ListSigningProfiles",
-        "sms-voice:DescribeKeywords",
-        "sms-voice:DescribeOptedOutNumbers",
-        "sms-voice:DescribePhoneNumbers",
-        "sms-voice:DescribePools",
-        "snowball:Describe*",
-        "sqs:Receive*",
-        "ssm-contacts:*",
-        "ssm:DescribeParameters*",
-        "ssm:GetParameter*",
-        "sso:Describe*",
-        "sso:Get*",
-        "sso:List*",
-        "storagegateway:DescribeChapCredentials",
-        "support:DescribeCommunications",
-        "timestream:ListDatabases",
-        "timestream:ListTables",
-        "transcribe:Get*",
-        "transcribe:List*",
-        "transfer:Describe*",
-        "transfer:List*",
-        "waf-regional:GetChangeToken",
-        "workmail:DescribeUser",
-        "workmail:GetMailUserDetails",
-        "workmail:ListUsers"
-      ],
-      "Effect": "Deny",
-      "Resource": "*"
-    }
-  ]
 }
 
 ```

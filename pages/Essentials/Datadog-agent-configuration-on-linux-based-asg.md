@@ -50,3 +50,7 @@ Save Launch Template: Review settings and "Create launch template".
 
 After updating the ASG with the new launch template, any new instances launched by the ASG will have the chosen agent installed and configured. This setup enhances monitoring capabilities for these instances, allowing for better insights and optimization recommendations through nOps Rightsizing.
 
+
+<br/><br/>
+
+{% include custom/series_related.html %}

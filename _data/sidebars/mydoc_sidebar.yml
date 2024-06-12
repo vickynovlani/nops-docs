@@ -132,11 +132,11 @@ entries:
 
         - title: Onboarding EKS with Cluster Autoscaler
           url: /copilot-eks-cas-guide.html
-          output: web
+          output: web       
 
-        - title: Managing Resources With Karpenter GitOps Support
-          url: /Managing-Resources-With-Karpenter-GitOps-Support.html
-          output: web            
+        - title: Managing Karpenter Configurations With nOps GitOps support
+          url: /Managing-Karpenter-Configurations-With-nOps-GitOps-support.html
+          output: web    
 
         - title: Karpenter Beta Support
           url: /copilot-eks-karpenter-beta.html
@@ -191,9 +191,17 @@ entries:
         url: /scheduler-terraform.html
         output: web 
 
-      - title: Storage
+      - title: EBS Volume Type Change
         url: /essentials-storage-configuration.html
         output: web                 
+
+      - title: Essentials Summary
+        url: /essentials-summary-page.html
+        output: web    
+
+      - title: EBS Idle Cleanup
+        url: /ebs-idle-cleanup.html
+        output: web    
 
       - title: EC2 and ASG Rightsizing with DataDog
         url: /ec2-asg-rightsizing-with-nops-using-datadog.html
@@ -355,8 +363,8 @@ entries:
     output: web
     folderitems:
 
-    - title: Automated Tagging for AWS MAP
-      url: /automated-tagging-for-aws-map.html
+    - title: AWS MAP Tracker
+      url: /aws-map-tracker.html
       output: web
 
     - title: Backfill a CUR for AWS MAP
@@ -371,13 +379,26 @@ entries:
       url: /developer-getting-started.html
       output: web
 
-    - title: Scheduler Slackbot "How To" Guide
-      url: /developer-scheduler-slackbot.html
-      output: web
+    - title: skip
+      url:
+      output: skip
 
-    - title: nOps Scheduler API Guide
-      external_url: /scheduler-api.html
-      output: web
+      subfolders:
+      - title: Essentials API
+        output: web
+        subfolderitems:
+
+        - title: Create and configure EventBridge
+          url: /create-and-configure-eventbridge.html
+          output: web
+
+        - title: Essentials Scheduler API
+          url: /essentials-scheduler-api.html
+          output: web
+
+        - title: Scheduler Slackbot "How To" Guide
+          url: /developer-scheduler-slackbot.html
+          output: web
 
     - title: nOps Application API Swagger File
       external_url: https://app.nops.io/swagger/

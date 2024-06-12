@@ -8,6 +8,7 @@ allowed-tags:
   - storage
   - rightsizing
   - idle_resources
+  - eventbridge
   - onboarding
   - iam
   - sso

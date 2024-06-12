@@ -1,6 +1,6 @@
 ---
 title: EventBridge Integration for Essentials
-keywords: savings, recommendations, scheduler, essentials, nswitch, eventbridge
+keywords: savings, recommendations, scheduler, essentials, eventbridge
 tags: [essentials, scheduler]
 sidebar: mydoc_sidebar
 permalink: essentials-eventbridge-setup.html
@@ -9,15 +9,15 @@ series: [Essentials, Scheduler]
 weight: 1.0
 ---
 
-### EventBridge Integration Guide for nOps Essentials
+# EventBridge Integration Guide for nOps Essentials #
 
 This guide aims to facilitate the technical understanding and operational procedures associated with the integration of EventBridge within the nOps platform, ensuring efficient automation and management of cloud resources.
 
-**Introduction:**
+## Introduction ##
 
 Amazon EventBridge facilitates the creation and management of event-driven applications. It is instrumental in automating and managing a variety of nOps features. nOps provides two types of EventBridges: Scheduler and Essential. The Scheduler EventBridge handles tasks related to resource scheduling, resource rightsizing, and managing idle resources. The Essential EventBridge, on the other hand, is specifically tailored for tasks like migrating storage from Gp2 to Gp3.
 
-**Prerequisites:**
+## Prerequisites ##
 
 Before setting up an EventBridge, ensure:
 
@@ -25,19 +25,19 @@ Before setting up an EventBridge, ensure:
 
 - Your AWS account is properly configured with nOps.
 
-**Creating EventBridge from nOps Essentials Features**
+## Creating EventBridge from nOps Essentials Features ##
 
 EventBridge can be initiated from the Settings/Integration tab, from the Essential scheduler Create Window, or through recommendations in features like EC2 rightsizing, idle instances, and storage. 
 
 ![](https://lh7-us.googleusercontent.com/T-iyZVdIT4YSA2djxUVVzlWHRGp1AeY0YNvTZuJUYiBPIJhy2VaNLMxaUQJbvBIc_8ShK4UEtM0zczVukUJWAOuSk1o74BtCM6_olAKFA7K767lSr0ip1PRM45BHpmrx6GJVbEUSiRukveQyuQY4i1s)
 
-**Creating an EventBridge When None Exists**
+## Creating an EventBridge When None Exists ##
 
 If no EventBridge is associated with the client, a "Create Now" option will be available on the scheduler page of every Essentials feature. Clicking this will open a window where you can enter details such as the EventBridge name, AWS account, and region.
 
 ![](https://lh7-us.googleusercontent.com/QhwllzIt8ydRqeMUT2izQUtYdaNrxZpI9KJ1hGnCo391sENPxvbJLA1lLcR1c9ZjbKQGm60nmVf4oC7cAL50BM69R2DQWEAz3M5HI9EjmDqjE8oTnI40kjYTlRPztT7BTP97gsko9mJay0Zfz1Cz8FI)
 
-**Configuring an EventBridge When It Exists but Isn't Configured**
+## Configuring an EventBridge When It Exists, but Isn't Configured ##
 
 If an EventBridge has been created but not configured, a "Configure Now" option will be visible. 
 
@@ -47,13 +47,13 @@ Selecting this will display a window with details of the existing EventBridge, a
 
 ![](https://lh7-us.googleusercontent.com/igQzjvxwOdbzqWZREtyOVTkLbjymUMy9vMDabZLXg65nafInkJWy6fKmXS2KrfZCpWqQCAJOM2avJ8QY1xhazYRybwtVU6CHH3JpFPkem6H0o7iuvWDCrlnJ6kRJCnO-e4cyISnGQrupm1C_ckvMoF0)
 
-**Logging into AWS and Launching the Stack**
+### Logging into AWS and Launching the Stack ###
 
 Once you create an EventBridge, log into AWS and launch the stack from the schedule creation page. Complete the setup by clicking on "Create Stack".
 
 ![](https://lh7-us.googleusercontent.com/mUHO2IXj4C708LJxAPcVvZnMejzaWbyEGTYC0PQwUOt6wFh7aHe_QSrinam9brVVY8Cu9aI5pmQL4t4w-_4ISSc2pisIZ8fYhW7f7utM6UXy8v5RSV5ObHcbnsbHn9UsNyqZ5bEXTY0r-OLZikcc8fY)
 
-**To Create EventBridge from nOps Integrations**
+### To Create EventBridge from nOps Integrations ###
 
 - Navigate to "Personal Settings" and select "Integrations".
 
@@ -63,7 +63,7 @@ Once you create an EventBridge, log into AWS and launch the stack from the sched
 
 - Log into AWS and click on "Launch Stack" to initiate the stack run.
 
-**Creating EventBridge for Multiple AWS Accounts**
+### Creating EventBridge for Multiple AWS Accounts ###
 
 nOps supports the creation of EventBridge for multiple AWS accounts simultaneously. In the "Create New Event Bridge" window, select multiple accounts from the dropdown to configure EventBridges across several AWS accounts at once.
 
