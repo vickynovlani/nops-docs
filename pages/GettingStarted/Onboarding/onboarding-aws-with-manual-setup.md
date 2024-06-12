@@ -5,6 +5,7 @@ tags: [getting_started, onboarding]
 sidebar: mydoc_sidebar
 permalink: onboarding-aws-with-manual-setup.html
 folder: GettingStarted
+series: [Onboarding]
 weight: 9.0
 ---
 
